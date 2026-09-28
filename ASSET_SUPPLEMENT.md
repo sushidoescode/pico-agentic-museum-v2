@@ -7,14 +7,14 @@ This repository is one of two parts.
 
 ## Access
 
-This repository does not link to the supplement. When the repository was prepared on 2026-09-28, the owner had assembled the supplement and checked it file by file on their own computer. Its online upload was still in progress, and no sharing link or invitation had been issued. Ask the project owner for access. Do not assume it is available online.
+This repository does not link to the supplement. When the repository was prepared on 2026-09-28, the owner had assembled the supplement and checked it file by file on their own computer. Its online upload was still in progress, and no sharing link or invitation had been issued. Ask the project owner for access. Do not assume it is available online. Sharing it is not part of this repository's proposed review; it depends on the per-item recipient and rights decisions in [open items](review/OPEN_ITEMS.md).
 
 ## What the supplement contains
 
 | Folder in the supplement | Contents |
 | --- | --- |
 | `01_Review_Package/` and its ZIP | The original review package this repository grew from, unchanged |
-| `02_Assets_and_Blender/` | All eighteen current exhibit models and thumbnails, plus the archive room model and layout. It also has the original Blender file with its five room textures, the authoring scripts, the three reference models actually used, the original inputs for the generated vessel and seven PICO template resources. `RESTORE_MAP.json` maps each file to its place in the museum source. |
+| `02_Assets_and_Blender/` | All eighteen current exhibit models and thumbnails, plus the archive room model and layout. It also has the original Blender file with its five room textures, the authoring scripts, the three reference models actually used, the original inputs for the generated vessel, seven PICO template resources and the original provenance and attribution records (reference manifest, asset registers, pipeline and build-input notes, and entry/spec/build records for the four held exhibit families). `RESTORE_MAP.json` maps each file to its place in the museum source. |
 | `03_Android_App/` | The build-008 installer (APK) and its identity notes |
 | `04_Current_Frame/` | The admitted build-008 visitor-start image and its scope notes |
 
@@ -29,6 +29,8 @@ This repository's [MANIFEST.json](MANIFEST.json) lists each file it leaves out u
 | The museum's original `THIRD_PARTY_NOTICES.md` | Kept private; the corrected notices are in [source/NOTICES.md](source/NOTICES.md) |
 | `preview.html` and `preview-manifest.json` | The bundled Web preview's license scope is unresolved |
 | One build-006 inspector image (E08 in the [evidence index](evidence/INDEX.md)) | Its background shows rights-qualified thumbnails |
+
+Raw evidence, original prompts and conversations, Git history and recordings are in neither part.
 
 Some documents here were written for the original package and call the APK, the four held model families, the template resources and the Blender file “held privately”. For this repository that is still accurate: those files are not in Git. The owner has since placed them in the supplement for team review.
 

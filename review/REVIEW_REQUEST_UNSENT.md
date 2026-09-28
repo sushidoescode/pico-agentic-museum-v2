@@ -18,7 +18,7 @@ Thank you.
 
 ## Proposed sharing, prepared locally
 
-The proposed tree is this standalone Git repository, starting at [README.md](../README.md). It exists only on the owner's computer, with no remote configured. An archive of the same tracked files, `pico-review-2026-09-28-r2.zip`, expands to `2026-09-28-pico-repository/` without Git metadata. The archive's size and SHA-256 are recorded beside it in the local delivery closeout, outside the archive to avoid recursive hashing. The earlier archive `pico-review-2026-09-28.zip` stays unchanged as the historical package.
+The proposed tree is this Git repository, starting at [README.md](../README.md). The same files can also be supplied as one archive without Git metadata; its size and SHA-256 are given alongside it, outside the archive.
 
 The repository and archive exclude the APK, held models/template binaries, the original `.blend`, the final build-008 image, the affected inspector image, raw evidence/coordinator records, recordings, audio and the museum's Git history. The owner's separate asset supplement ([ASSET_SUPPLEMENT.md](../ASSET_SUPPLEMENT.md)) is not part of this proposal. Whether and with whom to share it is a separate owner decision. See [open items](OPEN_ITEMS.md) for exact qualifications; the artifact manifests control the final included file list.
 

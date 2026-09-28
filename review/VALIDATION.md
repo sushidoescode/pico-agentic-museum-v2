@@ -50,4 +50,4 @@ Original capture/gate, source transformation and prompt audit maps remain privat
 
 ## Readiness limits
 
-Snapshots omit held assets/template graphics and are not build-complete or offline runnable. No fresh build/install/native test, new capture, provider generation, accepted audio, upload, push, correspondence or history rewrite occurred. Recipient eligibility, supported teaching versions, rights/attribution and runtime/hardware limits remain in [open items](OPEN_ITEMS.md). The original package's opening doctor reported 19.9 GB free, and this repository's opening doctor reported 12.4 GB; the inherited 10 GB reserve plus staging headroom was rechecked before copies/packing. No native ownership transferred and no retry allowance changed.
+Snapshots omit held assets/template graphics and are not build-complete or offline runnable. No fresh build/install/native test, new capture, provider generation, accepted audio, upload, push, correspondence or history rewrite occurred. Recipient eligibility, supported teaching versions, rights/attribution and runtime/hardware limits remain in [open items](OPEN_ITEMS.md).

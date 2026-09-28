@@ -21,8 +21,8 @@
     },
     {
       "path": "ASSET_SUPPLEMENT.md",
-      "bytes": 3675,
-      "sha256": "6cf4c0cc4a642eaa3b5795e3eb4ff41f037eb1469a788c1dccaea09d32627cce",
+      "bytes": 4116,
+      "sha256": "b756635024dc7d344a2b9d87ef43870025466673729732ae5bd1bffd03646707",
       "original": {
         "kind": "editorial-package-material",
         "date": "2026-09-28",
@@ -35,8 +35,8 @@
     },
     {
       "path": "DELIVERABLES.json",
-      "bytes": 5193,
-      "sha256": "825989e0f5809977377fa85b52512af69272ba77c82f16034ceb524d83a4c9dd",
+      "bytes": 5238,
+      "sha256": "6283e486206264a6cb8740e36b069b317237649ba3b8896771a8190cc3e5fe6c",
       "original": {
         "kind": "editorial-package-material",
         "date": "2026-09-28",
@@ -49,8 +49,8 @@
     },
     {
       "path": "PROGRAM_INGREDIENTS.md",
-      "bytes": 5746,
-      "sha256": "e75d60e5bd936418842f3da69df804850a8ef8168ac58e607519f14f0b511c29",
+      "bytes": 6169,
+      "sha256": "7d575a738084368d5821a09e251c85d1b2888586659b477db7e02152b531ba6c",
       "original": {
         "kind": "editorial-package-material",
         "date": "2026-09-28",
@@ -63,8 +63,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4461,
-      "sha256": "6888e921e88b7f4d4c54b438b9cd6f3d9836a43fb154f014a57a28d2d31d94c5",
+      "bytes": 4411,
+      "sha256": "bfb470d059cf42e74c3bc287e183bc1e1901e66159c06f7e99ae012307febff4",
       "original": {
         "kind": "editorial-package-material",
         "date": "2026-09-28",
@@ -1399,8 +1399,8 @@
     },
     {
       "path": "curriculum/FIRST_STEPS_WITH_AI.md",
-      "bytes": 6396,
-      "sha256": "9262449af7b39e76a22ef187644f1cf3bbe3077603ca764618e35f11df675854",
+      "bytes": 6687,
+      "sha256": "43efee9cddc20c52fd057113c8334d3ca2a7888a0094a3f3971c6c29ff6a1af9",
       "original": {
         "kind": "editorial-package-material",
         "date": "2026-09-28",
@@ -1455,8 +1455,8 @@
     },
     {
       "path": "demo/WALKTHROUGH.md",
-      "bytes": 7532,
-      "sha256": "82516b8fdc3effd5b81efd4a78515e733ad10a78b7f47bc389fb1d4e1ac89a30",
+      "bytes": 7533,
+      "sha256": "67cc13074f6f830eda92745ea95a0e2bd0f23b485bc16c97fb0a3424f4d6bf56",
       "original": {
         "kind": "editorial-package-material",
         "date": "2026-09-28",
@@ -1469,8 +1469,8 @@
     },
     {
       "path": "demo/index.html",
-      "bytes": 11805,
-      "sha256": "9b86a4880a2d26c49415875b3cc99848742a9cf64f096525936b8cad21c4e586",
+      "bytes": 11806,
+      "sha256": "9a5d01e9c4d521b3dae792e5d5e75cdee4f20f3952597ae2ba5b0ffc04bea5ce",
       "original": {
         "kind": "editorial-package-material",
         "date": "2026-09-28",
@@ -1785,8 +1785,8 @@
     },
     {
       "path": "review/OPEN_ITEMS.md",
-      "bytes": 4496,
-      "sha256": "277ead66420e221122c57563a61ee6803420fb1ca04da3dfe83ed05c0f6a8560",
+      "bytes": 4642,
+      "sha256": "25b3afa0a6941ca3d5e5269ed4dc08763f0d378eea8d9db0c304d128c16f66a6",
       "original": {
         "kind": "editorial-package-material",
         "date": "2026-09-28",
@@ -1799,8 +1799,8 @@
     },
     {
       "path": "review/REVIEW_REQUEST_UNSENT.md",
-      "bytes": 3166,
-      "sha256": "5312ba133e29165a00beb08b1b9ae8dce8369bf4e9912c596d03d5eb62d376e9",
+      "bytes": 2867,
+      "sha256": "f2d7e5409a4227973fb8a914d5e70e510ad26e9e0de19c6d3d3a0c4f9ca0ca45",
       "original": {
         "kind": "editorial-package-material",
         "date": "2026-09-28",
@@ -1827,8 +1827,8 @@
     },
     {
       "path": "review/VALIDATION.md",
-      "bytes": 6465,
-      "sha256": "825121da926240c2b78f7b544050d7be680b2e4dec574784094e39a36ab2a111",
+      "bytes": 6198,
+      "sha256": "ecb11c21c9606e1413e625954742f0af9d26a095c44b377f07d6e04f8d3eabbb",
       "original": {
         "kind": "editorial-package-material",
         "date": "2026-09-28",

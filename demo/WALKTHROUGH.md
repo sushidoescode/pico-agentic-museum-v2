@@ -98,7 +98,7 @@ Open in 3D creates an independent object window with Turn, Spin/Pause and Reset.
 
 Build-008 · E07/T08 · sanitized evidence summary
 
-Source c65959f; APK b1a61d99…; retained 128 passing app tests. Final visitor-start gate museum-dh-01-b8-visitor-start passed 17 checks once. Its inspected original image and the APK are not in this repository; ASSET_SUPPLEMENT.md explains how they are supplied separately, with their rights qualifications.
+Source c65959f; APK b1a61d99…; retained 128 passing app tests. Final visitor-start gate museum-dh-01-b8-visitor-start passed 17 checks once. Its inspected original image and the APK are not in this repository; ASSET_SUPPLEMENT.md describes the owner’s separate supplement and its access and rights limits.
 
 **Development/process:** This assembled walkthrough is not a continuous build-008 video. Earlier stills retain their own build labels. No new build, native test, capture, provider generation or audio was made. Source exports omit held assets and are not exact APK reproductions.
 

@@ -19,7 +19,7 @@ Five full lessons; current curriculum and architecture; labelled prompt/process 
 | Raw evidence, original prompts/coordinator records, private reference materials and Git history | Confidential identifiers, correspondence or source attribution context | Remain private; the candidate supplies reviewed summaries and snapshots. No whole-history export proposed. |
 | Recordings and narration | No selected recording excerpt was needed; narration remains unheard/unaccepted | Optional later editorial/audio review. Not required to finish this package. |
 
-**Repository note, 2026-09-28.** Everything in this table stays outside this Git repository. The owner has since staged most of these files in a separate asset supplement for team review. [ASSET_SUPPLEMENT.md](../ASSET_SUPPLEMENT.md) lists what it contains and which items are in neither part. That staging does not settle the recipient and rights decisions below.
+**Repository note, 2026-09-28.** Everything in this table stays outside this Git repository. The owner has since placed the APK, the held models and thumbnails, the template resources, the Blender file and the build-008 frame in a separate asset supplement for team review. Raw evidence, original prompts, Git history, recordings and the inspector image are in neither part. [ASSET_SUPPLEMENT.md](../ASSET_SUPPLEMENT.md) gives the details. That staging does not settle the recipient and rights decisions below.
 
 Missing exact L2–L4 repair/reviewer prompt transcripts are labelled as missing historical source; teaching reconstructions are supplied without claiming to recover those transcripts. No physical/headset/wearer evidence, measured GPU memory, human keyboard Enter acceptance, memory cause/plateau or fresh-machine reproduction was created.
 

@@ -2,7 +2,7 @@
 
 This guide is for people who have never built software with an AI coding assistant. An AI coding assistant is a program built on a large language model (LLM). You describe what you want in ordinary language, it reads the files you give it, and it proposes code or explanations. Any assistant of this kind will do; nothing here depends on a particular product.
 
-You can do everything on this page with this repository alone: no internet, installation or headset is needed. Using an assistant for the exercise is optional.
+Everything on this page works offline with this repository alone, except actually sending a prompt to an assistant, which is optional. No installation or headset is needed.
 
 ## Three words to know first
 
@@ -14,13 +14,13 @@ A **check** (or test) is a small program that confirms one specific rule, such a
 
 ## The working loop
 
-1. **Pick a lesson.** Start with [Lesson 1](../lessons/L1.md) or [Lesson 2](../lessons/L2.md). Read its starting state and outcome first. The [course map](COURSE_MAP.md) lists all five lessons.
+1. **Pick a lesson.** Start with [Lesson 1](../lessons/L1.md) or [Lesson 2](../lessons/L2.md). Read its starting state and outcome first. The [course map](COURSE_MAP.md) lists all five lessons. Lesson sheets are technical records; look up words such as “admitted”, “opened” and “LOOK” (an opened screenshot's recorded visual check) in the [vocabulary](ARCHITECTURE_AND_GLOSSARY.md#vocabulary).
 2. **Give the assistant context.** Attach or paste the lesson sheet and the specific source files involved. Say what “done” looks like and what must not change. An assistant only knows what you show it, so a missing file becomes a guess.
 3. **Ask for one bounded change.** Ask for one behaviour, in named files, with a stated way to check it. “Improve the app” invites large, unreviewable edits.
 4. **Check the proposed edits before accepting them.** Read what changed. Did it touch only the files you named? Does it call functions that really exist in the source you supplied? If you are unsure, ask the assistant to point to the exact line it relied on.
 5. **Run the appropriate checks, if prerequisites are met.** You need a complete working copy and the tools in [setup and versions](SETUP_AND_VERSIONS.md). This repository alone does not meet them, so for now “checking” means reading the source and the existing test files.
 6. **Examine the result.** Open the screenshot or output and compare it with what you asked for. Write down what the evidence shows and what it does not show.
-7. **Save a checkpoint.** In your own copy, commit the change with a message that says what you checked. The lesson snapshots in this repository are checkpoints of this kind.
+7. **Save a checkpoint.** In your own copy, commit the change (save a named snapshot in Git) with a message that says what you checked. The lesson snapshots in this repository are checkpoints of this kind.
 8. **Iterate.** If something is wrong, write a focused repair request (example below) rather than starting over.
 
 ## A teaching prompt to try
@@ -37,9 +37,9 @@ You can check the answer yourself. Open the same two files and search for `reset
 
 > **Example repair request, newly written for this guide.** It is modelled on the Lesson 2 companion repair; it is not the original wording.
 >
-> The attached screenshot (`evidence/media/l2-before.png`) shows the companion window open, but its text is too small to read. Change only the companion window's size and text layout in `CompanionWindow.kt` so the object name and details are readable at the default distance. Do not change the shared state, the reducers or the catalogue window. List every line you changed. Then tell me which screenshot and which existing test would show that the fix worked without breaking selection.
+> The attached screenshot (`evidence/media/l2-before.png`) shows the companion window open, but its text is too small to read. Change only the companion's window size (its `defaultSize` in `Main.kt`) and its text layout in `CompanionWindow.kt`, so the object name and details are readable at the default distance. Do not change the shared state, the reducers or the catalogue window. List every line you changed. Then tell me which screenshot and which existing test would show that the fix worked without breaking selection.
 
-This request names the visible problem, the evidence, the one file to change, what must stay the same and how success will be judged. To see how the real repair turned out, compare [the before image](../evidence/media/l2-before.png) with [the after image](../evidence/media/l2-after.png). Then read the “Failure and repair” section of [Lesson 2](../lessons/L2.md).
+This request names the visible problem, the evidence, the files to change, what must stay the same and how success will be judged. To see how the real repair turned out, compare [the before image](../evidence/media/l2-before.png) with [the after image](../evidence/media/l2-after.png). Then read the “Failure and repair” section of [Lesson 2](../lessons/L2.md).
 
 ## A no-install exercise
 
