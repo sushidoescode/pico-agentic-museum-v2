@@ -1,0 +1,29 @@
+{
+ "id": "smartwatch",
+ "number": "011",
+ "realSizeMetres": {
+  "H": 0.076,
+  "W": 0.045,
+  "D": 0.077
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Round 42 mm steel case, screen off (dark glass, no UI/text), face toward +Z tilted up 10 degrees, on a closed slate-blue strap loop (~0.21 m around) standing on its lower curve. Round rather than the rectangular Apple Watch case. The reference watch (readable UI numbers, strap stubs only) was not used.",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/smartwatch/author_smartwatch.py (lathe case, swept strap loop)"
+  },
+  "permission": "Original authored for this project from the written brief; no reference model, reference image or provider output used."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/smartwatch.jpg (six views, Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/smartwatch.png"
+  ],
+  "verdict": "reads as a round smartwatch on its strap; crown and pusher at 3 o'clock; dark screen",
+  "issuesFixed": [
+   "strap profile axes and case orientation corrected before the first export"
+  ]
+ }
+}

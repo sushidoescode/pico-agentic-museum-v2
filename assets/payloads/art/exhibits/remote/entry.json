@@ -1,0 +1,29 @@
+{
+ "id": "remote",
+ "number": "013",
+ "realSizeMetres": {
+  "H": 0.018,
+  "W": 0.152,
+  "D": 0.038
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Display: LYING FLAT with the long axis along X (across the viewer), d-pad / IR end toward -X, keys up (changed after root's native study check: end-on along Z it read as a small dark blob). No icons or text; one muted-red power key. Low triangle count (under the 5k guide) is adequate for a flat remote.",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/remote/author_remote.py (plan lofts + lathes)"
+  },
+  "permission": "Original authored for this project from the written brief; no reference model, reference image or provider output used."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/remote.jpg (six views, Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/remote.png"
+  ],
+  "verdict": "reads as a streaming remote: d-pad ring with select, four keys, volume rocker, power key",
+  "issuesFixed": [
+   "re-oriented from long-axis-along-Z (foreshortened in the study/inspector front view) to long-axis-along-X"
+  ]
+ }
+}

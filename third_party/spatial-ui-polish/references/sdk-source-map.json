@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "title": "spatial-ui-polish — SDK source map (code-level dependency contract)",
+  "generatedOn": "2026-09-16",
+  "authority": "Read directly from the locally resolved PICO Spatial SDK 6.1.9 sources jars in the Gradle module cache. Line spans are the exact spans in those archives. This map is the contract later tasks cite instead of guessing overloads. Nothing here is native-tested until the checkpoint says so.",
+  "resolvedSdk": {
+    "bom": "com.pico.spatial:bom:6.1.9",
+    "bomPom": {
+      "path": "~/.gradle/caches/modules-2/files-2.1/com.pico.spatial/bom/6.1.9/154b1b1a7567683ea09f318ed0b355bbde4618db/bom-6.1.9.pom",
+      "members": [
+        "com.pico.spatial.core:core",
+        "com.pico.spatial.ui:platform",
+        "com.pico.spatial.ui:foundation",
+        "com.pico.spatial.ui:design",
+        "com.pico.spatial.sense:sense",
+        "com.pico.spatial.ml:securemr",
+        "com.pico.spatial.ml:readback",
+        "com.pico.spatial.tracking:tracking",
+        "com.pico.spatial.foundation:foundation"
+      ],
+      "note": "Every member resolves to 6.1.9. The BOM was already present in the local cache before this work; nothing was provisioned for this map.",
+      "sha256": "4652bc40910d62deda92fc957b8dad08d99600c64db2325895c5137f5f69099e"
+    },
+    "declaredToolchainFromPoms": {
+      "kotlinStdlib": "2.0.21 (design-6.1.9.pom, ui-android-1.2.5.pom)",
+      "composeRuntime": "androidx.compose.runtime:runtime-android:1.10.4 (ui-android-1.2.5.pom)",
+      "composeUiFork": "com.pico.spatial.ui:ui-android:1.2.5 replaces androidx.compose.ui:ui / ui-graphics / ui-text; com.pico.spatial.ui.foundation:foundation-android replaces androidx.compose.foundation:foundation — the official template excludes those four androidx artifacts on every configuration",
+      "lifecycle": "2.10.0 (design-6.1.9.pom)"
+    },
+    "templateObservation": "pico-cli 0.4.4 `project create --template planar --sdk 6.1.9` still emitted `spatialBom = \"6.0.0\"` and reported `SDK Version: 6.0.0` (Template Version 6.0); the flag did not select 6.1.9. The showcase pins 6.1.9 explicitly in its version catalog."
+  },
+  "archives": {
+    "design": {
+      "coordinates": "com.pico.spatial.ui:design:6.1.9:sources",
+      "path": "~/.gradle/caches/modules-2/files-2.1/com.pico.spatial.ui/design/6.1.9/66d81734408d681a06a5f3368273de897f243a6a/design-6.1.9-sources.jar",
+      "sha256": "d117cc73260f05af6b623c84aeefcd8bb2e023f86424f3c138b0257b26c8c210",
+      "kotlinFiles": 70
+    },
+    "foundation": {
+      "coordinates": "com.pico.spatial.ui:foundation:6.1.9:sources",
+      "path": "~/.gradle/caches/modules-2/files-2.1/com.pico.spatial.ui/foundation/6.1.9/11e412b8e05590f1c15bd95e05b48112df390a0d/foundation-6.1.9-sources.jar",
+      "sha256": "3961ddd8e110653c68edb56a02f9f14963fcd1c41818670b390cafad5a63e6d6",
+      "kotlinFiles": 92
+    },
+    "platform": {
+      "coordinates": "com.pico.spatial.ui:platform:6.1.9:sources",
+      "path": "~/.gradle/caches/modules-2/files-2.1/com.pico.spatial.ui/platform/6.1.9/c75a557d0337296ec4d4c1d4f4e396a6101fa480/platform-6.1.9-sources.jar",
+      "sha256": "d39051031c44c3819d1da1dfbede69a55b5a5d97466238996262f4b3017bb264",
+      "kotlinFiles": 40
+    },
+    "core": {
+      "coordinates": "com.pico.spatial.core:core:6.1.9:sources",
+      "path": "~/.gradle/caches/modules-2/files-2.1/com.pico.spatial.core/core/6.1.9/c335ac21fa5298818ec3b4d732b78df1948f264d/core-6.1.9-sources.jar",
+      "sha256": "971d4c05f95649566495e4ba1dc9b55f57606372df8eb1014273eda0501155c2",
+      "kotlinFiles": 203
+    }
+  },
+  "declarations": [
+    {
+      "id": "ColorScheme",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/ColorScheme.kt",
+      "lines": "49-67",
+      "signature": "class ColorScheme(fillPrimary, fillSecondary, fillTertiary, fillLight, labelPrimaryLight, labelPrimary, labelSecondary, labelTertiary, labelQuaternary, lightenHover, lightenPressed, error, alert, passable, interaction, dividerLine: Color)",
+      "notes": "Exactly 16 public roles in 6.1.9; copy() at 69-104. No `accent`/`onAccent` role exists (the 6.0 vault theme doc still names them; the vendor verifier R8 rejects them). The accent-like role is `interaction`.",
+      "support": "declared"
+    },
+    {
+      "id": "vibrantColorScheme / systemColorScheme",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/ColorScheme.kt",
+      "lines": "230-276",
+      "signature": "fun vibrantColorScheme(...16 defaults...): ColorScheme; fun systemColorScheme(context: Context): ColorScheme = vibrantColorScheme().adaptVibrantColor { defaultColorScheme() }",
+      "notes": "fill*/label*/lighten* defaults are Vibrant-encoded (Color.Vibrant.withVibrant(Darker/SemiLight/Neutral/Light; Darkest/UltraDark/Semidark/Dark)); error/alert/passable/interaction are fixed DisplayP3 semantic colors; dividerLine and labelPrimaryLight are fixed with Vibrant.None. On a non-spatial platform the adaptVibrantColor fallback returns defaultColorScheme() (184-201) whose labelPrimary is opaque black and fillPrimary is opaque #282828.",
+      "support": "declared"
+    },
+    {
+      "id": "PicoTheme",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/PicoTheme.kt",
+      "lines": "53-69",
+      "signature": "@Composable fun PicoTheme(colorScheme: ColorScheme = systemColorScheme(LocalContext.current), typography: Typography? = null, content: @Composable () -> Unit)",
+      "notes": "Provides LocalColorScheme, LocalTypography, LocalIndication (PicoIndication(pressedColorProducer = { colorScheme.lightenPressed })), LocalTokensBearer, then TextSelectionAndToolbarProvider { SnackbarHost(content) }. It does NOT provide LocalContentColor.",
+      "support": "declared"
+    },
+    {
+      "id": "LocalContentColor / LocalDisableAlpha",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/CompositionLocals.kt",
+      "lines": "29-43",
+      "signature": "val LocalContentColor = compositionLocalOf { Color.Unspecified }; val LocalDisableAlpha = compositionLocalOf { 0.3f }; internal fun ProvideContentColor(...)",
+      "notes": "Default content color is Unspecified. ProvideContentColor is internal; app code uses CompositionLocalProvider(LocalContentColor provides ...).",
+      "support": "declared"
+    },
+    {
+      "id": "Text",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/Text.kt",
+      "lines": "80-132 (String), 180-232 (AnnotatedString), 241 LocalTextStyle, 251 ProvideTextStyle",
+      "signature": "@Composable fun Text(text: String, modifier, color: Color = Color.Unspecified, autoSize, fontSize, fontStyle, fontWeight, fontFamily, letterSpacing, textDecoration, textAlign, lineHeight, overflow = TextOverflow.Clip, softWrap, maxLines, minLines, onTextLayout, style: TextStyle = LocalTextStyle.current)",
+      "notes": "Color resolution at 101-108: explicit color, else style.color, else LocalContentColor.current. DefaultTextStyle (tokens/TypographyTokens.kt:26-27) carries no color and Typography roles carry no color, so an ordinary Text on a plain surface inside PicoTheme falls through to Unspecified — BasicText then draws the framework default (black). Built-ins provide their own content color (Button.kt:191, ListItem.kt:166, AlertDialog.kt:263).",
+      "support": "declared"
+    },
+    {
+      "id": "Typography",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/Typography.kt",
+      "lines": "44-62",
+      "signature": "class Typography(bodyLarge, bodyLargeMultiline, bodyMedium, bodyMediumMultiline, bodySmall, bodyTiny, displayLarge, displayMedium, displaySmall, headlineLarge, headlineMedium, headlineSmall, labelLarge, labelMedium, labelSmall, titleLarge, titleMedium, titleSmall: TextStyle)",
+      "notes": "18 roles in 6.1.9 (the always-present 15 plus bodyLargeMultiline, bodyMediumMultiline, bodyTiny).",
+      "support": "declared"
+    },
+    {
+      "id": "Button",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/Button.kt",
+      "lines": "86-127 Button, 129-209 BasicButton, 306-444 ButtonDefaults",
+      "signature": "@Composable fun Button(onClick: () -> Unit, modifier, enabled: Boolean = true, size: ButtonSize = ButtonDefaults.Regular, colors: ButtonColors = ButtonDefaults.buttonColors(), leadingIcon, trailingIcon, contentPadding, shape = ButtonDefaults.shapeForButtonSize(size), gap, interactionSource, content: @Composable RowScope.() -> Unit)",
+      "notes": "BasicButton chain (171-188): graphicsLayer{clip=true; shape; alpha = enabled ? 1 : LocalDisableAlpha} -> spatialHoverEffect(enabled) -> background(containerColor) -> semantics(role) -> clickable(indication = LocalIndication.current, interactionSource) -> controllerHapticFeedback(interactionSource); content color provided at 191. Defaults: buttonColors = fillPrimary / labelPrimaryLight (359-363); sizes Max 104x56, Regular 81x48, Small 69x40, Min 57x32 (309-318); corner radius Max 32dp, Regular 102dp (pill), Small 20dp, Min RadiusLarge (439-444); text style Regular = titleMedium, Small = labelLarge, Min = labelMedium (388-396). Hover is applied INSIDE the built-in — never add spatialHoverEffect on top.",
+      "support": "declared"
+    },
+    {
+      "id": "IconButton",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/IconButton.kt",
+      "lines": "47-57 IconButton, 72-102 BasicIconButton, 108-197 IconButtonDefaults",
+      "signature": "@Composable fun IconButton(onClick: () -> Unit, modifier, colors: ButtonColors = IconButtonDefaults.iconButtonColors(), size: ButtonSize = IconButtonDefaults.Regular, shape: Shape = IconButtonDefaults.DefaultShape, enabled: Boolean = true, interactionSource, content: @Composable () -> Unit)",
+      "notes": "Delegates to BasicButton (hover, indication, haptics inherited). Defaults: fillPrimary / labelPrimaryLight (191-196), Min 38x32, Regular 56x48, Max 66x56, DefaultShape = RoundedCornerShape(35dp) (119), iconButtonSize(size) for square shells (127).",
+      "support": "declared"
+    },
+    {
+      "id": "Built-ins that already apply spatialHoverEffect",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/*.kt",
+      "lines": "Button.kt:179, ListItem.kt:72, Option.kt:89, Switch.kt:254, SegmentControls.kt:149, CheckBox.kt:149, Slider.kt:664+799, TextField.kt:831, Chips.kt:188+304+440; also DatePicker.kt, NumberField.kt, PageControl.kt, ScrollIndicator.kt, Timepicker.kt, menu/MenuItem.kt, windows/TabBar.kt (file-level grep)",
+      "signature": "n/a",
+      "notes": "Adding Modifier.spatialHoverEffect to any of these doubles the effect. There is NO `Card` built-in in design 6.1.9 (the vendor hover.md Card example names a component that does not exist here); ListItem is the closest built-in and applies hover internally without an onClick parameter.",
+      "support": "declared"
+    },
+    {
+      "id": "spatialHoverEffect (style)",
+      "archive": "foundation",
+      "member": "com/pico/spatial/ui/foundation/hover/SpatialHoverEffectStyle.kt",
+      "lines": "29-36",
+      "signature": "fun Modifier.spatialHoverEffect(style: SpatialHoverStyle = SpatialHoverStyle.Default, enabled: Boolean = true): Modifier",
+      "notes": "No-op unless isSupportSpatialHoverEffect(). Block overload: SpatialHoverEffect.kt:46-53 `fun Modifier.spatialHoverEffect(block: SpatialHoverEffectRootScope.(SpatialHoverEffectContext) -> Unit)`; DSL builders in hover/Dsl.kt: clipShape(63), scale(71, 80), alpha(88), offset(95, 103), animation(132). Active/inactive branches must call the same builders (SpatialHoverEffect.kt:157-159 check).",
+      "support": "declared"
+    },
+    {
+      "id": "backgroundMaterial",
+      "archive": "foundation",
+      "member": "com/pico/spatial/ui/foundation/material/BackgroundMaterial.kt",
+      "lines": "44-51 modifier, 69-121 node, 123-125 support, 127-134 mapping",
+      "signature": "@Stable fun Modifier.backgroundMaterial(enable: Boolean = true, style: Material = Material.Regular): Modifier",
+      "notes": "View-level material rendered by the OS compositor; applied only when enable && (SpatialBuild.isSpatialPlatform() || core BuildConfig.DEBUG). It is a LayoutModifierNode that consumes 1px of depth (DEPTH=-1, BACK_OFFSET=1) and sets SpatialGraphicsLayerScope.backgroundMaterial = Material.toFrameworkViewMaterial(): None 0, Regular 1, Thick 2, Thickest 3, Thin 4. Exposes enable/style only — no blur radius, refraction, lensing or backdrop sampling parameters.",
+      "support": "declared"
+    },
+    {
+      "id": "Material (window path)",
+      "archive": "platform",
+      "member": "com/pico/spatial/ui/platform/Material.kt",
+      "lines": "19-39 enum, 41-48 toFrameworkWindowBackgroundInt, 50-64 window helpers",
+      "signature": "enum class Material { None, Regular, Thick, Thickest, Thin }",
+      "notes": "KDoc: Regular = base layer (Window, Augment, TabBar, ToolBar); Thick = large elevated layer (Dialog, Sheet, Menu); Thickest = small elevated layer (Tooltip, Text selector); Thin = small elevated elements (Box, Button, CheckBox) and 'Currently, It has no effect for the Window'. toFrameworkWindowBackgroundInt maps Thin -> 0, identical to None: Thin is not a window material.",
+      "support": "declared"
+    },
+    {
+      "id": "Window material fallback off SpaceOS",
+      "archive": "foundation",
+      "member": "com/pico/spatial/ui/foundation/window/WindowMaterials.kt",
+      "lines": "28-59",
+      "signature": "internal fun Modifier.backgroundWhenMaterialIfNotSupport(radius, material: () -> Material); internal fun WindowMaterialProvider(material, content)",
+      "notes": "When FeatureFlags.isSupportWindowMaterial is false the SDK draws flat greys for Regular/Thick/Thickest and NOTHING for Thin or None. LocalIsMaterialBackgroundEnabled = material != None.",
+      "support": "declared"
+    },
+    {
+      "id": "WindowContainer DSL",
+      "archive": "foundation",
+      "member": "com/pico/spatial/ui/foundation/dsl/WindowContainer.kt",
+      "lines": "66-68 DefaultWindowContainer, 99-150 WindowContainer(direct params), 167-214 WindowContainer(properties DSL), 257-266 Form",
+      "signature": "fun SpatialAppScope.WindowContainer(id: String, form: Form? = null, defaultSize: WindowContainerSize? = null, resizeType: ContainerResizeType? = null, defaultResizeRestriction: ContainerResizeRestriction? = null, enableMaterialBackground: Boolean? = null, volumeAlignment: VolumeAlignment? = null, defaultVolumeBasePanelType: VolumeBasePanelType? = null, defaultCaptionBarType: CaptionBarType? = null, placement: (PlacementContext.() -> Placement)? = null, targetActivity: Class<out ComponentActivity>? = null, worldScale: WorldScale? = null, content: @Composable WindowContainerScope.() -> Unit)",
+      "notes": "enableMaterialBackground is `Boolean? = null` (106) and `ContainerProperties.enableMaterialBackground: Boolean?` (WindowContainerProperties.kt:43, impl default null at 65). DefaultWindowContainer exposes no DSL knob.",
+      "support": "declared"
+    },
+    {
+      "id": "enableMaterialBackground effective default (core)",
+      "archive": "core",
+      "member": "com/pico/spatial/core/container/{WindowContainer.kt, SpatialContainerManager.kt, SCParamsExtractor.kt, ContainerMaterialBackground.kt}",
+      "lines": "WindowContainer.kt:53-54 and :183; SpatialContainerManager.kt:1194-1195 and :1229-1230; SCParamsExtractor.kt:201 and :307; ContainerMaterialBackground.kt:16-41",
+      "signature": "public val WindowContainer.enableMaterialBackground: Boolean get() = properties.enableMaterialBackground ?: true; WindowContainerProperties.enableMaterialBackground: Boolean? = null; manager merge: dsl.enableMaterialBackground ?: default.enableMaterialBackground; default from ContainerMaterialBackground.fromBundle(meta-data `pico.spatial.windowcontainer.materialbackground`, default REGULAR=1)",
+      "notes": "A null DSL value means INHERIT: the manager fills it from the target Activity's manifest meta-data (0 = NONE, anything else = REGULAR), and the manifest default is REGULAR. So the effective default is glass ON unless the manifest says \"0\" or the DSL says false. Platform side agrees: SUIWindowContainer.kt:82-84 provides LocalIsMaterialBackgroundEnabled = isSupportWindowMaterial && (enableMaterialBackground ?: true); SpatialActivityDelegateImpl.kt:169-176 applies Material.Regular to the Activity window when the merged value == true. The simplified docs' `true (default)` is therefore correct as an effective default, not as the declared type.",
+      "support": "declared"
+    },
+    {
+      "id": "FeatureFlags.isSupportWindowMaterial",
+      "archive": "platform",
+      "member": "com/pico/spatial/ui/platform/FeatureFlags.kt",
+      "lines": "16-20",
+      "signature": "internal val isSupportWindowMaterial: Boolean by lazy { runCatching { PicoOSBuild.IS_SPACE_OS }.getOrNull() ?: false }",
+      "notes": "Window materials exist only on SpaceOS builds; LocalIsMaterialBackgroundEnabled (SpatialCompositionLocals.kt:76) is false elsewhere.",
+      "support": "declared"
+    },
+    {
+      "id": "Augment",
+      "archive": "foundation",
+      "member": "com/pico/spatial/ui/foundation/window/Augments.kt",
+      "lines": "78-96 and 131-151 (two overloads), 318 defaultCornerRadius",
+      "signature": "fun Augment(anchor, alignment, offset, cornerRadius: Dp = 16.dp, enableMaterialBackground: Boolean = true, focusable, ..., content)",
+      "notes": "Non-null Boolean default true; material = if (enableMaterialBackground) Material.Regular else Material.None (96). Every Augment is a real system window.",
+      "support": "declared"
+    },
+    {
+      "id": "Subwindow",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/windows/Subwindow.kt",
+      "lines": "54-85, 131-135 SubwindowDefaults",
+      "signature": "@Composable fun Subwindow(rotation3D: Rotation3D? = null, followViewpoints: Set<ViewPoint> = ViewPoint.All, placement: SubwindowPlacement = SubwindowPlacement.Default, offset: DpOffset3D = getGap(...), focusable: Boolean = true, content: @Composable BoxScope.() -> Unit)",
+      "notes": "AugmentImpl with Material.Regular (74), fixed width 360dp, gap 24dp, corner 32dp, MatchContainerHeight. The system owns its glass; do not paint over it.",
+      "support": "declared"
+    },
+    {
+      "id": "Toolbar",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/windows/Toolbar.kt",
+      "lines": "66-106 (legacy), 126-161 (segmented)",
+      "signature": "@Composable fun Toolbar(cornerSize: Dp = ToolbarDefaults.CornerRadius, followViewpoints, focusable: Boolean = true, content: @Composable RowScope.() -> Unit); @Composable fun Toolbar(followViewpoints, focusable, contentConfiguration, supportingConfiguration, supportingContent, content)",
+      "notes": "AugmentImpl anchored BottomFront with Material.Regular (85), LayerType.Level12, SpatialWindowType.Toolbar; segmented overload renders each segment with backgroundMaterial(Regular) (243). Use the named-argument form Toolbar(content = { ... }) to avoid overload ambiguity.",
+      "support": "declared"
+    },
+    {
+      "id": "AlertDialog / BasicAlertDialog",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/windows/AlertDialog.kt",
+      "lines": "93-106 AlertDialog, 136-181 BasicAlertDialog",
+      "signature": "@Composable fun AlertDialog(modifier, cornerRadius, properties: DialogProperties, onDismissRequest: (() -> Unit)? = null, icon, title, content, buttons, orientation: Orientation = Horizontal, padding, followViewpoints); @Composable fun BasicAlertDialog(onDismissRequest: () -> Unit, properties, cornerRadius, followViewpoints, dialogContent)",
+      "notes": "SpatialDialogDelegate with Material.Thick (160), LayerType.Level3, WindowPriority.P0, modal, centered in container. The dialog owns its material.",
+      "support": "declared"
+    },
+    {
+      "id": "Sheet / BasicSheet",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/windows/Sheets.kt",
+      "lines": "154-199 Sheet, 202-240 BasicSheet",
+      "signature": "@Composable fun Sheet(modifier, properties, onDismissRequest: (() -> Unit)? = null, cornerRadius, followViewpoints, contentPadding, contentSpace, title, leadingAction (default close IconButton), trailingAction, bottom, content)",
+      "notes": "Material.Thick (225), LayerType.Level23.",
+      "support": "declared"
+    },
+    {
+      "id": "SpatialPopup",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/windows/SpatialPopup.kt",
+      "lines": "68-79",
+      "signature": "@Composable fun SpatialPopup(onDismissRequest: (() -> Unit)?, modifier, popupPositionProvider = rememberSpatialPopupPositionProvider(), cornerRadius, defaultMinWidth, defaultMinHeight, disableMaterialBackground: Boolean = false, properties, content: @Composable BoxScope.() -> Unit)",
+      "notes": "material = if (disableMaterialBackground) None else Thick (87).",
+      "support": "declared"
+    },
+    {
+      "id": "Switch",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/Switch.kt",
+      "lines": "94-103, 368-375 default colors",
+      "signature": "@Composable fun Switch(checked: Boolean, onCheckedChange: ((Boolean) -> Unit)?, modifier, enabled: Boolean = true, colors: SwitchColors = SwitchDefaults.switchColors(), interactionSource)",
+      "notes": "checked track = interaction (the accent role), unchecked track = fillTertiary, thumbs = labelPrimaryLight. Hover internal (254).",
+      "support": "declared"
+    },
+    {
+      "id": "Slider / SegmentSlider / SymbolSlider",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/Slider.kt",
+      "lines": "214-225 Slider, 276-286 SegmentSlider, 134-146 SymbolSlider",
+      "signature": "@Composable fun Slider(value: Float, onValueChange: (Float) -> Unit, modifier, valueRange = 0f..1f, onValueChangeFinished, enabled = true, interactionSource, sliderSpec: SliderSpec = SliderDefaults.Regular, colors: SliderColors = SliderDefaults.sliderColors())",
+      "notes": "Hover internal (664, 799).",
+      "support": "declared"
+    },
+    {
+      "id": "TextField / TextArea",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/TextField.kt",
+      "lines": "508-540 TextField(String), 128-148 TextArea(String)",
+      "signature": "@Composable fun TextField(value: String, onValueChange: (String) -> Unit, modifier, placeholder, leadingContent, trailingContent, supportingText, ...); @Composable fun TextArea(value: String, onValueChange, modifier, placeholder, supportingText, enabled, readOnly, textStyle, isError: Boolean = false, visualTransformation, keyboardOptions, keyboardActions, maxLines, minLines, showScrollIndicator, interactionSource, cornerRadius, colors)",
+      "notes": "isError and supportingText exist on TextArea; hover internal (831, disabled while focused).",
+      "support": "declared"
+    },
+    {
+      "id": "SegmentControl / SegmentItem",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/SegmentControls.kt",
+      "lines": "68-76, 116-128, 312-319 default colors",
+      "signature": "@Composable fun SegmentControl(modifier, backgroundColor, itemSpace, contentPadding, cornerRadius, content: @Composable RowScope.() -> Unit); @Composable fun RowScope.SegmentItem(selected: Boolean, onClick: () -> Unit, modifier, interactionSource, textStyle, colors, title, icon, contentPadding, gap)",
+      "notes": "Selected item = fillSecondary/labelPrimary, unselected = transparent/labelTertiary. Hover internal (149).",
+      "support": "declared"
+    },
+    {
+      "id": "ToggleButton / ToggleableChip / ButtonChip",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/{ToggleButton.kt, Chips.kt}",
+      "lines": "ToggleButton.kt:63-86; Chips.kt:331-343 ToggleableChip, 90-101 ButtonChip",
+      "signature": "@Composable fun ToggleButton(checked: Boolean, onCheckedChange: (Boolean) -> Unit, modifier, colors, size = ToggleButtonDefaults.Min, enabled, interactionSource, leadingIcon, trailingIcon, contentPadding, shape, gap, content: @Composable RowScope.() -> Unit); @Composable fun ToggleableChip(label: @Composable () -> Unit, isToggleOn: Boolean, onClick: () -> Unit, modifier, leadingIcon, trailingIcon, enabled, chipSize, colors, interactionSource)",
+      "notes": "Hover internal.",
+      "support": "declared"
+    },
+    {
+      "id": "ListItem",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/ListItem.kt",
+      "lines": "56-115, 290-298 default colors",
+      "signature": "@Composable fun ListItem(headlineContent: @Composable () -> Unit, modifier, supportingContent, leadingContent: (BoxScope.() -> Unit)?, trailingContent, colors: ListItemColors = ListItemDefaults.listItemColors(), padding, shape)",
+      "notes": "No onClick parameter; clip(shape).semantics.then(modifier).spatialHoverEffect().background(fillLight). Selection/click must come from the caller's modifier (clickable with LocalIndication + controllerHapticFeedback) placed BEFORE the internal hover via `modifier`.",
+      "support": "declared"
+    },
+    {
+      "id": "Option",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/Option.kt",
+      "lines": "63-75",
+      "signature": "@Composable fun Option(selected: Boolean, onSelectChange: (Boolean) -> Unit, modifier, icon, colors, enabled = true, gap, shape, contentPadding, interactionSource, content: @Composable () -> Unit)",
+      "notes": "Card-style selectable option with internal hover (89) and disabled alpha; groups are app-managed.",
+      "support": "declared"
+    },
+    {
+      "id": "TitleBar",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/TitleBar.kt",
+      "lines": "49-60",
+      "signature": "@Composable fun TitleBar(title: @Composable BoxScope.() -> Unit, modifier, leadingActions: (@Composable RowScope.() -> Unit)?, trailingActions, contentPadding, leadingGap, trailingGap, titleAlignment: TitleAlignment = Center, colors: TitleBarColors)",
+      "notes": "Slot-style title; no String overload.",
+      "support": "declared"
+    },
+    {
+      "id": "SideNavigation",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/SideNavigation.kt",
+      "lines": "60-67, 105-112, 141-151",
+      "signature": "@Composable fun SideNavigation(modifier, scrollState, contentPadding, headerColor, header, content: ColumnScope.() -> Unit); fun SideNavigationSection(modifier, contentPadding, titlePadding, sectionColor, title, content); fun SideNavigationItem(selected: Boolean, modifier, horizontalArrangement, shape, contentPadding, colors, leading, trailing, content: BoxScope.() -> Unit)",
+      "notes": "SideNavigationItem has no onClick parameter; click comes from the caller's modifier.",
+      "support": "declared"
+    },
+    {
+      "id": "Icon",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/Icon.kt",
+      "lines": "56-61, 89-94, 123-128",
+      "signature": "@Composable fun Icon(imageVector | bitmap | painter, contentDescription: String?, modifier, tint: Color = LocalContentColor.current)",
+      "notes": "tint reads LocalContentColor; Unspecified tint means no color filter.",
+      "support": "declared"
+    },
+    {
+      "id": "CircularProgressIndicator / LinearProgressIndicator",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/{CircularProgressIndicator.kt, LinearProgressIndicator.kt}",
+      "lines": "CircularProgressIndicator.kt:102-109 (determinate, progress: () -> Float), 158-163 (indeterminate: modifier, color = labelPrimaryLight, progressSize, strokeWidth); LinearProgressIndicator.kt:48-54",
+      "signature": "see lines",
+      "notes": "Progress is a lambda, not a Float.",
+      "support": "declared"
+    },
+    {
+      "id": "HorizontalDivider / VerticalDivider",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/Divider.kt",
+      "lines": "35-39, 56-60",
+      "signature": "@Composable fun HorizontalDivider(modifier, color: Color = DividerDefaults.color, thickness: Dp = DividerDefaults.thickness)",
+      "notes": "",
+      "support": "declared"
+    },
+    {
+      "id": "PicoIndication",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/PicoIndication.kt",
+      "lines": "45-75, 90-130",
+      "signature": "class PicoIndication(pressedColorProducer: () -> Color) : IndicationNodeFactory",
+      "notes": "Spatial platform: PicoIndicationNode (press overlay + auditory feedback); other platforms: ColorIndicationNode with 0x1FFFFFFF hover/pressed. Custom clickables must pass indication = LocalIndication.current and share the interactionSource with controllerHapticFeedback (foundation/haptic/ControllerHapticFeedback.kt).",
+      "support": "declared"
+    },
+    {
+      "id": "MotionTokens durations",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/tokens/MotionTokens.kt",
+      "lines": "31-107",
+      "signature": "object MotionTokens { springEasingGradual/Steady/Rapid/Instant/Snapy/Fair/Bouncy; bezierEasingStandard/Decelerate/Accelerate/PowerStandard/PowerDecelerate/PowerAccelerate; durationShort1 = 120, durationShort2 = 180, durationShort3 = 240, durationMedium1 = 300, durationMedium2 = 360, durationMedium3 = 420, durationMedium4 = 1000, durationLong1..4 = 540/600/660/720 }",
+      "notes": "Public object (not RestrictTo). The design's proposed 120-180 ms feedback and 180-240 ms panel transitions coincide with durationShort1..3.",
+      "support": "declared"
+    },
+    {
+      "id": "Motion duration scale is pinned by the SDK",
+      "archive": "design",
+      "member": "com/pico/spatial/ui/design/{SpatialUIProvider.kt, utils/MotionScaleHelper.kt}",
+      "lines": "SpatialUIProvider.kt:22-28; MotionScaleHelper.kt:23-33",
+      "signature": "internal fun enableMotion() { WindowRecomposerPolicy.setFactory { rootView -> rootView.createLifecycleAwareWindowRecomposer(EmptyCoroutineContext + FixedMotionDurationScale) } }; FixedMotionDurationScale.scaleFactor = 1f",
+      "notes": "Installed from a ContentProvider at process start. Consequence: Compose animations in a SpatialUI app ignore the system animator duration scale, so an OS-level 'remove animations' preference does NOT shorten them. Reduced motion therefore has to be an app-owned option (optionally seeded from Settings.Global.ANIMATOR_DURATION_SCALE as an advisory signal).",
+      "support": "declared"
+    },
+    {
+      "id": "Vibrant",
+      "archive": "foundation",
+      "member": "com/pico/spatial/ui/foundation/vibrant/{Vibrant.kt, ColorVibrant.kt}",
+      "lines": "Vibrant.kt:48 vibrantEffect, 64 observeCurrentVibrantEffect, 68+ enum (Darkest 1, UltraDark 2, Darker 3, Semidark 4, Dark 5, Neutral 6, Light 7, SemiLight 8, UltraLight 9, LightenPressed 11, ...); ColorVibrant.kt:86 withVibrant, 97 obtainVibrant, 104 containsVibrant, 131 animateColorVibrantAsState",
+      "signature": "fun Modifier.vibrantEffect(vibrant: Vibrant): Modifier; fun Color.withVibrant(vibrant: Vibrant): Color",
+      "notes": "Vibrant is encoded into the Color value; the compositor adapts it to the material behind it. Only visible through translucent surfaces.",
+      "support": "declared"
+    },
+    {
+      "id": "windowConstraints",
+      "archive": "platform",
+      "member": "com/pico/spatial/ui/platform/resize/WindowConstraintsModifier.kt",
+      "lines": "52-59 (min/max form), 73 (exact form)",
+      "signature": "WindowContainerConstraintsScope: fun Modifier.windowConstraints(minWidth: Dp = Dp.Hairline, minHeight: Dp = Dp.Hairline, maxWidth: Dp = Dp.Infinity, maxHeight: Dp = Dp.Infinity, minDepth: Dp = Dp.Hairline, maxDepth: Dp = Dp.Infinity): Modifier; fun Modifier.windowConstraints(width: Dp, height: Dp, depth: Dp = Dp.Unspecified): Modifier",
+      "notes": "Scope members, available inside a WindowContainer content lambda (the WindowContainerScope receiver); requirePrecondition rejects max < min (86-88). Used on the root layout to declare the supported window size range for ContentMinSize / ContentSize resize types.",
+      "support": "declared"
+    }
+  ],
+  "rulings": [
+    {
+      "id": "R-thin-window",
+      "question": "Is Material.Thin a window-glass solution?",
+      "ruling": "No. As a WINDOW material it maps to 0 (None) and its KDoc says it has no effect for the Window (platform/Material.kt:34-38, 47). As a VIEW material (Modifier.backgroundMaterial) it maps to 4 and is documented for small elevated elements such as Box/Button/CheckBox. The kit uses the system Regular glass for window roots and reserves Thin for inner elements only. The vendor window-background.md example that reapplies Thin on a window root after switching the system glass off is not carried into this skill.",
+      "evidence": [
+        "platform/Material.kt:19-48",
+        "foundation/material/BackgroundMaterial.kt:127-134",
+        "foundation/window/WindowMaterials.kt:28-51"
+      ]
+    },
+    {
+      "id": "R-nullable-window-background",
+      "question": "What does WindowContainer(enableMaterialBackground = null) mean?",
+      "ruling": "Inherit. Core merges a null DSL value with the target Activity's manifest meta-data `pico.spatial.windowcontainer.materialbackground` (default REGULAR = on). The composition local and the Activity window both treat the merged value as on unless it is explicitly off. Writing `enableMaterialBackground = true` blindly is unnecessary but harmless; leaving it null is the documented default. To go opaque or custom, set the DSL value to false (non-default containers) or the manifest to \"0\" (the launcher DefaultWindowContainer), then own the root background explicitly.",
+      "evidence": [
+        "foundation/dsl/WindowContainer.kt:106",
+        "core/container/WindowContainer.kt:53-54,183",
+        "core/container/SpatialContainerManager.kt:1194-1195,1229-1230",
+        "core/container/SCParamsExtractor.kt:201,307",
+        "core/container/ContainerMaterialBackground.kt:16-41",
+        "platform/containers/SUIWindowContainer.kt:82-84",
+        "platform/stub/delegate/SpatialActivityDelegateImpl.kt:169-176"
+      ]
+    },
+    {
+      "id": "R-text-foreground",
+      "question": "Does PicoTheme provide a text foreground for ordinary layout surfaces?",
+      "ruling": "No. PicoTheme provides colour scheme, typography, indication and tokens but not LocalContentColor, whose default is Color.Unspecified; Text and Icon fall through to it. Only built-ins provide content colour internally. The kit's theme wrapper provides LocalContentColor = labelPrimary on the theme root, and every polished surface re-provides the foreground that matches its own background (labelPrimary on glass/neutral fills, labelPrimaryLight on accent/dark fills).",
+      "evidence": [
+        "design/PicoTheme.kt:53-69",
+        "design/CompositionLocals.kt:29",
+        "design/Text.kt:101-108",
+        "design/Icon.kt:60",
+        "design/tokens/TypographyTokens.kt:26-27"
+      ]
+    },
+    {
+      "id": "R-duplicate-hover",
+      "question": "Which components already own hover, so wrappers must not add spatialHoverEffect?",
+      "ruling": "Button, IconButton (via BasicButton), ToggleButton, ButtonChip/ToggleableChip/RemovableChip, CheckBox, Switch, Slider family, TextField/TextArea, SegmentItem, ListItem, Option, PageControl, ScrollIndicator, DatePicker/TimePicker/NumberField, MenuItem and TabBar apply spatialHoverEffect internally. Wrappers pass hover-neutral modifiers to them. Custom surfaces that are NOT built-ins (PolishSurface in enhanced mode) may apply spatialHoverEffect exactly once, before clickable.",
+      "evidence": [
+        "design/Button.kt:179",
+        "design/ListItem.kt:72",
+        "design/Option.kt:89",
+        "design/Switch.kt:254",
+        "design/SegmentControls.kt:149",
+        "design/CheckBox.kt:149",
+        "design/Slider.kt:664,799",
+        "design/TextField.kt:831",
+        "design/Chips.kt:188,304,440"
+      ]
+    },
+    {
+      "id": "R-accent-role",
+      "question": "How is 'one configurable accent' expressed in 6.1.9?",
+      "ruling": "Through ColorScheme.interaction (fixed semantic role; default SubBlue100 #3377FF in DisplayP3), overridden via systemColorScheme(context).copy(interaction = ...). There is no accent/onAccent role; foreground on accent fills is labelPrimaryLight.",
+      "evidence": [
+        "design/ColorScheme.kt:49-67,230-249",
+        "design/Switch.kt:368-375"
+      ]
+    },
+    {
+      "id": "R-reduced-motion-source",
+      "question": "Can reduced motion come from a platform preference?",
+      "ruling": "Not automatically: the SDK pins the Compose motion duration scale to 1. The kit owns a reduceMotion option (persisted app setting) and may seed it from Settings.Global.ANIMATOR_DURATION_SCALE == 0 as an advisory default; reduced transparency and increased contrast are app-owned options (no SpatialUI preference exists in 6.1.9 sources).",
+      "evidence": [
+        "design/SpatialUIProvider.kt:22-28",
+        "design/utils/MotionScaleHelper.kt:23-33"
+      ]
+    },
+    {
+      "id": "R-window-shape",
+      "question": "Can the window corner radius be tuned?",
+      "ruling": "No. The 6.0 vault FAQ states the window corner radius is a fixed system value (32 dp visual) with no DSL or manifest entry; only the glass panel can be disabled. Inner surfaces therefore harmonise with a 32 dp window: cards 16-24 dp, buttons per ButtonDefaults.",
+      "evidence": [
+        "vault 6.0 documentation/spatial-sdk_video_video-faqs_can-the-window-corner-radius-be-modified-or-can-a-square-cornered-window-be-created.md:1-91",
+        "design/windows/Subwindow.kt:134"
+      ]
+    }
+  ],
+  "effectClassification": {
+    "supportedNativeTestedHere": [],
+    "declaredNativeUntestedHere": [
+      "system Material.Regular window glass (DefaultWindowContainer / WindowContainer / Augment / Subwindow / Toolbar)",
+      "Material.Thick dialogs, sheets, popups, menus; Material.Thickest snackbar/tooltips",
+      "Modifier.backgroundMaterial(Regular|Thick|Thickest|Thin) on inner views",
+      "Modifier.spatialHoverEffect presets and DSL (scale/offset/alpha/animation)",
+      "PicoIndication press feedback + controllerHapticFeedback",
+      "Vibrant-encoded colour roles adapting to the material behind them",
+      "Modifier.windowConstraints for min/max window sizes"
+    ],
+    "unavailableInPublicApi": [
+      "refraction, lensing, per-button blur radius, backdrop/passthrough sampling, moving specular highlights (backgroundMaterial exposes enable/style only)",
+      "window corner radius changes / square windows",
+      "Material.Thin as a window material",
+      "ColorScheme.accent / onAccent roles",
+      "a `Card` built-in"
+    ],
+    "upgradePath": "Rows move from declaredNativeUntestedHere to supportedNativeTestedHere only when docs/findings/SPATIAL_UI_POLISH_CHECKPOINT.md links an opened native frame (emulator or headset) that shows the effect."
+  }
+}

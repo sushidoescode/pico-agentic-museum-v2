@@ -1,0 +1,72 @@
+{
+ "id": "remote",
+ "script": "art/exhibits/remote/author_remote.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/remote.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from the written brief; the reference (garbled icons, chunky proportions) was not used"
+ },
+ "display": "lying flat, long axis along X, d-pad / IR end toward -X",
+ "materials": {
+  "remote_body": "charcoal matte plastic sRGB (40,42,46) r0.52",
+  "remote_keys": "dark grey satin keys sRGB (78,80,84) r0.34",
+  "remote_power": "muted red power key sRGB (150,62,54) r0.40"
+ },
+ "textures": {},
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "imagemagick": "ImageMagick 7.1.2-25 Q16-HDRI aarch64 037e46295:20260604 https://imagemagick.org",
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/remote.glb",
+  "sha256": "681f6a0853b435c3679187066e68e69e1eb157e13068ae99f8ea3c1d8c6f8d27",
+  "bytes": 118480,
+  "triangles": 3512,
+  "boundsMetres": {
+   "min": [
+    -0.0759,
+    0.0,
+    -0.019
+   ],
+   "max": [
+    0.0759,
+    0.0175,
+    0.019
+   ],
+   "size": [
+    0.1518,
+    0.0175,
+    0.038
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

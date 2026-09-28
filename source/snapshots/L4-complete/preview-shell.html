@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Everyday Futures — private design draft</title>
+<style>__APP_CSS__</style></head>
+<body><div class="room" aria-hidden="true"></div><div id="window-anchor"></div>
+<sui-augment id="museum-window" for="window-anchor" anchor="top-left" alignment="top-left" corner-radius="32" window-size-behavior="match-container-width">
+<main id="app" class="window-content" aria-label="Everyday Futures museum"></main>
+</sui-augment>
+<sui-sheet id="settings-sheet" title="Make it comfortable" hidden dismiss-on-escape>
+<sui-button slot="trailing" id="close-settings" text="Done" size="small"></sui-button>
+<div class="settings-row"><div><h3>Reduce motion</h3><p>Keep transitions still and immediate.</p></div><sui-switch id="reduce-motion" aria-label="Reduce motion"></sui-switch></div>
+<div class="settings-row"><div><h3>Reduce transparency</h3><p>Give exhibit content a solid backing.</p></div><sui-switch id="reduce-transparency" aria-label="Reduce transparency"></sui-switch></div>
+<div class="settings-row"><div><h3>Increase contrast</h3><p>Strengthen supporting text and edges.</p></div><sui-switch id="increase-contrast" aria-label="Increase contrast"></sui-switch></div>
+<sui-button id="reset-request" text="Reset saved collection" container-color="var(--sui-fill-tertiary)" content-color="var(--sui-label-primary)"></sui-button>
+</sui-sheet>
+<sui-sheet id="notebook-sheet" title="Your collection" hidden dismiss-on-escape>
+<sui-button slot="trailing" id="close-notebook" text="Done" size="small"></sui-button>
+<div id="notebook-content"></div></sui-sheet>
+<sui-alert-dialog id="reset-dialog" title="Start a new collection?" message="Your saved objects will be cleared on this browser. You can collect them again." hidden dismiss-on-escape>
+<sui-button slot="buttons" id="reset-cancel" text="Keep collection" container-color="var(--sui-fill-tertiary)" content-color="var(--sui-label-primary)"></sui-button>
+<sui-button slot="buttons" id="reset-confirm" text="Start fresh"></sui-button></sui-alert-dialog>
+<script>__SPATIALUI_BUNDLE__</script><script>__APP_JS__</script></body></html>

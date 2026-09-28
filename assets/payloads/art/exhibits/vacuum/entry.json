@@ -1,0 +1,29 @@
+{
+ "id": "vacuum",
+ "number": "002",
+ "realSizeMetres": {
+  "H": 0.092,
+  "W": 0.347,
+  "D": 0.344
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Front (+Z) = matte black bumper arc; turret 25 mm behind centre. Generic two-tone disc robot: the reference's 'Roomba' wordmark and turret logo are not used, and nothing is derived from it. Story hero stays the app's procedural model; this GLB is for study/inspector/room.",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/vacuum/author_vacuum.py (parametric bmesh)"
+  },
+  "permission": "Original authored for this project from the written brief; no reference model, reference image or provider output used."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/vacuum.jpg (six views, Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/vacuum.png"
+  ],
+  "verdict": "reads as a robot vacuum from every side: pale top shell in a graphite rim, turret with dark window band, front bumper, side brushes at the front corners; no marks",
+  "issuesFixed": [
+   "v1 was uniformly dark (bumper merged with the body): changed to a pale top shell + graphite rim, thicker/longer side brushes"
+  ]
+ }
+}

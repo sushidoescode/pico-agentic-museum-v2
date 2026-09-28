@@ -1,0 +1,29 @@
+{
+ "id": "deliverybox",
+ "number": "005",
+ "realSizeMetres": {
+  "H": 0.307,
+  "W": 0.546,
+  "D": 0.421
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Carton body 350 x 250 x 200 mm; the real-size extent includes the four opened flaps (front flap droops toward the viewer, +Z). Empty, as the collection copy says. Blank label (grey blocks + a non-decoding random bar pattern, no text); no retailer name, smile or pictogram; never named 'Prime'. Low triangle count (under the 5k guide) is inherent to a box; detail is in the textures.",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/deliverybox/author_deliverybox.py (board slabs + swept flaps, procedural kraft and label textures)"
+  },
+  "permission": "Original authored for this project from the written brief; no reference model, reference image or provider output used."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/deliverybox.jpg (six views, Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/deliverybox.png"
+  ],
+  "verdict": "reads as an opened, empty corrugated shipping box with cut tape and a blank label",
+  "issuesFixed": [
+   "tape tails moved to the end walls, where a seam tape wraps"
+  ]
+ }
+}

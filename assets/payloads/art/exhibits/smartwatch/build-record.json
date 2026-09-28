@@ -1,0 +1,71 @@
+{
+ "id": "smartwatch",
+ "script": "art/exhibits/smartwatch/author_smartwatch.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/smartwatch.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from the written brief; the reference watch was not used (readable UI numbers, no strap loop)"
+ },
+ "materials": {
+  "smartwatch_steel": "brushed steel metallic 1.0 sRGB (186,188,191) r0.30",
+  "smartwatch_glass": "dark glass (screen off, sensor window) sRGB (9,10,12) r0.05",
+  "smartwatch_strap": "slate-blue sport rubber sRGB (78,96,120) r0.68"
+ },
+ "textures": {},
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "imagemagick": "ImageMagick 7.1.2-25 Q16-HDRI aarch64 037e46295:20260604 https://imagemagick.org",
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/smartwatch.glb",
+  "sha256": "54820c1c53a275213bccf054251dd109790a763c4f0c1ab34172282175eeb03e",
+  "bytes": 174952,
+  "triangles": 6756,
+  "boundsMetres": {
+   "min": [
+    -0.02265,
+    0.0,
+    -0.03855
+   ],
+   "max": [
+    0.02265,
+    0.0762,
+    0.03855
+   ],
+   "size": [
+    0.0453,
+    0.0762,
+    0.07709
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

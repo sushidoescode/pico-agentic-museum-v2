@@ -1,0 +1,77 @@
+{
+ "id": "rocket",
+ "script": "art/exhibits/rocket/author_rocket.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/rocket.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from general public Saturn V proportions; the reference rocket GLB (asset.extras license CC-BY-ND-4.0, Sketchfab) was not opened for geometry or texture and nothing is derived from it"
+ },
+ "scale": "1:212.7 (110.6 m -> 0.52 m) on a 0.025 m stand",
+ "materials": {
+  "rocket_paint": "livery strip + swatches, dielectric r0.42",
+  "rocket_metal": "same texture, metallic 1.0 r0.32 (bells, service module, RCS, brass plate)"
+ },
+ "textures": {
+  "rocket_livery.png": {
+   "path": "art/exhibits/rocket/textures/rocket_livery.png",
+   "sha256": "139a723f8a890455c8b6eaf459688c4899c2367d84f27f49e1a842f17a6a890c",
+   "bytes": 6966
+  }
+ },
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "imagemagick": "ImageMagick 7.1.2-25 Q16-HDRI aarch64 037e46295:20260604 https://imagemagick.org",
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/rocket.glb",
+  "sha256": "38baf6c3cc9c689f293c60ea2c77ade7ab3f905fa8a5f73bc5a812729f468d62",
+  "bytes": 250164,
+  "triangles": 7608,
+  "boundsMetres": {
+   "min": [
+    -0.06,
+    0.0,
+    -0.06045
+   ],
+   "max": [
+    0.06,
+    0.545,
+    0.06045
+   ],
+   "size": [
+    0.12,
+    0.545,
+    0.1209
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

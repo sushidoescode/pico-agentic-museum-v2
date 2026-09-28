@@ -1,0 +1,16 @@
+# build-007 :app:testDebugUnitTest (JUnit XML under native/app/build/test-results/testDebugUnitTest)
+ExampleUnitTest 1 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.300Z
+CatalogueTest 14 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.303Z
+ExhibitLoadTest 7 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.334Z
+ModelFitTest 17 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.338Z
+ArchiveGeometryTest 9 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.351Z
+ArchiveLoadTest 5 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.354Z
+ArchiveTest 9 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.358Z
+AuxWindowTest 12 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.391Z
+CollectionResetTest 2 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.435Z
+FilterTest 5 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.437Z
+InspectorTest 12 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.441Z
+MuseumStateTest 11 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.450Z
+SharedWorkspaceTest 8 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.452Z
+StoryTest 16 tests, 0 failures, 0 errors, 0 skipped, timestamp 2026-09-27T22:35:32.455Z
+TOTAL 128 tests, 0 failures, 0 errors, 0 skipped

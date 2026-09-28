@@ -1,0 +1,82 @@
+{
+ "id": "deliverybox",
+ "script": "art/exhibits/deliverybox/author_deliverybox.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/deliverybox.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from the written brief; no reference model, image or provider; no retailer name, smile or pictogram"
+ },
+ "materials": {
+  "deliverybox_board": "kraft texture (tiles every 0.25 m) r0.86",
+  "deliverybox_tape": "tan tape sRGB (196,160,112) r0.30",
+  "deliverybox_label": "blank label texture: grey blocks + non-decoding random bars, no text"
+ },
+ "textures": {
+  "deliverybox_kraft.jpg": {
+   "path": "art/exhibits/deliverybox/textures/deliverybox_kraft.jpg",
+   "sha256": "920bb6dd07ab59347bb4f0f23a8a407dc3f389b2ed7b49d86f0b0b43ad49d30c",
+   "bytes": 18802
+  },
+  "deliverybox_label.jpg": {
+   "path": "art/exhibits/deliverybox/textures/deliverybox_label.jpg",
+   "sha256": "6edc9fabdabfc12d9f05fc026e739960a4b15e08e2bacb333075b1f7622e2cd4",
+   "bytes": 4937
+  }
+ },
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "imagemagick": "ImageMagick 7.1.2-25 Q16-HDRI aarch64 037e46295:20260604 https://imagemagick.org",
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/deliverybox.glb",
+  "sha256": "8b5ce1f7fbabd0c0c502a193942be0a253dd289961d9f8cf18130a2f4ffa9685",
+  "bytes": 58256,
+  "triangles": 664,
+  "boundsMetres": {
+   "min": [
+    -0.27288,
+    0.0,
+    -0.21028
+   ],
+   "max": [
+    0.27288,
+    0.30673,
+    0.21028
+   ],
+   "size": [
+    0.54577,
+    0.30673,
+    0.42055
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

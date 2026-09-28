@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "repository": "museum",
+      "revision": "7157a37f4039deb95dc198c92f7011d49f472a62",
+      "path": "native/app/src/main/assets/box.usdz",
+      "bytes": 217200,
+      "sha256": "1036270ab9c96b0194233177b3407694dd1a831a8a663873fcb172d88da6df75",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "7157a37f4039deb95dc198c92f7011d49f472a62",
+      "path": "native/app/src/main/res/drawable/ic_launcher_foreground.png",
+      "bytes": 456036,
+      "sha256": "3044d2ef10d9c2551a3956e71db9c56973ffb37a0ce83d001c6f3fa4af4f6cce",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "7157a37f4039deb95dc198c92f7011d49f472a62",
+      "path": "native/app/src/main/res/drawable/icon_3d_layer_0.png",
+      "bytes": 222387,
+      "sha256": "ff273c4671fa12e2652bb8ed974c3462f51dc87e295baa346d0234ea8c4f2496",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "7157a37f4039deb95dc198c92f7011d49f472a62",
+      "path": "native/app/src/main/res/drawable/icon_3d_layer_1.png",
+      "bytes": 55732,
+      "sha256": "9f331b1d67bc8432045a994f557ee4e8ba962707542f4e1d7a5531f56a76bb9d",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "7157a37f4039deb95dc198c92f7011d49f472a62",
+      "path": "native/app/src/main/res/drawable/icon_3d_sdf_0.png",
+      "bytes": 106880,
+      "sha256": "8112ca61542a21296dd65e46a089599415f7d0b3441290c72bcab405cff361f2",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "7157a37f4039deb95dc198c92f7011d49f472a62",
+      "path": "native/app/src/main/res/drawable/icon_3d_sdf_1.png",
+      "bytes": 26053,
+      "sha256": "d685a4182a36c986d212ba2a351f228f82db77a44ae8848263cf67cdcf771f49",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "7157a37f4039deb95dc198c92f7011d49f472a62",
+      "path": "native/app/src/main/res/mipmap-xxxhdpi/ic_spatial_launcher.png",
+      "bytes": 315383,
+      "sha256": "d7d4df68adc56bf4ee27a14ccff5bcf174aa9e45d6ff3adf36e3751246764c76",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "480853b849ce2dc6c1a6807d3ae787fbd5b9977e",
+      "path": "native/app/src/main/assets/models/vessel_study.glb",
+      "bytes": 658752,
+      "sha256": "f1d904a4195d0b6a65a07f49a5f4d8a06914032e22ed62d36ab3891306352280",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "720827216fbd73764c48b89602432386a89ac54d",
+      "path": "native/app/src/main/assets/models/exhibits/fidget.glb",
+      "bytes": 560148,
+      "sha256": "c36d7b1c8c1a15cfc919c0fd7f6aaa7db20bddd98f0c6c6694a49bc7375bacf0",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "720827216fbd73764c48b89602432386a89ac54d",
+      "path": "native/app/src/main/assets/models/exhibits/gascan.glb",
+      "bytes": 486240,
+      "sha256": "127f241bd5cb22bf2a8861a1f0ec226d7cd562ac070598685e5e273d69e05be8",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "720827216fbd73764c48b89602432386a89ac54d",
+      "path": "native/app/src/main/assets/models/exhibits/scooter.glb",
+      "bytes": 998172,
+      "sha256": "a021a57228d3fb9e548c5065f639b8f0992de22b93c4cd30b60e42547d508d83",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "720827216fbd73764c48b89602432386a89ac54d",
+      "path": "native/app/src/main/assets/thumbnails/fidget.png",
+      "bytes": 29579,
+      "sha256": "38513b6d03b8d7e4540fdd86c559fc205ebaf5b69d85e832fce77f319dd020e8",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "720827216fbd73764c48b89602432386a89ac54d",
+      "path": "native/app/src/main/assets/thumbnails/gascan.png",
+      "bytes": 37692,
+      "sha256": "510abf28d1c2ffbff06cc5485a79244b7de834f10af9046f8d614f2f1aa51717",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "720827216fbd73764c48b89602432386a89ac54d",
+      "path": "native/app/src/main/assets/thumbnails/quencher.png",
+      "bytes": 30580,
+      "sha256": "2dab3107dc5e4f58ed5f65833cef3812edf17add292c4cc025c072cbe10dd146",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "720827216fbd73764c48b89602432386a89ac54d",
+      "path": "native/app/src/main/assets/thumbnails/scooter.png",
+      "bytes": 30599,
+      "sha256": "47a919630562fe932ff6e1743e17e499ad8b55f6eeb7fcc273b345c8f9066b01",
+      "inclusionStatus": "held-private",
+      "reason": "Asset/depiction rights hold; see assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "art/room/earth_archive.blend",
+      "bytes": 362847,
+      "sha256": "6de3acb34ad175590be65517554dff1474fbb8f37548bbfd71c2c78d344cd0e7",
+      "inclusionStatus": "held-private",
+      "reason": "Compressed Blender workspace retains unexplained image filename and stale host-path fragments; binary privacy/embedded attribution not fully established. Authoring scripts and eligible textures are supplied instead."
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3938,
+      "sha256": "1350d8d50aebd915b2a0159fbd630e32e14d541bd94d6d90aa21707313cead24",
+      "inclusionStatus": "held-private",
+      "reason": "Original provenance/notice record retained privately; candidate provides corrected sanitized inventories, not a blanket license"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "assets/reference-manifest.json",
+      "bytes": 8230,
+      "sha256": "33eb01aeb0719cbef23ede5a9ce704debc7babbd76d583c499011cd0463742f5",
+      "inclusionStatus": "held-private",
+      "reason": "Original provenance/notice record retained privately; candidate provides corrected sanitized inventories, not a blanket license"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "assets/exhibit-assets.json",
+      "bytes": 66325,
+      "sha256": "fa1f31dd3d52bc3102bab5065bc911518e026315a3443138b91acda2abff9097",
+      "inclusionStatus": "held-private",
+      "reason": "Original provenance/notice record retained privately; candidate provides corrected sanitized inventories, not a blanket license"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "assets/room-assets.json",
+      "bytes": 6217,
+      "sha256": "cf83eb1f935f7451fa23b65b7e1da418cdcee6c0a1cb1c81c92aac427bd285cc",
+      "inclusionStatus": "held-private",
+      "reason": "Original provenance/notice record retained privately; candidate provides corrected sanitized inventories, not a blanket license"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "docs/assets/ASSET_PIPELINE.md",
+      "bytes": 15397,
+      "sha256": "d648156e014ed2327468d9b05db3c4741479c9593fa06618a3524f3c1aab846c",
+      "inclusionStatus": "held-private",
+      "reason": "Original provenance/notice record retained privately; candidate provides corrected sanitized inventories, not a blanket license"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "docs/native/build-inputs.json",
+      "bytes": 28250,
+      "sha256": "9671f955ae6d3e04b1b7614c0e1cfd41f880876e8338ba36e0e1b9064eb404a1",
+      "inclusionStatus": "held-private",
+      "reason": "Original provenance/notice record retained privately; candidate provides corrected sanitized inventories, not a blanket license"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "art/exhibits/fidget/build-record.json",
+      "bytes": 3837,
+      "sha256": "aaacd63483ee557753acb7e95725c8555f3ff80d1be8eab95495121b8a2f46dd",
+      "inclusionStatus": "held-private",
+      "reason": "Attribution/source details stay with held reference or provider asset"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "art/exhibits/fidget/entry.json",
+      "bytes": 1916,
+      "sha256": "f849fad99ce2eadf6e89b1ea797d59ccadc13d0c438a407bc0c3fb3e1f4e31a9",
+      "inclusionStatus": "held-private",
+      "reason": "Attribution/source details stay with held reference or provider asset"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "art/exhibits/fidget/spec.json",
+      "bytes": 1939,
+      "sha256": "dfcd4f91c90352a96fbc21ca82c37912cc1b7b01ff750c257a1777a6236e3688",
+      "inclusionStatus": "held-private",
+      "reason": "Attribution/source details stay with held reference or provider asset"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "art/exhibits/scooter/build-record.json",
+      "bytes": 3719,
+      "sha256": "c3aa72949b5f6ee2059092fc12ba876da8343b9be14cf4dc2676cbbeec41c9a5",
+      "inclusionStatus": "held-private",
+      "reason": "Attribution/source details stay with held reference or provider asset"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "art/exhibits/scooter/entry.json",
+      "bytes": 1892,
+      "sha256": "e4f97408fe7b09c3156cc538a82cdc5b11bbd6ca099adc02c090447aa9798ac3",
+      "inclusionStatus": "held-private",
+      "reason": "Attribution/source details stay with held reference or provider asset"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "art/exhibits/scooter/spec.json",
+      "bytes": 1596,
+      "sha256": "9bc0997ee139b43bb4d862727205c2db74d38785cb7bbaf9c50c18fc7b3da2d0",
+      "inclusionStatus": "held-private",
+      "reason": "Attribution/source details stay with held reference or provider asset"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "art/exhibits/gascan/build-record.json",
+      "bytes": 3333,
+      "sha256": "9c30dfbcbbc0978558656e8b396dfd2dbf7cbec4a6b73476e0cd37f7ab2d7df4",
+      "inclusionStatus": "held-private",
+      "reason": "Attribution/source details stay with held reference or provider asset"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "art/exhibits/gascan/entry.json",
+      "bytes": 2175,
+      "sha256": "583e13eadbefb7e845ad51aec39f0d15cfbb6cf49a414e87117905e16f47fe3e",
+      "inclusionStatus": "held-private",
+      "reason": "Attribution/source details stay with held reference or provider asset"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "art/exhibits/gascan/spec.json",
+      "bytes": 1577,
+      "sha256": "6fae3c4f50c09542276404f6f0de250140d37d2111296d9333b3871c4bb38cb5",
+      "inclusionStatus": "held-private",
+      "reason": "Attribution/source details stay with held reference or provider asset"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "art/exhibits/quencher/entry.json",
+      "bytes": 2223,
+      "sha256": "fc8d9de2fad5607e2cc65b35b3416276934a162bb907aefd5043b4dd0c67dbbf",
+      "inclusionStatus": "held-private",
+      "reason": "Attribution/source details stay with held reference or provider asset"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "preview.html",
+      "bytes": 193355,
+      "sha256": "80f3136d35636c79f8b78a8c556637213f5a0bb476d7ec6c9a4a395b4b96189b",
+      "inclusionStatus": "held-private",
+      "reason": "Embedded SpatialUI Web bundle license scope unresolved; original browser payload not included"
+    },
+    {
+      "repository": "museum",
+      "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+      "path": "preview-manifest.json",
+      "bytes": 848,
+      "sha256": "9a032308da23852480f668e47b4e34e15040e3172a60b9a66a9b1075573ff5e1",
+      "inclusionStatus": "held-private",
+      "reason": "Embedded SpatialUI Web bundle license scope unresolved; original browser payload not included"
+    }
+  ]
+}

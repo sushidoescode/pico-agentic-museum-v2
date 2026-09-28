@@ -1,0 +1,781 @@
+{
+ "schemaVersion": 1,
+ "generatedAt": "2026-09-27T21:00:01Z",
+ "scope": "room",
+ "frame": {
+  "up": "+Y",
+  "units": "metres",
+  "visitorForwardAtYaw0": "-Z",
+  "origin": "arrival point on the floor, centre of the brass circular motif"
+ },
+ "yawConvention": "degrees about +Y, right-handed; 0 = facing -Z, +90 = facing -X (turn left). Viewpoint forward = (-sin yaw, 0, -cos yaw). Anchor / plaque / sign yaw rotates the object's local frame (front +Z), so its front = (sin yaw, 0, cos yaw) (toward the visitor).",
+ "anchorConvention": "position = where the exhibit's base-centre origin goes (y = plinthTopY); displayScale 1.0 = real size (multiply by the exhibit's scaleToRealSize from assets/exhibit-assets.json).",
+ "plaqueConvention": "position = centre of the blank brass plate's front face; yawDeg as anchors; pitchDeg = tilt of the face from vertical, positive = facing up; sizeMetres = plate width x height (a ~0.16 x 0.05 m label fits). No text in any texture.",
+ "signConvention": "position = centre of a clean wall area for the bay title app label; yawDeg as anchors (front faces the bay viewpoint); sizeMetres = clean area width x height.",
+ "room": {
+  "glb": [
+   {
+    "path": "room/earth_archive.glb",
+    "sha256": "152e5087d2580e8952bda72192bb821fc6bee8a29bf0c3b0ab5f906ae971b6f3",
+    "bytes": 2121940,
+    "triangles": 14908,
+    "nodes": [
+     "aperture",
+     "displays",
+     "structure_walls",
+     "structure_shell",
+     "floor"
+    ],
+    "materials": [
+     "floor_baked",
+     "structure_shell_baked",
+     "structure_walls_baked",
+     "displays_baked",
+     "aperture_card"
+    ],
+    "textures": [
+     {
+      "name": "room_floor",
+      "size": "2048x2048",
+      "format": "image/jpeg",
+      "bytes": 206160
+     },
+     {
+      "name": "room_structure_shell",
+      "size": "2048x2048",
+      "format": "image/jpeg",
+      "bytes": 353875
+     },
+     {
+      "name": "room_structure_walls",
+      "size": "2048x2048",
+      "format": "image/jpeg",
+      "bytes": 332460
+     },
+     {
+      "name": "room_displays",
+      "size": "2048x2048",
+      "format": "image/jpeg",
+      "bytes": 561495
+     },
+     {
+      "name": "room_starfield",
+      "size": "2048x1024",
+      "format": "image/jpeg",
+      "bytes": 123552
+     }
+    ],
+    "boundsMetres": {
+     "min": [
+      -5.2,
+      -0.25,
+      -4.865
+     ],
+     "max": [
+      5.2,
+      4.2,
+      5.75
+     ]
+    },
+    "extensionsUsed": []
+   }
+  ],
+  "lighting": "baked: baseColor black + emissive atlas (display-referred sRGB through AgX); the aperture card is emissive starfield; no runtime lights needed for the architecture",
+  "enclosure": "closed on all sides: floor, walls, vaulted ceiling, rear wall with the aperture tunnel ending at the starfield card, front wall with a closed entrance vestibule; large surfaces overlap on the outside",
+  "entrance": {
+   "threshold": [
+    0.0,
+    0.0,
+    4.5
+   ],
+   "marker": [
+    0.55,
+    1.45,
+    5.680000000000001
+   ],
+   "note": "unlabelled illuminated marker on the vestibule's closed door; the real exit is an app control"
+  },
+  "aperture": {
+   "centre": [
+    0.0,
+    2.85,
+    -4.5
+   ],
+   "sizeMetres": [
+    4.0,
+    1.5
+   ],
+   "note": "static packaged starfield + small planetary crescent (emissive card); no live sky"
+  }
+ },
+ "bays": [
+  {
+   "id": "daily",
+   "section": "DAILY_RITUALS",
+   "title": "Daily rituals",
+   "viewpoint": "daily",
+   "anchors": [
+    "anchor_quencher",
+    "anchor_coffeepod",
+    "anchor_deliverybox",
+    "anchor_qrcode",
+    "anchor_fidget",
+    "anchor_facemask"
+   ],
+   "furniture": "curved segmented bench with risers",
+   "arcCentre": [
+    -0.8,
+    0.0,
+    0.0
+   ],
+   "arcRadiusM": 3.2,
+   "sign": {
+    "position": [
+     -4.96,
+     2.05,
+     0.0
+    ],
+    "yawDeg": 90.0,
+    "surface": "left wall, centre slate panel (upper row)",
+    "sizeMetres": [
+     1.6,
+     0.3
+    ]
+   }
+  },
+  {
+   "id": "connected",
+   "section": "CONNECTED_LIVES",
+   "title": "Connected lives",
+   "viewpoint": "connected",
+   "anchors": [
+    "anchor_smartspeaker",
+    "anchor_smartphone",
+    "anchor_earbuds",
+    "anchor_smartwatch",
+    "anchor_cryptowallet",
+    "anchor_remote"
+   ],
+   "furniture": "curved segmented bench with risers",
+   "arcCentre": [
+    0.0,
+    0.0,
+    -0.2
+   ],
+   "arcRadiusM": 3.1,
+   "sign": {
+    "position": [
+     0.0,
+     1.675,
+     -4.48
+    ],
+    "yawDeg": 0.0,
+    "surface": "rear wall, clean pale band between the slate dado (top 1.45 m) and the aperture bezel (from 1.90 m)",
+    "sizeMetres": [
+     1.6,
+     0.36
+    ]
+   }
+  },
+  {
+   "id": "domestic",
+   "section": "DOMESTIC_SYSTEMS",
+   "title": "Domestic systems and movement",
+   "viewpoint": "domestic",
+   "anchors": [
+    "anchor_vacuum",
+    "anchor_router",
+    "anchor_doorbell",
+    "anchor_scooter",
+    "anchor_gascan",
+    "anchor_rocket"
+   ],
+   "furniture": "low curved floor platform with plinths, a round pedestal and lecterns",
+   "arcCentre": [
+    0.8,
+    0.0,
+    0.0
+   ],
+   "arcRadiusM": 3.4,
+   "sign": {
+    "position": [
+     4.96,
+     2.05,
+     0.0
+    ],
+    "yawDeg": -90.0,
+    "surface": "right wall, centre slate panel (upper row)",
+    "sizeMetres": [
+     1.6,
+     0.3
+    ]
+   }
+  }
+ ],
+ "anchors": [
+  {
+   "name": "anchor_quencher",
+   "id": "quencher",
+   "bay": "daily",
+   "position": [
+    -3.6384,
+    0.85,
+    1.4776
+   ],
+   "yawDeg": 117.5,
+   "plinthTopY": 0.85,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": 27.5,
+   "distanceFromViewpointM": 3.2,
+   "plaque": {
+    "position": [
+     -3.3091,
+     0.6885,
+     1.3062
+    ],
+    "yawDeg": 117.5,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_coffeepod",
+   "id": "coffeepod",
+   "bay": "daily",
+   "position": [
+    -3.8682,
+    1.04,
+    0.9088
+   ],
+   "yawDeg": 106.5,
+   "plinthTopY": 1.04,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": 16.5,
+   "distanceFromViewpointM": 3.2,
+   "plaque": {
+    "position": [
+     -3.5122,
+     0.6885,
+     0.8034
+    ],
+    "yawDeg": 106.5,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_deliverybox",
+   "id": "deliverybox",
+   "bay": "daily",
+   "position": [
+    -3.9853,
+    0.88,
+    0.3067
+   ],
+   "yawDeg": 95.5,
+   "plinthTopY": 0.88,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": 5.5,
+   "distanceFromViewpointM": 3.2,
+   "plaque": {
+    "position": [
+     -3.6157,
+     0.6885,
+     0.2711
+    ],
+    "yawDeg": 95.5,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_qrcode",
+   "id": "qrcode",
+   "bay": "daily",
+   "position": [
+    -3.9853,
+    0.95,
+    -0.3067
+   ],
+   "yawDeg": 84.5,
+   "plinthTopY": 0.95,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": -5.5,
+   "distanceFromViewpointM": 3.2,
+   "plaque": {
+    "position": [
+     -3.6157,
+     0.6885,
+     -0.2711
+    ],
+    "yawDeg": 84.5,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_fidget",
+   "id": "fidget",
+   "bay": "daily",
+   "position": [
+    -3.8682,
+    1.02,
+    -0.9088
+   ],
+   "yawDeg": 73.5,
+   "plinthTopY": 1.02,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": -16.5,
+   "distanceFromViewpointM": 3.2,
+   "plaque": {
+    "position": [
+     -3.5122,
+     0.6885,
+     -0.8034
+    ],
+    "yawDeg": 73.5,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_facemask",
+   "id": "facemask",
+   "bay": "daily",
+   "position": [
+    -3.6384,
+    0.98,
+    -1.4776
+   ],
+   "yawDeg": 62.5,
+   "plinthTopY": 0.98,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": -27.5,
+   "distanceFromViewpointM": 3.2,
+   "plaque": {
+    "position": [
+     -3.3091,
+     0.6885,
+     -1.3062
+    ],
+    "yawDeg": 62.5,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_smartspeaker",
+   "id": "smartspeaker",
+   "bay": "connected",
+   "position": [
+    -1.3101,
+    0.9,
+    -3.0096
+   ],
+   "yawDeg": 25.0,
+   "plinthTopY": 0.9,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": 25.0,
+   "distanceFromViewpointM": 3.1,
+   "plaque": {
+    "position": [
+     -1.1532,
+     0.6885,
+     -2.6731
+    ],
+    "yawDeg": 25.0,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_smartphone",
+   "id": "smartphone",
+   "bay": "connected",
+   "position": [
+    -0.8023,
+    0.95,
+    -3.1944
+   ],
+   "yawDeg": 15.0,
+   "plinthTopY": 0.95,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": 15.0,
+   "distanceFromViewpointM": 3.1,
+   "plaque": {
+    "position": [
+     -0.7062,
+     0.6885,
+     -2.8357
+    ],
+    "yawDeg": 15.0,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_earbuds",
+   "id": "earbuds",
+   "bay": "connected",
+   "position": [
+    -0.2702,
+    1.02,
+    -3.2882
+   ],
+   "yawDeg": 5.0,
+   "plinthTopY": 1.02,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": 5.0,
+   "distanceFromViewpointM": 3.1,
+   "plaque": {
+    "position": [
+     -0.2378,
+     0.6885,
+     -2.9183
+    ],
+    "yawDeg": 5.0,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_smartwatch",
+   "id": "smartwatch",
+   "bay": "connected",
+   "position": [
+    0.2702,
+    1.0,
+    -3.2882
+   ],
+   "yawDeg": -5.0,
+   "plinthTopY": 1.0,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": -5.0,
+   "distanceFromViewpointM": 3.1,
+   "plaque": {
+    "position": [
+     0.2378,
+     0.6885,
+     -2.9183
+    ],
+    "yawDeg": -5.0,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_cryptowallet",
+   "id": "cryptowallet",
+   "bay": "connected",
+   "position": [
+    0.8023,
+    1.04,
+    -3.1944
+   ],
+   "yawDeg": -15.0,
+   "plinthTopY": 1.04,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": -15.0,
+   "distanceFromViewpointM": 3.1,
+   "plaque": {
+    "position": [
+     0.7062,
+     0.6885,
+     -2.8357
+    ],
+    "yawDeg": -15.0,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_remote",
+   "id": "remote",
+   "bay": "connected",
+   "position": [
+    1.3101,
+    1.03,
+    -3.0096
+   ],
+   "yawDeg": -25.0,
+   "plinthTopY": 1.03,
+   "displayScale": 1.0,
+   "support": "riser on the bench",
+   "angleFromViewpointDeg": -25.0,
+   "distanceFromViewpointM": 3.1,
+   "plaque": {
+    "position": [
+     1.1532,
+     0.6885,
+     -2.6731
+    ],
+    "yawDeg": -25.0,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_vacuum",
+   "id": "vacuum",
+   "bay": "domestic",
+   "position": [
+    3.7717,
+    0.3,
+    -1.6519
+   ],
+   "yawDeg": -60.931,
+   "plinthTopY": 0.3,
+   "displayScale": 1.0,
+   "support": "round pedestal",
+   "angleFromViewpointDeg": 29.07,
+   "distanceFromViewpointM": 3.4,
+   "plaque": {
+    "position": [
+     3.4385,
+     0.4485,
+     -1.4667
+    ],
+    "yawDeg": -60.931,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_router",
+   "id": "router",
+   "bay": "domestic",
+   "position": [
+    3.999,
+    0.9,
+    -1.1518
+   ],
+   "yawDeg": -70.199,
+   "plinthTopY": 0.9,
+   "displayScale": 1.0,
+   "support": "plinth",
+   "angleFromViewpointDeg": 19.8,
+   "distanceFromViewpointM": 3.4,
+   "plaque": {
+    "position": [
+     3.7626,
+     0.6885,
+     -1.0666
+    ],
+    "yawDeg": -70.199,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_doorbell",
+   "id": "doorbell",
+   "bay": "domestic",
+   "position": [
+    4.2457,
+    0.95,
+    -0.7196
+   ],
+   "yawDeg": -78.204,
+   "plinthTopY": 0.95,
+   "displayScale": 1.0,
+   "support": "plinth with wall-mount backboard",
+   "angleFromViewpointDeg": 11.8,
+   "distanceFromViewpointM": 3.52,
+   "plaque": {
+    "position": [
+     3.9116,
+     0.6885,
+     -0.6498
+    ],
+    "yawDeg": -78.204,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_scooter",
+   "id": "scooter",
+   "bay": "domestic",
+   "position": [
+    4.1889,
+    0.1,
+    0.2747
+   ],
+   "yawDeg": -94.634,
+   "plinthTopY": 0.1,
+   "displayScale": 1.0,
+   "support": "floor platform",
+   "angleFromViewpointDeg": -4.63,
+   "distanceFromViewpointM": 3.4,
+   "plaque": {
+    "position": [
+     3.8088,
+     0.4485,
+     0.2439
+    ],
+    "yawDeg": -94.634,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_gascan",
+   "id": "gascan",
+   "bay": "domestic",
+   "position": [
+    3.9637,
+    0.75,
+    1.2453
+   ],
+   "yawDeg": -111.486,
+   "plinthTopY": 0.75,
+   "displayScale": 1.0,
+   "support": "plinth",
+   "angleFromViewpointDeg": -21.49,
+   "distanceFromViewpointM": 3.4,
+   "plaque": {
+    "position": [
+     3.7485,
+     0.6885,
+     1.1606
+    ],
+    "yawDeg": -111.486,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  },
+  {
+   "name": "anchor_rocket",
+   "id": "rocket",
+   "bay": "domestic",
+   "position": [
+    3.7471,
+    0.9,
+    1.6955
+   ],
+   "yawDeg": -119.912,
+   "plinthTopY": 0.9,
+   "displayScale": 1.0,
+   "support": "plinth",
+   "angleFromViewpointDeg": -29.91,
+   "distanceFromViewpointM": 3.4,
+   "plaque": {
+    "position": [
+     3.5726,
+     0.6885,
+     1.5951
+    ],
+    "yawDeg": -119.912,
+    "pitchDeg": 25.0,
+    "sizeMetres": [
+     0.2,
+     0.075
+    ]
+   }
+  }
+ ],
+ "viewpoints": [
+  {
+   "name": "arrival",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "yawDeg": 0.0,
+   "eyeHeightForRenders": 1.75
+  },
+  {
+   "name": "daily",
+   "position": [
+    -0.8,
+    0.0,
+    0.0
+   ],
+   "yawDeg": 90.0,
+   "eyeHeightForRenders": 1.75
+  },
+  {
+   "name": "connected",
+   "position": [
+    0.0,
+    0.0,
+    -0.2
+   ],
+   "yawDeg": 0.0,
+   "eyeHeightForRenders": 1.75
+  },
+  {
+   "name": "domestic",
+   "position": [
+    0.8,
+    0.0,
+    0.0
+   ],
+   "yawDeg": -90.0,
+   "eyeHeightForRenders": 1.75
+  }
+ ]
+}

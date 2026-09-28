@@ -1,0 +1,71 @@
+{
+ "id": "cryptowallet",
+ "script": "art/exhibits/cryptowallet/author_cryptowallet.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/cryptowallet.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from the written brief; the reference (garbled screen text, noisy bezel) was not used"
+ },
+ "materials": {
+  "cryptowallet_body": "matte black plastic sRGB (30,31,33) r0.58",
+  "cryptowallet_steel": "brushed steel metallic 1.0 sRGB (190,192,195) r0.32",
+  "cryptowallet_glass": "dark screen glass (off) sRGB (8,9,11) r0.06"
+ },
+ "textures": {},
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "imagemagick": "ImageMagick 7.1.2-25 Q16-HDRI aarch64 037e46295:20260604 https://imagemagick.org",
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/cryptowallet.glb",
+  "sha256": "98d8ccaa047daea80f2da1f7db795675a2bcdaebbaa402d131adc6939e9f968d",
+  "bytes": 85296,
+  "triangles": 3012,
+  "boundsMetres": {
+   "min": [
+    -0.0295,
+    0.0,
+    -0.0092
+   ],
+   "max": [
+    0.0295,
+    0.0099,
+    0.0092
+   ],
+   "size": [
+    0.059,
+    0.0099,
+    0.0184
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

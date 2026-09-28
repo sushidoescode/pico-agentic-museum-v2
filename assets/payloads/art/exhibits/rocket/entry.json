@@ -1,0 +1,28 @@
+{
+ "id": "rocket",
+ "number": "018",
+ "realSizeMetres": {
+  "H": 0.545,
+  "W": 0.12,
+  "D": 0.121
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Saturn V desk replica 0.52 m (1:212.7) on a 25 mm black lacquer stand with a blank brass plate; stylised black/white roll pattern, orange escape tower, silver service module; no flags or lettering. Radially symmetric; the brass plate marks the front (+Z). Rocket width 0.047 m (fin span 0.085 m); the extent is the stand.",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/rocket/author_rocket.py (lathes from public Saturn V proportions, livery strip texture)"
+  },
+  "permission": "Original. The reference rocket GLB's asset.extras states license CC-BY-ND-4.0 (Sketchfab, NoDerivatives): it may not be distributed modified, so it was not used for geometry, texture or measurement; this replica is authored from general public dimensions only."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/rocket.jpg (six views, Blender render)",
+   "scratch close-up 1024 px (Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/rocket.png"
+  ],
+  "verdict": "reads as a Saturn V model: three stages, conical transitions, fins and engine fairings, five bells, spacecraft and escape tower",
+  "issuesFixed": []
+ }
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "originalPath": "docs/lessons/lesson-1/ARTIFACTS.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 6052,
+    "originalSha256": "08ef9ccbadb556278743ebf9ee2898a703e7e4febc8f41473fb81e039674a3b6",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/d1b-emulator-001/LOOK.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 14443,
+    "originalSha256": "3b8bae9ec33c01e41201ed876a3c5c8b12cffbb9c9d09b4e0ccdd284db10a1cb",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/d1b-emulator-001/INTERACTIONS.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 4744,
+    "originalSha256": "713f9e5684a15049a4e4560128b57941b2a1a338a6b398635fa955fd7bcdf5ea",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/l2-workspace-001/LOOK.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 5757,
+    "originalSha256": "19be54dcef78edf613a87ad389f4b43929aa42983507487f4d5bc4d6690ab60c",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/l2-workspace-001/PLACEMENT.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 9087,
+    "originalSha256": "e77aa58da0074a3a932ff5e6c3c7f44118e90b9fa5b479b18848662d96ebb00e",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/l2-workspace-001/INTERACTIONS.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 8955,
+    "originalSha256": "ee5c7b8227e4021c3318bb873ba9669d87a32ccd8c3795f0d012b2ffb72e6a5f",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/l3-story-001/REVIEW.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 4502,
+    "originalSha256": "65bd0e314c2338aa235146b3cb8f8ef71da72de126b6ac044f75bfb67ed119a4",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/l3-story-001/LOOK.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 5370,
+    "originalSha256": "5d7e371a243f11c0eb0c8786fd348df43e2ff60dd5a2fd4e5eba928366803555",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/l3-story-001/motion/MOTION.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 6470,
+    "originalSha256": "2dabea28d168b7ba19e16f6b37258ec02ed30549229857497bfac8e93f3492c5",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/earth-collection-001/README.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 18673,
+    "originalSha256": "87404e319aa844af3512e125ec908828244bb3718331e3f67018d7fc50cfdf2c",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/earth-collection-001/REVIEW.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 6221,
+    "originalSha256": "b83374920fc0be1f0c0a309f43413819bc55cd33bd7c1583edbe35886c0f2fc0",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/earth-collection-001/INTERACTIONS.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 31591,
+    "originalSha256": "787bb014e13e4d88cfe7f8ef79dfe81d982f5085678a598838446ecd7f40e976",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/demo-hardening-001/README.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 26314,
+    "originalSha256": "f5a8376fa68c19e747ec31cf648c1c7ce7e7db2e01a98cd0080bd4e4d9c1eb3f",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "evidence/demo-hardening-001/search-b8.txt",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 1864,
+    "originalSha256": "986306977e789ba416ae1e491e529aae49fe456f4eb33d7dd601f6df3fbad054",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  },
+  {
+    "originalPath": "docs/lessons/lesson-4/DEMO_SCRIPT.md",
+    "revision": "0efe2718e0eeb733e2a3b3b2cd300a1703025aa0",
+    "originalBytes": 6644,
+    "originalSha256": "423096929971a93f1ec59d31d0ddfce1940baac613d3f83343d3ea9b07bab24f",
+    "sourceIncluded": false,
+    "transform": "Editorial summaries only; original retained in private audit.",
+    "evidenceClass": "retained-source-record"
+  }
+]

@@ -1,0 +1,29 @@
+{
+ "id": "facemask",
+ "number": "008",
+ "realSizeMetres": {
+  "H": 0.095,
+  "W": 0.197,
+  "D": 0.086
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Standing on its lower edge, outer face +Z; mask panel 175 x 95 mm, the extent includes the ear loops curving back (-Z) and out. Pleats face downward (proud lower fold edges).",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/facemask/author_facemask.py (pleated closed shell, swept bindings and elastic loops, procedural nonwoven texture)"
+  },
+  "permission": "Original authored for this project from the written brief; no reference model, reference image or provider output used."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/facemask.jpg (six views, Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/facemask.png"
+  ],
+  "verdict": "reads as a pale-blue three-ply surgical mask with white inner face and ear loops",
+  "issuesFixed": [
+   "pleat direction corrected to downward-facing folds before the first export"
+  ]
+ }
+}

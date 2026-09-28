@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translucent parent, as the template ships: an opaque activity background would sit behind the system glass. -->
+    <style name="Theme.EverydayFutures" parent="android:Theme.Translucent.NoTitleBar.Fullscreen" />
+</resources>

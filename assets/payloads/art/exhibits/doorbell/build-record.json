@@ -1,0 +1,71 @@
+{
+ "id": "doorbell",
+ "script": "art/exhibits/doorbell/author_doorbell.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/doorbell.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from the written brief; the reference ('ring' wordmark, smeary bezel) was not used"
+ },
+ "materials": {
+  "doorbell_body": "satin graphite plastic sRGB (72,74,78) r0.40",
+  "doorbell_glass": "black glass panel / lens sRGB (10,11,13) r0.06",
+  "doorbell_accent": "pale satin ring, lens bezel, sensor sRGB (206,206,202) r0.34"
+ },
+ "textures": {},
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "imagemagick": "ImageMagick 7.1.2-25 Q16-HDRI aarch64 037e46295:20260604 https://imagemagick.org",
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/doorbell.glb",
+  "sha256": "7592c80470d45b3b18c8d98b74b08a305e4ca776a9775b90bbdbeb77aba06bae",
+  "bytes": 90952,
+  "triangles": 2804,
+  "boundsMetres": {
+   "min": [
+    -0.023,
+    0.0,
+    -0.0137
+   ],
+   "max": [
+    0.023,
+    0.13,
+    0.0137
+   ],
+   "size": [
+    0.046,
+    0.13,
+    0.0274
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

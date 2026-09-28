@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Everyday Futures launcher manifest overlay (unbuilt; replaces the scaffold's AndroidManifest.xml).
+  Every value below is a documented pico.spatial.windowcontainer.* key from the 6.1 volumetric template.
+  Deviations from the template are marked DEVIATION and justified in native-staging/README.md.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".platform.SpatialApplication"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_spatial_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_spatial_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EverydayFutures"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".platform.LaunchActivity"
+            android:exported="true"
+            android:theme="@style/Theme.EverydayFutures">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Required unique container id; the SDK reads it from the launcher activity. -->
+            <meta-data
+                android:name="pico.spatial.windowcontainer.id"
+                android:value="EverydayFuturesMain" />
+
+            <!-- 2 = Volumetric per the template's documented values, so the study object has depth; the template notes that 0 currently resolves to Planar. -->
+            <meta-data
+                android:name="pico.spatial.windowcontainer.style"
+                android:value="2" />
+
+            <!-- Width x height x depth in dp (DEVIATION from the template's 960x960x960: wider for three columns). -->
+            <meta-data
+                android:name="pico.spatial.windowcontainer.defaultsize"
+                android:value="1440x1040x720" />
+            <meta-data
+                android:name="pico.spatial.windowcontainer.defaultsize.unit"
+                android:value="dp" />
+
+            <!-- 0 = Automatic (currently ContentMinSize); the first child under the root declares windowConstraints. -->
+            <meta-data
+                android:name="pico.spatial.windowcontainer.resizetype"
+                android:value="0" />
+            <meta-data
+                android:name="pico.spatial.windowcontainer.resizerestriction"
+                android:value="1" />
+
+            <!-- 1 = dynamic world scale (the system default; the SDK's volumetric animation sample and the polish kit's showcase use it).
+                 The first admitted emulator frame (2026-09-23, D1B) showed the template's Fixed scale (2) rendering the 1440 dp window
+                 about 1.1 m wide at the default 1.75 m placement, with body text unreadable; the objects' metre sizes are a
+                 representation, not a physical-scale claim. -->
+            <meta-data
+                android:name="pico.spatial.windowcontainer.worldscaletype"
+                android:value="1" />
+            <meta-data
+                android:name="pico.spatial.windowcontainer.captionbar"
+                android:value="0" />
+
+            <!-- DEVIATION: the template ships "0" (glass off). The app leaves the system Material.Regular glass ON
+                 and paints nothing on the window root; the polish kit is told windowSurface = SystemGlass. -->
+            <meta-data
+                android:name="pico.spatial.windowcontainer.materialbackground"
+                android:value="1" />
+
+            <meta-data
+                android:name="pico.spatial.windowcontainer.volumealignment"
+                android:value="0" />
+            <!-- 0 = the template default (base panel shown during interaction). Briefly set to 1 in build-002 (2026-09-24) on the
+                 belief that a translucent band across the lower window was this panel; the next frame showed the band unchanged and
+                 it is the room's shelf seen through the glass, so the template value is restored. -->
+            <meta-data
+                android:name="pico.spatial.windowcontainer.volumebasepanel"
+                android:value="0" />
+        </activity>
+
+        <!-- 3D launcher icon layers: the scaffold's template PNGs and drawables_3d.xml are kept unchanged. -->
+        <meta-data
+            android:name="icon.3d.list"
+            android:resource="@array/icon_3d_list" />
+        <meta-data
+            android:name="icon.sdf.list"
+            android:resource="@array/icon_sdf_list" />
+    </application>
+
+</manifest>

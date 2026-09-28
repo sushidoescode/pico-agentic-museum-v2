@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "sourceKind": "blender-original",
+  "runtime": {
+    "glb": [
+      {
+        "path": "room/earth_archive.glb",
+        "sha256": "152e5087d2580e8952bda72192bb821fc6bee8a29bf0c3b0ab5f906ae971b6f3",
+        "bytes": 2121940,
+        "triangles": 14908,
+        "nodes": [
+          "aperture",
+          "displays",
+          "structure_walls",
+          "structure_shell",
+          "floor"
+        ],
+        "materials": [
+          "floor_baked",
+          "structure_shell_baked",
+          "structure_walls_baked",
+          "displays_baked",
+          "aperture_card"
+        ],
+        "textures": [
+          {
+            "name": "room_floor",
+            "size": "2048x2048",
+            "format": "image/jpeg",
+            "bytes": 206160
+          },
+          {
+            "name": "room_structure_shell",
+            "size": "2048x2048",
+            "format": "image/jpeg",
+            "bytes": 353875
+          },
+          {
+            "name": "room_structure_walls",
+            "size": "2048x2048",
+            "format": "image/jpeg",
+            "bytes": 332460
+          },
+          {
+            "name": "room_displays",
+            "size": "2048x2048",
+            "format": "image/jpeg",
+            "bytes": 561495
+          },
+          {
+            "name": "room_starfield",
+            "size": "2048x1024",
+            "format": "image/jpeg",
+            "bytes": 123552
+          }
+        ],
+        "boundsMetres": {
+          "min": [
+            -5.2,
+            -0.25,
+            -4.865
+          ],
+          "max": [
+            5.2,
+            4.2,
+            5.75
+          ]
+        },
+        "extensionsUsed": []
+      }
+    ],
+    "layout": {
+      "path": "room/room-layout.json",
+      "sha256": "67023ca9e5f77c068e25901aeb9c8ad9fdda2c652f3a589db4a7f13b51d8bf03",
+      "bytes": 14482
+    }
+  },
+  "bakes": {
+    "floor": {
+      "path": "art/room/textures/room_floor.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "sha256": "76d0aefe980cd5ccf5c2e795fd3e79b315ca04686627189f936de7557fdea0c7",
+      "bytes": 206160,
+      "bakeSeconds": 159.6,
+      "samples": 1024
+    },
+    "structure_shell": {
+      "path": "art/room/textures/room_structure_shell.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "sha256": "ceafd051468fc2dd53c12a28b8007a393bfbdc9763d9567bbc38b36903be3576",
+      "bytes": 353875,
+      "bakeSeconds": 75.4,
+      "samples": 1024
+    },
+    "structure_walls": {
+      "path": "art/room/textures/room_structure_walls.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "sha256": "c800d61d4a1eaefca0dd6d0b45f54bd813d41eb6431d17f372f8c99f87c4cb00",
+      "bytes": 332460,
+      "bakeSeconds": 113.1,
+      "samples": 1024
+    },
+    "displays": {
+      "path": "art/room/textures/room_displays.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "sha256": "80d16e36b0192ce2e72d0f2dd2c788b64321c588450c2c59f1d0d3e1eb70c666",
+      "bytes": 561495,
+      "bakeSeconds": 132.1,
+      "samples": 1024
+    }
+  },
+  "starfield": {
+    "path": "art/room/textures/room_starfield.jpg",
+    "size": [
+      2048,
+      1024
+    ],
+    "sha256": "22c4b3fdde8a154eeab4bb1103b3543eb99d06b4b896d8b6343adb0f16ec36f1",
+    "bytes": 123552,
+    "seed": 1969
+  },
+  "versions": {
+    "blender": "5.1.2",
+    "blenderHash": "ec6e62d40fa9",
+    "io_scene_gltf2": "5.1.20",
+    "python": "3.13.9"
+  },
+  "sourcePayloadRoot": "payloads/art/room",
+  "blenderWorkspaceStatus": "held-private: unresolved binary privacy/embedded-attribution inspection",
+  "includedRuntimePath": "../source/snapshots/build-008/native/app/src/main/assets/room/earth_archive.glb",
+  "includedLayoutPath": "../source/snapshots/build-008/native/app/src/main/assets/room/room-layout.json",
+  "publicationAuthorized": false
+}

@@ -1,0 +1,72 @@
+{
+ "id": "earbuds",
+ "script": "art/exhibits/earbuds/author_earbuds.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/earbuds.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from the written brief; no reference model, image or provider"
+ },
+ "lidOpenDeg": 105.0,
+ "materials": {
+  "earbuds_case": "terracotta satin plastic sRGB (184,104,86) r0.42",
+  "earbuds_charcoal": "charcoal gloss sRGB (38,40,44) r0.30 (insert, lid underside, buds)",
+  "earbuds_accent": "pale satin sRGB (200,200,198) r0.38 (touch surfaces, hinge, status dot)"
+ },
+ "textures": {},
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "imagemagick": "ImageMagick 7.1.2-25 Q16-HDRI aarch64 037e46295:20260604 https://imagemagick.org",
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/earbuds.glb",
+  "sha256": "312daee4124de57384da7d5f778c3d5e62c24208c82295982f9ad200a8e054b9",
+  "bytes": 166828,
+  "triangles": 6456,
+  "boundsMetres": {
+   "min": [
+    -0.03,
+    0.0,
+    -0.0273
+   ],
+   "max": [
+    0.03,
+    0.05246,
+    0.0273
+   ],
+   "size": [
+    0.06,
+    0.05246,
+    0.05461
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

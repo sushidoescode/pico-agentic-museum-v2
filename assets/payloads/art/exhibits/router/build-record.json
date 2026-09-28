@@ -1,0 +1,71 @@
+{
+ "id": "router",
+ "script": "art/exhibits/router/author_router.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/router.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from the written brief; the reference (lumpy, '5G' label) was not used"
+ },
+ "materials": {
+  "router_body": "matte charcoal plastic sRGB (50,52,56) r0.56",
+  "router_dark": "gloss black (vents, strip, feet, knuckles) sRGB (18,18,20) r0.30",
+  "router_light": "pale status lights, unlit sRGB (170,210,196) r0.30"
+ },
+ "textures": {},
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "imagemagick": "ImageMagick 7.1.2-25 Q16-HDRI aarch64 037e46295:20260604 https://imagemagick.org",
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/router.glb",
+  "sha256": "c0d59ace8e0b5801deef943c367d526db82fedf2814380b20ec4cbbb34123e04",
+  "bytes": 197124,
+  "triangles": 5540,
+  "boundsMetres": {
+   "min": [
+    -0.1162,
+    0.0,
+    -0.07755
+   ],
+   "max": [
+    0.1162,
+    0.17152,
+    0.07755
+   ],
+   "size": [
+    0.2324,
+    0.17152,
+    0.15511
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

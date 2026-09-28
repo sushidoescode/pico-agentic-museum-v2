@@ -1,0 +1,76 @@
+{
+ "id": "facemask",
+ "script": "art/exhibits/facemask/author_facemask.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/facemask.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from the written brief; no reference model, image or provider"
+ },
+ "materials": {
+  "facemask_outer": "pale blue nonwoven speckle texture (tiles every 40 mm) r0.92",
+  "facemask_white": "white inner layer / elastic sRGB (236,236,232) r0.85"
+ },
+ "textures": {
+  "facemask_nonwoven.jpg": {
+   "path": "art/exhibits/facemask/textures/facemask_nonwoven.jpg",
+   "sha256": "427b61942223b9a29c802a34943132c7e80a8e0b58bc5a94459443f3b0b2a9a7",
+   "bytes": 8538
+  }
+ },
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "imagemagick": "ImageMagick 7.1.2-25 Q16-HDRI aarch64 037e46295:20260604 https://imagemagick.org",
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/facemask.glb",
+  "sha256": "2be00155fbac49859031b7d5078b2f07ba8c95f7f2a223bd40632568c79a0dcb",
+  "bytes": 261456,
+  "triangles": 9740,
+  "boundsMetres": {
+   "min": [
+    -0.09826,
+    0.0,
+    -0.04321
+   ],
+   "max": [
+    0.09826,
+    0.095,
+    0.04321
+   ],
+   "size": [
+    0.19652,
+    0.095,
+    0.08642
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

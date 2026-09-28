@@ -1,0 +1,29 @@
+{
+ "id": "earbuds",
+ "number": "010",
+ "realSizeMetres": {
+  "H": 0.052,
+  "W": 0.06,
+  "D": 0.055
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Pebble case lying flat, lid hinged at the back (-Z) and opened 105 degrees; two stemless buds seated in the charcoal insert. Terracotta case: deliberately not the white flip-top case with white stem buds. Case closed 60 x 36 x 30 mm.",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/earbuds/author_earbuds.py (plan lofts + lathes)"
+  },
+  "permission": "Original authored for this project from the written brief; no reference model, reference image or provider output used."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/earbuds.jpg (six views, Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/earbuds.png"
+  ],
+  "verdict": "reads as a wireless earbuds charging case, lid open, two buds visible",
+  "issuesFixed": [
+   "plan and bud tessellation raised (3.7k -> 6.5k triangles) for smooth silhouettes when enlarged in the inspector"
+  ]
+ }
+}

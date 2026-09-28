@@ -1,0 +1,61 @@
+package dev.local.everydayfutures.museum.content
+
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.remember
+import androidx.compose.ui.platform.LocalContext
+import com.pico.spatial.ui.design.systemColorScheme
+import com.pico.spatial.ui.platform.containers.LocalSpatialNavigator
+import com.pico.spatial.ui.platform.containers.SpatialNavigator
+import dev.local.everydayfutures.museum.state.ComfortOptions
+import dev.local.everydayfutures.museum.state.MuseumController
+import dev.local.everydayfutures.museum.state.Surface
+import dev.local.everydayfutures.museum.state.WindowNavigator
+import dev.local.picopolish.PolishOptions
+import dev.local.picopolish.PolishTheme
+import dev.local.picopolish.PolishWindowSurface
+
+/**
+ * The shared shell of every window root: reports the root's composition entering and leaving to the app-owned
+ * [controller], logs what the root shows whenever the shared logical state changes, and applies the one set of comfort
+ * preferences through the polish kit. The container owns its glass (`windowSurface = SystemGlass`); nothing paints
+ * the window root.
+ */
+@Composable
+fun MuseumRoot(controller: MuseumController, surface: Surface, content: @Composable () -> Unit) {
+    DisposableEffect(controller, surface) {
+        controller.windowAttached(surface)
+        onDispose { controller.windowDetached(surface) }
+    }
+    val state = controller.state
+    LaunchedEffect(state.selectedId, state.turnSteps, state.view, state.options) {
+        controller.windowShows(surface)
+    }
+    PolishTheme(
+        options = state.options.toPolishOptions(),
+        windowSurface = PolishWindowSurface.SystemGlass,
+        // Mirrors PicoTheme's own default so the vibrant scheme applies on PICO OS and the static fallback elsewhere.
+        colorScheme = systemColorScheme(LocalContext.current),
+    ) {
+        content()
+    }
+}
+
+/** The comfort preferences in the polish kit's own option type; the kit ships no animations, so reduceMotion is app policy. */
+fun ComfortOptions.toPolishOptions(): PolishOptions =
+    PolishOptions(reduceMotion = reduceMotion, reduceTransparency = reduceTransparency, increaseContrast = increaseContrast)
+
+/** Adapts this window's SDK navigator to the controller's two calls. No bundle is ever sent. */
+private class SdkWindowNavigator(private val navigator: SpatialNavigator) : WindowNavigator {
+    override fun open(id: String, tag: String) = navigator.openWindowContainer(id = id, tag = tag, bundle = null)
+
+    override fun close(id: String, tag: String) = navigator.closeWindowContainer(id = id, tag = tag)
+}
+
+/** The navigator of the window this composable runs in (provided by the SDK in every window root). */
+@Composable
+fun rememberWindowNavigator(): WindowNavigator {
+    val navigator = LocalSpatialNavigator.current
+    return remember(navigator) { SdkWindowNavigator(navigator) }
+}

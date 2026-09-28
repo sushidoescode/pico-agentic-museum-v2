@@ -1,0 +1,7 @@
+# Qualified original art payloads
+
+Local private review only. This directory contains authoring scripts, source textures and build metadata for fourteen original exhibits, plus archive authoring/export/layout scripts and baked textures. Shared Blender helpers are under `art/tools/`. Runtime models and thumbnail files are preserved at their historical positions in the source snapshots; current eligible runtime files are in [build-008](../../source/snapshots/build-008/SNAPSHOT_NOTICE.md).
+
+The three reference-derived objects and Tripo tumbler are omitted. The compressed room `.blend` is held because read-only decompression exposed unexplained image-name data and stale host-path fragments; its complete binary privacy/embedded-attribution status was not established. The provided room scripts/textures and runtime GLB are separate, inspected inputs. No Blender file was rewritten and no asset was regenerated for this package.
+
+Scripts retain historical default output locations such as `native-staging/`; use explicit `--out` destinations in a separate working copy. The retained original scripts are teaching inputs, not a turnkey rebuild pipeline for this incomplete asset set. Dependencies include Blender 5.1.2, its bundled Python and glTF exporter 5.1.20; some scripts invoke ImageMagick 7.1.2-25. No such tools or font binaries are distributed here. Read [provenance and rights](../PROVENANCE_AND_RIGHTS.md) before reuse.

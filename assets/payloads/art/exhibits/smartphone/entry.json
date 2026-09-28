@@ -1,0 +1,18 @@
+{
+ "id": "smartphone",
+ "number": "009",
+ "realSizeMetres": {"H": 0.150, "W": 0.072, "D": 0.008},
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Authored standing upright on its bottom edge, screen toward +Z, back toward -Z (the app or room supplies any stand or lean). Measured depth 0.0098 m includes the 1.8 mm camera island; the footprint bbox centre is the origin, so the body's mid-plane sits 0.9 mm in front of z = 0.",
+ "source": {
+  "kind": "blender-original",
+  "identities": {"author": "art/exhibits/smartphone/author_smartphone.py (parametric bmesh, no reference model, image or provider)"},
+  "permission": "Original authored for this project. Generic design chosen to avoid Apple/Samsung trade dress: vertical pill camera island with two lenses and a flash dot, centred punch-hole, no logos or text; the screen is a dark neutral gradient."
+ },
+ "inspection": {
+  "renders": ["art/previews/inspect/smartphone.jpg (six views, Blender render)", "scratch front/back 1024 px three-quarter close-ups (Blender render)", "native-staging/app/src/main/assets/thumbnails/smartphone.png"],
+  "verdict": "reads as a generic modern smartphone from front, back and side; frame/glass/back material split clean; buttons on +X; no flipped faces",
+  "issuesFixed": ["screen gradient lifted slightly (top sRGB 38,42,50 / bottom 17,19,23) so the screen separates from the bezel on dark UI backgrounds"]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "coffeepod",
+ "number": "004",
+ "realSizeMetres": {
+  "H": 0.03,
+  "W": 0.04,
+  "D": 0.04
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Generic flanged aluminium capsule standing on its foil face (copper anodised). No roundel, logo or text; the reference K-cup-style pod with its embossed mark was not used. A 4 cm object: display on a riser.",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/coffeepod/author_coffeepod.py (lathe)"
+  },
+  "permission": "Original authored for this project from the written brief; no reference model, reference image or provider output used."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/coffeepod.jpg (six views, Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/coffeepod.png"
+  ],
+  "verdict": "reads as a single-serve coffee capsule; smooth anodised surface, flange and shoulder ring clean",
+  "issuesFixed": [
+   "v1 (a wide foil-lidded cup) read as a flowerpot / pudding cup: re-authored as a flanged capsule, as in the art-direction concept"
+  ]
+ }
+}

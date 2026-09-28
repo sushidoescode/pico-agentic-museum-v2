@@ -1,0 +1,27 @@
+{
+ "id": "router",
+ "number": "014",
+ "realSizeMetres": {
+  "H": 0.172,
+  "W": 0.232,
+  "D": 0.155
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Front (+Z) carries the status-light strip (lights unlit, pale); four paddle antennas at the back, splayed. No labels or text.",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/router/author_router.py (plan lofts + lathes)"
+  },
+  "permission": "Original authored for this project from the written brief; no reference model, reference image or provider output used."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/router.jpg (six views, Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/router.png"
+  ],
+  "verdict": "reads as a home Wi-Fi router with four antennas and a vented top",
+  "issuesFixed": []
+ }
+}

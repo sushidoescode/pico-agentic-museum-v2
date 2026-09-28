@@ -1,0 +1,30 @@
+{
+ "id": "qrcode",
+ "number": "006",
+ "realSizeMetres": {
+  "H": 0.149,
+  "W": 0.1,
+  "D": 0.06
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "QR decision: a NON-DECODING pattern with finder squares (version-2 layout; data and format-information modules seeded random), not a URL and not text. Card leans back 8 degrees in an oak block. No text anywhere. Low triangle count (under the 5k guide) is inherent; detail is in the card texture.",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/qrcode/author_qrcode.py (parametric + procedural card atlas and oak texture)"
+  },
+  "permission": "Original authored for this project from the written brief; no reference model, reference image or provider output used."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/qrcode.jpg (six views, Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/qrcode.png"
+  ],
+  "verdict": "reads as a tabletop QR menu stand; finder squares crisp; no text",
+  "issuesFixed": [
+   "card lengthened to 140 mm with 4 mm rounded corners (total height 0.149 m, brief 0.15)",
+   "wood grain toned down (v1 read as cartoon waves)"
+  ]
+ }
+}

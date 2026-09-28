@@ -1,0 +1,29 @@
+{
+ "id": "doorbell",
+ "number": "015",
+ "realSizeMetres": {
+  "H": 0.13,
+  "W": 0.046,
+  "D": 0.027
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Upright, front +Z, standing on its lower end (the room supplies the small wall-mount stand). Rounded-rectangle body, black glass panel with lens, pale unlit button ring. The reference ('ring' wordmark) was not used; not the Ring faceplate. Low triangle count (under the 5k guide) is adequate for a flat slab.",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/doorbell/author_doorbell.py (plan lofts + lathes)"
+  },
+  "permission": "Original authored for this project from the written brief; no reference model, reference image or provider output used."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/doorbell.jpg (six views, Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/doorbell.png"
+  ],
+  "verdict": "reads as a video doorbell: camera in a dark glass panel above, round press button below",
+  "issuesFixed": [
+   "glass panel inset kept inside the rounded front edge"
+  ]
+ }
+}

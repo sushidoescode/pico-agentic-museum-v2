@@ -1,0 +1,267 @@
+{
+ "scope": "room",
+ "script": "art/room/build_room.py",
+ "args": {
+  "samples": 1024,
+  "atlas": 2048,
+  "device": "GPU",
+  "bake": true
+ },
+ "blend": {
+  "path": "art/room/earth_archive.blend",
+  "bytes": 362847
+ },
+ "groups": {
+  "floor": {
+   "triangles": 4,
+   "materials": [
+    "floor_floor"
+   ]
+  },
+  "structure_shell": {
+   "triangles": 5932,
+   "materials": [
+    "structure_shell_mineral_white",
+    "structure_shell_slate_seam",
+    "structure_shell_channel",
+    "structure_shell_downlight",
+    "structure_shell_ring"
+   ]
+  },
+  "structure_walls": {
+   "triangles": 3326,
+   "materials": [
+    "structure_walls_mineral_white",
+    "structure_walls_slate",
+    "structure_walls_vestibule",
+    "structure_walls_wallwash",
+    "structure_walls_aperture_glow",
+    "structure_walls_marker"
+   ]
+  },
+  "displays": {
+   "triangles": 5550,
+   "materials": [
+    "displays_mineral_white",
+    "displays_brass",
+    "displays_glow"
+   ]
+  },
+  "aperture": {
+   "triangles": 96,
+   "materials": [
+    "aperture_starfield"
+   ]
+  }
+ },
+ "bakes": {
+  "floor": {
+   "path": "art/room/textures/room_floor.jpg",
+   "size": [
+    2048,
+    2048
+   ],
+   "sha256": "76d0aefe980cd5ccf5c2e795fd3e79b315ca04686627189f936de7557fdea0c7",
+   "bytes": 206160,
+   "bakeSeconds": 159.6,
+   "samples": 1024
+  },
+  "structure_shell": {
+   "path": "art/room/textures/room_structure_shell.jpg",
+   "size": [
+    2048,
+    2048
+   ],
+   "sha256": "ceafd051468fc2dd53c12a28b8007a393bfbdc9763d9567bbc38b36903be3576",
+   "bytes": 353875,
+   "bakeSeconds": 75.4,
+   "samples": 1024
+  },
+  "structure_walls": {
+   "path": "art/room/textures/room_structure_walls.jpg",
+   "size": [
+    2048,
+    2048
+   ],
+   "sha256": "c800d61d4a1eaefca0dd6d0b45f54bd813d41eb6431d17f372f8c99f87c4cb00",
+   "bytes": 332460,
+   "bakeSeconds": 113.1,
+   "samples": 1024
+  },
+  "displays": {
+   "path": "art/room/textures/room_displays.jpg",
+   "size": [
+    2048,
+    2048
+   ],
+   "sha256": "80d16e36b0192ce2e72d0f2dd2c788b64321c588450c2c59f1d0d3e1eb70c666",
+   "bytes": 561495,
+   "bakeSeconds": 132.1,
+   "samples": 1024
+  }
+ },
+ "starfield": {
+  "path": "art/room/textures/room_starfield.jpg",
+  "size": [
+   2048,
+   1024
+  ],
+  "sha256": "22c4b3fdde8a154eeab4bb1103b3543eb99d06b4b896d8b6343adb0f16ec36f1",
+  "bytes": 123552,
+  "seed": 1969
+ },
+ "bake": {
+  "type": "COMBINED",
+  "passes": [
+   "DIRECT",
+   "INDIRECT",
+   "DIFFUSE",
+   "EMIT"
+  ],
+  "margin": 16,
+  "viewTransform": [
+   "AgX",
+   "None",
+   0.0
+  ],
+  "jpegQuality": 92,
+  "engine": "Cycles",
+  "maxBounces": 6,
+  "diffuseBounces": 4,
+  "seed": 0
+ },
+ "palette": {
+  "mineral_white": [
+   [
+    226,
+    221,
+    210
+   ],
+   0.85
+  ],
+  "slate": [
+   [
+    92,
+    112,
+    128
+   ],
+   0.75
+  ],
+  "slate_seam": [
+   [
+    38,
+    44,
+    49
+   ],
+   0.9
+  ],
+  "vestibule": [
+   [
+    64,
+    76,
+    86
+   ],
+   0.8
+  ],
+  "brass": [
+   [
+    176,
+    136,
+    74
+   ],
+   0.4
+  ],
+  "floor": [
+   [
+    172,
+    166,
+    158
+   ],
+   0.6
+  ]
+ },
+ "emission": {
+  "channel": [
+   [
+    255,
+    224,
+    186
+   ],
+   9.0
+  ],
+  "glow": [
+   [
+    255,
+    204,
+    150
+   ],
+   5.0
+  ],
+  "downlight": [
+   [
+    255,
+    230,
+    200
+   ],
+   6.0
+  ],
+  "wallwash": [
+   [
+    255,
+    224,
+    188
+   ],
+   10.0
+  ],
+  "ring": [
+   [
+    255,
+    228,
+    192
+   ],
+   4.0
+  ],
+  "aperture_glow": [
+   [
+    255,
+    216,
+    168
+   ],
+   7.0
+  ],
+  "marker": [
+   [
+    255,
+    206,
+    150
+   ],
+   8.0
+  ]
+ },
+ "spots": {
+  "power": 420.0,
+  "color": [
+   1.0,
+   0.88,
+   0.74
+  ],
+  "size_deg": 20.0,
+  "blend": 0.45,
+  "radius": 0.04,
+  "throw": 0.9
+ },
+ "worldFill": [
+  [
+   0.02,
+   0.021,
+   0.024
+  ],
+  1.0
+ ],
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ }
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "commit": "3b09ac5db919afef612558f3fdb5302b2c55e3eb",
+  "skillVersion": "0.3.4",
+  "trackedSubtreeFileCount": 27,
+  "originalBytes": 553153,
+  "exportedSubtreeBytes": 552897,
+  "originalPathAggregateSha256": "a2e04602861adc52cf280ac37be1aae48b9f5ee0ed2f034331581419e4b944db",
+  "sanitizedPackagePathAggregateSha256": "efd4220d57f155d819100b7f17d4b4bf482a1fc9f1dcfea43ac61f6a18a0e375",
+  "aggregateRecipe": "SHA-256 of sorted UTF-8 lines: file SHA-256, one space, path, LF; original uses original repository paths, output uses package-relative paths; excludes added LICENSE/NOTICE and this identity record",
+  "unchangedModuleInputs": 18,
+  "compiledModuleInputsExcludingGitignore": 17,
+  "changedDocumentationFiles": 7,
+  "licenseNoticeUnchanged": true,
+  "compiledDuringExport": false,
+  "moduleLocation": "../third_party/spatial-ui-polish/resources/polish",
+  "filesManifest": "EXPORT_FILES.json"
+}

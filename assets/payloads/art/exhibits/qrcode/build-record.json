@@ -1,0 +1,86 @@
+{
+ "id": "qrcode",
+ "script": "art/exhibits/qrcode/author_qrcode.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/qrcode.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from the written brief; no reference model, image or provider"
+ },
+ "qrPattern": {
+  "decision": "non-decoding pattern with finder squares",
+  "detail": "version-2 layout (25 x 25): finder, timing, alignment and dark module placed; data and format-information modules seeded random (numpy default_rng(6)), so no valid format/Reed-Solomon codewords; not a URL, not text",
+  "modulePx": 14
+ },
+ "materials": {
+  "qrcode_card": "printed card atlas r0.55",
+  "qrcode_wood": "oak grain texture r0.62"
+ },
+ "textures": {
+  "qrcode_card.png": {
+   "path": "art/exhibits/qrcode/textures/qrcode_card.png",
+   "sha256": "9897ce48e18637fa3212b1a279af76a29c18e0cd37cbf0290837983928e01011",
+   "bytes": 8335
+  },
+  "qrcode_wood.jpg": {
+   "path": "art/exhibits/qrcode/textures/qrcode_wood.jpg",
+   "sha256": "4a46756a710b2a6ac5f5e818ac235ab29cd62801e22197c7700c2cb3a89a5c68",
+   "bytes": 17829
+  }
+ },
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "imagemagick": "ImageMagick 7.1.2-25 Q16-HDRI aarch64 037e46295:20260604 https://imagemagick.org",
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/qrcode.glb",
+  "sha256": "9a630c948d2760fdee3b782661277d0211ec6d1dcaf6f5f24d6014cb75aa9c1a",
+  "bytes": 46876,
+  "triangles": 552,
+  "boundsMetres": {
+   "min": [
+    -0.05,
+    0.0,
+    -0.03
+   ],
+   "max": [
+    0.05,
+    0.14875,
+    0.03
+   ],
+   "size": [
+    0.1,
+    0.14875,
+    0.06
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

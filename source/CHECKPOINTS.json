@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "snapshots": [
+    {
+      "name": "L0-start",
+      "originalTag": "lesson-0-start",
+      "peeledCommit": "49b53f6f87cc69f611eebf0dfe84176bd5b6fcc9",
+      "exportDirectory": "snapshots/L0-start",
+      "exportFileCount": 4,
+      "exportBytes": 35476,
+      "sanitizedAggregateSha256": "f7d0642ee005778e20183d7a7c4e2a3c2c3406ee2621b2de1360caed777971b1",
+      "aggregateRecipe": "SHA-256 over sorted UTF-8 lines: sha256 + one space + snapshot-relative path + LF; excludes SNAPSHOT_NOTICE.md",
+      "omittedAssetPaths": [],
+      "completeRelativeToApk": false,
+      "compiledOrReproducedDuringExport": false
+    },
+    {
+      "name": "L0-complete",
+      "originalTag": "lesson-0-complete",
+      "peeledCommit": "a0ed5cd6eb17178013fc852b8b27206db3684a1b",
+      "exportDirectory": "snapshots/L0-complete",
+      "exportFileCount": 19,
+      "exportBytes": 82372,
+      "sanitizedAggregateSha256": "00c5f310613e792872c9d4f10671fa661c86a80e8a93d1e0a2686dbf3857ffd8",
+      "aggregateRecipe": "SHA-256 over sorted UTF-8 lines: sha256 + one space + snapshot-relative path + LF; excludes SNAPSHOT_NOTICE.md",
+      "omittedAssetPaths": [],
+      "completeRelativeToApk": false,
+      "compiledOrReproducedDuringExport": false
+    },
+    {
+      "name": "L1-complete",
+      "originalTag": "lesson-1-complete",
+      "peeledCommit": "7157a37f4039deb95dc198c92f7011d49f472a62",
+      "exportDirectory": "snapshots/L1-complete",
+      "exportFileCount": 39,
+      "exportBytes": 162618,
+      "sanitizedAggregateSha256": "d94a4a175e6f9013fe51b5b37f48f4767c0049ab26fc031e69d87d6deabf9a5f",
+      "aggregateRecipe": "SHA-256 over sorted UTF-8 lines: sha256 + one space + snapshot-relative path + LF; excludes SNAPSHOT_NOTICE.md",
+      "omittedAssetPaths": [
+        "native/app/src/main/assets/box.usdz",
+        "native/app/src/main/res/drawable/ic_launcher_foreground.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_0.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_1.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_0.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_1.png",
+        "native/app/src/main/res/mipmap-xxxhdpi/ic_spatial_launcher.png"
+      ],
+      "completeRelativeToApk": false,
+      "compiledOrReproducedDuringExport": false
+    },
+    {
+      "name": "L2-start",
+      "originalTag": "lesson-2-start",
+      "peeledCommit": "fd603d01207d9d8626df4f06e7e07cb09391df4b",
+      "exportDirectory": "snapshots/L2-start",
+      "exportFileCount": 39,
+      "exportBytes": 162618,
+      "sanitizedAggregateSha256": "d94a4a175e6f9013fe51b5b37f48f4767c0049ab26fc031e69d87d6deabf9a5f",
+      "aggregateRecipe": "SHA-256 over sorted UTF-8 lines: sha256 + one space + snapshot-relative path + LF; excludes SNAPSHOT_NOTICE.md",
+      "omittedAssetPaths": [
+        "native/app/src/main/assets/box.usdz",
+        "native/app/src/main/res/drawable/ic_launcher_foreground.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_0.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_1.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_0.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_1.png",
+        "native/app/src/main/res/mipmap-xxxhdpi/ic_spatial_launcher.png"
+      ],
+      "completeRelativeToApk": false,
+      "compiledOrReproducedDuringExport": false
+    },
+    {
+      "name": "L2-complete",
+      "originalTag": "lesson-2-complete",
+      "peeledCommit": "70f4ba8cc905644f65ba518109cd5e3115120cb3",
+      "exportDirectory": "snapshots/L2-complete",
+      "exportFileCount": 44,
+      "exportBytes": 192384,
+      "sanitizedAggregateSha256": "aaf4380e58124dedbcbae596ad734ec2880e84a83957da5943c32ecca6848ca6",
+      "aggregateRecipe": "SHA-256 over sorted UTF-8 lines: sha256 + one space + snapshot-relative path + LF; excludes SNAPSHOT_NOTICE.md",
+      "omittedAssetPaths": [
+        "native/app/src/main/assets/box.usdz",
+        "native/app/src/main/res/drawable/ic_launcher_foreground.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_0.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_1.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_0.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_1.png",
+        "native/app/src/main/res/mipmap-xxxhdpi/ic_spatial_launcher.png"
+      ],
+      "completeRelativeToApk": false,
+      "compiledOrReproducedDuringExport": false
+    },
+    {
+      "name": "L3-start",
+      "originalTag": "lesson-3-start",
+      "peeledCommit": "2855de92b824edf34696fdc475297e6568790b24",
+      "exportDirectory": "snapshots/L3-start",
+      "exportFileCount": 44,
+      "exportBytes": 192384,
+      "sanitizedAggregateSha256": "aaf4380e58124dedbcbae596ad734ec2880e84a83957da5943c32ecca6848ca6",
+      "aggregateRecipe": "SHA-256 over sorted UTF-8 lines: sha256 + one space + snapshot-relative path + LF; excludes SNAPSHOT_NOTICE.md",
+      "omittedAssetPaths": [
+        "native/app/src/main/assets/box.usdz",
+        "native/app/src/main/res/drawable/ic_launcher_foreground.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_0.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_1.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_0.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_1.png",
+        "native/app/src/main/res/mipmap-xxxhdpi/ic_spatial_launcher.png"
+      ],
+      "completeRelativeToApk": false,
+      "compiledOrReproducedDuringExport": false
+    },
+    {
+      "name": "L3-complete",
+      "originalTag": "lesson-3-complete",
+      "peeledCommit": "fa750a9a9b01d380868aa4cb192d40f16d597c19",
+      "exportDirectory": "snapshots/L3-complete",
+      "exportFileCount": 49,
+      "exportBytes": 245231,
+      "sanitizedAggregateSha256": "73bcb43aedd066d1eea25fd6d98e93f82b6236f0e9ec4857f949d112d0c951bc",
+      "aggregateRecipe": "SHA-256 over sorted UTF-8 lines: sha256 + one space + snapshot-relative path + LF; excludes SNAPSHOT_NOTICE.md",
+      "omittedAssetPaths": [
+        "native/app/src/main/assets/box.usdz",
+        "native/app/src/main/res/drawable/ic_launcher_foreground.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_0.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_1.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_0.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_1.png",
+        "native/app/src/main/res/mipmap-xxxhdpi/ic_spatial_launcher.png"
+      ],
+      "completeRelativeToApk": false,
+      "compiledOrReproducedDuringExport": false
+    },
+    {
+      "name": "L4-start",
+      "originalTag": "lesson-4-start",
+      "peeledCommit": "480853b849ce2dc6c1a6807d3ae787fbd5b9977e",
+      "exportDirectory": "snapshots/L4-start",
+      "exportFileCount": 53,
+      "exportBytes": 293383,
+      "sanitizedAggregateSha256": "3f0f49a2e0fec70d1b43615362111bbbbb5118d72b86380847e5851344c58b69",
+      "aggregateRecipe": "SHA-256 over sorted UTF-8 lines: sha256 + one space + snapshot-relative path + LF; excludes SNAPSHOT_NOTICE.md",
+      "omittedAssetPaths": [
+        "native/app/src/main/assets/box.usdz",
+        "native/app/src/main/assets/models/vessel_study.glb",
+        "native/app/src/main/res/drawable/ic_launcher_foreground.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_0.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_1.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_0.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_1.png",
+        "native/app/src/main/res/mipmap-xxxhdpi/ic_spatial_launcher.png"
+      ],
+      "completeRelativeToApk": false,
+      "compiledOrReproducedDuringExport": false
+    },
+    {
+      "name": "L4-complete",
+      "originalTag": "lesson-4-complete",
+      "peeledCommit": "720827216fbd73764c48b89602432386a89ac54d",
+      "exportDirectory": "snapshots/L4-complete",
+      "exportFileCount": 108,
+      "exportBytes": 5505689,
+      "sanitizedAggregateSha256": "36adda05e830bd40ca3b4961e5e517345c41defe07bf36b2942b291c7cd28e8f",
+      "aggregateRecipe": "SHA-256 over sorted UTF-8 lines: sha256 + one space + snapshot-relative path + LF; excludes SNAPSHOT_NOTICE.md",
+      "omittedAssetPaths": [
+        "native/app/src/main/assets/box.usdz",
+        "native/app/src/main/assets/models/exhibits/fidget.glb",
+        "native/app/src/main/assets/models/exhibits/gascan.glb",
+        "native/app/src/main/assets/models/exhibits/scooter.glb",
+        "native/app/src/main/assets/models/vessel_study.glb",
+        "native/app/src/main/assets/thumbnails/fidget.png",
+        "native/app/src/main/assets/thumbnails/gascan.png",
+        "native/app/src/main/assets/thumbnails/quencher.png",
+        "native/app/src/main/assets/thumbnails/scooter.png",
+        "native/app/src/main/res/drawable/ic_launcher_foreground.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_0.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_1.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_0.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_1.png",
+        "native/app/src/main/res/mipmap-xxxhdpi/ic_spatial_launcher.png"
+      ],
+      "completeRelativeToApk": false,
+      "compiledOrReproducedDuringExport": false
+    },
+    {
+      "name": "build-008",
+      "originalTag": null,
+      "peeledCommit": "c65959f66d164ee28933f3dd2c09bfe1fc760ff3",
+      "exportDirectory": "snapshots/build-008",
+      "exportFileCount": 108,
+      "exportBytes": 5508194,
+      "sanitizedAggregateSha256": "8b2ab9be5a388e004108f7e910ae3840ee4de06eaa1ab171bd14e2d88631ff4c",
+      "aggregateRecipe": "SHA-256 over sorted UTF-8 lines: sha256 + one space + snapshot-relative path + LF; excludes SNAPSHOT_NOTICE.md",
+      "omittedAssetPaths": [
+        "native/app/src/main/assets/box.usdz",
+        "native/app/src/main/assets/models/exhibits/fidget.glb",
+        "native/app/src/main/assets/models/exhibits/gascan.glb",
+        "native/app/src/main/assets/models/exhibits/scooter.glb",
+        "native/app/src/main/assets/models/vessel_study.glb",
+        "native/app/src/main/assets/thumbnails/fidget.png",
+        "native/app/src/main/assets/thumbnails/gascan.png",
+        "native/app/src/main/assets/thumbnails/quencher.png",
+        "native/app/src/main/assets/thumbnails/scooter.png",
+        "native/app/src/main/res/drawable/ic_launcher_foreground.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_0.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_1.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_0.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_1.png",
+        "native/app/src/main/res/mipmap-xxxhdpi/ic_spatial_launcher.png"
+      ],
+      "completeRelativeToApk": false,
+      "compiledOrReproducedDuringExport": false
+    }
+  ],
+  "editorialMappings": [
+    {
+      "lesson": "L1",
+      "phase": "start",
+      "snapshot": "L0-complete",
+      "originalTag": null,
+      "commit": "a0ed5cd6eb17178013fc852b8b27206db3684a1b",
+      "qualification": "No lesson-1-start tag exists. L0 complete already contains unbuilt staged L1 sources."
+    }
+  ],
+  "qualifications": [
+    "L0 complete is source-only, not a native build.",
+    "L1 completion annotation corrected forward: 12 admitted frames, 9 opened.",
+    "L4-complete is build-007; build-008 is a distinct later hardening checkpoint.",
+    "App APK build-time receipt retains dirtyLines=2; a peeled source revision does not prove clean build inputs."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+ "id": "smartphone",
+ "script": "art/exhibits/smartphone/author_smartphone.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/smartphone.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from scratch from the written brief; no reference model, image or provider"
+ },
+ "parameters": {
+  "W": 0.072,
+  "H": 0.15,
+  "D": 0.008,
+  "cornerRadius": 0.0095,
+  "edgeRadius": 0.0024,
+  "bezel": 0.0013,
+  "island": {
+   "u": 0.0205,
+   "v": 0.0505,
+   "hw": 0.006,
+   "hh": 0.0135,
+   "h": 0.0011,
+   "rb": 0.0005
+  },
+  "lens": {
+   "r_out": 0.0042,
+   "r_in": 0.0033,
+   "dv": 0.0064,
+   "n": 48
+  },
+  "flash": {
+   "u": 0.01,
+   "v": 0.0569,
+   "r": 0.0016
+  },
+  "buttons": [
+   {
+    "v": 0.03,
+    "hl": 0.011
+   },
+   {
+    "v": 0.004,
+    "hl": 0.0055
+   }
+  ]
+ },
+ "materials": {
+  "smartphone_frame": "metallic 1.0, roughness 0.32, sRGB (178,182,186) satin aluminium",
+  "smartphone_glass": "metallic 0.0, roughness 0.06, base colour = front-glass texture (dark neutral screen)",
+  "smartphone_back": "metallic 0.0, roughness 0.45, sRGB (118,138,130) frosted sage"
+ },
+ "textures": {
+  "smartphone_front_glass.png": {
+   "path": "art/exhibits/smartphone/textures/smartphone_front_glass.png",
+   "size": [
+    512,
+    1024
+   ],
+   "sha256": "91b025da1cbb1a4348a2eb1e4b3591ac7bce171451f36b885f1ca488d5a0e329",
+   "bytes": 10440
+  }
+ },
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/smartphone.glb",
+  "sha256": "d536d0ef8b5555b8c4d7172c7c7cb59c7d8c0b6123dda427275c43e4031ac5ea",
+  "bytes": 176416,
+  "triangles": 5616,
+  "boundsMetres": {
+   "min": [
+    -0.0363,
+    0.0,
+    -0.0049
+   ],
+   "max": [
+    0.0363,
+    0.15,
+    0.0049
+   ],
+   "size": [
+    0.0726,
+    0.15,
+    0.0098
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

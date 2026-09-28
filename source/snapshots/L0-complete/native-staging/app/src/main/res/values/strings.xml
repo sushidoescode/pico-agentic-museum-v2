@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Everyday Futures</string>
+    <string name="museum_eyebrow">A museum of our habits</string>
+    <string name="catalogue_heading">The permanent collection</string>
+    <string name="catalogue_subheading">Ordinary, extraordinary.</string>
+    <string name="study_number">Study no. %1$s</string>
+    <string name="study_inspecting">An object, up close</string>
+    <string name="study_front">Front view</string>
+    <string name="study_turned">Turned view · %1$d°</string>
+    <string name="action_turn_left">Turn left</string>
+    <string name="action_turn_right">Turn right</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_inspect">Inspect object</string>
+    <string name="action_return">Return to catalogue</string>
+    <string name="action_keep">Keep this object</string>
+    <string name="action_kept">Added to your collection</string>
+    <string name="details_object">Object / %1$s</string>
+    <string name="details_collection">Collection</string>
+    <string name="details_collection_value">Everyday rituals</string>
+    <string name="details_focus">Focus</string>
+    <string name="details_era">Era</string>
+    <string name="comfort_heading">Make it comfortable</string>
+    <string name="comfort_motion">Reduce motion</string>
+    <string name="comfort_motion_hint">Turns are immediate; later transitions stay still.</string>
+    <string name="comfort_transparency">Reduce transparency</string>
+    <string name="comfort_transparency_hint">Give exhibit content a solid backing.</string>
+    <string name="comfort_contrast">Increase contrast</string>
+    <string name="comfort_contrast_hint">Strengthen supporting text and edges.</string>
+</resources>

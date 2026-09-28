@@ -1,0 +1,70 @@
+{
+ "id": "coffeepod",
+ "script": "art/exhibits/coffeepod/author_coffeepod.py",
+ "args": {
+  "out": "native-staging/app/src/main/assets/models/exhibits/coffeepod.glb"
+ },
+ "source": {
+  "kind": "blender-original",
+  "note": "authored from the written brief; no reference model, image or provider"
+ },
+ "materials": {
+  "coffeepod_anodised": "copper anodised aluminium metallic 1.0 sRGB (176,98,62) r0.30",
+  "coffeepod_foil": "silver foil metallic 1.0 sRGB (206,204,198) r0.36"
+ },
+ "textures": {},
+ "versions": {
+  "blender": "5.1.2",
+  "blenderHash": "ec6e62d40fa9",
+  "io_scene_gltf2": "5.1.20",
+  "python": "3.13.9"
+ },
+ "imagemagick": "ImageMagick 7.1.2-25 Q16-HDRI aarch64 037e46295:20260604 https://imagemagick.org",
+ "exporterSettings": {
+  "export_format": "GLB",
+  "export_yup": true,
+  "export_apply": true,
+  "export_image_format": "AUTO",
+  "export_jpeg_quality": 90,
+  "export_draco_mesh_compression_enable": false,
+  "export_use_gltfpack": false,
+  "export_image_add_webp": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_materials": "EXPORT",
+  "export_vertex_color": "NONE",
+  "export_animations": false,
+  "export_skins": false,
+  "export_morph": false,
+  "export_cameras": false,
+  "export_lights": false,
+  "export_extras": false,
+  "use_selection": true
+ },
+ "exporterSettingsSha256": "644c55a917c5e431ee3b6d4770fef2adb3403fc9c24d4751515f69f9dabd5150",
+ "output": {
+  "path": "native-staging/app/src/main/assets/models/exhibits/coffeepod.glb",
+  "sha256": "629d9336e4b946a89169f7a54b38edb74261ee370a29e2bfb7c4d0b13ef2643d",
+  "bytes": 145088,
+  "triangles": 5376,
+  "boundsMetres": {
+   "min": [
+    -0.02,
+    0.0,
+    -0.02
+   ],
+   "max": [
+    0.02,
+    0.03,
+    0.02
+   ],
+   "size": [
+    0.04,
+    0.03,
+    0.04
+   ]
+  },
+  "extensionsUsed": []
+ }
+}

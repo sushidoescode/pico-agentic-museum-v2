@@ -1,0 +1,27 @@
+{
+ "id": "smartspeaker",
+ "number": "003",
+ "realSizeMetres": {
+  "H": 0.169,
+  "W": 0.14,
+  "D": 0.14
+ },
+ "origin": "footprint-centre",
+ "front": "+Z",
+ "notes": "Radially symmetric; the status dot on the top marks the front (+Z). Straight fabric cylinder with a solid graphite top cap and dial groove: deliberately not the HomePod pill silhouette or Echo light ring / four-button top. Fabric texture tiles every 20 mm (repeat sampler).",
+ "source": {
+  "kind": "blender-original",
+  "identities": {
+   "author": "art/exhibits/smartspeaker/author_smartspeaker.py (lathe + procedural plain-weave fabric texture)"
+  },
+  "permission": "Original authored for this project from the written brief; no reference model, reference image or provider output used."
+ },
+ "inspection": {
+  "renders": [
+   "art/previews/inspect/smartspeaker.jpg (six views, Blender render)",
+   "native-staging/app/src/main/assets/thumbnails/smartspeaker.png"
+  ],
+  "verdict": "reads as a fabric smart speaker; weave visible close up, no moire at thumbnail size; no marks",
+  "issuesFixed": []
+ }
+}

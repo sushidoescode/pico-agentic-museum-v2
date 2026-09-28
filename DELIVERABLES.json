@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-28",
+  "status": "local-unsent",
+  "items": [
+    {
+      "id": "entry",
+      "status": "included",
+      "paths": [
+        "README.md",
+        "START_HERE.md"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "ingredient-index",
+      "status": "included",
+      "paths": [
+        "PROGRAM_INGREDIENTS.md"
+      ],
+      "qualification": "Repository navigation added 2026-09-28; marks each ingredient included, reconstructed, held or not established."
+    },
+    {
+      "id": "beginner-guide",
+      "status": "included",
+      "paths": [
+        "curriculum/FIRST_STEPS_WITH_AI.md"
+      ],
+      "qualification": "Newly written, agent-neutral guide; its prompt and repair request are labelled as new teaching examples."
+    },
+    {
+      "id": "asset-supplement-explanation",
+      "status": "included",
+      "paths": [
+        "ASSET_SUPPLEMENT.md"
+      ],
+      "qualification": "Explains the separate owner-supplied asset supplement; no link or remote availability is stated."
+    },
+    {
+      "id": "course",
+      "status": "included",
+      "paths": [
+        "curriculum/COURSE_MAP.md"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "lessons",
+      "status": "included",
+      "paths": [
+        "lessons/L0.md",
+        "lessons/L1.md",
+        "lessons/L2.md",
+        "lessons/L3.md",
+        "lessons/L4.md"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "prompts",
+      "status": "included",
+      "paths": [
+        "prompts/PROMPT_INDEX.md",
+        "prompts/PROMPT_LIBRARY.md"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "process",
+      "status": "included",
+      "paths": [
+        "process/AI_AND_HUMAN_DECISIONS.md"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "setup",
+      "status": "included",
+      "paths": [
+        "curriculum/SETUP_AND_VERSIONS.md"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "architecture",
+      "status": "included",
+      "paths": [
+        "curriculum/ARCHITECTURE_AND_GLOSSARY.md",
+        "curriculum/TROUBLESHOOTING.md"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "source",
+      "status": "included",
+      "paths": [
+        "source/CHECKPOINTS.json",
+        "source/SNAPSHOTS.md",
+        "source/EXPORT_FILES.json"
+      ],
+      "qualification": "Sanitized, omitted-asset source; no fresh compilation or reproduction."
+    },
+    {
+      "id": "walkthrough",
+      "status": "included",
+      "paths": [
+        "demo/index.html",
+        "demo/WALKTHROUGH.md",
+        "demo/SHOT_LIST.md"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "evidence",
+      "status": "included",
+      "paths": [
+        "evidence/INDEX.md",
+        "evidence/EVIDENCE.json",
+        "evidence/CLAIM_SOURCES.json"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "rights",
+      "status": "included",
+      "paths": [
+        "assets/PROVENANCE_AND_RIGHTS.md"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "review",
+      "status": "included",
+      "paths": [
+        "review/REVIEW_REQUEST_UNSENT.md",
+        "review/OPEN_ITEMS.md"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "validation",
+      "status": "included",
+      "paths": [
+        "review/VALIDATION.md",
+        "MANIFEST.json",
+        "SHA256SUMS",
+        "review/verify_checksums.py",
+        ".gitattributes"
+      ],
+      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+    },
+    {
+      "id": "apk-and-qualified-artifacts",
+      "status": "held",
+      "paths": [
+        "source/HELD_ITEMS.json",
+        "review/OPEN_ITEMS.md",
+        "ASSET_SUPPLEMENT.md"
+      ],
+      "qualification": "Not in this repository. Most held files are supplied separately by the owner; see ASSET_SUPPLEMENT.md."
+    },
+    {
+      "id": "missing-exact-prompts",
+      "status": "missing-source",
+      "paths": [
+        "prompts/PROMPT_INDEX.md"
+      ],
+      "qualification": "Unretained L2\u2013L4 repair/reviewer transcripts are not invented; teaching reconstructions labelled."
+    },
+    {
+      "id": "continuous-video-and-narration",
+      "status": "optional-not-included",
+      "paths": [
+        "demo/WALKTHROUGH.md"
+      ],
+      "qualification": "Stills/process walkthrough delivered; no new generation/recording, unheard audio excluded."
+    }
+  ]
+}
