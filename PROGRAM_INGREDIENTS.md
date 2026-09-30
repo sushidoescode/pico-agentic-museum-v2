@@ -6,7 +6,7 @@ This page maps each part of the program to its folder and the file to open first
 
 - **Included:** in this repository.
 - **Reconstructed:** newly written to teach what happened. It is not a recovered original.
-- **Held:** it exists, but it is deliberately not in this repository. The owner keeps many held files in a separate [asset supplement](ASSET_SUPPLEMENT.md); access is by request and depends on open rights decisions.
+- **Held:** it exists, but it is deliberately not in this repository. The owner keeps many held files in the linked [Drive asset supplement](ASSET_SUPPLEMENT.md). Each file retains its rights qualifications; link access is not a blanket redistribution license.
 - **Not established:** never demonstrated or recorded, so do not assume it.
 
 ## Requested ingredients

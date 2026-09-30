@@ -7,7 +7,11 @@ This repository is one of two parts.
 
 ## Access
 
-This repository does not link to the supplement. When the repository was prepared on 2026-09-28, the owner had assembled the supplement and checked it file by file on their own computer. Its online upload was still in progress, and no sharing link or invitation had been issued. Ask the project owner for access. Do not assume it is available online. Sharing it is not part of this repository's proposed review; it depends on the per-item recipient and rights decisions in [open items](review/OPEN_ITEMS.md).
+The owner supplied the [PICO Museum Delivery folder](https://drive.google.com/drive/folders/1C6693JWX1kvqgu253xLBeGumSB32UPB-) for this team handoff. It contains the dated [2026-09-28 delivery](https://drive.google.com/drive/folders/1AS_WAx3grzcMzsxmL7meZOO-pxiHTU2P). Both folders were readable without signing in on September 30, 2026. Use this Git repository for the latest navigation and delivery documentation; Drive's `05_Review_Repository_R2/` and its ZIP preserve the September 28 edition.
+
+Open [assets and Blender](https://drive.google.com/drive/folders/1mR_iZEc2MCvzEHG0HjQWkd99ULH3RYZz), [the eighteen exhibit models](https://drive.google.com/drive/folders/1ZHyUQuv7WBgXgxFQfopJNDOczROMhnFr), or [the Blender room project](https://drive.google.com/drive/folders/1GxGsDcnly8oxpl9mcir6RU7irx8WqqGb). The preserved [build-008 APK](https://drive.google.com/file/d/1JFz00IfCpPrXmBb0oRTe0onfTUojJv6m/view) and [final visitor-start frame](https://drive.google.com/file/d/1CeWg1v13b3tWbLONKlvlnFL_-90jYz9D/view) are separate from Git.
+
+The owner controls access to that folder. Link access does not establish a public reuse license or settle the per-item qualifications in [open items](review/OPEN_ITEMS.md). No Drive sharing setting was changed as part of this repository delivery. The September 28 statement that upload was in progress is historical; [team handoff](review/TEAM_HANDOFF.md) records the newer verification scope.
 
 ## What the supplement contains
 
@@ -17,6 +21,7 @@ This repository does not link to the supplement. When the repository was prepare
 | `02_Assets_and_Blender/` | All eighteen current exhibit models and thumbnails, plus the archive room model and layout. It also has the original Blender file with its five room textures, the authoring scripts, the three reference models actually used, the original inputs for the generated vessel, seven PICO template resources and the original provenance and attribution records (reference manifest, asset registers, pipeline and build-input notes, and entry/spec/build records for the four held exhibit families). `RESTORE_MAP.json` maps each file to its place in the museum source. |
 | `03_Android_App/` | The build-008 installer (APK) and its identity notes |
 | `04_Current_Frame/` | The admitted build-008 visitor-start image and its scope notes |
+| `05_Review_Repository_R2/` and its ZIP | The preserved September 28 sharing repository, before the September 30 delivery documentation updates |
 
 The supplement has its own `README.md`, `SHARING_SCOPE.md`, `MANIFEST.json` and `SHA256SUMS`.
 
@@ -32,7 +37,7 @@ This repository's [MANIFEST.json](MANIFEST.json) lists each file it leaves out u
 
 Raw evidence, original prompts and conversations, Git history and recordings are in neither part.
 
-Some documents here were written for the original package and call the APK, the four held model families, the template resources and the Blender file “held privately”. For this repository that is still accurate: those files are not in Git. The owner has since placed them in the supplement for team review.
+Some documents here were written for the original package and call the APK, the four held model families, the template resources and the Blender file “held privately”. That is historical preparation wording: these files remain excluded from Git, while the owner-supplied Drive link is now readable without signing in. Their rights qualifications remain unchanged.
 
 ## Having both parts is not a tested build
 

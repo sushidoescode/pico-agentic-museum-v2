@@ -1,6 +1,6 @@
 # Source snapshots for local review
 
-This is a local, unsent teaching package. Ten allowlisted file snapshots preserve the named lesson states without exporting Git history. They are **incomplete relative to the admitted APK** and have not been compiled, deployed or reproduced on a fresh machine. Source inspection and path validation are the checks performed for this package.
+This is the Museum team's teaching package. Ten allowlisted file snapshots preserve the named lesson states without exporting the original museum Git history. They are **incomplete relative to the admitted APK** and have not been compiled, deployed or reproduced on a fresh machine. Source inspection and path validation are the checks performed for this package.
 
 [CHECKPOINTS.json](CHECKPOINTS.json) records every original peeled Git revision separately from the sanitized snapshot aggregate. [EXPORT_FILES.json](EXPORT_FILES.json) records original/output bytes and SHA-256, source revision, transformation and evidence class for each exported input. These are new export identities; no original tag was created, moved or recreated.
 

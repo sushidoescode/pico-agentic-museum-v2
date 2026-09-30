@@ -1,6 +1,6 @@
 # PICO review request — UNSENT
 
-Draft date: September 28, 2026. Recipient list and feedback timing remain to be confirmed. No message, upload or invitation has been sent. No extension or submission date is represented as agreed.
+Draft date: September 28, 2026; delivery context updated September 30. Recipient list and feedback timing remain to be confirmed. This correspondence remains unsent. The user separately authorized placement of the teaching package in the private XRBootcamp repository. No extension or submission date is represented as agreed.
 
 **Subject:** Everyday Futures / Earth Collection — agentic curriculum review candidate
 
@@ -16,10 +16,10 @@ Could you identify the curriculum and Kotlin/emulator reviewers, the supported t
 
 Thank you.
 
-## Proposed sharing, prepared locally
+## Delivery context for the unsent draft
 
-The proposed tree is this Git repository, starting at [README.md](../README.md). The same files can also be supplied as one archive without Git metadata; its size and SHA-256 are given alongside it, outside the archive.
+The teaching package is prepared for the private [XRBootcamp repository](https://github.com/XRBootcamp/pico-space-agentic-track-dev), starting at [README.md](../README.md). The September 28 r2 archive on Drive is the earlier edition: its source, evidence and prompts match, but its delivery documentation predates these repository and Drive links.
 
-The repository and archive exclude the APK, held models/template binaries, the original `.blend`, the final build-008 image, the affected inspector image, raw evidence/coordinator records, recordings, audio and the museum's Git history. The owner's separate asset supplement ([ASSET_SUPPLEMENT.md](../ASSET_SUPPLEMENT.md)) is not part of this proposal. Whether and with whom to share it is a separate owner decision. See [open items](OPEN_ITEMS.md) for exact qualifications; the artifact manifests control the final included file list.
+The repository excludes the APK, held models/template binaries, the original `.blend`, the final build-008 image, the affected inspector image, raw evidence/coordinator records, recordings, audio and the museum's original Git history. The owner supplied a link to the separate Drive delivery, described in [ASSET_SUPPLEMENT.md](../ASSET_SUPPLEMENT.md). That link does not grant blanket redistribution rights. See [open items](OPEN_ITEMS.md) for exact qualifications; the artifact manifests control the included file lists.
 
 This is the complete proposed message and sharing scope for user review. It is not permission to send it.

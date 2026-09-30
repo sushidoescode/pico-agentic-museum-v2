@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-28",
-  "status": "local-unsent-repository-candidate",
+  "status": "private-team-review-repository",
   "hashAlgorithm": "SHA-256",
   "scheme": "MANIFEST lists payloads (the tracked files; never .git), excludes itself and SHA256SUMS. SHA256SUMS covers payloads plus MANIFEST, excludes itself. Archive digest is outside archive.",
   "files": [
@@ -21,59 +21,59 @@
     },
     {
       "path": "ASSET_SUPPLEMENT.md",
-      "bytes": 4116,
-      "sha256": "b756635024dc7d344a2b9d87ef43870025466673729732ae5bd1bffd03646707",
+      "bytes": 5245,
+      "sha256": "1ed61980b5925cb5e4c9766a271d5c17541acfc1efb77b3b6c26c41f1ed8c166",
       "original": {
-        "kind": "editorial-package-material",
-        "date": "2026-09-28",
-        "sourceBasis": "Frozen museum closeout 0efe271; source citations and private audit mappings retained."
+        "kind": "editorial-delivery-document",
+        "date": "2026-09-30",
+        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
       },
-      "transform": "New editorial assembly or sanitized manifest; not a historical transcript or native result.",
+      "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
-      "inclusionStatus": "included-local-private-review",
-      "reason": "Requested teaching/review deliverable."
+      "inclusionStatus": "included-private-team-review",
+      "reason": "User-requested team repository handoff."
     },
     {
       "path": "DELIVERABLES.json",
-      "bytes": 5238,
-      "sha256": "6283e486206264a6cb8740e36b069b317237649ba3b8896771a8190cc3e5fe6c",
+      "bytes": 5725,
+      "sha256": "ff38d49529cf707022c825877e993b9dbc392d5aaa6cc04924a8fd6bb0e35a6d",
       "original": {
-        "kind": "editorial-package-material",
-        "date": "2026-09-28",
-        "sourceBasis": "Frozen museum closeout 0efe271; source citations and private audit mappings retained."
+        "kind": "editorial-delivery-document",
+        "date": "2026-09-30",
+        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
       },
-      "transform": "New editorial assembly or sanitized manifest; not a historical transcript or native result.",
+      "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
-      "inclusionStatus": "included-local-private-review",
-      "reason": "Requested teaching/review deliverable."
+      "inclusionStatus": "included-private-team-review",
+      "reason": "User-requested team repository handoff."
     },
     {
       "path": "PROGRAM_INGREDIENTS.md",
-      "bytes": 6169,
-      "sha256": "7d575a738084368d5821a09e251c85d1b2888586659b477db7e02152b531ba6c",
+      "bytes": 6214,
+      "sha256": "10665e4d27ec2e764fb2f345351b4e9ac768af8ffa1a0e7c53bbda33ed2030bd",
       "original": {
-        "kind": "editorial-package-material",
-        "date": "2026-09-28",
-        "sourceBasis": "Frozen museum closeout 0efe271; source citations and private audit mappings retained."
+        "kind": "editorial-delivery-document",
+        "date": "2026-09-30",
+        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
       },
-      "transform": "New editorial assembly or sanitized manifest; not a historical transcript or native result.",
+      "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
-      "inclusionStatus": "included-local-private-review",
-      "reason": "Requested teaching/review deliverable."
+      "inclusionStatus": "included-private-team-review",
+      "reason": "User-requested team repository handoff."
     },
     {
       "path": "README.md",
-      "bytes": 4411,
-      "sha256": "bfb470d059cf42e74c3bc287e183bc1e1901e66159c06f7e99ae012307febff4",
+      "bytes": 5216,
+      "sha256": "7068429a08e76a2ee8b4308612b94cd7f57f39a2622de2d3d2e10383c59085bb",
       "original": {
-        "kind": "editorial-package-material",
-        "date": "2026-09-28",
-        "sourceBasis": "Frozen museum closeout 0efe271; source citations and private audit mappings retained."
+        "kind": "editorial-delivery-document",
+        "date": "2026-09-30",
+        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
       },
-      "transform": "New editorial assembly or sanitized manifest; not a historical transcript or native result.",
+      "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
-      "inclusionStatus": "included-local-private-review",
-      "reason": "Requested teaching/review deliverable."
+      "inclusionStatus": "included-private-team-review",
+      "reason": "User-requested team repository handoff."
     },
     {
       "path": "START_HERE.md",
@@ -1785,31 +1785,31 @@
     },
     {
       "path": "review/OPEN_ITEMS.md",
-      "bytes": 4642,
-      "sha256": "25b3afa0a6941ca3d5e5269ed4dc08763f0d378eea8d9db0c304d128c16f66a6",
+      "bytes": 4967,
+      "sha256": "4798e3a02f12abbdf52d1fcdbbb5f10b830ed5a14ddec6d9fb60e20fb4694961",
       "original": {
-        "kind": "editorial-package-material",
-        "date": "2026-09-28",
-        "sourceBasis": "Frozen museum closeout 0efe271; source citations and private audit mappings retained."
+        "kind": "editorial-delivery-document",
+        "date": "2026-09-30",
+        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
       },
-      "transform": "New editorial assembly or sanitized manifest; not a historical transcript or native result.",
+      "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
-      "inclusionStatus": "included-local-private-review",
-      "reason": "Requested teaching/review deliverable."
+      "inclusionStatus": "included-private-team-review",
+      "reason": "User-requested team repository handoff."
     },
     {
       "path": "review/REVIEW_REQUEST_UNSENT.md",
-      "bytes": 2867,
-      "sha256": "f2d7e5409a4227973fb8a914d5e70e510ad26e9e0de19c6d3d3a0c4f9ca0ca45",
+      "bytes": 3115,
+      "sha256": "721f7a26ecb8750b7a8f9303d58e9ef963835b6b88f699d6057a5717a185aec4",
       "original": {
-        "kind": "editorial-package-material",
-        "date": "2026-09-28",
-        "sourceBasis": "Frozen museum closeout 0efe271; source citations and private audit mappings retained."
+        "kind": "editorial-delivery-document",
+        "date": "2026-09-30",
+        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
       },
-      "transform": "New editorial assembly or sanitized manifest; not a historical transcript or native result.",
+      "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
-      "inclusionStatus": "included-local-private-review",
-      "reason": "Requested teaching/review deliverable."
+      "inclusionStatus": "included-private-team-review",
+      "reason": "User-requested team repository handoff."
     },
     {
       "path": "review/REVIEW_RESOLUTION.md",
@@ -1826,18 +1826,32 @@
       "reason": "Requested teaching/review deliverable."
     },
     {
-      "path": "review/VALIDATION.md",
-      "bytes": 6198,
-      "sha256": "ecb11c21c9606e1413e625954742f0af9d26a095c44b377f07d6e04f8d3eabbb",
       "original": {
-        "kind": "editorial-package-material",
-        "date": "2026-09-28",
-        "sourceBasis": "Frozen museum closeout 0efe271; source citations and private audit mappings retained."
+        "kind": "editorial-delivery-document",
+        "date": "2026-09-30",
+        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
       },
-      "transform": "New editorial assembly or sanitized manifest; not a historical transcript or native result.",
+      "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
-      "inclusionStatus": "included-local-private-review",
-      "reason": "Requested teaching/review deliverable."
+      "inclusionStatus": "included-private-team-review",
+      "reason": "User-requested team repository handoff.",
+      "path": "review/TEAM_HANDOFF.md",
+      "bytes": 5635,
+      "sha256": "c4ae84fbd4d890e588b258192bb1381252724592935e2d750e46f982feb155b2"
+    },
+    {
+      "path": "review/VALIDATION.md",
+      "bytes": 7176,
+      "sha256": "7a93c782f34b395e8a25b1a9a7481339fb9c37acc94d56921d3b6d5ae604b026",
+      "original": {
+        "kind": "editorial-delivery-document",
+        "date": "2026-09-30",
+        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
+      },
+      "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
+      "evidenceClass": "package-documentation",
+      "inclusionStatus": "included-private-team-review",
+      "reason": "User-requested team repository handoff."
     },
     {
       "path": "review/verify_checksums.py",
@@ -1925,17 +1939,17 @@
     },
     {
       "path": "source/SNAPSHOTS.md",
-      "bytes": 4150,
-      "sha256": "9e29a521975ed6347432354d601a00f5e01c2476f2f293c414ed6f79d3ebc8ad",
+      "bytes": 4172,
+      "sha256": "bced166f716ec2073268c537d85bed03f8c46a8f694759662019bab73019fbfb",
       "original": {
-        "kind": "editorial-package-material",
-        "date": "2026-09-28",
-        "sourceBasis": "Frozen museum closeout 0efe271; source citations and private audit mappings retained."
+        "kind": "editorial-delivery-document",
+        "date": "2026-09-30",
+        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
       },
-      "transform": "New editorial assembly or sanitized manifest; not a historical transcript or native result.",
+      "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
-      "inclusionStatus": "included-local-private-review",
-      "reason": "Requested teaching/review deliverable."
+      "inclusionStatus": "included-private-team-review",
+      "reason": "User-requested team repository handoff."
     },
     {
       "path": "source/dependency-freezes/deps-debugCompileClasspath.txt",
@@ -12108,5 +12122,7 @@
       "inclusionStatus": "held-private",
       "reason": "Historical independent inspector on smartphone; held image includes reference/generated thumbnails."
     }
-  ]
+  ],
+  "revisionDate": "2026-09-30",
+  "repository": "https://github.com/XRBootcamp/pico-space-agentic-track-dev"
 }

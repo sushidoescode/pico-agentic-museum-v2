@@ -16,6 +16,18 @@ This repository is also a course showing how one person directed AI coding assis
 
 ## Choose a route
 
+This is the Museum delivery for the private [XRBootcamp team repository](https://github.com/XRBootcamp/pico-space-agentic-track-dev). The folders below contain the teaching and review material; the Android installer and larger asset supplement are linked in [ASSET_SUPPLEMENT.md](ASSET_SUPPLEMENT.md). [Team handoff](review/TEAM_HANDOFF.md) records the delivery scope and checks.
+
+To get an offline copy with GitHub access:
+
+```sh
+git clone https://github.com/XRBootcamp/pico-space-agentic-track-dev.git
+cd pico-space-agentic-track-dev
+python3 review/verify_checksums.py
+```
+
+You can also use GitHub's **Code → Download ZIP**, extract it, and run the same checksum command from the extracted folder.
+
 **See the walkthrough.** Download or clone the whole repository, then open `demo/index.html` from your computer in a web browser. It runs offline: nine panels, six with historical emulator stills, about six minutes. Code-hosting websites show its source instead of running it. The Markdown version is [demo/WALKTHROUGH.md](demo/WALKTHROUGH.md).
 
 **Learn the process.** Read [First steps with an AI assistant](curriculum/FIRST_STEPS_WITH_AI.md), then the [course map](curriculum/COURSE_MAP.md) and [Lesson 1](lessons/L1.md). The [prompt library](prompts/PROMPT_LIBRARY.md) and [AI and human decisions](process/AI_AND_HUMAN_DECISIONS.md) show what the assistants produced, what failed and what people decided.
@@ -38,7 +50,7 @@ The museum was built and checked on a signed-in PICO emulator, not on a headset.
 
 It deliberately omits the Android installer (APK), four exhibit models with their thumbnails, PICO template resources and the original Blender file. **The source here therefore cannot be built as supplied.** All 37 omitted files are listed under `heldItems` in [MANIFEST.json](MANIFEST.json), with reasons in [open items](review/OPEN_ITEMS.md) and [asset provenance and rights](assets/PROVENANCE_AND_RIGHTS.md). No public license is granted.
 
-The project owner keeps most omitted files in a separate asset supplement and decides who receives it. [ASSET_SUPPLEMENT.md](ASSET_SUPPLEMENT.md) explains how the two parts fit together.
+The project owner keeps most omitted files in a separate Drive asset supplement. [ASSET_SUPPLEMENT.md](ASSET_SUPPLEMENT.md) links to the supplied folder and explains how the two parts fit together. Availability does not change the files' individual rights or establish a reproduced build.
 
 ## Details and checks
 

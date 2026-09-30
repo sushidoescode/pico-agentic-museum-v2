@@ -1,6 +1,6 @@
 # Package validation
 
-September 28, 2026. **A qualified local candidate for user review. Unsent.** These checks concern documentation, exported file identities, navigation and package integrity. They are not a new application acceptance result or distribution clearance.
+September 30, 2026. **Private team repository edition of the September 28 review candidate. Correspondence remains unsent.** These checks concern documentation, exported file identities, navigation and package integrity. They are not a new application acceptance result or distribution clearance.
 
 ## Check your copy
 
@@ -14,7 +14,13 @@ It needs Python 3.8 or later and no extra packages. It only reads files: it chec
 
 `MANIFEST.json` lists every payload with path, byte count, SHA-256, original identity, transformation, evidence class, inclusion status and reason. It excludes itself and `SHA256SUMS`. `SHA256SUMS` covers payloads plus `MANIFEST.json` and excludes itself. The payloads are exactly the files tracked in this repository; Git's own `.git` folder is never listed. `heldItems` identifies excluded bytes, not missing files. The `.gitattributes` file turns off line-ending conversion so that checksums also match on Windows.
 
-## Repository successor, 2026-09-28
+## Team repository edition, 2026-09-30
+
+The user authorized placement in the private XRBootcamp team repository and supplied the Drive folder link. This edition updates delivery documentation, navigation, availability statements, the inventory and hashes. The original course, lesson prompts, source snapshots, assets, evidence and offline walkthrough are unchanged. The original museum Git history is absent; this repository has its own short delivery history.
+
+The producer reruns the host-only integrity validator and the recipient checksum verifier before publication. Remote commit and tree identity are checked after the push. See [team handoff](TEAM_HANDOFF.md) for the edition boundaries, Drive verification and reproduction limits. No new archive, application build, install, native test or capture is part of this transfer.
+
+## Repository successor, 2026-09-28 (historical)
 
 This repository grew from the original review package. It adds the [README](../README.md), the [program ingredient index](../PROGRAM_INGREDIENTS.md), a [beginner guide](../curriculum/FIRST_STEPS_WITH_AI.md), the [asset-supplement explanation](../ASSET_SUPPLEMENT.md), the checksum verifier and `.gitattributes`. It also shortens `START_HERE.md` and updates the navigation and sharing wording in this review folder and `DELIVERABLES.json`. The walkthrough changes one link and one sentence about where the held build-008 image and APK are. No application source, snapshot, image, evidence export or prompt changed.
 
@@ -50,4 +56,4 @@ Original capture/gate, source transformation and prompt audit maps remain privat
 
 ## Readiness limits
 
-Snapshots omit held assets/template graphics and are not build-complete or offline runnable. No fresh build/install/native test, new capture, provider generation, accepted audio, upload, push, correspondence or history rewrite occurred. Recipient eligibility, supported teaching versions, rights/attribution and runtime/hardware limits remain in [open items](OPEN_ITEMS.md).
+Snapshots omit held assets/template graphics and are not build-complete or offline runnable. This delivery adds the user-authorized GitHub placement and links to existing Drive files. No fresh build/install/native test, new capture, provider generation, accepted audio, correspondence or history rewrite is part of it. Recipient eligibility, supported teaching versions, rights/attribution and runtime/hardware limits remain in [open items](OPEN_ITEMS.md).

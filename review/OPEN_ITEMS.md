@@ -1,8 +1,8 @@
 # Included items, holds and review decisions
 
-Local candidate, September 28, 2026. Every teaching/document task is independent of the item-specific sharing holds below. No sending, upload, push or public release has occurred; October 9 is not an agreed deadline.
+Team repository edition, September 30, 2026, based on the September 28 review candidate. The owner has authorized placement in the private XRBootcamp repository and supplied a Drive folder link. That delivery does not settle the item-specific rights qualifications below. No correspondence or public release is implied; October 9 is not an agreed deadline.
 
-## Included for local review
+## Included for team review
 
 Five full lessons; current curriculum and architecture; labelled prompt/process records; setup and dependency instructions; sanitized source checkpoint exports and the qualified exact-version polish module; eligible project-original asset material; six inspected historical stills; an offline rough walkthrough with notes; evidence/test summaries, notices and package hashes. Use [DELIVERABLES.json](../DELIVERABLES.json) and [MANIFEST.json](../MANIFEST.json) for the actual inventory. These inclusions are for intended private PICO technical review, not a blanket publication license.
 
@@ -23,10 +23,10 @@ Five full lessons; current curriculum and architecture; labelled prompt/process 
 
 Missing exact L2–L4 repair/reviewer prompt transcripts are labelled as missing historical source; teaching reconstructions are supplied without claiming to recover those transcripts. No physical/headset/wearer evidence, measured GPU memory, human keyboard Enter acceptance, memory cause/plateau or fresh-machine reproduction was created.
 
-## Decisions genuinely needed after local review
+## Decisions genuinely needed after team review
 
 1. Identify intended PICO recipients, review scope and desired feedback timing. The unsent request proposes specific curriculum and Kotlin/emulator questions without assigning anyone a commitment.
 2. Confirm the supported teaching version baseline with PICO. The recorded working versions are explicit; support approval is external information.
-3. Resolve per-item asset/template entitlement and attribution before any affected payload is shared. The qualified teaching candidate can be reviewed now.
+3. Resolve per-item asset/template entitlement and attribution before extending distribution or granting reuse of the affected payloads. The owner-supplied Drive supplement is already separate from this Git repository; its availability does not resolve those qualifications.
 
-No routine approval is needed to inspect this local candidate. Actual sending or publishing remains a separate user action; this document does not request an emulator ownership transfer or a new native test.
+No further approval is needed for the user-requested placement of this teaching package in the private team repository. Sending the draft PICO message or expanding distribution remains a separate action. This document does not request emulator ownership or a new native test.

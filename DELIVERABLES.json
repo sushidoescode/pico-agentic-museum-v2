@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-28",
-  "status": "local-unsent",
+  "status": "private-team-review-repository",
   "items": [
     {
       "id": "entry",
@@ -10,7 +10,7 @@
         "README.md",
         "START_HERE.md"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "ingredient-index",
@@ -34,7 +34,7 @@
       "paths": [
         "ASSET_SUPPLEMENT.md"
       ],
-      "qualification": "Explains the separate owner-supplied asset supplement; no link or remote availability is stated."
+      "qualification": "Links the owner-supplied Drive delivery; separates Git content from rights-qualified supplements and states verification scope."
     },
     {
       "id": "course",
@@ -42,7 +42,7 @@
       "paths": [
         "curriculum/COURSE_MAP.md"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "lessons",
@@ -54,7 +54,7 @@
         "lessons/L3.md",
         "lessons/L4.md"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "prompts",
@@ -63,7 +63,7 @@
         "prompts/PROMPT_INDEX.md",
         "prompts/PROMPT_LIBRARY.md"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "process",
@@ -71,7 +71,7 @@
       "paths": [
         "process/AI_AND_HUMAN_DECISIONS.md"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "setup",
@@ -79,7 +79,7 @@
       "paths": [
         "curriculum/SETUP_AND_VERSIONS.md"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "architecture",
@@ -88,7 +88,7 @@
         "curriculum/ARCHITECTURE_AND_GLOSSARY.md",
         "curriculum/TROUBLESHOOTING.md"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "source",
@@ -108,7 +108,7 @@
         "demo/WALKTHROUGH.md",
         "demo/SHOT_LIST.md"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "evidence",
@@ -118,7 +118,7 @@
         "evidence/EVIDENCE.json",
         "evidence/CLAIM_SOURCES.json"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "rights",
@@ -126,7 +126,7 @@
       "paths": [
         "assets/PROVENANCE_AND_RIGHTS.md"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "review",
@@ -135,7 +135,7 @@
         "review/REVIEW_REQUEST_UNSENT.md",
         "review/OPEN_ITEMS.md"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "validation",
@@ -145,9 +145,10 @@
         "MANIFEST.json",
         "SHA256SUMS",
         "review/verify_checksums.py",
-        ".gitattributes"
+        ".gitattributes",
+        "review/TEAM_HANDOFF.md"
       ],
-      "qualification": "Local unsent teaching/review material; evidence scope stated per file."
+      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
     },
     {
       "id": "apk-and-qualified-artifacts",
@@ -157,7 +158,7 @@
         "review/OPEN_ITEMS.md",
         "ASSET_SUPPLEMENT.md"
       ],
-      "qualification": "Not in this repository. Many held files are kept by the owner in a separate supplement; sharing is a separate owner decision (ASSET_SUPPLEMENT.md)."
+      "qualification": "Not in Git. Most held files are available in the owner-supplied Drive supplement, with item-specific qualifications retained (ASSET_SUPPLEMENT.md)."
     },
     {
       "id": "missing-exact-prompts",
@@ -175,5 +176,6 @@
       ],
       "qualification": "Stills/process walkthrough delivered; no new generation/recording, unheard audio excluded."
     }
-  ]
+  ],
+  "revisionDate": "2026-09-30"
 }
