@@ -7,7 +7,7 @@ This repository is one of two parts.
 
 ## Access
 
-The owner supplied the [PICO Museum Delivery folder](https://drive.google.com/drive/folders/1C6693JWX1kvqgu253xLBeGumSB32UPB-) for this team handoff. It contains the dated [2026-09-28 delivery](https://drive.google.com/drive/folders/1AS_WAx3grzcMzsxmL7meZOO-pxiHTU2P). Both folders were readable without signing in on September 30, 2026. Use this Git repository for the latest navigation and delivery documentation; Drive's `05_Review_Repository_R2/` and its ZIP preserve the September 28 edition.
+The owner supplied the [Museum delivery folder](https://drive.google.com/drive/folders/1C6693JWX1kvqgu253xLBeGumSB32UPB-) for review alongside this repository. It contains the dated [2026-09-28 delivery](https://drive.google.com/drive/folders/1AS_WAx3grzcMzsxmL7meZOO-pxiHTU2P). Both folders were readable without signing in on September 30, 2026, with link access reconfirmed October 1. The parent is now titled “PICO Agentic Spatial SDK Museum (Sushant)”; the folder IDs are unchanged. Use this Git repository for the latest navigation and delivery documentation; Drive's `05_Review_Repository_R2/` and its ZIP preserve the September 28 edition.
 
 Open [assets and Blender](https://drive.google.com/drive/folders/1mR_iZEc2MCvzEHG0HjQWkd99ULH3RYZz), [the eighteen exhibit models](https://drive.google.com/drive/folders/1ZHyUQuv7WBgXgxFQfopJNDOczROMhnFr), or [the Blender room project](https://drive.google.com/drive/folders/1GxGsDcnly8oxpl9mcir6RU7irx8WqqGb). The preserved [build-008 APK](https://drive.google.com/file/d/1JFz00IfCpPrXmBb0oRTe0onfTUojJv6m/view) and [final visitor-start frame](https://drive.google.com/file/d/1CeWg1v13b3tWbLONKlvlnFL_-90jYz9D/view) are separate from Git.
 
@@ -21,7 +21,7 @@ The owner controls access to that folder. Link access does not establish a publi
 | `02_Assets_and_Blender/` | All eighteen current exhibit models and thumbnails, plus the archive room model and layout. It also has the original Blender file with its five room textures, the authoring scripts, the three reference models actually used, the original inputs for the generated vessel, seven PICO template resources and the original provenance and attribution records (reference manifest, asset registers, pipeline and build-input notes, and entry/spec/build records for the four held exhibit families). `RESTORE_MAP.json` maps each file to its place in the museum source. |
 | `03_Android_App/` | The build-008 installer (APK) and its identity notes |
 | `04_Current_Frame/` | The admitted build-008 visitor-start image and its scope notes |
-| `05_Review_Repository_R2/` and its ZIP | The preserved September 28 sharing repository, before the September 30 delivery documentation updates |
+| `05_Review_Repository_R2/` and its ZIP | The preserved September 28 sharing repository, before the September 30 and October 1 delivery documentation updates |
 
 The supplement has its own `README.md`, `SHARING_SCOPE.md`, `MANIFEST.json` and `SHA256SUMS`.
 

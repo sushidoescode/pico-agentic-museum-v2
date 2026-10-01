@@ -1,6 +1,6 @@
 # Package validation
 
-September 30, 2026. **Private team repository edition of the September 28 review candidate. Correspondence remains unsent.** These checks concern documentation, exported file identities, navigation and package integrity. They are not a new application acceptance result or distribution clearance.
+October 1, 2026. **Private personal v2 repository edition of the prepared Museum review package. Correspondence remains unsent.** These checks concern documentation, exported file identities, navigation and package integrity. They are not a new application acceptance result or distribution clearance.
 
 ## Check your copy
 
@@ -14,7 +14,13 @@ It needs Python 3.8 or later and no extra packages. It only reads files: it chec
 
 `MANIFEST.json` lists every payload with path, byte count, SHA-256, original identity, transformation, evidence class, inclusion status and reason. It excludes itself and `SHA256SUMS`. `SHA256SUMS` covers payloads plus `MANIFEST.json` and excludes itself. The payloads are exactly the files tracked in this repository; Git's own `.git` folder is never listed. `heldItems` identifies excluded bytes, not missing files. The `.gitattributes` file turns off line-ending conversion so that checksums also match on Windows.
 
-## Team repository edition, 2026-09-30
+## Personal v2 edition, 2026-10-01
+
+The owner authorized a new private personal repository, **pico-agentic-museum-v2**. It contains the complete package from team commit `6be1f8a417f175d92c5d65bacec0e877d9585730`, with delivery documentation and package hashes updated for this destination. All 669 file paths are retained. Source exports, lessons, prompts, images, assets, module and walkthrough are unchanged; all 37 held items remain outside Git.
+
+The producer reruns the host-only repository validator and the recipient checksum verifier, checks that only delivery documents and hashes changed, and verifies the new GitHub commit/tree after publication. The prior repositories are preserved. This introduces no new archive, application build, test, capture or Drive mutation. The v2 name does not identify a new APK.
+
+## Team repository edition, 2026-09-30 (historical)
 
 The user authorized placement in the private XRBootcamp team repository and supplied the Drive folder link. This edition updates delivery documentation, navigation, availability statements, the inventory and hashes. The original course, lesson prompts, source snapshots, assets, evidence and offline walkthrough are unchanged. The original museum Git history is absent; this repository has its own short delivery history.
 
@@ -56,4 +62,4 @@ Original capture/gate, source transformation and prompt audit maps remain privat
 
 ## Readiness limits
 
-Snapshots omit held assets/template graphics and are not build-complete or offline runnable. This delivery adds the user-authorized GitHub placement and links to existing Drive files. No fresh build/install/native test, new capture, provider generation, accepted audio, correspondence or history rewrite is part of it. Recipient eligibility, supported teaching versions, rights/attribution and runtime/hardware limits remain in [open items](OPEN_ITEMS.md).
+Snapshots omit held assets/template graphics and are not build-complete or offline runnable. This delivery adds the user-authorized private personal v2 placement and retains links to existing Drive files. No fresh build/install/native test, new capture, provider generation, accepted audio, correspondence or history rewrite is part of it. Recipient eligibility, supported teaching versions, rights/attribution and runtime/hardware limits remain in [open items](OPEN_ITEMS.md).

@@ -1,6 +1,6 @@
 # Included items, holds and review decisions
 
-Team repository edition, September 30, 2026, based on the September 28 review candidate. The owner has authorized placement in the private XRBootcamp repository and supplied a Drive folder link. That delivery does not settle the item-specific rights qualifications below. No correspondence or public release is implied; October 9 is not an agreed deadline.
+Personal v2 repository edition, October 1, 2026, carrying forward the complete September 30 team package. The owner authorized a new private personal review repository and supplied the Drive folder link. That delivery does not settle the item-specific rights qualifications below. No correspondence or public release is implied; October 9 is not an agreed deadline.
 
 ## Included for team review
 
@@ -29,4 +29,4 @@ Missing exact L2–L4 repair/reviewer prompt transcripts are labelled as missing
 2. Confirm the supported teaching version baseline with PICO. The recorded working versions are explicit; support approval is external information.
 3. Resolve per-item asset/template entitlement and attribution before extending distribution or granting reuse of the affected payloads. The owner-supplied Drive supplement is already separate from this Git repository; its availability does not resolve those qualifications.
 
-No further approval is needed for the user-requested placement of this teaching package in the private team repository. Sending the draft PICO message or expanding distribution remains a separate action. This document does not request emulator ownership or a new native test.
+No further approval is needed for the user-requested placement of this teaching package in the new private personal v2 repository. Sending the draft PICO message or expanding distribution remains a separate action. This document does not request emulator ownership or a new native test.

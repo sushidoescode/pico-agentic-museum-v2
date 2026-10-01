@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-28",
-  "status": "private-team-review-repository",
+  "status": "private-personal-review-repository",
   "items": [
     {
       "id": "entry",
@@ -177,5 +177,5 @@
       "qualification": "Stills/process walkthrough delivered; no new generation/recording, unheard audio excluded."
     }
   ],
-  "revisionDate": "2026-09-30"
+  "revisionDate": "2026-10-01"
 }

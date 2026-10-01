@@ -16,17 +16,15 @@ This repository is also a course showing how one person directed AI coding assis
 
 ## Choose a route
 
-This is the Museum delivery for the private [XRBootcamp team repository](https://github.com/XRBootcamp/pico-space-agentic-track-dev). The folders below contain the teaching and review material; the Android installer and larger asset supplement are linked in [ASSET_SUPPLEMENT.md](ASSET_SUPPLEMENT.md). [Team handoff](review/TEAM_HANDOFF.md) records the delivery scope and checks.
+This is **pico-agentic-museum-v2**, the project owner’s private personal repository for PICO’s first review. It contains the complete prepared L0–L4 teaching and review package. The v2 name identifies this repository edition; the latest retained application remains build-008. [Delivery handoff](review/TEAM_HANDOFF.md) records its scope and checks. Reviewers need GitHub access to this private repository.
 
-To get an offline copy with GitHub access:
+**Review downloads:** [organized Museum delivery on Drive](https://drive.google.com/drive/folders/1C6693JWX1kvqgu253xLBeGumSB32UPB-), [build-008 APK](https://drive.google.com/file/d/1JFz00IfCpPrXmBb0oRTe0onfTUojJv6m/view), and [Blender/models/assets](https://drive.google.com/drive/folders/1mR_iZEc2MCvzEHG0HjQWkd99ULH3RYZz). Open `2026-09-28` in the Drive folder. [ASSET_SUPPLEMENT.md](ASSET_SUPPLEMENT.md) explains its contents and qualifications.
+
+To get an offline copy, choose GitHub’s **Code → Download ZIP** and extract it, or clone using the repository URL shown under **Code**. From the downloaded repository folder, run:
 
 ```sh
-git clone https://github.com/XRBootcamp/pico-space-agentic-track-dev.git
-cd pico-space-agentic-track-dev
 python3 review/verify_checksums.py
 ```
-
-You can also use GitHub's **Code → Download ZIP**, extract it, and run the same checksum command from the extracted folder.
 
 **See the walkthrough.** Download or clone the whole repository, then open `demo/index.html` from your computer in a web browser. It runs offline: nine panels, six with historical emulator stills, about six minutes. Code-hosting websites show its source instead of running it. The Markdown version is [demo/WALKTHROUGH.md](demo/WALKTHROUGH.md).
 

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-28",
-  "status": "private-team-review-repository",
+  "status": "private-personal-review-repository",
   "hashAlgorithm": "SHA-256",
   "scheme": "MANIFEST lists payloads (the tracked files; never .git), excludes itself and SHA256SUMS. SHA256SUMS covers payloads plus MANIFEST, excludes itself. Archive digest is outside archive.",
   "files": [
@@ -21,31 +21,31 @@
     },
     {
       "path": "ASSET_SUPPLEMENT.md",
-      "bytes": 5245,
-      "sha256": "1ed61980b5925cb5e4c9766a271d5c17541acfc1efb77b3b6c26c41f1ed8c166",
+      "bytes": 5413,
+      "sha256": "f395b4ffd3cf9058a8adfea5c225089c560117ef5517b28c189c2b6fbc214330",
       "original": {
         "kind": "editorial-delivery-document",
-        "date": "2026-09-30",
-        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
+        "date": "2026-10-01",
+        "sourceBasis": "Published sharing package 6be1f8a417f175d92c5d65bacec0e877d9585730; owner-authorized new private personal v2 repository."
       },
       "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
       "inclusionStatus": "included-private-team-review",
-      "reason": "User-requested team repository handoff."
+      "reason": "User-requested private personal v2 repository handoff."
     },
     {
       "path": "DELIVERABLES.json",
-      "bytes": 5725,
-      "sha256": "ff38d49529cf707022c825877e993b9dbc392d5aaa6cc04924a8fd6bb0e35a6d",
+      "bytes": 5729,
+      "sha256": "01a6891b4dcf2fe0fd220cb28fb9ef9fb6156c3a057db48c50b39fc4efa069aa",
       "original": {
         "kind": "editorial-delivery-document",
-        "date": "2026-09-30",
-        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
+        "date": "2026-10-01",
+        "sourceBasis": "Published sharing package 6be1f8a417f175d92c5d65bacec0e877d9585730; owner-authorized new private personal v2 repository."
       },
       "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
       "inclusionStatus": "included-private-team-review",
-      "reason": "User-requested team repository handoff."
+      "reason": "User-requested private personal v2 repository handoff."
     },
     {
       "path": "PROGRAM_INGREDIENTS.md",
@@ -63,17 +63,17 @@
     },
     {
       "path": "README.md",
-      "bytes": 5216,
-      "sha256": "7068429a08e76a2ee8b4308612b94cd7f57f39a2622de2d3d2e10383c59085bb",
+      "bytes": 5609,
+      "sha256": "dd01af17326d609d82781fdfc2337591e7ab6da4983107b8ebb60e4808597780",
       "original": {
         "kind": "editorial-delivery-document",
-        "date": "2026-09-30",
-        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
+        "date": "2026-10-01",
+        "sourceBasis": "Published sharing package 6be1f8a417f175d92c5d65bacec0e877d9585730; owner-authorized new private personal v2 repository."
       },
       "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
       "inclusionStatus": "included-private-team-review",
-      "reason": "User-requested team repository handoff."
+      "reason": "User-requested private personal v2 repository handoff."
     },
     {
       "path": "START_HERE.md",
@@ -1785,31 +1785,31 @@
     },
     {
       "path": "review/OPEN_ITEMS.md",
-      "bytes": 4967,
-      "sha256": "4798e3a02f12abbdf52d1fcdbbb5f10b830ed5a14ddec6d9fb60e20fb4694961",
+      "bytes": 4987,
+      "sha256": "2c7a0df379872e6e496ca2c60b8e56973a493fe02cbe00913a741ad4773ce77f",
       "original": {
         "kind": "editorial-delivery-document",
-        "date": "2026-09-30",
-        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
+        "date": "2026-10-01",
+        "sourceBasis": "Published sharing package 6be1f8a417f175d92c5d65bacec0e877d9585730; owner-authorized new private personal v2 repository."
       },
       "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
       "inclusionStatus": "included-private-team-review",
-      "reason": "User-requested team repository handoff."
+      "reason": "User-requested private personal v2 repository handoff."
     },
     {
       "path": "review/REVIEW_REQUEST_UNSENT.md",
-      "bytes": 3115,
-      "sha256": "721f7a26ecb8750b7a8f9303d58e9ef963835b6b88f699d6057a5717a185aec4",
+      "bytes": 3235,
+      "sha256": "026fe73a3447deb7f6b799c44100a7570ecdc0149516527d621393e87e1bdd74",
       "original": {
         "kind": "editorial-delivery-document",
-        "date": "2026-09-30",
-        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
+        "date": "2026-10-01",
+        "sourceBasis": "Published sharing package 6be1f8a417f175d92c5d65bacec0e877d9585730; owner-authorized new private personal v2 repository."
       },
       "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
       "inclusionStatus": "included-private-team-review",
-      "reason": "User-requested team repository handoff."
+      "reason": "User-requested private personal v2 repository handoff."
     },
     {
       "path": "review/REVIEW_RESOLUTION.md",
@@ -1828,30 +1828,30 @@
     {
       "original": {
         "kind": "editorial-delivery-document",
-        "date": "2026-09-30",
-        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
+        "date": "2026-10-01",
+        "sourceBasis": "Published sharing package 6be1f8a417f175d92c5d65bacec0e877d9585730; owner-authorized new private personal v2 repository."
       },
       "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
       "inclusionStatus": "included-private-team-review",
-      "reason": "User-requested team repository handoff.",
+      "reason": "User-requested private personal v2 repository handoff.",
       "path": "review/TEAM_HANDOFF.md",
-      "bytes": 5635,
-      "sha256": "c4ae84fbd4d890e588b258192bb1381252724592935e2d750e46f982feb155b2"
+      "bytes": 6258,
+      "sha256": "a92bffdcd2b67d64fb59eb177127227450da4740d4b6540c9acb828462bdd5db"
     },
     {
       "path": "review/VALIDATION.md",
-      "bytes": 7176,
-      "sha256": "7a93c782f34b395e8a25b1a9a7481339fb9c37acc94d56921d3b6d5ae604b026",
+      "bytes": 8037,
+      "sha256": "ca24aef781b8eba0ea3dc8d46fcb21ab0e25b1fce037c1916c12406314b62bd0",
       "original": {
         "kind": "editorial-delivery-document",
-        "date": "2026-09-30",
-        "sourceBasis": "Sharing repository 50a30c514d3b2d13535e866e3c4872d522af5349; user-authorized private team placement and owner-supplied Drive link."
+        "date": "2026-10-01",
+        "sourceBasis": "Published sharing package 6be1f8a417f175d92c5d65bacec0e877d9585730; owner-authorized new private personal v2 repository."
       },
       "transform": "Delivery navigation and status updated; preserved application source, assets, prompts and native evidence unchanged.",
       "evidenceClass": "package-documentation",
       "inclusionStatus": "included-private-team-review",
-      "reason": "User-requested team repository handoff."
+      "reason": "User-requested private personal v2 repository handoff."
     },
     {
       "path": "review/verify_checksums.py",
@@ -12123,6 +12123,6 @@
       "reason": "Historical independent inspector on smartphone; held image includes reference/generated thumbnails."
     }
   ],
-  "revisionDate": "2026-09-30",
-  "repository": "https://github.com/XRBootcamp/pico-space-agentic-track-dev"
+  "revisionDate": "2026-10-01",
+  "repository": "https://github.com/sushidoescode/pico-agentic-museum-v2"
 }
