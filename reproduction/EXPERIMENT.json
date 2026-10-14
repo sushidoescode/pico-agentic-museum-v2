@@ -1,0 +1,1404 @@
+{
+  "protocol": "Bounded operator-mediated text-only recreation",
+  "implementationAuthor": "requested gpt-5.6-luna via codex-cli 0.160.0",
+  "operatorWritesAppImplementation": false,
+  "teachingPrompts": "assistant/operator authored for experiment, not historical user messages",
+  "modelIdentity": "Explicit CLI request and no fallback warnings; JSON schema has no backend model attestation",
+  "transport": "Existing paid Codex account, not verified Free ChatGPT session",
+  "nativeRuntimeActions": false,
+  "completedMuseumSourceSupplied": false,
+  "assetInput": "No museum assets supplied. Code-generated primitive stand-ins; unused official starter box and icons remain private in scaffold.",
+  "maxRepairTurnsPerSlice": 3,
+  "scaffold": "Official managed pico-cli 0.5.0 volumetric template for SDK 6.1.9",
+  "checkpoints": [
+    {
+      "id": "L0",
+      "after": "scaffold",
+      "build": "build-00-starter",
+      "claim": "starter compile and template test only"
+    },
+    {
+      "id": "L1",
+      "after": "turn-03",
+      "build": "build-03",
+      "repairTurns": [
+        "turn-02",
+        "turn-03"
+      ],
+      "claim": "source wires selection and rotation; compile and three pure state tests, no runtime verification"
+    },
+    {
+      "id": "L2",
+      "after": "turn-07",
+      "build": "build-07",
+      "repairTurns": [
+        "turn-05",
+        "turn-06",
+        "turn-07"
+      ],
+      "claim": "companion source uses shared observable store and stable id/tag;6 pure tests; window lifecycle unverified"
+    },
+    {
+      "id": "L3",
+      "after": "turn-09",
+      "build": "build-09",
+      "repairTurns": [
+        "turn-09"
+      ],
+      "claim": "three story definitions,control source,reduced-motion primitive values;12 pure tests;visible motion unverified"
+    },
+    {
+      "id": "L4",
+      "after": "turn-13",
+      "build": "build-13",
+      "repairTurns": [
+        "turn-12",
+        "turn-13"
+      ],
+      "catalogueCheckpoint": "turn-10",
+      "claim": "18 catalogue entries,text companion/details panel (not a separate 3D inspector),and Stage plinth prototype compile;15 pure state/catalogue/story tests. All room objects are generic primitives; native entry/exit/layout unverified."
+    }
+  ],
+  "turns": [
+    {
+      "turn": "turn-01",
+      "slice": "L1",
+      "kind": "initial",
+      "build": "build-01",
+      "finding": "compile success,3 museum state tests; empty SpatialView update, acknowledged static scene"
+    },
+    {
+      "turn": "turn-02",
+      "slice": "L1",
+      "kind": "repair-1",
+      "build": "build-02",
+      "finding": "nullable TransformComponent compile failure; positions off-center by source inspection"
+    },
+    {
+      "turn": "turn-03",
+      "slice": "L1",
+      "kind": "repair-2",
+      "build": "build-03",
+      "finding": "compile success;3 museum state tests; actual scene wiring in source only"
+    },
+    {
+      "turn": "turn-04",
+      "slice": "L2",
+      "kind": "initial",
+      "build": "build-04",
+      "finding": "incomplete response; missing referenced file,callback and import caused compile failure"
+    },
+    {
+      "turn": "turn-05",
+      "slice": "L2",
+      "kind": "repair-1",
+      "build": "build-05",
+      "finding": "wrong SpatialNavigator import compile failure; separate remembered state copies and absent companion select/reset from source inspection"
+    },
+    {
+      "turn": "turn-06",
+      "slice": "L2",
+      "kind": "repair-2",
+      "build": "build-06",
+      "finding": "compile success;6 feature tests. Main still remembered stale selection copy by source inspection."
+    },
+    {
+      "turn": "turn-07",
+      "slice": "L2",
+      "kind": "repair-3",
+      "build": "build-07",
+      "finding": "compile success;6 feature tests. Both views now directly read observable store in source; no actual window check."
+    },
+    {
+      "turn": "turn-08",
+      "slice": "L3",
+      "kind": "initial",
+      "build": "build-08",
+      "finding": "compile success;10 feature tests. Source inspection found Reset mismatched selected exhibit and story."
+    },
+    {
+      "turn": "turn-09",
+      "slice": "L3",
+      "kind": "repair-1",
+      "build": "build-09",
+      "finding": "compile success;12 feature tests including current-exhibit reset/reduced-motion numerical output."
+    },
+    {
+      "turn": "turn-10",
+      "slice": "L4-catalogue",
+      "kind": "initial",
+      "build": "build-10",
+      "finding": "compile success;15 feature tests plus starter.18-entry enum,list,and generic primitive scene mapping present; no native appearance test."
+    },
+    {
+      "turn": "turn-11",
+      "slice": "L4-room",
+      "kind": "initial",
+      "build": "build-11",
+      "finding": "compile failure: missing coroutine launch import and invalid suspend call; source review also found no room size modifier and GlobalScope."
+    },
+    {
+      "turn": "turn-12",
+      "slice": "L4-room",
+      "kind": "repair-1",
+      "build": "build-12",
+      "finding": "compile failure: nonexistent Immersion.Full and internal weight import. Sized content and scoped coroutine introduced."
+    },
+    {
+      "turn": "turn-13",
+      "slice": "L4-room",
+      "kind": "repair-2",
+      "build": "build-13",
+      "finding": "compile success;15 feature tests plus starter. StageStyle.Full,scoped enter/leave,and nonzero layout constraints in source. No room/native tests."
+    }
+  ],
+  "operatorPreflightIssues": [
+    {
+      "before": "build-00-starter",
+      "issue": "JDK parent directory was initially used instead of versioned JDK Contents/Home; corrected before Gradle launched. Not a model or compiler failure.",
+      "privateRecord": "build-00-starter/host-preflight-failure.txt"
+    },
+    {
+      "before": "turn-05",
+      "issue": "Context assembly first looked for gradle.log instead of build.log; initial harness invocation stopped before Codex because context.txt was absent. Corrected file lookup before actual turn.",
+      "privateRecord": "turn-05/operator-preflight.txt"
+    }
+  ],
+  "result": "Bounded experiment finished with a compiling smaller primitive prototype. No full-museum parity, verified Free ChatGPT session or native runtime proof.",
+  "knownLimits": [
+    "No runtime render,window closure,reopening,gesture,room entry or exit evidence.",
+    "15 extra catalogue exhibits are generic box/cylinder stand-ins; all 18 room objects are generic primitives.",
+    "Catalogue main controls lie below the scrolling exhibit list; actual reachability and layout need native review.",
+    "Three stories use discrete timed pose changes,not polished animation. Playback coroutine is owned by main view; companion-only playback after closing main is not established.",
+    "Shared store tests validate data reads and writes,not actual Compose recomposition or Activity lifecycle.",
+    "Room has plinth positions but no room-specific unit tests,spatial exhibit selection,art,wall environment or navigation.",
+    "Fresh-machine setup,offline dependency reproduction and Free ChatGPT quota/context limits were not tested.",
+    "Focused review: the generated Companion inspector panel is text/buttons only, without its own SpatialView or independent rotation. The original independent 3D inspector was not reproduced.",
+    "The prototype supplies generic three-step placeholder stories for the extra fifteen catalogue entries; this differs from the original museum, where only the initial three objects have stories."
+  ],
+  "catalogueInput": {
+    "logicalSource": "assets/ASSET_REGISTER.json",
+    "sha256": "de55edc21987aed67f55d3e7c857e16d3c698af8fb43e847a7fc357fd01669fb",
+    "providedToModel": "only human-readable 18 exhibit names in turn-10 context; no asset metadata/file payload or completed museum implementation"
+  },
+  "turnCount": 13,
+  "usageTotal": {
+    "input_tokens": 235308,
+    "cached_input_tokens": 38144,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 55684,
+    "reasoning_output_tokens": 7802
+  },
+  "usageCost": "No monetary cost returned by CLI. Input/output tokens include CLI context; this is not Free ChatGPT quota evidence.",
+  "turnMetadata": [
+    {
+      "turn": "turn-01",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:01:19.665564+00:00",
+      "finishedAt": "2026-10-07T23:01:39.107601+00:00",
+      "exitCode": 0,
+      "inputBytes": 8669,
+      "inputSha256": "588a3583375ee429d6a1cb8edf47705a67eed88ba31b15ac58033e842b7ea513",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 18694,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3050,
+          "reasoning_output_tokens": 516
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "00951bb6e06e0db8e9ebb982e6b043874e7499826f4aa4d7642cec79f461a216",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelection.kt",
+          "bytes": 947,
+          "sha256": "3225597c89c0f670ee79aa5a322c1c19e3cab0ad89686587b49e4b347a015c1d"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+          "bytes": 5844,
+          "sha256": "771b35ced5330753a5865c4b367df54fa4b535664dd2498b8c476434c61a52e2"
+        },
+        {
+          "path": "app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionTest.kt",
+          "bytes": 1086,
+          "sha256": "5f47c78a615a996bd2ac9844509e4c8367750011e8fed3cd9a8aa45be69f7dba"
+        }
+      ],
+      "promptWords": 53,
+      "contextBytes": 7836,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "d978df0cfb4ad07a39224e63efa99753e388c09efd96e104ea38cd1db23b128c",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "1c77e43493d2bae03c8dcb36ea5f30e6d974a6e54ebb299d7c999e29092b97e9"
+      }
+    },
+    {
+      "turn": "turn-02",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:04:11.466219+00:00",
+      "finishedAt": "2026-10-07T23:04:37.000314+00:00",
+      "exitCode": 0,
+      "inputBytes": 10881,
+      "inputSha256": "0faf6b4eb346e4e496b39e1f1d63f70a85a2a60e4fe99842b72fe66c11a607b0",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 15288,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5037,
+          "reasoning_output_tokens": 654
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "e6045f17b7b1eaf7ee51faced34cbd3de8b0dc44220dde7bbb1cab96c3e4f41c",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+          "bytes": 6962,
+          "sha256": "37d00d1a331d9025618473224283839c252a0200ebeb87c7b048949f9df32bce"
+        }
+      ],
+      "promptWords": 40,
+      "contextBytes": 10115,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "e0d4b1f62a75b362daac0066c85ea362f63128abd41bec35be1404c0d83c8512",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "cc1cd5b03c0b10da0a6b922fb683ec83ff5355c29775db976f959321134832b4"
+      }
+    },
+    {
+      "turn": "turn-03",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:04:56.449766+00:00",
+      "finishedAt": "2026-10-07T23:05:09.076269+00:00",
+      "exitCode": 0,
+      "inputBytes": 9049,
+      "inputSha256": "b3b4ca8b1dd7da22714ff33429cfa7134b2023d6ec8c955b0b4d30585b0d8b59",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 14907,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2308,
+          "reasoning_output_tokens": 130
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "8092b5a948aca07b3358402662d2ce99377db1617056d5319a87088621f98e9f",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+          "bytes": 7017,
+          "sha256": "264bb47d2c0877dbd6ecd2d450c6fea810a4f3756cd7e46296450d2c1a25336f"
+        }
+      ],
+      "promptWords": 32,
+      "contextBytes": 8321,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "9a8f2f09e7eaf1eeca1b068b1cc5f7ff6eb601861cba55dd2598fd41fdb271a7",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "cff20bd7b05f3913f34b925bf4c753025de89ce72f6f88ec8e5e7de024c05bd8"
+      }
+    },
+    {
+      "turn": "turn-04",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:05:37.133839+00:00",
+      "finishedAt": "2026-10-07T23:05:46.763038+00:00",
+      "exitCode": 0,
+      "inputBytes": 12675,
+      "inputSha256": "c525c91341d0b0a32ad06b7023b3f03981b48c18e51c51e668285d0f0f8abfcc",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 19783,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 875,
+          "reasoning_output_tokens": 516
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "ebc60edd8d0589fb66ad1866c50f36224196551dd8fd2d4c33dd06104d808713",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt",
+          "bytes": 1083,
+          "sha256": "b2514267de1ae7fdf7e28da4d69ed4f7cf02ccf35f289dadee350d396a29cfd6"
+        }
+      ],
+      "promptWords": 42,
+      "contextBytes": 11886,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "d061e4c3e815b5754332653f80590b8b4d50e482c5bab80c9a331888c599d1d3",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "e4b9c414d6947d8f0824fb0e0550e6e9cadb9218e0a5b5ac818e316cd6825054"
+      }
+    },
+    {
+      "turn": "turn-05",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:06:37.028767+00:00",
+      "finishedAt": "2026-10-07T23:06:59.864389+00:00",
+      "exitCode": 0,
+      "inputBytes": 14249,
+      "inputSha256": "9a4e44aa74ff00e0168d03c4f53a5f9076b54a20045c451e8136407794cb2d6d",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 20133,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4157,
+          "reasoning_output_tokens": 839
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "b2579a9eb8ac78ee3c430e87a153262c0608e2be2ebe49e78a476cbbfd962a5e",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt",
+          "bytes": 1254,
+          "sha256": "4a1d0787721c6496b4322e7323f5cddb2cefd4477a2711a2d2e87a9ff11d7c4e"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+          "bytes": 7514,
+          "sha256": "01eda0b1a91b591561bd4226126915788da5196dd002e7c0dd200360a1aab769"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+          "bytes": 1498,
+          "sha256": "34b24af00aa6a4fc62979feab4042e080de51bf49df63f39505b62bc0dd930cf"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStore.kt",
+          "bytes": 391,
+          "sha256": "4b5785c17fcf8baa30ef2b98e182cca168c305b252f0561311dce8e6e5302bf7"
+        },
+        {
+          "path": "app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStoreTest.kt",
+          "bytes": 894,
+          "sha256": "9c806adb65b44130f1221fe954be4db11d7e4ce3b9f8ab15b81eba59e98c5d42"
+        }
+      ],
+      "promptWords": 39,
+      "contextBytes": 13463,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "32078a810e4e75015a62b85661364d78b2121496ee2acbfbc189547b2ff1e543",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "7e51bb8caaa8c397339b3e1f6281b6018f769164a4fc6f09057747c95cd4f71e"
+      }
+    },
+    {
+      "turn": "turn-06",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:07:34.242204+00:00",
+      "finishedAt": "2026-10-07T23:07:47.772118+00:00",
+      "exitCode": 0,
+      "inputBytes": 17881,
+      "inputSha256": "b6c340983bbc4f25a802eb9f3769bdbfa66df6f376bb32bf7d29121779712f5c",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 16717,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1715,
+          "reasoning_output_tokens": 516
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "f7472ab375d90d6a9cd050c9bd8dd2548f925e09fb4bc4839b3571c3d6c463f6",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+          "bytes": 3178,
+          "sha256": "791867153df66034794f31c5ee8e5b0b12f043937af18659c92343dd84d484f5"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStore.kt",
+          "bytes": 476,
+          "sha256": "288933ba82e99097848e1b0b7f219de5ffd7638489ef7ccf01cdc7bca5ff8034"
+        },
+        {
+          "path": "app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStoreTest.kt",
+          "bytes": 1258,
+          "sha256": "ca8c02cd592a4093be554640667a02e4aa8603a03368104238eb179babd262aa"
+        }
+      ],
+      "promptWords": 48,
+      "contextBytes": 17055,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "1c82e933afd1f21cbed229baf32511e552f1eb0a63690339483561b91772570b",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "2a6b8d69c89c2c96cb2e02d52baed38181d515bc70d11874a08ffb27384d792c"
+      }
+    },
+    {
+      "turn": "turn-07",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:08:11.118550+00:00",
+      "finishedAt": "2026-10-07T23:08:24.524956+00:00",
+      "exitCode": 0,
+      "inputBytes": 13442,
+      "inputSha256": "61c71ca08566144cdf4633da8061982afa263fb0f31fc1f5e1fcafe62939f6c0",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 15681,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2374,
+          "reasoning_output_tokens": 82
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "911df6d528d700451618c128d29fc4074533c0486d480a8916879a8684197234",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+          "bytes": 7459,
+          "sha256": "110c8a457052bd4aa229b7eb7c2f88b8ff4d1e9ed46f948069aaad69df5b8ffb"
+        }
+      ],
+      "promptWords": 36,
+      "contextBytes": 12690,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "41e0dad4b237b2cface8bf07ae59b95124381e01bcc65224e7f55bdeec9b9c2e",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "f55ae63e281a8da64fc5c4691bb9f3ca46354aa8360a37345810f41edf3d0022"
+      }
+    },
+    {
+      "turn": "turn-08",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:08:39.688530+00:00",
+      "finishedAt": "2026-10-07T23:09:13.627129+00:00",
+      "exitCode": 0,
+      "inputBytes": 17655,
+      "inputSha256": "3f7000f1942967e3625366d72a80e702121080760a6e92dea2206a4b6f7aa4a0",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 16534,
+          "cached_input_tokens": 12032,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6297,
+          "reasoning_output_tokens": 1347
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "52211113a0ef8b2fb9b6b5277f30b31686be14aef5df684f764ae30ee5aafef8",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumStory.kt",
+          "bytes": 2626,
+          "sha256": "b71103d42b36d2378bbd39ebc4e6a42865cea6a857492c0614910c34f660cb9e"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+          "bytes": 9944,
+          "sha256": "b83e80681554d8da25e506f34bf06f7cd5b21339273540d3b7ad86ff0182fb8f"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+          "bytes": 3948,
+          "sha256": "fd8eb87f1e649eabdad2e8c3f03a1ae2f3ea0c9085df16effb42fbf0b16ca972"
+        },
+        {
+          "path": "app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumStoryTest.kt",
+          "bytes": 1403,
+          "sha256": "752bcf32459e906f2ea945d27eb0183f351a27afb020b58d677ed2f92534d275"
+        }
+      ],
+      "promptWords": 44,
+      "contextBytes": 16847,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "0730f19b338b2b10db188a8a68cd1f6ccc0ddf649c6a8ef7cc6e2c8c894b6bef",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "12a8a77f195a4fc42aaf6b1bc3b83bd14b2874e7427ec48f8917336f32c7c841"
+      }
+    },
+    {
+      "turn": "turn-09",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:10:07.903962+00:00",
+      "finishedAt": "2026-10-07T23:10:38.936016+00:00",
+      "exitCode": 0,
+      "inputBytes": 23685,
+      "inputSha256": "83dc8597c6d2cb657995f1db2c39b657f31082f6404e5ddc99d17027d2aeb960",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 22090,
+          "cached_input_tokens": 9984,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6208,
+          "reasoning_output_tokens": 856
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "389488d787fc0a3bc0dc65abbeba318cb75b6b3b79e05e3105e3f2f3fa2f51bb",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumStory.kt",
+          "bytes": 4024,
+          "sha256": "f7a77ee411d253305213fff6d637bc34241dad3b95b5d2b983514d099a94c25e"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+          "bytes": 4027,
+          "sha256": "66267e362dffa40603478355441d62d69928d43b1ee791ed140631f5d90d07fe"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+          "bytes": 9350,
+          "sha256": "4c127b5309f95aeda1d82f06702bb841b3980ffe6fcbaa39aeb85f73d2cc2d15"
+        },
+        {
+          "path": "app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumStoryTest.kt",
+          "bytes": 2543,
+          "sha256": "488654f3a5e29ebe4e4a5a98e3632ae095d91a23e805da0f71bea766383ca414"
+        }
+      ],
+      "promptWords": 49,
+      "contextBytes": 22832,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "50c39093ccf93714fcd07a85ea7f4890dc37a3e14f1321bfcef7d45b84f802ca",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "0255e61cd0ce305804bca2db5b4ff8c7a8f3821795a5415b30af2188627df83d"
+      }
+    },
+    {
+      "turn": "turn-10",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:11:23.336962+00:00",
+      "finishedAt": "2026-10-07T23:12:18.689903+00:00",
+      "exitCode": 0,
+      "inputBytes": 27319,
+      "inputSha256": "fc666d2ba7782c188b268da0d0070e775d37c28431ffa2aa790c6d3bc5ca7526",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 22779,
+          "cached_input_tokens": 16128,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 12158,
+          "reasoning_output_tokens": 862
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "11c0a8699a46330246b5879315addba200e630dc90847481b157e4623a48f518",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelection.kt",
+          "bytes": 2153,
+          "sha256": "d72ef6d70a33df29e5ce897d20f092ed4eb3cc572f3cca5a2815eb47c893a451"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumStory.kt",
+          "bytes": 3929,
+          "sha256": "539829a5a27d56bdfaf86346db2f67afbe791202e835bdd6de0589fd4c82e3c1"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+          "bytes": 3852,
+          "sha256": "94cfddda9c55e4b0f5e6ddf08158a94a9db4cee455bcfc2fdc674f024fc90fc2"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+          "bytes": 9045,
+          "sha256": "d72988701a097db2509b85304d09b7c6f8a05500dab6c08c060ea332d244b260"
+        },
+        {
+          "path": "app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumCatalogueTest.kt",
+          "bytes": 757,
+          "sha256": "0ae970868d4adf3097abbcc9880f7c96ce3c073068dbd4a09ab6190665d48bb9"
+        }
+      ],
+      "promptWords": 56,
+      "contextBytes": 26446,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "de293c36ed462e74d3ca5419fc69cabaf07179bc490d396eb5592a437488b993",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "d8e0efa521111222bc0ca0f9580445c5939e81c4ebe8dcf60ae4ec33c5f1a80b"
+      }
+    },
+    {
+      "turn": "turn-11",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:13:02.425492+00:00",
+      "finishedAt": "2026-10-07T23:13:31.922317+00:00",
+      "exitCode": 0,
+      "inputBytes": 23653,
+      "inputSha256": "8b4e345e8f3f5b8addd38a0b15b89cd8150393caee6da7196b7a837a24ac3717",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 17948,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5580,
+          "reasoning_output_tokens": 709
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "7f989c0845bfbc317975acde61c860961ae939ef5e595e5be91a4c556fb74c8e",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt",
+          "bytes": 1499,
+          "sha256": "c983dba78d4761565ec0716f02622d51020445d21da2d4010a6dcecf3b052e39"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+          "bytes": 4453,
+          "sha256": "112afd0ccb1d0fd5079f99ebe550cfebe8de49afbdfb3578c3b2643eaa825e54"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumRoomStage.kt",
+          "bytes": 4551,
+          "sha256": "fcf7888ca859edd9e08f26f1ac8cb9dd98cbbaf9cdca2d2a2cdbabdc0018b55c"
+        }
+      ],
+      "promptWords": 38,
+      "contextBytes": 22904,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "b5653eff026e8e4a109073d40aa555006c32610c170fb54f0936f95ad09e2268",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "a2fe919bb58edd2594263a4158e2c8ee550f92b63fc79067e9d57f88815bd8f8"
+      }
+    },
+    {
+      "turn": "turn-12",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:14:11.454373+00:00",
+      "finishedAt": "2026-10-07T23:14:32.345180+00:00",
+      "exitCode": 0,
+      "inputBytes": 15809,
+      "inputSha256": "b0c50de0389b9bdca5a617bfecea35fda0c700bbefc769a791dbc08b164c6d66",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 15970,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4067,
+          "reasoning_output_tokens": 684
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "cd72cfa5a5cd1d000c3bbbd6b8c97faa40c490cc4da75f0acd37688821001fd5",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt",
+          "bytes": 1579,
+          "sha256": "485de8627c0064a05e09a05a334006d315665e5672fc25f843ff026fe47ceaa5"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumRoomStage.kt",
+          "bytes": 5076,
+          "sha256": "e5b1157332a56d3e1cce2c1e3250269821cad9eb80f729c9e4fea6d9e2b9013b"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+          "bytes": 4453,
+          "sha256": "112afd0ccb1d0fd5079f99ebe550cfebe8de49afbdfb3578c3b2643eaa825e54"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelection.kt",
+          "bytes": 2153,
+          "sha256": "d72ef6d70a33df29e5ce897d20f092ed4eb3cc572f3cca5a2815eb47c893a451"
+        }
+      ],
+      "promptWords": 42,
+      "contextBytes": 15022,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "8030021a6e13799e55a635c2f1da8309410d6b8a4e518b847b49c8e55baa0bd0",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "96c006e9086d35b42f541be459b56ab99f1a5e3bceaf530e91627449ec2c6d5a"
+      }
+    },
+    {
+      "turn": "turn-13",
+      "requestedModel": "gpt-5.6-luna",
+      "runner": "codex-cli 0.160.0",
+      "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+      "startedAt": "2026-10-07T23:14:56.453736+00:00",
+      "finishedAt": "2026-10-07T23:15:08.185628+00:00",
+      "exitCode": 0,
+      "inputBytes": 9564,
+      "inputSha256": "e1a7d82609ade341e125b0e575cd6d0472a75393d729500e2e9051ee684fb421",
+      "toolUseRequested": false,
+      "usage": [
+        {
+          "input_tokens": 18784,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1858,
+          "reasoning_output_tokens": 91
+        }
+      ],
+      "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+      "toolEventCount": 0,
+      "responseSha256": "28d35b471fbbd1963a47973dafacc2d69d92da4b895dd89d491808732dcb7c2c",
+      "responseFiles": [
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt",
+          "bytes": 1499,
+          "sha256": "c983dba78d4761565ec0716f02622d51020445d21da2d4010a6dcecf3b052e39"
+        },
+        {
+          "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumRoomStage.kt",
+          "bytes": 5027,
+          "sha256": "baa82ddf3883ae166f1338e1fbaccca56362d603f5c09a230a5f8046d0b4ac8d"
+        }
+      ],
+      "promptWords": 24,
+      "contextBytes": 8883,
+      "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+      "privateRecordHashes": {
+        "events.jsonl": "bcf8d468a954fee6581c9dc4e4d48310470fcc47f8a8a8fe601368f5094c89c4",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "request.json": "079408933ad8f487b1e05c6f74e1c00ab40afa76fa239d9cd538b07cd5eb46f7"
+      }
+    }
+  ],
+  "builds": [
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:01:55.318409+00:00",
+      "freeBefore": 64148393984,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 0,
+      "finishedAt": "2026-10-07T23:02:11.011297+00:00",
+      "freeAfter": 64135303168,
+      "apk": {
+        "bytes": 32644734,
+        "sha256": "57411ebe3bdcb61d5bf9416e282f308480911992c413dd641f7ad1a333fc8037"
+      },
+      "tests": [
+        {
+          "name": "dev.local.lunamuseum.reproduction.ExampleUnitTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        }
+      ],
+      "build": "build-00-starter",
+      "logOriginalSha256": "befd8d77f4020b77bb9d2b9769efb36cb2bcb17dec54382e813b37d91c8d7a95",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:03:43.314178+00:00",
+      "freeBefore": 64082046976,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 0,
+      "finishedAt": "2026-10-07T23:03:52.590814+00:00",
+      "freeAfter": 64078942208,
+      "apk": {
+        "bytes": 32686989,
+        "sha256": "1a3fc5ee6afc58d3474dbf6473e410d6ce655216673b83579b4d089f4c5f0246"
+      },
+      "tests": [
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.ExampleUnitTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        }
+      ],
+      "build": "build-01",
+      "logOriginalSha256": "252fa7fd33862e35576e6856c29ff305541774c1280f84ca27c43ffef66f033a",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:04:41.420521+00:00",
+      "freeBefore": 64044605440,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 1,
+      "finishedAt": "2026-10-07T23:04:48.364820+00:00",
+      "freeAfter": 64044494848,
+      "tests": [],
+      "build": "build-02",
+      "logOriginalSha256": "f4ef440c6ef3efea005e57d6b0000cfd9e9bd72e0015771e4e7aa1b0014affe5",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:05:22.451052+00:00",
+      "freeBefore": 64045002752,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 0,
+      "finishedAt": "2026-10-07T23:05:31.782450+00:00",
+      "freeAfter": 64042008576,
+      "apk": {
+        "bytes": 32690821,
+        "sha256": "fe6fd8c630dfe308b3bf2516caf19512682719ea607e4aef1f88364419ad2b4c"
+      },
+      "tests": [
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.ExampleUnitTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        }
+      ],
+      "build": "build-03",
+      "logOriginalSha256": "55024333659da1711a56ff5be1f4c8433aa44717e91572b5efd31525774e68f7",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:06:05.188804+00:00",
+      "freeBefore": 64007860224,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 1,
+      "finishedAt": "2026-10-07T23:06:11.754759+00:00",
+      "freeAfter": 64007438336,
+      "tests": [],
+      "build": "build-04",
+      "logOriginalSha256": "fff7937d61d9c941032b9c54ea1925deb761dfcddbc73d3690839b28b0c48d82",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:07:16.712066+00:00",
+      "freeBefore": 64007053312,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 1,
+      "finishedAt": "2026-10-07T23:07:23.951117+00:00",
+      "freeAfter": 63975915520,
+      "tests": [],
+      "build": "build-05",
+      "logOriginalSha256": "13781914a67c9053b741d01851024df0f74b71b7d4098bdf1fafcd3ef579030e",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:07:58.714684+00:00",
+      "freeBefore": 63972179968,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 0,
+      "finishedAt": "2026-10-07T23:08:08.415856+00:00",
+      "freeAfter": 63969964032,
+      "apk": {
+        "bytes": 32727689,
+        "sha256": "9d6ffe2caca4c47ca2d0549c18cb7fd574aaf4d1105819fe1a22485825e7656d"
+      },
+      "tests": [
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionStoreTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.ExampleUnitTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        }
+      ],
+      "build": "build-06",
+      "logOriginalSha256": "131a286b7d05ed930afec940c707fccd164b30e37ea08b35cf27ed18884af726",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:08:28.483838+00:00",
+      "freeBefore": 63938211840,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 0,
+      "finishedAt": "2026-10-07T23:08:37.837356+00:00",
+      "freeAfter": 63935967232,
+      "apk": {
+        "bytes": 32726693,
+        "sha256": "008ab2aba291caef57719919acc505ff1a39de61df3503f3df4902f6591abd67"
+      },
+      "tests": [
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionStoreTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.ExampleUnitTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        }
+      ],
+      "build": "build-07",
+      "logOriginalSha256": "6f26c241c1d7b289c2a5d2cf3f5e0ca22688d72a3a50a1da3d58cd474c1ac55f",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:09:41.749591+00:00",
+      "freeBefore": 63900655616,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 0,
+      "finishedAt": "2026-10-07T23:09:51.985852+00:00",
+      "freeAfter": 63899590656,
+      "apk": {
+        "bytes": 32757305,
+        "sha256": "665ef222cdb33fee6e7b72055ef8ea27ae4cda464264ce988df08f814b059126"
+      },
+      "tests": [
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumStoryTest",
+          "tests": "4",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionStoreTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.ExampleUnitTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        }
+      ],
+      "build": "build-08",
+      "logOriginalSha256": "6bec87b4544ada19eae4684cff4460809821469de8fad91b6ee0e2efc0f7bf38",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:11:05.783993+00:00",
+      "freeBefore": 63865409536,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 0,
+      "finishedAt": "2026-10-07T23:11:15.960312+00:00",
+      "freeAfter": 63863959552,
+      "apk": {
+        "bytes": 32758513,
+        "sha256": "d2979bc605a5b3960ce35230913785a24ad0a22050de877d3728e2328d192d5e"
+      },
+      "tests": [
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumStoryTest",
+          "tests": "6",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionStoreTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.ExampleUnitTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        }
+      ],
+      "build": "build-09",
+      "logOriginalSha256": "62f720fa2791edd5ab887e82d697999300bc656b39e5e7ee7948b7037ff6b0cb",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:12:40.883843+00:00",
+      "freeBefore": 63802355712,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 0,
+      "finishedAt": "2026-10-07T23:12:51.985451+00:00",
+      "freeAfter": 63796592640,
+      "apk": {
+        "bytes": 32751941,
+        "sha256": "394c3810af21d4c83ecccf5716c61999526645f7b9c67a9d6bd1cbda700a9ab9"
+      },
+      "tests": [
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumStoryTest",
+          "tests": "6",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionStoreTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumCatalogueTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.ExampleUnitTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        }
+      ],
+      "build": "build-10",
+      "logOriginalSha256": "f44746c318163e83ece019ff8351917bc0e89619b8e271ab35e4376eb5e7a7b4",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:13:44.215824+00:00",
+      "freeBefore": 63757819904,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 1,
+      "finishedAt": "2026-10-07T23:13:51.574368+00:00",
+      "freeAfter": 63757606912,
+      "tests": [],
+      "build": "build-11",
+      "logOriginalSha256": "8da434c3a063894aa7faea95b9c9c8a10a4f33dc2c81458713d8876f0c58d0f0",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:14:37.258637+00:00",
+      "freeBefore": 63752777728,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 1,
+      "finishedAt": "2026-10-07T23:14:44.687183+00:00",
+      "freeAfter": 63752003584,
+      "tests": [],
+      "build": "build-12",
+      "logOriginalSha256": "6d3072ccb646993cad2917195235c83e6131afea7a83e1b6d063e43e22562d98",
+      "apkDistributed": false
+    },
+    {
+      "argv": [
+        "./gradlew",
+        "--offline",
+        "--no-daemon",
+        "--console=plain",
+        ":app:testDebugUnitTest",
+        ":app:assembleDebug"
+      ],
+      "startedAt": "2026-10-07T23:15:27.099041+00:00",
+      "freeBefore": 63755624448,
+      "nativeOperations": false,
+      "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+      "exitCode": 0,
+      "finishedAt": "2026-10-07T23:15:37.078156+00:00",
+      "freeAfter": 63760191488,
+      "apk": {
+        "bytes": 32777233,
+        "sha256": "c51c62af78b415c6408daa48a0c74a4acfa9cb526ca5568e983a5c9a1b4c0898"
+      },
+      "tests": [
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumStoryTest",
+          "tests": "6",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionStoreTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumSelectionTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.content.MuseumCatalogueTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        },
+        {
+          "name": "dev.local.lunamuseum.reproduction.ExampleUnitTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0"
+        }
+      ],
+      "build": "build-13",
+      "logOriginalSha256": "17c6ff2375315ca49ac48620e87d54ccc947a098c8f0c4d8224d5785ea73dfd7",
+      "apkDistributed": false
+    }
+  ],
+  "sdkDeclarationSources": [
+    {
+      "artifact": "com.pico.spatial.core:core:6.1.9:sources",
+      "sha256": "971d4c05f95649566495e4ba1dc9b55f57606372df8eb1014273eda0501155c2",
+      "bytes": 439451,
+      "use": "read-only operator declaration lookup; full JAR not supplied to model or sharing repo"
+    },
+    {
+      "artifact": "com.pico.spatial.ui:foundation:6.1.9:sources",
+      "sha256": "3961ddd8e110653c68edb56a02f9f14963fcd1c41818670b390cafad5a63e6d6",
+      "bytes": 195309,
+      "use": "read-only operator declaration lookup; full JAR not supplied to model or sharing repo"
+    },
+    {
+      "artifact": "com.pico.spatial.ui:platform:6.1.9:sources",
+      "sha256": "d39051031c44c3819d1da1dfbede69a55b5a5d97466238996262f4b3017bb264",
+      "bytes": 62708,
+      "use": "read-only operator declaration lookup; full JAR not supplied to model or sharing repo"
+    },
+    {
+      "artifact": "com.pico.spatial.ui:design:6.1.9:sources",
+      "sha256": "d117cc73260f05af6b623c84aeefcd8bb2e023f86424f3c138b0257b26c8c210",
+      "bytes": 213761,
+      "use": "read-only operator declaration lookup; full JAR not supplied to model or sharing repo"
+    },
+    {
+      "artifact": "com.pico.spatial.foundation:foundation:6.1.9:sources",
+      "sha256": "cb70f3485c9698d14600e58841e9c6cfbb2ee174f4785033173d6d2d7ac0ee39",
+      "bytes": 89576,
+      "use": "read-only operator EulerAngles declaration lookup; full JAR not supplied to model or sharing repo"
+    }
+  ],
+  "sourceFileCount": 11,
+  "artInput": "18 exhibit names only; no museum model payload or completed app code supplied",
+  "starterCommand": "pico-cli project create --sdk-type spatial --template volumetric --name luna-museum --package dev.local.lunamuseum.reproduction --sdk 6.1.9 --dir <EXPERIMENT_PROJECT> -- --offline",
+  "starterGeneratedFiles": 36,
+  "noNativeRuntimeAcceptance": true,
+  "reviewCorrection": "October 7 focused source review corrected the producer description of the auxiliary panel. Model responses, source bytes and build evidence remain unchanged."
+}

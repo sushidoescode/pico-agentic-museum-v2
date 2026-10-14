@@ -1,0 +1,43 @@
+{
+  "requestedModel": "gpt-5.6-luna",
+  "runner": "codex-cli 0.160.0",
+  "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+  "startedAt": "2026-10-07T23:14:56.453736+00:00",
+  "finishedAt": "2026-10-07T23:15:08.185628+00:00",
+  "exitCode": 0,
+  "inputBytes": 9564,
+  "inputSha256": "e1a7d82609ade341e125b0e575cd6d0472a75393d729500e2e9051ee684fb421",
+  "toolUseRequested": false,
+  "usage": [
+    {
+      "input_tokens": 18784,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1858,
+      "reasoning_output_tokens": 91
+    }
+  ],
+  "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+  "toolEventCount": 0,
+  "responseSha256": "28d35b471fbbd1963a47973dafacc2d69d92da4b895dd89d491808732dcb7c2c",
+  "responseFiles": [
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt",
+      "bytes": 1499,
+      "sha256": "c983dba78d4761565ec0716f02622d51020445d21da2d4010a6dcecf3b052e39"
+    },
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumRoomStage.kt",
+      "bytes": 5027,
+      "sha256": "baa82ddf3883ae166f1338e1fbaccca56362d603f5c09a230a5f8046d0b4ac8d"
+    }
+  ],
+  "promptWords": 24,
+  "contextBytes": 8883,
+  "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+  "privateRecordHashes": {
+    "events.jsonl": "bcf8d468a954fee6581c9dc4e4d48310470fcc47f8a8a8fe601368f5094c89c4",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "request.json": "079408933ad8f487b1e05c6f74e1c00ab40afa76fa239d9cd538b07cd5eb46f7"
+  }
+}

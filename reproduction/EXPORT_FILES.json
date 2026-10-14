@@ -1,0 +1,1122 @@
+{
+  "files": [
+    {
+      "path": "turns/turn-01/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-01/prompt.txt",
+      "originalSha256": "c7861b30240f88e172d7c553be9272e8f93d3807e0eead7056fbdc414a927433",
+      "originalBytes": 292,
+      "sha256": "c7861b30240f88e172d7c553be9272e8f93d3807e0eead7056fbdc414a927433",
+      "bytes": 292,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-01/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-01/full-input.txt",
+      "originalSha256": "588a3583375ee429d6a1cb8edf47705a67eed88ba31b15ac58033e842b7ea513",
+      "originalBytes": 8669,
+      "sha256": "588a3583375ee429d6a1cb8edf47705a67eed88ba31b15ac58033e842b7ea513",
+      "bytes": 8669,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-01/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-01/response.json",
+      "originalSha256": "00951bb6e06e0db8e9ebb982e6b043874e7499826f4aa4d7642cec79f461a216",
+      "originalBytes": 8878,
+      "sha256": "00951bb6e06e0db8e9ebb982e6b043874e7499826f4aa4d7642cec79f461a216",
+      "bytes": 8878,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-01/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-01/request.json",
+      "originalSha256": "1c77e43493d2bae03c8dcb36ea5f30e6d974a6e54ebb299d7c999e29092b97e9",
+      "originalBytes": 1499,
+      "sha256": "15f373f2254e1f9c92a599d4213c00594603b83dd22ca9412ac02f25d1e82199",
+      "bytes": 2104,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-02/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-02/prompt.txt",
+      "originalSha256": "619d87b88f11db93de483b25faa50996580798c4de36669bd4f7bd034e5a3710",
+      "originalBytes": 225,
+      "sha256": "619d87b88f11db93de483b25faa50996580798c4de36669bd4f7bd034e5a3710",
+      "bytes": 225,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-02/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-02/full-input.txt",
+      "originalSha256": "0faf6b4eb346e4e496b39e1f1d63f70a85a2a60e4fe99842b72fe66c11a607b0",
+      "originalBytes": 10881,
+      "sha256": "0faf6b4eb346e4e496b39e1f1d63f70a85a2a60e4fe99842b72fe66c11a607b0",
+      "bytes": 10881,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-02/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-02/response.json",
+      "originalSha256": "e6045f17b7b1eaf7ee51faced34cbd3de8b0dc44220dde7bbb1cab96c3e4f41c",
+      "originalBytes": 7455,
+      "sha256": "e6045f17b7b1eaf7ee51faced34cbd3de8b0dc44220dde7bbb1cab96c3e4f41c",
+      "bytes": 7455,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-02/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-02/request.json",
+      "originalSha256": "cc1cd5b03c0b10da0a6b922fb683ec83ff5355c29775db976f959321134832b4",
+      "originalBytes": 1500,
+      "sha256": "1148a0ebc44c817faecd7b8b18fe0ae9ba92663067002bf1d5c07f9cc4a7403c",
+      "bytes": 1677,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-03/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-03/prompt.txt",
+      "originalSha256": "01cb1dfb29629b6fd696a2017e248c3771047b4e5ca0aecc8304e69fe457a397",
+      "originalBytes": 187,
+      "sha256": "01cb1dfb29629b6fd696a2017e248c3771047b4e5ca0aecc8304e69fe457a397",
+      "bytes": 187,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-03/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-03/full-input.txt",
+      "originalSha256": "b3b4ca8b1dd7da22714ff33429cfa7134b2023d6ec8c955b0b4d30585b0d8b59",
+      "originalBytes": 9049,
+      "sha256": "b3b4ca8b1dd7da22714ff33429cfa7134b2023d6ec8c955b0b4d30585b0d8b59",
+      "bytes": 9049,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-03/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-03/response.json",
+      "originalSha256": "8092b5a948aca07b3358402662d2ce99377db1617056d5319a87088621f98e9f",
+      "originalBytes": 7433,
+      "sha256": "8092b5a948aca07b3358402662d2ce99377db1617056d5319a87088621f98e9f",
+      "bytes": 7433,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-03/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-03/request.json",
+      "originalSha256": "cff20bd7b05f3913f34b925bf4c753025de89ce72f6f88ec8e5e7de024c05bd8",
+      "originalBytes": 1499,
+      "sha256": "da4c0f6a7955f1baeef692e9b3443177aeba33f5b491fa8eb313c7dede37d7e9",
+      "bytes": 1675,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-04/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-04/prompt.txt",
+      "originalSha256": "301888c80e837000d8b5dd7b5ed8c6e255905b8bd91e9ac099a6442d84917387",
+      "originalBytes": 248,
+      "sha256": "301888c80e837000d8b5dd7b5ed8c6e255905b8bd91e9ac099a6442d84917387",
+      "bytes": 248,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-04/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-04/full-input.txt",
+      "originalSha256": "c525c91341d0b0a32ad06b7023b3f03981b48c18e51c51e668285d0f0f8abfcc",
+      "originalBytes": 12675,
+      "sha256": "c525c91341d0b0a32ad06b7023b3f03981b48c18e51c51e668285d0f0f8abfcc",
+      "bytes": 12675,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-04/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-04/response.json",
+      "originalSha256": "ebc60edd8d0589fb66ad1866c50f36224196551dd8fd2d4c33dd06104d808713",
+      "originalBytes": 1652,
+      "sha256": "ebc60edd8d0589fb66ad1866c50f36224196551dd8fd2d4c33dd06104d808713",
+      "bytes": 1652,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-04/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-04/request.json",
+      "originalSha256": "e4b9c414d6947d8f0824fb0e0550e6e9cadb9218e0a5b5ac818e316cd6825054",
+      "originalBytes": 1499,
+      "sha256": "2a4158b8079e4857e126a05f0a367e7b9df5971b5cb0f951cf03a01fc42dd11b",
+      "bytes": 1662,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-05/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-05/prompt.txt",
+      "originalSha256": "5841c3d7c6a8b72cdc1ab115abfe2b64c11b71f3ac06d37e10f7e0778e67c15b",
+      "originalBytes": 245,
+      "sha256": "5841c3d7c6a8b72cdc1ab115abfe2b64c11b71f3ac06d37e10f7e0778e67c15b",
+      "bytes": 245,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-05/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-05/full-input.txt",
+      "originalSha256": "9a4e44aa74ff00e0168d03c4f53a5f9076b54a20045c451e8136407794cb2d6d",
+      "originalBytes": 14249,
+      "sha256": "9a4e44aa74ff00e0168d03c4f53a5f9076b54a20045c451e8136407794cb2d6d",
+      "bytes": 14249,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-05/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-05/response.json",
+      "originalSha256": "b2579a9eb8ac78ee3c430e87a153262c0608e2be2ebe49e78a476cbbfd962a5e",
+      "originalBytes": 12678,
+      "sha256": "b2579a9eb8ac78ee3c430e87a153262c0608e2be2ebe49e78a476cbbfd962a5e",
+      "bytes": 12678,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-05/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-05/request.json",
+      "originalSha256": "7e51bb8caaa8c397339b3e1f6281b6018f769164a4fc6f09057747c95cd4f71e",
+      "originalBytes": 1500,
+      "sha256": "4f2ad7622f78ca54b154b08573baee12fa95ff06b6104ea4d86905b624c15570",
+      "bytes": 2522,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-06/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-06/prompt.txt",
+      "originalSha256": "7dce59a5585fac5eae37e15110e088d0be7d213966d0694c8c26123394b04a7a",
+      "originalBytes": 285,
+      "sha256": "7dce59a5585fac5eae37e15110e088d0be7d213966d0694c8c26123394b04a7a",
+      "bytes": 285,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-06/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-06/full-input.txt",
+      "originalSha256": "b6c340983bbc4f25a802eb9f3769bdbfa66df6f376bb32bf7d29121779712f5c",
+      "originalBytes": 17881,
+      "sha256": "b6c340983bbc4f25a802eb9f3769bdbfa66df6f376bb32bf7d29121779712f5c",
+      "bytes": 17881,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-06/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-06/response.json",
+      "originalSha256": "f7472ab375d90d6a9cd050c9bd8dd2548f925e09fb4bc4839b3571c3d6c463f6",
+      "originalBytes": 5823,
+      "sha256": "f7472ab375d90d6a9cd050c9bd8dd2548f925e09fb4bc4839b3571c3d6c463f6",
+      "bytes": 5823,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-06/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-06/request.json",
+      "originalSha256": "2a6b8d69c89c2c96cb2e02d52baed38181d515bc70d11874a08ffb27384d792c",
+      "originalBytes": 1500,
+      "sha256": "918add705f4b5301b131c32857550eb09d7e54dbd64f447833b91b1940e69613",
+      "bytes": 2121,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-07/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-07/prompt.txt",
+      "originalSha256": "c85db7707ee76f36a785f543d0bbab3fcc0a2b6e8bb6ca6a7fe680f6e472c923",
+      "originalBytes": 211,
+      "sha256": "c85db7707ee76f36a785f543d0bbab3fcc0a2b6e8bb6ca6a7fe680f6e472c923",
+      "bytes": 211,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-07/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-07/full-input.txt",
+      "originalSha256": "61c71ca08566144cdf4633da8061982afa263fb0f31fc1f5e1fcafe62939f6c0",
+      "originalBytes": 13442,
+      "sha256": "61c71ca08566144cdf4633da8061982afa263fb0f31fc1f5e1fcafe62939f6c0",
+      "bytes": 13442,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-07/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-07/response.json",
+      "originalSha256": "911df6d528d700451618c128d29fc4074533c0486d480a8916879a8684197234",
+      "originalBytes": 8005,
+      "sha256": "911df6d528d700451618c128d29fc4074533c0486d480a8916879a8684197234",
+      "bytes": 8005,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-07/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-07/request.json",
+      "originalSha256": "f55ae63e281a8da64fc5c4691bb9f3ca46354aa8360a37345810f41edf3d0022",
+      "originalBytes": 1499,
+      "sha256": "af4a8e6e3247ba4b33e2f95ed057393cd566db22ff2da856cb8970aeb15656b3",
+      "bytes": 1676,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-08/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-08/prompt.txt",
+      "originalSha256": "8e17493d6df04585128acea82eafd2bd44a259460807bd8609c643fe6377ed6b",
+      "originalBytes": 267,
+      "sha256": "8e17493d6df04585128acea82eafd2bd44a259460807bd8609c643fe6377ed6b",
+      "bytes": 267,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-08/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-08/full-input.txt",
+      "originalSha256": "3f7000f1942967e3625366d72a80e702121080760a6e92dea2206a4b6f7aa4a0",
+      "originalBytes": 17655,
+      "sha256": "3f7000f1942967e3625366d72a80e702121080760a6e92dea2206a4b6f7aa4a0",
+      "bytes": 17655,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-08/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-08/response.json",
+      "originalSha256": "52211113a0ef8b2fb9b6b5277f30b31686be14aef5df684f764ae30ee5aafef8",
+      "originalBytes": 19158,
+      "sha256": "52211113a0ef8b2fb9b6b5277f30b31686be14aef5df684f764ae30ee5aafef8",
+      "bytes": 19158,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-08/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-08/request.json",
+      "originalSha256": "12a8a77f195a4fc42aaf6b1bc3b83bd14b2874e7427ec48f8917336f32c7c841",
+      "originalBytes": 1505,
+      "sha256": "cff63f15dbe5f2c74e9bfa6b7e5cadf3599a616d591b88b855cdea49532d7124",
+      "bytes": 2317,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-09/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-09/prompt.txt",
+      "originalSha256": "1f909e6e1d318f794b577e31b224049b7bc4d95c03df6388109d667e0b4bb293",
+      "originalBytes": 312,
+      "sha256": "1f909e6e1d318f794b577e31b224049b7bc4d95c03df6388109d667e0b4bb293",
+      "bytes": 312,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-09/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-09/full-input.txt",
+      "originalSha256": "83dc8597c6d2cb657995f1db2c39b657f31082f6404e5ddc99d17027d2aeb960",
+      "originalBytes": 23685,
+      "sha256": "83dc8597c6d2cb657995f1db2c39b657f31082f6404e5ddc99d17027d2aeb960",
+      "bytes": 23685,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-09/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-09/response.json",
+      "originalSha256": "389488d787fc0a3bc0dc65abbeba318cb75b6b3b79e05e3105e3f2f3fa2f51bb",
+      "originalBytes": 21179,
+      "sha256": "389488d787fc0a3bc0dc65abbeba318cb75b6b3b79e05e3105e3f2f3fa2f51bb",
+      "bytes": 21179,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-09/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-09/request.json",
+      "originalSha256": "0255e61cd0ce305804bca2db5b4ff8c7a8f3821795a5415b30af2188627df83d",
+      "originalBytes": 1503,
+      "sha256": "e28b17f8c35d8f4850734c979de66e3987b3a091a91bd1329b04ebdef77d0aa8",
+      "bytes": 2315,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-10/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-10/prompt.txt",
+      "originalSha256": "fb6c9e8becb431059321812be67a2e66d832766a3fb3878658a3e4a621540505",
+      "originalBytes": 332,
+      "sha256": "fb6c9e8becb431059321812be67a2e66d832766a3fb3878658a3e4a621540505",
+      "bytes": 332,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-10/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-10/full-input.txt",
+      "originalSha256": "fc666d2ba7782c188b268da0d0070e775d37c28431ffa2aa790c6d3bc5ca7526",
+      "originalBytes": 27319,
+      "sha256": "fc666d2ba7782c188b268da0d0070e775d37c28431ffa2aa790c6d3bc5ca7526",
+      "bytes": 27319,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-10/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-10/response.json",
+      "originalSha256": "11c0a8699a46330246b5879315addba200e630dc90847481b157e4623a48f518",
+      "originalBytes": 21198,
+      "sha256": "11c0a8699a46330246b5879315addba200e630dc90847481b157e4623a48f518",
+      "bytes": 21198,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-10/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-10/request.json",
+      "originalSha256": "d8e0efa521111222bc0ca0f9580445c5939e81c4ebe8dcf60ae4ec33c5f1a80b",
+      "originalBytes": 1505,
+      "sha256": "9d58275abee1f4915f0e05a5cfbde55d21e2771bddecff94bbb3a52a9c77f3fe",
+      "bytes": 2533,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-11/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-11/prompt.txt",
+      "originalSha256": "3baa4e87ed3fc3a6cd50258ed96840c4eac7f7d703cdee60d214010f39e831cc",
+      "originalBytes": 208,
+      "sha256": "3baa4e87ed3fc3a6cd50258ed96840c4eac7f7d703cdee60d214010f39e831cc",
+      "bytes": 208,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-11/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-11/full-input.txt",
+      "originalSha256": "8b4e345e8f3f5b8addd38a0b15b89cd8150393caee6da7196b7a837a24ac3717",
+      "originalBytes": 23653,
+      "sha256": "8b4e345e8f3f5b8addd38a0b15b89cd8150393caee6da7196b7a837a24ac3717",
+      "bytes": 23653,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-11/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-11/response.json",
+      "originalSha256": "7f989c0845bfbc317975acde61c860961ae939ef5e595e5be91a4c556fb74c8e",
+      "originalBytes": 11429,
+      "sha256": "7f989c0845bfbc317975acde61c860961ae939ef5e595e5be91a4c556fb74c8e",
+      "bytes": 11429,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-11/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-11/request.json",
+      "originalSha256": "a2fe919bb58edd2594263a4158e2c8ee550f92b63fc79067e9d57f88815bd8f8",
+      "originalBytes": 1500,
+      "sha256": "466971a5b98930790f06b3f9c2744bb111dd01d9a5d57869023b722229856585",
+      "bytes": 2089,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-12/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-12/prompt.txt",
+      "originalSha256": "845333ee2004e5fb744d7bf7ae78a202d6645a3998250d7f7ae20ad986890b48",
+      "originalBytes": 246,
+      "sha256": "845333ee2004e5fb744d7bf7ae78a202d6645a3998250d7f7ae20ad986890b48",
+      "bytes": 246,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-12/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-12/full-input.txt",
+      "originalSha256": "b0c50de0389b9bdca5a617bfecea35fda0c700bbefc769a791dbc08b164c6d66",
+      "originalBytes": 15809,
+      "sha256": "b0c50de0389b9bdca5a617bfecea35fda0c700bbefc769a791dbc08b164c6d66",
+      "bytes": 15809,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-12/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-12/response.json",
+      "originalSha256": "cd72cfa5a5cd1d000c3bbbd6b8c97faa40c490cc4da75f0acd37688821001fd5",
+      "originalBytes": 14358,
+      "sha256": "cd72cfa5a5cd1d000c3bbbd6b8c97faa40c490cc4da75f0acd37688821001fd5",
+      "bytes": 14358,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-12/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-12/request.json",
+      "originalSha256": "96c006e9086d35b42f541be459b56ab99f1a5e3bceaf530e91627449ec2c6d5a",
+      "originalBytes": 1500,
+      "sha256": "3bdce1716a3b03589e2e6c80f9592c507b9f05c732cda211ccd12570857e3a77",
+      "bytes": 2302,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "turns/turn-13/prompt.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-13/prompt.txt",
+      "originalSha256": "261f1a6c8b6cab1dc722792f1ae01347edda9b3645d6879f1f6df0db94882477",
+      "originalBytes": 140,
+      "sha256": "261f1a6c8b6cab1dc722792f1ae01347edda9b3645d6879f1f6df0db94882477",
+      "bytes": 140,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-13/input.txt",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-13/full-input.txt",
+      "originalSha256": "e1a7d82609ade341e125b0e575cd6d0472a75393d729500e2e9051ee684fb421",
+      "originalBytes": 9564,
+      "sha256": "e1a7d82609ade341e125b0e575cd6d0472a75393d729500e2e9051ee684fb421",
+      "bytes": 9564,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-13/response.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-13/response.json",
+      "originalSha256": "28d35b471fbbd1963a47973dafacc2d69d92da4b895dd89d491808732dcb7c2c",
+      "originalBytes": 7042,
+      "sha256": "28d35b471fbbd1963a47973dafacc2d69d92da4b895dd89d491808732dcb7c2c",
+      "bytes": 7042,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "turns/turn-13/metadata.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "turn-13/request.json",
+      "originalSha256": "079408933ad8f487b1e05c6f74e1c00ab40afa76fa239d9cd538b07cd5eb46f7",
+      "originalBytes": 1498,
+      "sha256": "bdfa48cfcb250d1caeafeacb1b6c3b6cbec1a6a6fb90655f7c233073d9568a04",
+      "bytes": 1873,
+      "transforms": [
+        "select non-private metadata; omit absolute argv and thread IDs; add response/source hashes"
+      ]
+    },
+    {
+      "path": "final-source/app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt",
+      "evidenceClass": "model-authored-source",
+      "originalIdentity": "turn-13/response.json::app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt",
+      "originalSha256": "c983dba78d4761565ec0716f02622d51020445d21da2d4010a6dcecf3b052e39",
+      "originalBytes": 1499,
+      "sha256": "c983dba78d4761565ec0716f02622d51020445d21da2d4010a6dcecf3b052e39",
+      "bytes": 1499,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "final-source/app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+      "evidenceClass": "model-authored-source",
+      "originalIdentity": "turn-12/response.json::app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+      "originalSha256": "112afd0ccb1d0fd5079f99ebe550cfebe8de49afbdfb3578c3b2643eaa825e54",
+      "originalBytes": 4453,
+      "sha256": "112afd0ccb1d0fd5079f99ebe550cfebe8de49afbdfb3578c3b2643eaa825e54",
+      "bytes": 4453,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "final-source/app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+      "evidenceClass": "model-authored-source",
+      "originalIdentity": "turn-10/response.json::app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+      "originalSha256": "d72988701a097db2509b85304d09b7c6f8a05500dab6c08c060ea332d244b260",
+      "originalBytes": 9045,
+      "sha256": "d72988701a097db2509b85304d09b7c6f8a05500dab6c08c060ea332d244b260",
+      "bytes": 9045,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "final-source/app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumRoomStage.kt",
+      "evidenceClass": "model-authored-source",
+      "originalIdentity": "turn-13/response.json::app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumRoomStage.kt",
+      "originalSha256": "baa82ddf3883ae166f1338e1fbaccca56362d603f5c09a230a5f8046d0b4ac8d",
+      "originalBytes": 5027,
+      "sha256": "baa82ddf3883ae166f1338e1fbaccca56362d603f5c09a230a5f8046d0b4ac8d",
+      "bytes": 5027,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "final-source/app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelection.kt",
+      "evidenceClass": "model-authored-source",
+      "originalIdentity": "turn-12/response.json::app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelection.kt",
+      "originalSha256": "d72ef6d70a33df29e5ce897d20f092ed4eb3cc572f3cca5a2815eb47c893a451",
+      "originalBytes": 2153,
+      "sha256": "d72ef6d70a33df29e5ce897d20f092ed4eb3cc572f3cca5a2815eb47c893a451",
+      "bytes": 2153,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "final-source/app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStore.kt",
+      "evidenceClass": "model-authored-source",
+      "originalIdentity": "turn-06/response.json::app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStore.kt",
+      "originalSha256": "288933ba82e99097848e1b0b7f219de5ffd7638489ef7ccf01cdc7bca5ff8034",
+      "originalBytes": 476,
+      "sha256": "288933ba82e99097848e1b0b7f219de5ffd7638489ef7ccf01cdc7bca5ff8034",
+      "bytes": 476,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "final-source/app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumStory.kt",
+      "evidenceClass": "model-authored-source",
+      "originalIdentity": "turn-10/response.json::app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumStory.kt",
+      "originalSha256": "539829a5a27d56bdfaf86346db2f67afbe791202e835bdd6de0589fd4c82e3c1",
+      "originalBytes": 3929,
+      "sha256": "539829a5a27d56bdfaf86346db2f67afbe791202e835bdd6de0589fd4c82e3c1",
+      "bytes": 3929,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "final-source/app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumCatalogueTest.kt",
+      "evidenceClass": "model-authored-source",
+      "originalIdentity": "turn-10/response.json::app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumCatalogueTest.kt",
+      "originalSha256": "0ae970868d4adf3097abbcc9880f7c96ce3c073068dbd4a09ab6190665d48bb9",
+      "originalBytes": 757,
+      "sha256": "0ae970868d4adf3097abbcc9880f7c96ce3c073068dbd4a09ab6190665d48bb9",
+      "bytes": 757,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "final-source/app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStoreTest.kt",
+      "evidenceClass": "model-authored-source",
+      "originalIdentity": "turn-06/response.json::app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStoreTest.kt",
+      "originalSha256": "ca8c02cd592a4093be554640667a02e4aa8603a03368104238eb179babd262aa",
+      "originalBytes": 1258,
+      "sha256": "ca8c02cd592a4093be554640667a02e4aa8603a03368104238eb179babd262aa",
+      "bytes": 1258,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "final-source/app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionTest.kt",
+      "evidenceClass": "model-authored-source",
+      "originalIdentity": "turn-01/response.json::app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionTest.kt",
+      "originalSha256": "5f47c78a615a996bd2ac9844509e4c8367750011e8fed3cd9a8aa45be69f7dba",
+      "originalBytes": 1086,
+      "sha256": "5f47c78a615a996bd2ac9844509e4c8367750011e8fed3cd9a8aa45be69f7dba",
+      "bytes": 1086,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "final-source/app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumStoryTest.kt",
+      "evidenceClass": "model-authored-source",
+      "originalIdentity": "turn-09/response.json::app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumStoryTest.kt",
+      "originalSha256": "488654f3a5e29ebe4e4a5a98e3632ae095d91a23e805da0f71bea766383ca414",
+      "originalBytes": 2543,
+      "sha256": "488654f3a5e29ebe4e4a5a98e3632ae095d91a23e805da0f71bea766383ca414",
+      "bytes": 2543,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "checks/build-00-starter/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-00-starter/build.log",
+      "originalSha256": "befd8d77f4020b77bb9d2b9769efb36cb2bcb17dec54382e813b37d91c8d7a95",
+      "originalBytes": 2283,
+      "sha256": "befd8d77f4020b77bb9d2b9769efb36cb2bcb17dec54382e813b37d91c8d7a95",
+      "bytes": 2283,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "checks/build-00-starter/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-00-starter/result.json",
+      "originalSha256": "39a53ba8c99aa623f5bb93bd248c5104fd0f02bbdada0eeec2ce1f0095e843ef",
+      "originalBytes": 7168,
+      "sha256": "00c7855952563a2705cd4e447f962e123963502d090eddda25002fe1cff4a70d",
+      "bytes": 1039,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-01/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-01/build.log",
+      "originalSha256": "252fa7fd33862e35576e6856c29ff305541774c1280f84ca27c43ffef66f033a",
+      "originalBytes": 2659,
+      "sha256": "252fa7fd33862e35576e6856c29ff305541774c1280f84ca27c43ffef66f033a",
+      "bytes": 2659,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "checks/build-01/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-01/result.json",
+      "originalSha256": "bcd869b1af55477ff730e5307c1c130531e8332fd03325d4d10130a976332084",
+      "originalBytes": 7774,
+      "sha256": "8727b438959c9493ec93f0c3c3df91b986bccbe0375150fa161a918e583db292",
+      "bytes": 1208,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-02/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-02/build.log",
+      "originalSha256": "f4ef440c6ef3efea005e57d6b0000cfd9e9bd72e0015771e4e7aa1b0014affe5",
+      "originalBytes": 2903,
+      "sha256": "8e40956221c13828bd2faa9edd1677e2576811eb00ae669f370b8a69237eedb8",
+      "bytes": 2838,
+      "transforms": [
+        "replace host paths with placeholders"
+      ]
+    },
+    {
+      "path": "checks/build-02/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-02/result.json",
+      "originalSha256": "d2ca4e9ec94615fb722d583d81037c83ae4f58a8606f9ab6d5906091e3be45a2",
+      "originalBytes": 7310,
+      "sha256": "1081bafb2056bf6491a25ddfae6e7105d8c0be1894752c6904a82f78b9582558",
+      "bytes": 744,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-03/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-03/build.log",
+      "originalSha256": "55024333659da1711a56ff5be1f4c8433aa44717e91572b5efd31525774e68f7",
+      "originalBytes": 2670,
+      "sha256": "55024333659da1711a56ff5be1f4c8433aa44717e91572b5efd31525774e68f7",
+      "bytes": 2670,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "checks/build-03/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-03/result.json",
+      "originalSha256": "fff6b76ed48eb461acea4d00f7997393397f018b51d75680f1ba39dd9d781088",
+      "originalBytes": 7774,
+      "sha256": "cb36d2763bbff270801a51a0989767761dd4275de11e3b18fc38332207e7bcd9",
+      "bytes": 1208,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-04/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-04/build.log",
+      "originalSha256": "fff7937d61d9c941032b9c54ea1925deb761dfcddbc73d3690839b28b0c48d82",
+      "originalBytes": 4008,
+      "sha256": "426d49a53da98e77999774e676c9d8a3c224ca6d0dfc01b0220fd2e62fce112e",
+      "bytes": 3553,
+      "transforms": [
+        "replace host paths with placeholders"
+      ]
+    },
+    {
+      "path": "checks/build-04/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-04/result.json",
+      "originalSha256": "84c2e1c0c9e3dcd7060dac01ee0b752cf28642c93773ce44bec6ce68886ac529",
+      "originalBytes": 7311,
+      "sha256": "82b36b4b67ea45079058369c03b4c703dbaa372459ade9ea7f6c825cb6085dd6",
+      "bytes": 744,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-05/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-05/build.log",
+      "originalSha256": "13781914a67c9053b741d01851024df0f74b71b7d4098bdf1fafcd3ef579030e",
+      "originalBytes": 3282,
+      "sha256": "2782951f483b2d3ba64b3158b0b904207b2e178e8249e0bc6a7de5e62540cd59",
+      "bytes": 3087,
+      "transforms": [
+        "replace host paths with placeholders"
+      ]
+    },
+    {
+      "path": "checks/build-05/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-05/result.json",
+      "originalSha256": "0affc168ecc476bb8404fa837e1f3ec71f4777e4c32094c148f8deda2517a11f",
+      "originalBytes": 7962,
+      "sha256": "39e6d1701e8c4674f7471e08f24cdbb3514923f0ec56171068c22f1838f8cf52",
+      "bytes": 744,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-06/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-06/build.log",
+      "originalSha256": "131a286b7d05ed930afec940c707fccd164b30e37ea08b35cf27ed18884af726",
+      "originalBytes": 2670,
+      "sha256": "131a286b7d05ed930afec940c707fccd164b30e37ea08b35cf27ed18884af726",
+      "bytes": 2670,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "checks/build-06/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-06/result.json",
+      "originalSha256": "1706c2d9ffc92d08469ad27b8c55769fa3161b579bacf2402d1a642cab54e517",
+      "originalBytes": 8609,
+      "sha256": "563103bb13888a9bedcb637293d4ddcef69b00c14f3ddec08a4bd5965734dc24",
+      "bytes": 1390,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-07/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-07/build.log",
+      "originalSha256": "6f26c241c1d7b289c2a5d2cf3f5e0ca22688d72a3a50a1da3d58cd474c1ac55f",
+      "originalBytes": 2670,
+      "sha256": "6f26c241c1d7b289c2a5d2cf3f5e0ca22688d72a3a50a1da3d58cd474c1ac55f",
+      "bytes": 2670,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "checks/build-07/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-07/result.json",
+      "originalSha256": "9f688dd21e97ef39445c52d2bcbd2660bb7405f2655bf6fadb5734465ab9b5a8",
+      "originalBytes": 8609,
+      "sha256": "cf46bd1f798b68522b56e8243f4ec4dbe7909307035cb181a51ed5d7eb1014d3",
+      "bytes": 1390,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-08/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-08/build.log",
+      "originalSha256": "6bec87b4544ada19eae4684cff4460809821469de8fad91b6ee0e2efc0f7bf38",
+      "originalBytes": 2670,
+      "sha256": "6bec87b4544ada19eae4684cff4460809821469de8fad91b6ee0e2efc0f7bf38",
+      "bytes": 2670,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "checks/build-08/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-08/result.json",
+      "originalSha256": "d421bbde789a0728cb845617707bea713c99a1f199973ca57a66f388b49345ec",
+      "originalBytes": 9204,
+      "sha256": "ac38779f2fdb6fe6350f863bda7eb2eae91fc52c99ffbf6c76f1760f9bb04282",
+      "bytes": 1563,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-09/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-09/build.log",
+      "originalSha256": "62f720fa2791edd5ab887e82d697999300bc656b39e5e7ee7948b7037ff6b0cb",
+      "originalBytes": 2649,
+      "sha256": "62f720fa2791edd5ab887e82d697999300bc656b39e5e7ee7948b7037ff6b0cb",
+      "bytes": 2649,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "checks/build-09/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-09/result.json",
+      "originalSha256": "09a2a27c6f25ba9fc421a8559cc9e1e8c33c50f44a00f590a6ca27c91c69315a",
+      "originalBytes": 9204,
+      "sha256": "1e11c28fe2f477333d8b9695136541f25bc604beb948990a47aadbd6a81c9f69",
+      "bytes": 1563,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-10/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-10/build.log",
+      "originalSha256": "f44746c318163e83ece019ff8351917bc0e89619b8e271ab35e4376eb5e7a7b4",
+      "originalBytes": 2671,
+      "sha256": "f44746c318163e83ece019ff8351917bc0e89619b8e271ab35e4376eb5e7a7b4",
+      "bytes": 2671,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "checks/build-10/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-10/result.json",
+      "originalSha256": "c981a3ad126ca8fb2ac393f8dd11947d6b19535359675157cd8bd110f0d60b79",
+      "originalBytes": 9598,
+      "sha256": "26560bd3db25a5141a777578f063a9cc634143b7d258b09b03a6c692e7eed4e4",
+      "bytes": 1740,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-11/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-11/build.log",
+      "originalSha256": "8da434c3a063894aa7faea95b9c9c8a10a4f33dc2c81458713d8876f0c58d0f0",
+      "originalBytes": 3143,
+      "sha256": "359318c722a4a65fee548cd7a2b1a6eed8906c0f738db88c9a411b63cf688038",
+      "bytes": 3013,
+      "transforms": [
+        "replace host paths with placeholders"
+      ]
+    },
+    {
+      "path": "checks/build-11/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-11/result.json",
+      "originalSha256": "a792f5c210a07a6ea33371ca29639c129aac8de96ac2f4da49c1940f4a97b34c",
+      "originalBytes": 8815,
+      "sha256": "6a6e3fb82adda6bd2ee86480d760efda5a4d9533f54af69f1ee0194d74eb6191",
+      "bytes": 744,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-12/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-12/build.log",
+      "originalSha256": "6d3072ccb646993cad2917195235c83e6131afea7a83e1b6d063e43e22562d98",
+      "originalBytes": 3064,
+      "sha256": "fd9b3a3e5f8245f64927ccea814d4c11dcfa4913b0b673b5a9535e168d95753b",
+      "bytes": 2934,
+      "transforms": [
+        "replace host paths with placeholders"
+      ]
+    },
+    {
+      "path": "checks/build-12/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-12/result.json",
+      "originalSha256": "a4d74656ec2c9a4e6e8ac8e527883ababe08657574b27402ffd2374f40b9476e",
+      "originalBytes": 8815,
+      "sha256": "302d6a05d220171aaffe38cce41c391a0a792295e246a86365a5a4befe1822a6",
+      "bytes": 744,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "checks/build-13/build.log",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-13/build.log",
+      "originalSha256": "17c6ff2375315ca49ac48620e87d54ccc947a098c8f0c4d8224d5785ea73dfd7",
+      "originalBytes": 2649,
+      "sha256": "17c6ff2375315ca49ac48620e87d54ccc947a098c8f0c4d8224d5785ea73dfd7",
+      "bytes": 2649,
+      "transforms": [
+        "none"
+      ]
+    },
+    {
+      "path": "checks/build-13/result.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "build-13/result.json",
+      "originalSha256": "615997cd3812769278d2f6be36b6acb94b18e64063198f0772d63c689c142e7a",
+      "originalBytes": 9811,
+      "sha256": "129d2a964b646514a916df074f1f21f8480297166ca1b42df8c4d2a2baf3757b",
+      "bytes": 1740,
+      "transforms": [
+        "remove source input paths if present; add log hash and non-distribution flag"
+      ]
+    },
+    {
+      "path": "EXPERIMENT.json",
+      "evidenceClass": "derived-experiment-summary",
+      "originalIdentity": "experiment.json",
+      "originalSha256": "bcbb339d532a16a82f01a3d1824dd981d78834f730b21fb2f8de49c2fe2f2365",
+      "originalBytes": 7357,
+      "sha256": "159f959575c0e986b6518ed6f92097c94ca338bf4961fd2491096c686f85d557",
+      "bytes": 58624,
+      "transforms": [
+        "merge sanitized turn/build metadata, SDK coordinates and counts",
+        "Focused source review corrected text-companion versus 3D-inspector characterization and added placeholder-story limit; original private producer record retained."
+      ]
+    },
+    {
+      "path": "response-schema.json",
+      "evidenceClass": "experiment-evidence",
+      "originalIdentity": "response-schema.json",
+      "originalSha256": "a8c28fb14d3cbbd77fd9b1f212ac883f9887dc4edd4cb7441964f6c56a4b9787",
+      "originalBytes": 659,
+      "sha256": "a8c28fb14d3cbbd77fd9b1f212ac883f9887dc4edd4cb7441964f6c56a4b9787",
+      "bytes": 659,
+      "transforms": [
+        "none"
+      ]
+    }
+  ],
+  "note": "Original identities are private experiment-relative logical identifiers; source content is exact model output. Full CLI records and APKs remain private."
+}

@@ -1,0 +1,1 @@
+The room change has the attached coroutine compiler errors. Please fix them and make sure the room view has a nonzero size with an always-visible Leave button. Use an immersive room and keep opening or closing work tied to the view’s lifetime.

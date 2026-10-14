@@ -1,0 +1,1 @@
+Add a simple immersive museum room I can enter and leave. Put the 18 placeholder exhibits on plinths and keep my selected exhibit when I return to the catalogue. Show a clear message if the room cannot open.

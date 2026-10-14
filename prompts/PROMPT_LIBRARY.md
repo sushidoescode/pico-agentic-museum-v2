@@ -1,233 +1,249 @@
-# Prompt library
+# Requests you can build on
 
-Local teaching draft, 2026-09-28. These blocks are study/reuse material, not active instructions to operate the frozen museum. Run source exercises only in a disposable copy. Build/native steps require their own prerequisites and authorization; this package assigns neither. Historical target ownership and retry allowances are not carried into these examples. The current museum numeric retry remains spent 1/1, with single-attempt gates and durable holds.
+**Practice wording:** these short requests were written for the lessons. They are not saved messages from the original project or records of what a model actually produced. Read the [actual saved user messages](ACTUAL_USER_MESSAGES.md) separately. The older [historical collection](HISTORICAL_PROMPTS.md) contains both excerpts and reconstructions.
 
-“Verbatim retained excerpt” means the characters inside the block are unchanged contiguous text from a retained museum prompt, not the complete original conversation. “Sanitized brief” preserves task substance while removing private authority/context. “Condensed historical prompt” shortens an already-retained brief. “Reconstructed teaching prompt” is newly written from a finding and result, never a claim of exact historical words. No redacted-verbatim block is needed here: selected exact excerpts contain no private identifiers. Commentary outside each block is editorial.
+<a id="choose-a-route-then-use-one-prompt"></a>
 
-Original file hashes/revision are in [source notes](SOURCE_NOTES.md); exact-block hashes, source line ranges and original private packet hashes are retained in the private audit. [Prompt index](PROMPT_INDEX.md) maps these blocks to the lessons.
+## Use one request at a time
 
-## P00 — Bound the first native slice
+Start with [Before you begin](../lessons/PREPARE_TO_BUILD.md). Share the working starter text identified in setup, then keep your conversation up to date as you edit. Ask the assistant which additional file it needs rather than sending the whole project.
 
-Provenance: **verbatim retained excerpt**. Original museum source citation: `docs/MUSEUM_START_PROMPT.md` at the [frozen revision](SOURCE_NOTES.md).
+After each request, save the change, build and open the app, and try the check. If something goes wrong, report what you actually saw before asking for another feature. The [lesson index](PROMPT_INDEX.md) helps you choose where to start.
 
-```text
-Deliver a first native, emulator-first museum slice when the existing host and native prerequisites permit it:
+<a id="t01"></a>
 
-- A catalogue containing the three objects.
-- Clear selected-object details.
-- A supported 3D object representation adjacent to the catalogue.
-- An observable inspection action and reset.
-- A coherent initial layout using the canonical polish kit where supported.
-- Exact build identity, prompt/repair history and honestly classified review evidence.
-```
+## Describe your idea
 
-Use with L0/L1. The excerpt defines the intended result; it is not a record that the result already exists.
+Start with your own sketch or the museum idea below.
 
-## P01 — Require actual visual and interaction evidence
+> Help me plan a small museum with a tumbler, a robot vacuum and a smart speaker. I want to choose an object, read about it and see it in 3D.
 
-Provenance: **verbatim retained excerpt**. Original museum source citation: `docs/MUSEUM_START_PROMPT.md` at the [frozen revision](SOURCE_NOTES.md).
+**Try it:** Keep three choices, a description and a 3D view. Leave extra features for later.
 
-```text
-Build/verify output is not a visual pass. Open the captured frame, judge the claimed result and link it to the actual artifact, invocation and target. Retain refused and wrong-build captures as diagnostic evidence with their status intact. Bind interaction claims to actual observed actions, not an assumed click delivery. Do not convert a preview screenshot or reference-video sample into native evidence.
-```
+<a id="t02"></a>
 
-Use throughout. Require an artifact identity, evidence class and visible/action observation for each claim.
+## Understand your starter
 
-## P02 — Useful work while the native lane is held
+First open the official starter using [Before you begin](../lessons/PREPARE_TO_BUILD.md). Share the actual starter text named in setup.
 
-Provenance: **verbatim retained excerpt**. Original museum source citation: `docs/MUSEUM_START_PROMPT.md` at the [frozen revision](SOURCE_NOTES.md).
+> Here is the starter I can already run. Explain what it shows now and the smallest change we could make first.
 
-```text
-Continue useful lightweight work: review SDK declarations already present, map UI and entity responsibilities, refine the design preview within the approved core, prepare scoped native source when supported declarations are known, write exact prompts and acceptance cases, audit asset provenance and document build inputs.
-```
+**Try it:** Compare the explanation with the app you can see. Ask about one unfamiliar word if needed.
 
-Use with L0. Output is a labeled source-only checkpoint if no native work ran.
+<a id="t03"></a>
 
-## P03 — Freeze build inputs
+## Make three choices
 
-Provenance: **verbatim retained excerpt**. Original museum source citation: `docs/native/D1_PROMPTS_AND_ACCEPTANCE.md` at the [frozen revision](SOURCE_NOTES.md).
+Continue with that working starter and your short museum idea.
 
-```text
-Record the resolved compile and runtime dependency trees as frozen
-files beside the build receipt, separately from the host SDK tool identities, with the Kotlin, AGP
-and Compose versions actually compiled with; the host Kotlin 2.0.0 fixture is not compilation
-evidence. Record the APK SHA-256, size and ABI.
-```
+> Add choices for a tumbler, a robot vacuum and a smart speaker. When I choose one, show its name and a short description.
 
-Use with L1. This excerpt is from the retained D1A prompt; host fixture and app compilation must remain separate.
+**Try it:** Build and open the app. Choose each object and check its name and description.
 
-## P04 — Verify declarations before compiling
+<a id="t04"></a>
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `docs/native/D1_PROMPTS_AND_ACCEPTANCE.md; evidence/native-hold-001/prompts/AGENT_PROMPTS.md` at the [frozen revision](SOURCE_NOTES.md).
+## Show the matching object
 
-```text
-Inspect the staged museum UI against the pinned SDK source declarations and polish module. For every external call verify package, visibility, receiver scope, parameter names, units and failure behavior. Pay special attention to RowScope/ColumnScope weight, SpatialView initialization/update/disposal, and resource factories. Report a concrete source location and declaring member for each mismatch. Repair only confirmed defects in a disposable teaching copy, then state which source remains uncompiled. Pure reducer tests are not UI compilation evidence.
-```
+Get the three models from the [model-copying guide](../curriculum/ADD_MODELS.md), put them in your project and share their locations.
 
-The historical check found an invalid weight import and resource/unit concerns; this wording is newly written.
+> Show the matching 3D object when I choose the tumbler, vacuum or speaker. Keep its name and description beside it.
 
-## P05 — Review a source-only checkpoint
+**Try it:** Choose each object. Its model and description should match; a box standing in for a model does not finish this check.
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `docs/D0_CHECKPOINT.md; docs/native/D1_PROMPTS_AND_ACCEPTANCE.md` at the [frozen revision](SOURCE_NOTES.md).
+<a id="t05"></a>
 
-```text
-Review the checkpoint read-only. Compare every completion, test and native claim with the retained artifacts. Check input identities, digest ordering, source-versus-built language, staged-file/architecture agreement and missing acceptance cases. Return only concrete findings with source locations and the minimum correction. Preserve historical tags and correct inaccurate wording forward. Explicitly list what no available artifact can establish.
-```
+## Turn and reset
 
-Useful output: a ranked, bounded finding list, not another broad project redesign. D0 repairs were applied in-session; a separate historical repair prompt was not issued.
+Use the tumbler to make a change in direction easy to see.
 
-## P06 — Repair readability from an opened frame
+> Let me turn the object left or right a little at a time. Add Reset to bring it back to the front.
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `docs/lessons/lesson-1/WALKTHROUGH.md` at the [frozen revision](SOURCE_NOTES.md).
+**Try it:** The handle moves when you turn it; Reset faces it forward without choosing another object. The original museum used twelve equal steps for a full turn.
 
-```text
-Compare the first admitted native frame with the intended catalogue/details/study layout. State which text is readable, which controls clip and whether the object can actually be seen. Trace scale and window-size settings to the pinned declarations. Propose one bounded layout change, preserve the old frame, and judge the changed build from its own opened frame. Do not interpret room geometry seen through glass as app chrome without checking it.
-```
+<a id="t06"></a>
 
-Expected historical lesson: dynamic scale and a taller window improved the view; the base-panel assumption was corrected.
+## Make it easier to see
 
-## P07 — Diagnose an ineffective click
+Try these options after the three-object screen works.
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `evidence/d1b-emulator-001/INTERACTIONS.md; docs/lessons/lesson-1/WALKTHROUGH.md` at the [frozen revision](SOURCE_NOTES.md).
+> Make the background less see-through and offer stronger contrast. Also add an option to reduce movement.
 
-```text
-The intended Turn right action left the scene unchanged. Compare the actual event landing, receiving window and Museum marker with the intended control. Keep the ineffective input. Do not count a delivered request as an action or repeat old screen coordinates after a pose change. In an authorized input lane, derive the mapping from observed landings, hover, then record one bounded action and its after-state. Report the input route and remaining limits.
-```
+**Try it:** Read the labels with each option on and off. You will check reduced movement again when you add stories and spinning.
 
-The retained L1 misses led to a run-specific mapping; this prompt is not permission to operate the inherited target.
+<a id="t07"></a>
 
-## P08 — Share state across a companion
+## Open a second window
 
-Provenance: **sanitized brief**. Original museum source citation: `docs/native/CORE_L2_L3.md; docs/lessons/lesson-2/WALKTHROUGH.md` at the [frozen revision](SOURCE_NOTES.md).
+Continue with your three-object app. Share the latest code when asked.
 
-```text
-Extend the accepted catalogue with one optional companion. Give the process one MuseumController created before window launch; pass it to both roots. Both windows must read and change the same selection, study orientation, saved objects and preferences. Repeated open focuses the existing fixed id/tag. Closing destroys presentation, not logical museum state; reopening reads current state. Count actual attach/detach events and test duplicate open and changes while closed. Preserve the original one-window route.
-```
+> Add a button that opens a small second window about the object I chose. Opening it again should bring back the same window.
 
-Derived from the retained core brief and actual continuation task; private ownership/target instructions are omitted. It is not verbatim.
+**Try it:** Both windows name the same object. Opening again leaves one small window, not several.
 
-## P09 — Repair companion placement
+<a id="t08"></a>
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `evidence/l2-workspace-001/PLACEMENT.md` at the [frozen revision](SOURCE_NOTES.md).
+## Share choices and saved objects
 
-```text
-A companion reports attached but is missing from the forward frame. Inspect the solver transform, dimensions, world scale and focus state. Distinguish off-view placement from failed creation. Compare bounded placement candidates against opened frames; keep the failed candidates and avoid negative offsets shown invalid in this run. Prefer a legible companion with reachable primary edges, and prove shared-state agreement by focusing each without changing state. Scope any placement conclusion to the tested view.
-```
+Use the main and small windows together.
 
-Historical iterations ended with an 880×480×400 dp companion at default placement; this is not a universal placement guarantee.
+> Let me choose and turn an object from either window, and add Keep to save it. Both windows should show the same choice and whether I have saved it.
 
-## P10 — Review workspace lifecycle
+**Try it:** Choose and turn an object from each window. Press Keep and check that both show it as saved.
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `evidence/l2-workspace-001/REVIEW.md` at the [frozen revision](SOURCE_NOTES.md).
+<a id="t09"></a>
 
-```text
-Read the shared-state change and pinned window APIs. Check one owner per process, stable container identity, no per-window logical cache, attach/detach accounting and persistence boundaries. Simulate close, selection while closed and reopen. Check that a marker covers saved-state agreement as well as selection. State whether each result is host logic, platform observation or untested. Do not treat the disappearance of an occluded window as state loss.
-```
+## If reopening shows the wrong object
 
-The historical review had minor findings carried into L3; this is a teaching reconstruction, not its exact reviewer text.
+First close the small window, choose another object and reopen it. Use this follow-up only if your result matches; otherwise describe what you actually saw.
 
-## P11 — Implement three reusable stories
+> I closed the small window, chose the vacuum and reopened it, but it still shows the tumbler. Please show my current choice.
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `docs/lessons/lesson-3/STORY_DESIGN.md; docs/lessons/lesson-3/WALKTHROUGH.md` at the [frozen revision](SOURCE_NOTES.md).
+**Try it:** Repeat the same steps. The reopened window should show your latest choice.
 
-```text
-Use one StoryReducer and one presenter for the tumbler, vacuum and speaker. Define each miniature as props with three chapter poses and chapter copy. Reveal opens/focuses the companion; Next/Back are bounded; Restart changes only the chapter; repeated Reveal keeps the current chapter; a new story-capable selection begins at chapter one. Preserve the primary study. Animate from current poses over the specified transition or snap to the same endpoints under Reduce motion. Own and dispose each scene's entities and log arrival only after scene creation.
-```
+<a id="t10"></a>
 
-Assess all nine end states and distinguish composition logic from animation observations. In the current catalogue only these three have stories.
+## Begin the vacuum story
 
-## P12 — Fix Return without undoing the visitor
+Share the vacuum’s chapter words from the [story words below](#story-words-to-copy).
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `evidence/l3-story-001/REVIEW.md` at the [frozen revision](SOURCE_NOTES.md).
+> Tell the vacuum’s story in the small window, starting with its first chapter. Show a little scene with the vacuum, a chair and a crumb.
 
-```text
-Reproduce this logical sequence: enter a story from a turned study, Reset the primary while the story is open, then Return. The visitor's Reset must survive. Since the story does not change study state, make Return clear only the story rather than restore entry state. Add a regression for both untouched and deliberately changed study context. Recheck the changed path in the authorized native lane if available; keep host-only cases labeled.
-```
+**Try it:** The small window shows Routine and a little scene; the main window still shows the vacuum.
 
-The retained build-003 native recheck showed Reset surviving Return; exact historical repair wording is unavailable.
+<a id="t11"></a>
 
-## P13 — Report motion review honestly
+## Move through the chapters
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `evidence/l3-story-001/motion/MOTION.md; evidence/l3-story-001/REVIEW.md` at the [frozen revision](SOURCE_NOTES.md).
+Continue with the first scene and the vacuum’s three chapter texts.
 
-```text
-For each retained recording name the build, action, interval and review method. Separate frames actually looked at from frames only measured numerically. Compare animated and reduced-motion endpoints, check whether motion stops, and identify any clipping or collision visible in the inspected frames. Use full timestamped frame sequences only when every claimed frame was actually examined. Do not infer smoothness, hardware FPS or wearer comfort from a change metric. Mark interrupted transitions and mid-flight Reduce motion as host-only unless separately exercised.
-```
+> Let me go forward and back through the three chapters, with a different little scene for each. Add ways to restart the story and return to the object.
 
-Initial L3 review used sampled contact sheets plus every-frame numerical analysis; one reopen interval was later fully inspected.
+**Try it:** Try Routine, Boundary and Human trace, then go back, restart and return.
 
-## P14 — Expand the museum coherently
+<a id="t12"></a>
 
-Provenance: **sanitized brief**. Original museum source citation: `docs/lessons/lesson-4/EARTH_COLLECTION_DESIGN.md; docs/lessons/lesson-4/WALKTHROUGH.md` at the [frozen revision](SOURCE_NOTES.md).
+## Tell the other two stories
 
-```text
-Grow the accepted museum to eighteen distinct everyday objects in three curatorial bays. Preserve the original ids, saved state and three stories. Keep factual identification visibly separate from fictional interpretation. Use one registry for metadata/model/thumbnail paths. Add a separate Open in 3D inspector and a Blender-authored Full Space archive with explicit entry and an obvious Return. The approved concept is art direction, not a scale-accurate blueprint or native evidence. Preserve the windowed museum while adding the visit.
-```
+Share the tumbler and speaker’s words from the [story words below](#story-words-to-copy).
 
-Sanitized from the private expansion direction and retained museum design. No private source names, targets or correspondence are included.
+> Give the tumbler and speaker their own three-part stories using these words. Choosing a different object should start its story from the beginning.
 
-## P15 — Bound the art implementer
+**Try it:** Try all three chapters for each object. Changing objects starts the new story; closing and reopening keeps your place.
 
-Provenance: **condensed historical prompt**. Original museum source citation: `docs/lessons/lesson-4/RUNBOOK.md` at the [frozen revision](SOURCE_NOTES.md).
+<a id="t13"></a>
 
-```text
-Own the exhibit/room authoring pipeline, provenance manifest and designated runtime asset directories. Use deterministic Blender scripts and one explicit export-settings block. Runtime convention: metres, +Y up, front +Z, base y=0, declared real size. Begin with two representative exhibits and one room segment for native inspection before finishing the set. Do not derive from assets whose terms forbid it, bake trademarks or text into textures, or upload private references. Record source identity, permission qualification, processing and final hashes for each output.
-```
+## Reduce story movement
 
-Condensed again from the runbook’s already-condensed art brief; not an exact original worker prompt. Fourteen originals, three processed references and the earlier Tripo vessel are distinct provenance classes.
+Try the same chapter change with Reduce motion off and on.
 
-## P16 — Bound the app implementer
+> When I turn on Reduce motion, change chapters without moving the scene around. Keep the same objects and story words.
 
-Provenance: **condensed historical prompt**. Original museum source citation: `docs/lessons/lesson-4/RUNBOOK.md` at the [frozen revision](SOURCE_NOTES.md).
+**Try it:** Watch the change itself. Both versions should finish with the same scene and words.
 
-```text
-Own the registry, catalogue, study, inspector and archive state hooks; leave Stage integration to the integrating root. The grid uses thumbnails, not hidden 3D models. Load only the selected model, cancel obsolete work and name per-item errors. Inspector opens as an alternative auxiliary window: close the other role, observe detach, then open; repeat activation focuses. Spin is opt-in, frame-driven and off under Reduce motion. Keep inspector presentation separate from study orientation. Test pure logic and expose markers for integration.
-```
+<a id="t14"></a>
 
-Condensed from the retained runbook. The one-auxiliary policy later gained explicit opening/closing-state handling.
+## Add more objects
 
-## P17 — Repair resource and window timing defects
+Use [Add the rest of the museum](../curriculum/EXPAND_MUSEUM.md) to copy the models and pictures. Start with the coffee pod, delivery box and face mask; share their [collection words](../curriculum/EXPAND_MUSEUM.md#copy-the-collection-words) and locations in your project.
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `evidence/earth-collection-001/REVIEW.md; docs/lessons/lesson-4/WALKTHROUGH.md` at the [frozen revision](SOURCE_NOTES.md).
+> Add these three objects to the museum, using their pictures, models and descriptions. Keep the first three objects working.
 
-```text
-Inspect model ownership and pending window operations before proposing a cleanup. Distinguish an absent asset from one that exists but is compressed. For stored GLBs, use the supported descriptor loader and close the descriptor when loading finishes or cancels. Verify all expected APK model entries and bytes. Model auxiliary requests that arrive before attach or before detach; assert no competing auxiliary attaches. Move the archive view while loading instead of waiting for final initialization. Report timing fixes as host-only where the input route cannot reproduce them.
-```
+**Try it:** Check six recognizable choices, then add more in small batches until there are eighteen.
 
-Expected checks target observed handle growth and confirmed review scenarios. They do not prove all native memory is released.
+<a id="t15"></a>
 
-## P18 — Make search submission testable
+## Find an object
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `evidence/demo-hardening-001/README.md` at the [frozen revision](SOURCE_NOTES.md).
+Use the expanded collection; save an object before trying Saved.
 
-```text
-Inspect the pinned SDK search field and the current field's keyboard contract. The modal keyboard blocks touch controls, so adding a touch-only Done button is not a demonstrated solution. Use a supported single-line search action, preserve query/results and retain the eight-second idle fallback. Log the submission route. Verify only through an authorized input lane and identify whether text/Enter were injected or typed by a person. Do not change system keyboard or account settings.
-```
+> Help me find objects by name or collection section. Let me show only the objects I have saved.
 
-Build-008 demonstrated Enter using injected key events; host-person typing and headset keyboard behavior remain unestablished.
+**Try it:** Try each section, a saved object and a search with no matches. Clearing the search brings the list back.
 
-## P19 — Bound memory conclusions
+<a id="t16"></a>
 
-Provenance: **reconstructed teaching prompt**. Original museum source citation: `evidence/demo-hardening-001/README.md` at the [frozen revision](SOURCE_NOTES.md).
+## Open a closer 3D view
 
-```text
-Read existing ownership and memory observations first. Compare one declared warm-up and at most five authorized enter/return cycles with the same artifact, identities, idle periods and scene state. Confirm that each intended visit actually entered the archive; retain any void series. Record PSS categories and relevant handles separately from entity-invalidity markers. Report continued growth, plateau or an inconclusive interval exactly. Do not restart between visits, force GC, infer GPU memory from file sizes, or assign an SDK cause without evidence.
-```
+Choose the scooter so you can see its different sides.
 
-The controlled retained series used build-007. Build-008 added entity-invalidity logging. Outcome remained unknown; this is teaching text, not a new test assignment.
+> Let me open the selected object in its own 3D window with turn, reset and close buttons. Close the small information window when I do this.
 
-## P20 — Repair provenance helpers before first use
+**Try it:** Turn, reset and close it. Keep one extra window open, and keep the same selection when it closes.
 
-Provenance: **verbatim retained excerpt**. Original museum source citation: `docs/native/D1_PROMPTS_AND_ACCEPTANCE.md` at the [frozen revision](SOURCE_NOTES.md).
+<a id="t17"></a>
 
-```text
-1. Bind kit identity to the actual build using retained log digests and matching checks immediately before and after the build. A previously successful log alone is insufficient.
+## Start and stop spinning
 
-2. Anchor receipt Git identity to the museum repository, independently of the caller's working directory. Require the dependency, tool, successful-build and APK package/ABI evidence needed for real D1A completion. Keep fixture results explicitly distinguished.
+Continue with the separate 3D view.
 
-3. Refuse to overwrite an existing receipt.
-4. Validate all overlay prerequisites and existing state before writing. A missing later anchor must leave the target unchanged; refuse unrecognized partial states.
-```
+> Let me start and pause the object spinning. Keep it still until I ask, and stop it when Reduce motion is on.
 
-Exact excerpt of the retained D1A helper-correction prompt. The historical correction used focused fixtures; fixture receipts remained distinct from real host-build evidence.
+**Try it:** It begins still. Spin starts movement; Pause or Reduce motion stops it.
 
+<a id="t18"></a>
+
+## Enter the room
+
+Follow [Bring in the room](../curriculum/EXPAND_MUSEUM.md#bring-in-the-room) to copy the two room files. Share the layout text and the room model’s location in your project.
+
+> Let me enter this room and see one exhibit. Keep a button for returning to the collection easy to find.
+
+**Try it:** Enter, find one exhibit and return before filling the room.
+
+<a id="t19"></a>
+
+## Fill the room
+
+Use the supplied room layout and all eighteen models.
+
+> Put all eighteen objects in the room and let me visit its three areas. I want to get closer to an object and open its 3D view.
+
+**Try it:** Visit each area, look closely at an object and return. Only the original three objects offer stories.
+
+<a id="repair-examples"></a>
+
+## Follow up on what you see
+
+Use a follow-up only after seeing the problem. Share your screenshot or exact steps, and use your own object names.
+
+### If words or buttons do not fit
+
+> The text is too small and the bottom button is cut off. Make everything readable and keep all the buttons in view.
+
+### If a window is missing
+
+> The second window opened, but I cannot see it. Help me bring it into view without hiding the main window.
+
+### If returning undoes your change
+
+> I pressed Reset while reading the story, but returning brought back the old angle. Keep the change I made.
+
+### If the keyboard blocks the buttons
+
+> After searching, the keyboard covers the buttons and will not close. Help me get back to the collection.
+
+### If an explanation is confusing
+
+> This explanation is too technical for me. Explain it using what I can see on the screen.
+
+## Story words to copy
+
+Copy the three rows for the object you are working on. These words come from the [original museum’s collection](../source/snapshots/L3-complete/native/app/src/main/java/dev/local/everydayfutures/museum/catalogue/Catalogue.kt).
+
+| Object | Chapter | Words |
+| --- | --- | --- |
+| Tumbler | Ritual | A refill marks a pause. Small repeated gestures give a day its shape. |
+| Tumbler | Signal | An ordinary object becomes a recognizable badge. What we carry can say who we hope to be. |
+| Tumbler | Afterlife | The ritual ends; the object remains. What would you want the next visitor to understand? |
+| Robot vacuum | Routine | The morning route begins beneath a chair. A crumb becomes a record of breakfast. |
+| Robot vacuum | Boundary | Furniture makes islands and doorways make borders. The machine travels through a geography we barely notice. |
+| Robot vacuum | Human trace | The route becomes a portrait. The most ordinary movements leave a pattern worth preserving. |
+| Smart speaker | Invitation | A voice crosses a room. The object waits at the edge of attention. |
+| Smart speaker | Connection | One small request opens into a network of distant systems. Convenience makes that distance feel invisible. |
+| Smart speaker | Silence | When the connection falls quiet, the room returns. Which parts of the ritual did the object really own? |
+
+## What happened in the original project
+
+The original work encountered small text, an awkwardly placed companion, Return undoing a newer viewing angle, and a keyboard that blocked controls. The lesson pages explain those events and show available pictures. The follow-ups above are possible ways to describe your own experience, not quotations from those repairs.
+
+[Choose a lesson](PROMPT_INDEX.md) · [Read the original technical accounts](../curriculum/COURSE_MAP.md)

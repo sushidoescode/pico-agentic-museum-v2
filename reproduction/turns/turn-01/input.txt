@@ -1,0 +1,176 @@
+This is a text-only chat recreation experiment. Do not call tools, read files, browse, run commands, or edit files. Use only the attached text. A human-style harness will manually apply your returned files and run checks. Return complete contents of only changed/new project files in the requested JSON shape, using project-relative paths. Do not claim the app was run or tested. Preserve the supplied package and Gradle versions.
+
+TEACHING PROMPT (operator-authored ordinary language, not an actual historical human message):
+Turn this empty PICO starter into a small museum with a handled cup, a robot vacuum and a smart speaker. Let me select an object, read a short description, and turn or reset its 3D view. Simple colored shapes are fine for this first version. Include small unit tests for selection and reset.
+
+ATTACHMENTS:
+Attachments supplied by experiment operator: official generated starter, not the completed museum. SDK BOM 6.1.9; use built-in SpatialUI Button/Text under PicoTheme, not Material/Material3. No external polish module or generated/reference models are supplied. Primitive stand-ins are intentional.
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt ---
+package dev.local.lunamuseum.reproduction
+
+import dev.local.lunamuseum.reproduction.content.HomeVolume
+import com.pico.spatial.ui.design.PicoTheme
+import com.pico.spatial.ui.foundation.dsl.DefaultWindowContainer
+import com.pico.spatial.ui.foundation.dsl.SpatialAppScope
+
+fun mainApp(scope: SpatialAppScope) =
+    with(scope) {
+        DefaultWindowContainer {
+            PicoTheme {
+                HomeVolume()
+            }
+        }
+    }
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.pico.spatial.core.ecs.Entity
+import com.pico.spatial.core.ecs.TransformComponent
+import com.pico.spatial.core.math.EulerAngles
+import com.pico.spatial.core.math.Vector3
+import dev.local.lunamuseum.reproduction.R
+import com.pico.spatial.ui.design.PicoTheme
+import com.pico.spatial.ui.design.Text
+import com.pico.spatial.ui.foundation.content.SpatialView
+import com.pico.spatial.ui.foundation.material.backgroundMaterial
+import com.pico.spatial.ui.platform.Material
+
+@Composable
+fun HomeVolume() {
+    // Add your own Spatial content here
+
+}
+
+--- app/build.gradle.kts ---
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.compose.compiler)
+}
+
+android {
+    namespace = "dev.local.lunamuseum.reproduction"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "dev.local.lunamuseum.reproduction"
+        minSdk = 35
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        ndk { abiFilters.add("arm64-v8a") }
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+    buildFeatures {
+        compose = true
+    }
+}
+
+dependencies {
+    implementation(libs.androidx.core.ktx)
+    implementation(platform(libs.spatial.bom))
+    implementation(libs.spatial.core)
+    implementation(libs.spatial.ui.platform)
+    implementation(libs.spatial.ui.foundation)
+    implementation(libs.spatial.ui.design)
+    implementation(libs.spatial.ui.sense)
+    implementation(libs.spatial.ui.tracking)
+    implementation(libs.androidx.ui.tooling)
+    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.appcompat)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    debugImplementation(libs.androidx.ui.tooling.preview)
+}
+
+configurations.all {
+    resolutionStrategy {
+        exclude("androidx.compose.ui", "ui")
+        exclude("androidx.compose.ui", "ui-graphics")
+        exclude("androidx.compose.ui", "ui-text")
+        exclude("androidx.compose.foundation", "foundation")
+    }
+}
+
+--- gradle/libs.versions.toml ---
+[versions]
+agp = "8.13.2"
+kotlin = "2.1.20"
+coreKtx = "1.13.0"
+spatialBom = "6.1.9"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+annotation = "1.7.0"
+appcompat = "1.6.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+spatial-bom = { group = "com.pico.spatial", name = "bom", version.ref = "spatialBom" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+spatial-core = { group = "com.pico.spatial.core", name = "core" }
+spatial-foundation = { group = "com.pico.spatial.foundation", name = "foundation" }
+spatial-ui-platform = { group = "com.pico.spatial.ui", name = "platform" }
+spatial-ui-foundation = { group = "com.pico.spatial.ui", name = "foundation" }
+spatial-ui-design = { group = "com.pico.spatial.ui", name = "design" }
+spatial-ui-sense = { group = "com.pico.spatial.sense", name = "sense" }
+spatial-ui-tracking = { group = "com.pico.spatial.tracking", name = "tracking" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+--- SDK declaration digest (operator-extracted facts from locally resolved 6.1.9 source JARs; not application code) ---
+com.pico.spatial.ui.foundation.content.SpatialView is @Composable:
+fun SpatialView(modifier: Modifier = Modifier, update: ((content: SpatialViewContent, attachments: SpatialViewAttachments) -> Unit)? = null, attachments: (AttachmentPanelBuilder.() -> Unit)? = null, initial: suspend (content: SpatialViewContent, attachments: SpatialViewAttachments) -> Unit)
+SpatialViewContent.addEntity(entity) adds a root entity. The initial callback is suspend; update reads changing Compose state.
+com.pico.spatial.core.ecs.Entity has addChild(Entity): Boolean and destroy(recursively: Boolean = true): Boolean.
+com.pico.spatial.core.ecs.ModelEntity(mesh: MeshResource, material: Material) extends Entity.
+com.pico.spatial.core.ecs.resource.MeshResource.createBox(size: Vector3, cornerRadius: Float = 0F): MeshResource
+MeshResource.createSphere(radius: Float): MeshResource
+MeshResource.createCylinder(height: Float, radius: Float): MeshResource
+com.pico.spatial.core.ecs.resource.UnlitMaterial.create(): UnlitMaterial; setBaseColor(color: com.pico.spatial.core.math.Color4)
+com.pico.spatial.core.ecs.TransformComponent() or TransformComponent(position: Vector3, rotation: EulerAngles, scale: Vector3).
+TransformComponent has mutable position: Vector3, eulerAngles: EulerAngles, scale: Vector3. Entity components are indexed by class: entity.components[TransformComponent::class.java].
+Vector3(x: Float, y: Float, z: Float); EulerAngles(pitch: Float, yaw: Float, roll: Float); Color4(red: Float, green: Float, blue: Float, alpha: Float).
+SpatialUI Button(onClick = { ... }) { Text("caption") }; imports com.pico.spatial.ui.design.Button and Text. Typography/theme defaults may be used. No fixed app colors are needed for 2D controls. 3D primitive materials may have authored colors.
+Use ordinary JUnit 4 tests on pure Kotlin behavior; PICO entities need runtime, so don't instantiate them in JVM unit tests.

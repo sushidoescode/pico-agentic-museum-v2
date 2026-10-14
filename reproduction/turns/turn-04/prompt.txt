@@ -1,0 +1,1 @@
+Add a companion window that shows the same selected object and lets me select, turn and reset it too. Closing and reopening the companion should keep my current selection and angle. Please include tests for sharing the state between the two views.

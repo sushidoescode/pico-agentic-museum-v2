@@ -1,0 +1,67 @@
+{
+  "scope": "Four exact excerpts from two saved user-role messages about testing and improving the museum. The three October 13 excerpts share one later feedback message; not separate successive prompts or a complete development transcript.",
+  "checkedDate": "2026-10-13",
+  "editorialRevision": 2,
+  "messages": [
+    {
+      "id": "saved-01",
+      "dateUtc": "2026-09-28T06:55:16.056Z",
+      "sourceRole": "user",
+      "sourceMessageSha256": "8a9d158b78e383c771eeedca6144edcf4f8b1aa72a62b5146ec38fe0d065a946",
+      "sourceRecordSha256": "ad509bf26cc94b58748ed5f9da277b0f5759026c39f79b3220d16c0d9747dee8",
+      "sourceGroup": "demo-testing",
+      "excerpt": "That was me testing the demo; emulator is free now, continue",
+      "excerptSha256": "8a9d158b78e383c771eeedca6144edcf4f8b1aa72a62b5146ec38fe0d065a946",
+      "excerptBytes": 60,
+      "startUtf8Byte": 0,
+      "endUtf8ByteExclusive": 60,
+      "wholeMessage": true,
+      "transformation": "Exact contiguous decoded text; no internal edits. Raw source paths and conversations stay private."
+    },
+    {
+      "id": "saved-02",
+      "dateUtc": "2026-10-13T20:57:19.401Z",
+      "sourceRole": "user",
+      "sourceMessageSha256": "8a3ab32bd6b40f03ffe0be8769e4f7a5f7cb71ff9a3bb0f2259283d41c593f36",
+      "sourceRecordSha256": "211985a6e9c88bedcebcd96872d63e99aa1e9a7c1da226d58801fd456cdd032f",
+      "sourceGroup": "later-teleport-subwindow-fade",
+      "excerpt": "I think for now adding teleport circles is very important. Especially using hand tracking, something that uses gaze that highlights where you're looking at and pinch to teleport to that item would be a great experience especially on the device itself, but on the emulator, I'm assuming navigation by clicking to teleport to the item for a close look also makes sense, because I don't think it's possible to test hand tracking on the emulator.",
+      "excerptSha256": "906e5c5c4c3caedfe8b322174721af7c763911d0035bd1539ad09b974c416fb5",
+      "excerptBytes": 442,
+      "startUtf8Byte": 0,
+      "endUtf8ByteExclusive": 442,
+      "wholeMessage": false,
+      "transformation": "Exact contiguous decoded text; no internal edits. Raw source paths and conversations stay private."
+    },
+    {
+      "id": "saved-03",
+      "dateUtc": "2026-10-13T20:57:19.401Z",
+      "sourceRole": "user",
+      "sourceMessageSha256": "8a3ab32bd6b40f03ffe0be8769e4f7a5f7cb71ff9a3bb0f2259283d41c593f36",
+      "sourceRecordSha256": "211985a6e9c88bedcebcd96872d63e99aa1e9a7c1da226d58801fd456cdd032f",
+      "sourceGroup": "later-teleport-subwindow-fade",
+      "excerpt": "That being said, authorizing a new build is fine with me and if we want to use PICO's subwindow idea and implement to see how it would work on the emulator that would be great too.",
+      "excerptSha256": "6c6300d0b66a9aaf1ed8ecdaf7fa9050f73e27b93ccf9211f43a5c7e41b64305",
+      "excerptBytes": 180,
+      "startUtf8Byte": 443,
+      "endUtf8ByteExclusive": 623,
+      "wholeMessage": false,
+      "transformation": "Exact contiguous decoded text; no internal edits. Raw source paths and conversations stay private."
+    },
+    {
+      "id": "saved-04",
+      "dateUtc": "2026-10-13T20:57:19.401Z",
+      "sourceRole": "user",
+      "sourceMessageSha256": "8a3ab32bd6b40f03ffe0be8769e4f7a5f7cb71ff9a3bb0f2259283d41c593f36",
+      "sourceRecordSha256": "211985a6e9c88bedcebcd96872d63e99aa1e9a7c1da226d58801fd456cdd032f",
+      "sourceGroup": "later-teleport-subwindow-fade",
+      "excerpt": "The device look, I would ask that the short fade would be a cool way to show the transition.",
+      "excerptSha256": "b5d6ab206fc179245feb37d2a2dc1a762af95773095f7b855d31d98000f0b199",
+      "excerptBytes": 92,
+      "startUtf8Byte": 624,
+      "endUtf8ByteExclusive": 716,
+      "wholeMessage": false,
+      "transformation": "Exact contiguous decoded text; no internal edits. Raw source paths and conversations stay private."
+    }
+  ]
+}

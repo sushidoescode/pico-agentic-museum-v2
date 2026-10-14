@@ -1,0 +1,27 @@
+{
+  "scope": "Existing evidence only; private PICO technical review; no new runtime check",
+  "items": [
+    {
+      "path": "evidence/build-010/build-010-archive-arrival-gate.png",
+      "sourceRelativePath": "evidence/pico-feedback-001/tooling/render-liveness-1.0.0/package-targeted-tooling-001/museum-fb-01-b10-archive-arrival.png",
+      "bytes": 1817984,
+      "sha256": "326b7b1acfeb5c324defd3044a2ebf9de4be6b3f4bbc27cf3e48541c52d69166",
+      "build": "build-010",
+      "evidenceClass": "exact-original-gate-capture",
+      "transform": "byte-identical relocation of existing evidence",
+      "scope": "Current panel position and six Connected-bay floor targets; one admitted archive-arrival frame. Host toolbar overlaps the leftmost panel edge.",
+      "rights": "Original project room and six original exhibits, plus PICO emulator chrome. Prepared for the intended private PICO review; no broad public clearance claimed.",
+      "openedForVisualReview": true,
+      "pngTextMetadata": [
+        {
+          "type": "iTXt",
+          "bytes": 472,
+          "sha256": "9fafe40d648b43111b331cdd2ff1ba3f9ac6559a842cfce33e6aa34b7b002acb"
+        }
+      ],
+      "included": false,
+      "placement": "Separate owner-requested PICO review package; Drive upload pending."
+    }
+  ],
+  "edition": "Public GitHub documentation; capture bytes excluded."
+}

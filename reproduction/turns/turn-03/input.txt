@@ -1,0 +1,228 @@
+This is a text-only chat recreation experiment. Do not call tools, read files, browse, run commands, or edit files. Use only the attached text. A human-style harness will manually apply your returned files and run checks. Return complete contents of only changed/new project files in the requested JSON shape, using project-relative paths. Do not claim the app was run or tested. Preserve the supplied package and Gradle versions.
+
+TEACHING PROMPT (operator-authored ordinary language, not an actual historical human message):
+Please repair the selected-object view using the attached compiler error. I also noticed in the code that the cup and speaker still sit far to either side; center whichever one I select.
+
+ATTACHMENTS:
+Actual compile result: build-02 failed. HomeVolume.kt:99:66 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type TransformComponent?. No app runtime was used. Entity.components[TransformComponent::class.java] returns TransformComponent?. EulerAngles uses degrees.
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.unit.dp
+import com.pico.spatial.core.ecs.Entity
+import com.pico.spatial.core.ecs.ModelEntity
+import com.pico.spatial.core.ecs.TransformComponent
+import com.pico.spatial.core.ecs.resource.MeshResource
+import com.pico.spatial.core.ecs.resource.UnlitMaterial
+import com.pico.spatial.core.math.Color4
+import com.pico.spatial.core.math.EulerAngles
+import com.pico.spatial.core.math.Vector3
+import com.pico.spatial.ui.design.Button
+import com.pico.spatial.ui.design.Text
+import com.pico.spatial.ui.foundation.content.SpatialView
+
+@Composable
+fun HomeVolume() {
+    var selection by remember { mutableStateOf(MuseumSelection()) }
+    var museumScene by remember { mutableStateOf<MuseumScene?>(null) }
+
+    Column(modifier = Modifier.padding(16.dp)) {
+        Text("Luna Museum")
+        Spacer(modifier = Modifier.height(8.dp))
+        Text("Select an exhibit to inspect it in 3D.")
+        Spacer(modifier = Modifier.height(12.dp))
+
+        SpatialView(
+            modifier = Modifier
+                .fillMaxWidth()
+                .size(260.dp)
+                .clip(RoundedCornerShape(18.dp)),
+            update = { _, _ ->
+                museumScene?.apply(selection)
+            },
+            initial = { content, _ ->
+                val scene = createMuseumScene()
+                museumScene = scene
+                content.addEntity(scene.root)
+                scene.apply(selection)
+            },
+        )
+
+        Spacer(modifier = Modifier.height(12.dp))
+        Text(selection.selected.title)
+        Text(selection.selected.description)
+        Spacer(modifier = Modifier.height(10.dp))
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            Button(onClick = { selection = selection.select(MuseumObject.HANDLED_CUP) }) {
+                Text("Cup")
+            }
+            Button(onClick = { selection = selection.select(MuseumObject.ROBOT_VACUUM) }) {
+                Text("Vacuum")
+            }
+            Button(onClick = { selection = selection.select(MuseumObject.SMART_SPEAKER) }) {
+                Text("Speaker")
+            }
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Button(onClick = { selection = selection.turn() }) {
+                Text("Turn")
+            }
+            Button(onClick = { selection = selection.reset() }) {
+                Text("Reset")
+            }
+        }
+    }
+}
+
+private class MuseumScene(
+    val root: Entity,
+    private val objects: Map<MuseumObject, Entity>,
+) {
+    fun apply(selection: MuseumSelection) {
+        objects.forEach { (museumObject, entity) ->
+            entity.enabled = museumObject == selection.selected
+            if (museumObject == selection.selected) {
+                entity.components[TransformComponent::class.java].eulerAngles = EulerAngles(
+                    0f,
+                    selection.turnQuarterTurns * 90f,
+                    0f,
+                )
+            }
+        }
+    }
+}
+
+private fun createMuseumScene(): MuseumScene {
+    val root = Entity()
+    val cup = createCup()
+    val vacuum = createRobotVacuum()
+    val speaker = createSmartSpeaker()
+
+    root.addChild(cup)
+    root.addChild(vacuum)
+    root.addChild(speaker)
+
+    return MuseumScene(
+        root = root,
+        objects = mapOf(
+            MuseumObject.HANDLED_CUP to cup,
+            MuseumObject.ROBOT_VACUUM to vacuum,
+            MuseumObject.SMART_SPEAKER to speaker,
+        ),
+    )
+}
+
+private fun createCup(): Entity {
+    val cup = Entity()
+    cup.components[TransformComponent::class.java] = TransformComponent(
+        position = Vector3(-0.8f, 0f, 0f),
+        rotation = EulerAngles(0f, 0f, 0f),
+        scale = Vector3(0.55f, 0.55f, 0.55f),
+    )
+    cup.addChild(model(MeshResource.createCylinder(0.7f, 0.42f), Color4(0.9f, 0.35f, 0.25f, 1f)))
+    cup.addChild(model(MeshResource.createCylinder(0.08f, 0.5f), Color4(1f, 0.75f, 0.35f, 1f), Vector3(0f, 0.38f, 0f)))
+    cup.addChild(model(MeshResource.createBox(Vector3(0.12f, 0.42f, 0.12f), 0.04f), Color4(1f, 0.7f, 0.25f, 1f), Vector3(0.42f, 0f, 0f)))
+    cup.addChild(model(MeshResource.createBox(Vector3(0.12f, 0.12f, 0.45f), 0.04f), Color4(1f, 0.7f, 0.25f, 1f), Vector3(0.42f, 0.2f, 0f)))
+    cup.addChild(model(MeshResource.createBox(Vector3(0.12f, 0.12f, 0.45f), 0.04f), Color4(1f, 0.7f, 0.25f, 1f), Vector3(0.42f, -0.2f, 0f)))
+    return cup
+}
+
+private fun createRobotVacuum(): Entity {
+    val vacuum = Entity()
+    vacuum.components[TransformComponent::class.java] = TransformComponent(
+        position = Vector3(0f, 0f, 0f),
+        rotation = EulerAngles(0f, 0f, 0f),
+        scale = Vector3(0.8f, 0.8f, 0.8f),
+    )
+    vacuum.addChild(model(MeshResource.createCylinder(0.25f, 0.55f), Color4(0.18f, 0.25f, 0.32f, 1f)))
+    vacuum.addChild(model(MeshResource.createCylinder(0.08f, 0.3f), Color4(0.25f, 0.75f, 0.8f, 1f), Vector3(0f, 0.28f, 0f)))
+    vacuum.addChild(model(MeshResource.createSphere(0.1f), Color4(0.9f, 0.9f, 0.95f, 1f), Vector3(0f, 0.36f, 0f)))
+    return vacuum
+}
+
+private fun createSmartSpeaker(): Entity {
+    val speaker = Entity()
+    speaker.components[TransformComponent::class.java] = TransformComponent(
+        position = Vector3(0.8f, 0f, 0f),
+        rotation = EulerAngles(0f, 0f, 0f),
+        scale = Vector3(0.65f, 0.65f, 0.65f),
+    )
+    speaker.addChild(model(MeshResource.createBox(Vector3(0.7f, 0.9f, 0.7f), 0.18f), Color4(0.35f, 0.28f, 0.55f, 1f)))
+    speaker.addChild(model(MeshResource.createCylinder(0.08f, 0.2f), Color4(0.35f, 0.9f, 0.75f, 1f), Vector3(0f, 0.5f, 0f)))
+    return speaker
+}
+
+private fun model(
+    mesh: MeshResource,
+    color: Color4,
+    position: Vector3 = Vector3(0f, 0f, 0f),
+): ModelEntity {
+    val material = UnlitMaterial.create()
+    material.setBaseColor(color)
+    return ModelEntity(mesh, material).also {
+        it.components[TransformComponent::class.java] = TransformComponent(
+            position = position,
+            rotation = EulerAngles(0f, 0f, 0f),
+            scale = Vector3(1f, 1f, 1f),
+        )
+    }
+}
+
+--- MuseumSelection.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+enum class MuseumObject(
+    val title: String,
+    val description: String,
+) {
+    HANDLED_CUP(
+        title = "Handled cup",
+        description = "A simple ceramic cup with a sturdy handle.",
+    ),
+    ROBOT_VACUUM(
+        title = "Robot vacuum",
+        description = "A compact robot vacuum that quietly patrols the floor.",
+    ),
+    SMART_SPEAKER(
+        title = "Smart speaker",
+        description = "A small connected speaker ready to answer a question.",
+    ),
+}
+
+data class MuseumSelection(
+    val selected: MuseumObject = MuseumObject.HANDLED_CUP,
+    val turnQuarterTurns: Int = 0,
+) {
+    fun select(item: MuseumObject): MuseumSelection = copy(
+        selected = item,
+        turnQuarterTurns = 0,
+    )
+
+    fun turn(): MuseumSelection = copy(
+        turnQuarterTurns = (turnQuarterTurns + 1) % 4,
+    )
+
+    fun reset(): MuseumSelection = copy(turnQuarterTurns = 0)
+}

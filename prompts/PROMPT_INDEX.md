@@ -1,31 +1,17 @@
-# Prompt index
+# Choose your next small step
 
-Twenty-one usable blocks: five retained exact excerpts, two sanitized briefs, two condensed historical implementer prompts and twelve reconstructed teaching prompts. Exact excerpt means exact **selected text**, not an entire transcript. The L2–L4 actual start packets stay private. Exact later reviewer/focused-repair prompts are not fully retained; reconstructed blocks do not fill that gap with invented quotations.
+Begin with [Before you begin](../lessons/PREPARE_TO_BUILD.md), then follow the lessons in order. Each request has something to try before you move on.
 
-| ID | Use | Provenance class | Lesson |
-| --- | --- | --- | --- |
-| P00 | Bound the first native slice | verbatim retained excerpt | L0/L1 |
-| P01 | Require actual visual and interaction evidence | verbatim retained excerpt | L0/L1 |
-| P02 | Useful work while the native lane is held | verbatim retained excerpt | L0/L1 |
-| P03 | Freeze build inputs | verbatim retained excerpt | L0/L1 |
-| P04 | Verify declarations before compiling | reconstructed teaching prompt | L0/L1 |
-| P05 | Review a source-only checkpoint | reconstructed teaching prompt | L0/L1 |
-| P06 | Repair readability from an opened frame | reconstructed teaching prompt | L1 |
-| P07 | Diagnose an ineffective click | reconstructed teaching prompt | L1 |
-| P08 | Share state across a companion | sanitized brief | L2 |
-| P09 | Repair companion placement | reconstructed teaching prompt | L2 |
-| P10 | Review workspace lifecycle | reconstructed teaching prompt | L2 |
-| P11 | Implement three reusable stories | reconstructed teaching prompt | L3 |
-| P12 | Fix Return without undoing the visitor | reconstructed teaching prompt | L3 |
-| P13 | Report motion review honestly | reconstructed teaching prompt | L3 |
-| P14 | Expand the museum coherently | sanitized brief | L4 |
-| P15 | Bound the art implementer | condensed historical prompt | L4 |
-| P16 | Bound the app implementer | condensed historical prompt | L4 |
-| P17 | Repair resource and window timing defects | reconstructed teaching prompt | L4 |
-| P18 | Make search submission testable | reconstructed teaching prompt | L4 |
-| P19 | Bound memory conclusions | reconstructed teaching prompt | L4 |
-| P20 | Repair provenance helpers before first use | verbatim retained excerpt | L0/L1 |
+| Lesson | What you will do | Requests to copy |
+| --- | --- | --- |
+| [Lesson 1 — A small idea](../lessons/L0.md) | Describe the museum and understand your starter | [Plan your screen](PROMPT_LIBRARY.md#describe-your-idea), [understand the starter](PROMPT_LIBRARY.md#understand-your-starter) |
+| [Lesson 2 — Choose and turn](../lessons/L1.md) | Make three choices, show the models and turn them | [Three choices](PROMPT_LIBRARY.md#make-three-choices), [matching models](PROMPT_LIBRARY.md#show-the-matching-object), [turn and reset](PROMPT_LIBRARY.md#turn-and-reset), [easier viewing](PROMPT_LIBRARY.md#make-it-easier-to-see) |
+| [Lesson 3 — Two windows](../lessons/L2.md) | Keep two windows in agreement | [Second window](PROMPT_LIBRARY.md#open-a-second-window), [shared choices](PROMPT_LIBRARY.md#share-choices-and-saved-objects) |
+| [Lesson 4 — Three small stories](../lessons/L3.md) | Add chapters for the original three objects | [First scene](PROMPT_LIBRARY.md#begin-the-vacuum-story), [chapter controls](PROMPT_LIBRARY.md#move-through-the-chapters), [other stories](PROMPT_LIBRARY.md#tell-the-other-two-stories), [less movement](PROMPT_LIBRARY.md#reduce-story-movement) |
+| [Lesson 5 — Fill the museum](../lessons/L4.md) | Grow to eighteen objects and enter the room | [More objects](PROMPT_LIBRARY.md#add-more-objects), [search](PROMPT_LIBRARY.md#find-an-object), [closer view](PROMPT_LIBRARY.md#open-a-closer-3d-view), [spinning](PROMPT_LIBRARY.md#start-and-stop-spinning), [enter](PROMPT_LIBRARY.md#enter-the-room), [fill the room](PROMPT_LIBRARY.md#fill-the-room) |
 
-Open the [library](PROMPT_LIBRARY.md) and select the block by ID. Each includes context, expected check and a source citation. The [source register](SOURCE_NOTES.md) binds original museum documents to whole-file hashes; the separate private audit binds retained excerpts to line ranges and hashes without exporting confidential packets.
+If something goes wrong, try a [follow-up based on what you see](PROMPT_LIBRARY.md#follow-up-on-what-you-see). If a step already works, keep it and continue.
 
-Suggested sequence: L0 P00–P02/P04/P05; L1 P03/P20 then P06/P07; L2 P08–P10; L3 P11–P13; L4 P14–P19. Read each [lesson sheet](../curriculum/COURSE_MAP.md) first: it supplies the actual starting/completed states and known limitations. These prompts do not replace source/asset eligibility review or grant deployment rights.
+The [request library](PROMPT_LIBRARY.md) explains where this practice wording comes from. The earlier [historical collection](HISTORICAL_PROMPTS.md) remains available for readers studying the original development process.
+
+For original wording, read [the saved user messages](ACTUAL_USER_MESSAGES.md). The practice requests above are not those messages.

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-28",
-  "status": "private-personal-review-repository",
+  "status": "github-documentation-edition",
   "items": [
     {
       "id": "entry",
@@ -10,7 +10,7 @@
         "README.md",
         "START_HERE.md"
       ],
-      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "ingredient-index",
@@ -18,15 +18,18 @@
       "paths": [
         "PROGRAM_INGREDIENTS.md"
       ],
-      "qualification": "Repository navigation added 2026-09-28; marks each ingredient included, reconstructed, held or not established."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "beginner-guide",
       "status": "included",
       "paths": [
-        "curriculum/FIRST_STEPS_WITH_AI.md"
+        "curriculum/FIRST_STEPS_WITH_AI.md",
+        "curriculum/FREE_CHATGPT.md",
+        "curriculum/MY_BUILD_NOTES.md",
+        "lessons/PREPARE_TO_BUILD.md"
       ],
-      "qualification": "Newly written, agent-neutral guide; its prompt and repair request are labelled as new teaching examples."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "asset-supplement-explanation",
@@ -42,7 +45,7 @@
       "paths": [
         "curriculum/COURSE_MAP.md"
       ],
-      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "lessons",
@@ -54,7 +57,7 @@
         "lessons/L3.md",
         "lessons/L4.md"
       ],
-      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "prompts",
@@ -63,7 +66,7 @@
         "prompts/PROMPT_INDEX.md",
         "prompts/PROMPT_LIBRARY.md"
       ],
-      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "process",
@@ -71,15 +74,17 @@
       "paths": [
         "process/AI_AND_HUMAN_DECISIONS.md"
       ],
-      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "setup",
       "status": "included",
       "paths": [
-        "curriculum/SETUP_AND_VERSIONS.md"
+        "curriculum/SETUP_AND_VERSIONS.md",
+        "curriculum/ADD_MODELS.md",
+        "curriculum/EXPAND_MUSEUM.md"
       ],
-      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "architecture",
@@ -88,7 +93,7 @@
         "curriculum/ARCHITECTURE_AND_GLOSSARY.md",
         "curriculum/TROUBLESHOOTING.md"
       ],
-      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "source",
@@ -98,7 +103,7 @@
         "source/SNAPSHOTS.md",
         "source/EXPORT_FILES.json"
       ],
-      "qualification": "Sanitized, omitted-asset source; no fresh compilation or reproduction."
+      "qualification": "Ten original sanitized checkpoints preserved; build-010 added separately. Incomplete asset set, with qualified assets in the Drive supplement. No new app build or recipient rebuild performed."
     },
     {
       "id": "walkthrough",
@@ -108,7 +113,7 @@
         "demo/WALKTHROUGH.md",
         "demo/SHOT_LIST.md"
       ],
-      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "evidence",
@@ -133,9 +138,12 @@
       "status": "included",
       "paths": [
         "review/REVIEW_REQUEST_UNSENT.md",
-        "review/OPEN_ITEMS.md"
+        "review/OPEN_ITEMS.md",
+        "review/README.md",
+        "review/PICO_FEEDBACK_2026-10-13.md",
+        "review/APK_FEEDBACK.md"
       ],
-      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "validation",
@@ -146,9 +154,13 @@
         "SHA256SUMS",
         "review/verify_checksums.py",
         ".gitattributes",
-        "review/TEAM_HANDOFF.md"
+        "review/TEAM_HANDOFF.md",
+        "review/READABILITY_REVIEW.md",
+        "review/FEEDBACK_REVIEW.md",
+        "review/OCTOBER_14_PACKAGE_CHECKS.md",
+        "review/GITHUB_EDITION.md"
       ],
-      "qualification": "Private team teaching/review material; evidence scope stated per file. Correspondence remains unsent."
+      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "apk-and-qualified-artifacts",
@@ -162,11 +174,13 @@
     },
     {
       "id": "missing-exact-prompts",
-      "status": "missing-source",
+      "status": "partial-source",
       "paths": [
-        "prompts/PROMPT_INDEX.md"
+        "prompts/ACTUAL_USER_MESSAGES.md",
+        "prompts/ACTUAL_MESSAGE_SOURCES.json",
+        "prompts/SOURCE_NOTES.md"
       ],
-      "qualification": "Unretained L2\u2013L4 repair/reviewer transcripts are not invented; teaching reconstructions labelled."
+      "qualification": "Four exact excerpts from two saved user messages about testing and later app improvements. Three excerpts share one October 13 follow-up message; not a complete build log or evidence that repairs were completed."
     },
     {
       "id": "continuous-video-and-narration",
@@ -175,7 +189,54 @@
         "demo/WALKTHROUGH.md"
       ],
       "qualification": "Stills/process walkthrough delivered; no new generation/recording, unheard audio excluded."
+    },
+    {
+      "id": "historical-reference-copies",
+      "status": "included",
+      "paths": [
+        "curriculum/RECORDED_SETUP.md",
+        "curriculum/TECHNICAL_ARCHITECTURE.md",
+        "curriculum/TECHNICAL_TROUBLESHOOTING.md",
+        "process/DEVELOPMENT_RECORD.md",
+        "evidence/TECHNICAL_RECORD.md",
+        "assets/RIGHTS_RECORD.md",
+        "source/RECORDED_NOTICES.md",
+        "third_party/MODULE_RECORD.md",
+        "review/PACKAGE_HISTORY.md",
+        "review/DELIVERY_HISTORY.md",
+        "prompts/HISTORICAL_PROMPTS.md",
+        "lessons/reference-L0.md",
+        "lessons/reference-L1.md",
+        "lessons/reference-L2.md",
+        "lessons/reference-L3.md",
+        "lessons/reference-L4.md"
+      ],
+      "qualification": "Sixteen byte-identical copies of the prior published edition, preserved separately from current learner-facing pages."
+    },
+    {
+      "id": "luna-reproduction",
+      "status": "included",
+      "paths": [
+        "reproduction/README.md",
+        "reproduction/TECHNICAL_RECORD.md",
+        "reproduction/EXPERIMENT.json",
+        "reproduction/EXPORT_FILES.json"
+      ],
+      "qualification": "Separate operator-assisted exact-request GPT-5.6 Luna prototype from official starter; see record for actual builds/tests/failures. Not a Free ChatGPT session or native acceptance, and not parity with original museum."
+    },
+    {
+      "id": "build-010-review",
+      "status": "included",
+      "paths": [
+        "review/BUILD_010_RESULTS.md",
+        "review/RECORDING_AND_DEVICE_CHECKS.md",
+        "evidence/build-010/BUILD_IDENTITY.json",
+        "evidence/build-010/BUILD010_GATE_SUMMARY.json",
+        "evidence/build-010/MEDIA_NOTES.json",
+        "evidence/build-010/ASSET_CHANGE_MAP.json"
+      ],
+      "qualification": "Retained APK/source identities and qualified observations. The capture itself stays in the separate review package; latest Drive upload pending. Most interaction checks belong to build-009."
     }
   ],
-  "revisionDate": "2026-10-01"
+  "revisionDate": "2026-10-14"
 }

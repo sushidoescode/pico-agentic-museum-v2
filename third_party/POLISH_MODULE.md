@@ -1,11 +1,17 @@
-# Included external module
+# The included UI module
 
-The package contains the 27 tracked paths under the canonical `skills/spatial-ui-polish` subtree at commit `3b09ac5db919afef612558f3fdb5302b2c55e3eb`, relocated into `third_party/spatial-ui-polish/`, plus that revision's unchanged Apache [LICENSE](spatial-ui-polish/LICENSE) and [NOTICE](spatial-ui-polish/NOTICE). Skill/module version: **0.3.4**. The source repository's package version **38.4.2** was never packed; the older verified **38.4.1** archive is a separate identity and was not used here.
+The museum uses a small extra module called **SpatialUI polish**. It supplies shared UI code. It is included here so reviewers do not need access to the original private development repository.
 
-The original 27-file aggregate is `a2e04602861adc52cf280ac37be1aae48b9f5ee0ed2f034331581419e4b944db`. Its recipe is SHA-256 over lexicographically sorted lines `<file-sha256> <original-path>\n`, with one space and LF. Relocation changes the aggregate path input. Privacy redactions also change some documentation bytes; historical links are rendered as source citations because the whole MCP/evidence repository is not included. Exact original/output hashes and transformations are in [EXPORT_FILES.json](../source/EXPORT_FILES.json). Required licensor attribution is unchanged.
+Use version **0.3.4**, from commit `3b09ac5db919afef612558f3fdb5302b2c55e3eb`. Its code, tests, configuration, Apache [LICENSE](spatial-ui-polish/LICENSE), and [NOTICE](spatial-ui-polish/NOTICE) are unchanged. Some documentation had private details removed and links adjusted for this package.
 
-The [machine-readable identity](../source/POLISH_IDENTITY.json) records both original-path and sanitized package-path aggregates. All Kotlin implementation and test files, `build.gradle.kts`, consumer rules and `.gitignore` remain byte-identical. No module functionality was forked or activated. Ignored build/cache products were excluded. Upstream documents retain historical test claims for the kit; they do not establish new museum tests or current headset acceptance.
+When building an original museum snapshot, tell Gradle where the module is:
 
-The exported native settings use the existing `pico.polish.dir` property. From the extracted package root, resolve `third_party/spatial-ui-polish/resources/polish` to an absolute path and pass `-Ppico.polish.dir=…`. The [setup instructions](../curriculum/SETUP_AND_VERSIONS.md) provide the exact command. No separate repository acquisition or access to the private MCP worktree is required for this included module. If reacquiring it independently, use the stated commit and verify all 27 original per-file identities; a matching package version alone is insufficient.
+```sh
+-Ppico.polish.dir=/absolute/path/to/third_party/spatial-ui-polish/resources/polish
+```
 
-The module expects the consuming version catalog aliases `spatial-bom`, `spatial-core`, `spatial-ui-platform`, `spatial-ui-foundation`, `spatial-ui-design`, `androidx-annotation` and `junit`, plus the Android library/Kotlin/Compose plugins. Those aliases exist in the exported native catalogs. This was checked as a file/layout contract only; Gradle configuration, compilation and fresh-machine dependency resolution were not run.
+Replace the example path with the actual location on your computer. The [setup guide](../curriculum/SETUP_AND_VERSIONS.md) shows how to create that path without typing it out.
+
+For exact file checks, use [POLISH_IDENTITY.json](../source/POLISH_IDENTITY.json) and [EXPORT_FILES.json](../source/EXPORT_FILES.json). The [preserved module record](MODULE_RECORD.md) explains the 27 original tracked paths, file fingerprints, required Gradle aliases, and the difference between this module and older package archives.
+
+The module's historical test notes describe earlier work. Including them does not establish a new museum build or headset test.

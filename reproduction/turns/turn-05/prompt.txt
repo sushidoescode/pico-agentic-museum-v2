@@ -1,0 +1,1 @@
+The companion change does not compile because it refers to files and a callback that were not included. Please finish the companion feature and return every changed or missing file, including the sharing tests. The compiler errors are attached.

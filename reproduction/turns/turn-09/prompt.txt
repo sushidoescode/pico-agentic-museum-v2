@@ -1,0 +1,1 @@
+Reset currently changes the story back to the cup even when another object remains selected. Please make Reset restore the current exhibit’s first story step and angle while keeping my reduced-motion preference. Add regression tests for that case and for automatic motion being zero when reduced motion is on.

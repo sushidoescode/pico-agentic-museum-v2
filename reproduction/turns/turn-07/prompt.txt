@@ -1,0 +1,1 @@
+The main view still remembers its own copy of the selection, so it will not follow changes from the companion. Please finish the shared-state connection in the main view. Keep the existing 3D view and controls.

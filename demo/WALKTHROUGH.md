@@ -1,107 +1,71 @@
-# Offline walkthrough and speaker notes
+# A picture tour of the museum
 
-Local draft, 2026-09-28. Open [index.html](index.html) directly in a browser. All images are local and all six selected media files were opened by the package root. No external fonts, analytics, scripts or network fetches. This is an assembled stills/process walkthrough, not continuous build-008 footage.
+These six saved pictures come from different versions of the original app. Select a picture to open its original file at full size, or use the [wide-page tour](index.html).
 
-## 01. An evolving museum
+## Start with three things
 
-L0 · context and source-only preparation
+We began with a cup, a vacuum, and a speaker. Choose one, read about it, and look at it in 3D.
 
-One product grows from catalogue and adjacent 3D study, to shared windows, to three miniature stories, then eighteen exhibits and an immersive archive. Agentic describes authoring: no runtime LLM is required.
+*Start with the [first lesson](../lessons/L0.md). The original first step was a design and code draft, not yet a running PICO app.*
 
-**Development/process:** The learner receives a bounded brief, local context, dependency identities and acceptance criteria. L0 completion was staged source, not a compiled or admitted application. The Web design preview was a design artifact.
+## Choose, turn, reset
 
-**Speaker notes:** Speak for 35 seconds. Introduce the five-lesson course and the distinction between generated output, build output, admitted frames, and human or agent inspection.
+Choose the cup, turn it, and press Reset. The cup should face forward again while staying selected.
 
-## 02. Catalogue → study → reset
+[![Choose, turn, reset](../evidence/media/l1-reset.png)](../evidence/media/l1-reset.png)
 
-L1 · build-003 · E01 · existing crop
+*Original three-object version, build-003. This existing crop shows the earlier cup made from simple shapes.*
 
-The selected vessel, its interpretation and adjacent procedural model share one screen. Reset returns the study to its front view. This is the original procedural vessel, before the Tripo replacement.
+## The second window is too small
 
-**Development/process:** A retained crop of museum-14-reset-after is shown unchanged. L1 forward records correct the count to 12 admitted frames and 9 opened; the original tag annotation was not rewritten.
+The companion opened, but its labels were too small to read. That gave us a clear next thing to fix.
 
-**Speaker notes:** Speak for 40 seconds. Read the card, identify the model and Reset state, and distinguish one observed Reset from an untested input route.
+[![The second window is too small](../evidence/media/l2-before.png)](../evidence/media/l2-before.png)
 
-[Open original-size included image](../evidence/media/l1-reset.png)
+*Original companion version, build-005. Practice wording: “The new window is too small to read. Can you make it bigger?”*
 
-## 03. A generated layout can still fail
+## Try the larger window
 
-L2 · build-005 · E02 · admitted historical frame
+The larger companion has room for the object details and controls. The next check is whether both windows follow the same choice, including after closing and reopening the companion.
 
-The companion exists, but its strip is too small for readable captions. Passing a rendering gate did not make this composition acceptable.
+[![Try the larger window](../evidence/media/l2-after.png)](../evidence/media/l2-after.png)
 
-**Development/process:** Teaching reconstruction, not an exact transcript: “Keep one shared selection and yaw. Inspect the companion at capture resolution. Repair the unreadable labels and wrapped Reset without adding a second state owner.”
+*Original companion version, build-006. This picture shows the reopened result; the interaction sequence is described in the original records.*
 
-**Speaker notes:** Speak for 40 seconds. Point to the small strip. Explain the brief → generated implementation → opened evidence → focused repair sequence. The prompt is reconstructed from the placement finding.
+## Give an object a short story
 
-[Open original-size included image](../evidence/media/l2-before.png)
+This is the vacuum’s second chapter. The original cup, vacuum, and speaker each have three chapters, with a way back to the object.
 
-## 04. Repair, then inspect the result
+[![Give an object a short story](../evidence/media/l3-story.png)](../evidence/media/l3-story.png)
 
-L2 · build-006 · E03 · admitted historical frame
+*Original story version, build-003. A still picture does not show how smoothly a chapter change moves.*
 
-The larger two-row companion exposes readable details, cards and rotation controls. Closing and reopening preserves the object selected while it was closed.
+## Small labels are hard to read in a room too
 
-**Development/process:** The source uses shared state and a window controller. This reopened frame is byte-identical to the earlier opened frame 14. The still supports the visible state; retained interaction records support the close/select/reopen sequence.
+The objects were in place, but the wall title was tiny. The room needed another pass inside the app.
 
-**Speaker notes:** Speak for 40 seconds. Compare with the preceding panel. A learner transfer task is to add one shared preference, then explain why each window must observe the same state.
+[![Small labels are hard to read in a room too](../evidence/media/l4-before-labels.jpg)](../evidence/media/l4-before-labels.jpg)
 
-[Open original-size included image](../evidence/media/l2-after.png)
+*Original collection build-004. This is a previously cropped and resized image, not a picture from a formal app check.*
 
-## 05. Stories preserve return context
+## Make the way back easy to find
 
-L3 · build-003 · E04 · admitted historical frame
+The larger wall title is easier to see. Return to catalogue gives the visitor a clear route out of the room.
 
-Boundary is the robot vacuum’s second chapter. Vessel, vacuum and speaker each have a three-chapter miniature. Only these three original objects have stories.
+[![Make the way back easy to find](../evidence/media/l4-archive.png)](../evidence/media/l4-archive.png)
 
-**Development/process:** A review repair separated Return from a fresh inspection action and made controls fit in two rows. Rapid interruption and changing Reduce motion during a transition have host-only coverage; this still is not motion-quality evidence.
+*Original collection build-006. One of three bays is visible. This does not establish how every label feels or reads in a headset.*
 
-**Speaker notes:** Speak for 40 seconds. Show Next and Return to object. Explain that Return preserves the visitor’s latest study selection and orientation, including a Reset performed during the story.
+## A closer look
 
-[Open original-size included image](../evidence/media/l3-story.png)
+The original museum also has a separate 3D object window. You can turn the object, start or stop its spin, and reset it.
 
-## 06. Blender room: an earlier iteration
+*This is a description, not a new screenshot. The original inspector image is excluded because of the artwork visible in its background.*
 
-L4 · build-004 · E06 · retained derived nongate look
+## Try the next small change
 
-The Connected lives bay already holds six original objects, but its wall title is tiny. This is an existing cropped/resized JPEG from an earlier build.
+The useful habit is the same throughout: ask, try, describe the result, and improve it. Keep the requests small enough that you can tell what changed.
 
-**Development/process:** The art and application work met at metres, model bounds, baked textures and the panel layout. Later layout changes enlarged bay lettering and fixed the control panel’s top edge.
+*These are existing pictures from different versions of the original museum, not a continuous run or pictures of the Luna prototype.*
 
-**Speaker notes:** Speak for 25 seconds. Identify the six models and the tiny wall label. This image is a nongate look, not a newly admitted capture.
-
-[Open original-size included image](../evidence/media/l4-before-labels.jpg)
-
-## 07. The archive becomes readable
-
-L4 · build-006 · E05 · admitted historical frame
-
-The Connected lives bay has larger wall lettering and an explicit Return to catalogue. Its six depicted exhibits and the room were authored for the project.
-
-**Development/process:** Wider final L4 interaction acceptance rests on build-007 and earlier feature evidence. This image is build-006. The room has three bays; only one is visible here. Plaque legibility, wearer comfort and real-world scale perception are not established.
-
-**Speaker notes:** Speak for 40 seconds. Explain the archive’s loading and return lifecycle. A counter of created entities is not proof of released native allocations.
-
-[Open original-size included image](../evidence/media/l4-archive.png)
-
-## 08. Independent inspection and bounded repair
-
-L4 · sanitized process panel · no screenshot claim
-
-Open in 3D creates an independent object window with Turn, Spin/Pause and Reset. Opening a companion replaces the inspector. Reduce motion stops spin. The source defines one auxiliary-window policy.
-
-**Development/process:** Build-007 retained interactions cover inspector and archive flows. Build-008 changes search to the pinned SDK SearchField: injected Enter submits, sometimes after a first Enter commits IME composition. The eight-second idle fallback remains. Human host-keyboard Enter was not established.
-
-**Speaker notes:** Speak for 35 seconds. Distinguish code, retained interaction results and stills. Inspector captures with reference/generated thumbnails are held; this panel is an editorial explanation, not a fabricated product image.
-
-## 09. What the final build establishes
-
-Build-008 · E07/T08 · sanitized evidence summary
-
-Source c65959f; APK b1a61d99…; retained 128 passing app tests. Final visitor-start gate museum-dh-01-b8-visitor-start passed 17 checks once. Its inspected original image and the APK are not in this repository; ASSET_SUPPLEMENT.md describes the owner’s separate supplement and its access and rights limits.
-
-**Development/process:** This assembled walkthrough is not a continuous build-008 video. Earlier stills retain their own build labels. No new build, native test, capture, provider generation or audio was made. Source exports omit held assets and are not exact APK reproductions.
-
-**Speaker notes:** Speak for 25 seconds. Request curriculum and technical feedback. Leave recipient timing, supported teaching versions and item-specific asset eligibility as explicit review questions; no date or extension is agreed.
-
-Total suggested narration: 320 seconds, with about 40 seconds for navigation and comparisons. See the separate [six-minute product demo script](SHOT_LIST.md) and [evidence index](../evidence/INDEX.md).
+[Picture sources](../evidence/INDEX.md)

@@ -1,0 +1,38 @@
+{
+  "requestedModel": "gpt-5.6-luna",
+  "runner": "codex-cli 0.160.0",
+  "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+  "startedAt": "2026-10-07T23:08:11.118550+00:00",
+  "finishedAt": "2026-10-07T23:08:24.524956+00:00",
+  "exitCode": 0,
+  "inputBytes": 13442,
+  "inputSha256": "61c71ca08566144cdf4633da8061982afa263fb0f31fc1f5e1fcafe62939f6c0",
+  "toolUseRequested": false,
+  "usage": [
+    {
+      "input_tokens": 15681,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2374,
+      "reasoning_output_tokens": 82
+    }
+  ],
+  "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+  "toolEventCount": 0,
+  "responseSha256": "911df6d528d700451618c128d29fc4074533c0486d480a8916879a8684197234",
+  "responseFiles": [
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+      "bytes": 7459,
+      "sha256": "110c8a457052bd4aa229b7eb7c2f88b8ff4d1e9ed46f948069aaad69df5b8ffb"
+    }
+  ],
+  "promptWords": 36,
+  "contextBytes": 12690,
+  "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+  "privateRecordHashes": {
+    "events.jsonl": "41e0dad4b237b2cface8bf07ae59b95124381e01bcc65224e7f55bdeec9b9c2e",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "request.json": "f55ae63e281a8da64fc5c4691bb9f3ca46354aa8360a37345810f41edf3d0022"
+  }
+}

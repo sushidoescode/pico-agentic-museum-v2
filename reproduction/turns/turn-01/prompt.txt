@@ -1,0 +1,1 @@
+Turn this empty PICO starter into a small museum with a handled cup, a robot vacuum and a smart speaker. Let me select an object, read a short description, and turn or reset its 3D view. Simple colored shapes are fine for this first version. Include small unit tests for selection and reset.

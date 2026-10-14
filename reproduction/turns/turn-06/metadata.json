@@ -1,0 +1,48 @@
+{
+  "requestedModel": "gpt-5.6-luna",
+  "runner": "codex-cli 0.160.0",
+  "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+  "startedAt": "2026-10-07T23:07:34.242204+00:00",
+  "finishedAt": "2026-10-07T23:07:47.772118+00:00",
+  "exitCode": 0,
+  "inputBytes": 17881,
+  "inputSha256": "b6c340983bbc4f25a802eb9f3769bdbfa66df6f376bb32bf7d29121779712f5c",
+  "toolUseRequested": false,
+  "usage": [
+    {
+      "input_tokens": 16717,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1715,
+      "reasoning_output_tokens": 516
+    }
+  ],
+  "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+  "toolEventCount": 0,
+  "responseSha256": "f7472ab375d90d6a9cd050c9bd8dd2548f925e09fb4bc4839b3571c3d6c463f6",
+  "responseFiles": [
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+      "bytes": 3178,
+      "sha256": "791867153df66034794f31c5ee8e5b0b12f043937af18659c92343dd84d484f5"
+    },
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStore.kt",
+      "bytes": 476,
+      "sha256": "288933ba82e99097848e1b0b7f219de5ffd7638489ef7ccf01cdc7bca5ff8034"
+    },
+    {
+      "path": "app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStoreTest.kt",
+      "bytes": 1258,
+      "sha256": "ca8c02cd592a4093be554640667a02e4aa8603a03368104238eb179babd262aa"
+    }
+  ],
+  "promptWords": 48,
+  "contextBytes": 17055,
+  "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+  "privateRecordHashes": {
+    "events.jsonl": "1c82e933afd1f21cbed229baf32511e552f1eb0a63690339483561b91772570b",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "request.json": "2a6b8d69c89c2c96cb2e02d52baed38181d515bc70d11874a08ffb27384d792c"
+  }
+}

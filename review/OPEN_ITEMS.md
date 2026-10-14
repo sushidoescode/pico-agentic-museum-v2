@@ -1,32 +1,19 @@
-# Included items, holds and review decisions
+# Included files and remaining work
 
-Personal v2 repository edition, October 1, 2026, carrying forward the complete September 30 team package. The owner authorized a new private personal review repository and supplied the Drive folder link. That delivery does not settle the item-specific rights qualifications below. No correspondence or public release is implied; October 9 is not an agreed deadline.
+The October 14 package brings the rewritten course together with build-010's source and the app agent's retained feedback results.
 
-## Included for team review
+Included: five lessons, short practice prompts, selected exact user messages, setup/model/room guides, source snapshots, historical and current evidence summaries, asset notices, an offline tour, a recording checklist, checksums, and an unsent review request. The prepared Drive package keeps the APK and qualified assets separate from this source/documentation ZIP. Its latest upload is pending; check the [download status](../ASSET_SUPPLEMENT.md).
 
-Five full lessons; current curriculum and architecture; labelled prompt/process records; setup and dependency instructions; sanitized source checkpoint exports and the qualified exact-version polish module; eligible project-original asset material; six inspected historical stills; an offline rough walkthrough with notes; evidence/test summaries, notices and package hashes. Use [DELIVERABLES.json](../DELIVERABLES.json) and [MANIFEST.json](../MANIFEST.json) for the actual inventory. These inclusions are for intended private PICO technical review, not a blanket publication license.
+## App checks still needed
 
-## Held separately
+Use [the manual checklist](RECORDING_AND_DEVICE_CHECKS.md). Arrival direction after turning, the door-ring exit, gaze highlight and real hand input remain unverified. The comfort switches, separate 3D-view fade and story path were not exercised in the feedback session. The failed Subwindow experiment needs PICO guidance before replacing the working guide window.
 
-| Item/family | Why held | What would resolve it |
-| --- | --- | --- |
-| Build-008 APK (42,446,151 bytes; `b1a61d99…`) | Embeds reference-derived models, the Tripo vessel and PICO template payloads | Confirm the proposed recipient's eligibility and item-specific sharing basis for all embedded material. |
-| Fidget, scooter, gascan models and their affected derivatives | User reports reuse permission; a blanket third-party redistribution license is not independently established; original attribution map is confidential | Establish per-file attribution and permitted recipients/distribution. If attribution conflicts with confidentiality, keep the affected artifact held. |
-| Tripo vessel and affected images/thumbnails | Task provenance retained, but plan/credit ownership qualification unresolved | Verify relevant entitlement and recipient use. No new generation required. |
-| PICO template binary object/launcher art | Applicable tools-license/developer-agreement and recipient eligibility qualification | Confirm eligible acquisition/use/sharing; no SDK/cache redistribution is proposed. |
-| Build-008 final visitor-start and inspector screenshot | Depict held assets/thumbnails, despite being inspected and hash-verified | Resolve depiction/sharing qualifications or separately authorize an appropriate evidence derivative. |
-| Original Blender room file and any additional source payload listed by the asset export | Binary metadata/privacy qualification; consult the per-file [rights record](../assets/PROVENANCE_AND_RIGHTS.md) | Review/sanitize the affected authoring artifact separately. Runtime room/export/layout materials remain useful. |
-| Raw evidence, original prompts/coordinator records, private reference materials and Git history | Confidential identifiers, correspondence or source attribution context | Remain private; the candidate supplies reviewed summaries and snapshots. No whole-history export proposed. |
-| Recordings and narration | No selected recording excerpt was needed; narration remains unheard/unaccepted | Optional later editorial/audio review. Not required to finish this package. |
+## Learning and sharing gaps
 
-**Repository note, 2026-09-28.** Everything in this table stays outside this Git repository. The owner has since placed the APK, the held models and thumbnails, the template resources, the Blender file and the build-008 frame in a separate asset supplement for team review. Raw evidence, original prompts, Git history, recordings and the inspector image are in neither part. [ASSET_SUPPLEMENT.md](../ASSET_SUPPLEMENT.md) gives the details. That staging does not settle the recipient and rights decisions below.
+The rewritten lessons have not been completed by a new learner on a fresh computer or through a free ChatGPT account. The saved user messages are a partial history. The earlier Luna attempt remains a partial prototype from a paid coding-tool session, with separate results.
 
-Missing exact L2–L4 repair/reviewer prompt transcripts are labelled as missing historical source; teaching reconstructions are supplied without claiming to recover those transcripts. No physical/headset/wearer evidence, measured GPU memory, human keyboard Enter acceptance, memory cause/plateau or fresh-machine reproduction was created.
+The artwork has no blanket public reuse license. Reference/provider/template qualifications and the Blender metadata note remain in [asset notices](../assets/PROVENANCE_AND_RIGHTS.md). Keep headset footage private until PICO clears sharing/public use.
 
-## Decisions genuinely needed after team review
+Raw conversations, account/device logs, signing keys, original Git history, build caches, the full old browser preview, excluded historical inspector image, and prototype APKs are outside the sharing package. No finished continuous recording or accepted narration is included.
 
-1. Identify intended PICO recipients, review scope and desired feedback timing. The unsent request proposes specific curriculum and Kotlin/emulator questions without assigning anyone a commitment.
-2. Confirm the supported teaching version baseline with PICO. The recorded working versions are explicit; support approval is external information.
-3. Resolve per-item asset/template entitlement and attribution before extending distribution or granting reuse of the affected payloads. The owner-supplied Drive supplement is already separate from this Git repository; its availability does not resolve those qualifications.
-
-No further approval is needed for the user-requested placement of this teaching package in the new private personal v2 repository. Sending the draft PICO message or expanding distribution remains a separate action. This document does not request emulator ownership or a new native test.
+The owner requested this GitHub documentation update. The latest Drive upload remains pending. No invitations or review messages have been sent.

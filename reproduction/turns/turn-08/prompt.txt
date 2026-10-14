@@ -1,0 +1,1 @@
+Give the cup, vacuum and speaker each a short three-step story I can play and restart, with a small movement that illustrates the story. Add a reduced-motion switch that keeps the story text but stops automatic movement. Please test story restart and reduced motion.

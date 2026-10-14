@@ -1,75 +1,64 @@
-# Current architecture and vocabulary
+# How the app fits together
 
-This map describes build-008's source lineage, not just L1. Built source is `c65959f66d164ee28933f3dd2c09bfe1fc760ff3`; documentation closeout is `0efe2718e0eeb733e2a3b3b2cd300a1703025aa0`. Original source paths below are relative museum citations. Qualified exports and transformed-byte identities are in [source snapshots](../source/SNAPSHOTS.md).
+Think of the museum as one notebook with several views. The notebook remembers which object you chose, how you turned it, and which objects you saved. Each window reads from that same notebook.
+
+If each window kept its own separate choice, the cup could appear in one window while the other still showed the vacuum. Lesson 3 teaches how to avoid that.
 
 ```mermaid
-flowchart TD
-    A[SpatialApplication.onCreate] --> B[One MuseumController per process]
-    B --> C[MuseumState and pure reducers]
-    B <--> D[Saved IDs and preferences persistence]
-    C --> E[Primary catalogue, study, details]
-    C --> F[Companion details or three original stories]
-    C --> G[Independent 3D inspector]
-    C --> H[Full Space archive Stage]
-    I[Catalogue registry and local asset metadata] --> E
-    I --> F
-    I --> G
-    I --> H
-    E --> J[Lazy model loader]
-    G --> J
-    H --> J
+flowchart LR
+    A[Choose an object] --> B[Remember the choice]
+    B --> C[Update the main window]
+    B --> D[Update the companion]
+    B --> E[Update an open 3D inspector]
 ```
 
-The controller is created before `Application.launch`. Compose snapshot state recomposes every root that reads it. UI actions pass through the controller and pure reducers; markers name their originating surface. Each presentation owns its scene lifetime. A second window does not create a second logical museum.
+## Find the part you need
 
-| Responsibility | Current source under `native/app/src/main/java/dev/local/everydayfutures/museum/` | Contract |
+Paths below are inside `source/snapshots/build-008/native/app/src/main/java/dev/local/everydayfutures/museum/`.
+
+| Part | What it does | Files to start with |
 | --- | --- | --- |
-| Entry and containers | `platform/SpatialApplication.kt`, `platform/MuseumRuntime.kt`, `Main.kt` | Default primary, DSL companion and inspector, DSL archive Stage; one shared controller |
-| Product data | `catalogue/Catalogue.kt`, `CatalogueQuery.kt` | Eighteen stable ids, sections, fact/interpretation copy, model/thumbnail metadata; only original three have stories |
-| Shared logic | `state/MuseumState.kt`, `MuseumController.kt`, `Workspace.kt`, `Filter.kt`, `Story.kt`, `Inspector.kt`, `Archive.kt` | Total state transitions and observable window lifecycle; no platform view cached as logical state |
-| Durable storage | `state/MuseumPreferences.kt` | Saved ids and three comfort preferences only; app-private SharedPreferences |
-| Catalogue and study | `content/MuseumWindow.kt`, `CataloguePanel.kt`, `ObjectPresenter.kt` | Grid/filter/details plus selected model; no eighteen-model preload for thumbnails |
-| Model lifecycle | `content/ExhibitLoader.kt`, `ExhibitLoad.kt`, `ModelSource.kt`, `ModelFit.kt` | Cancel obsolete loads, name failures, fit declared bounds; stored GLB descriptor closes after load |
-| Story | `content/CompanionStory.kt`, `story/StoryScenes.kt`, `StoryPresenter.kt`, `SceneReadiness.kt` | Reusable chapter data/presenter; scene arrival/loading and bounded returned-failure recovery |
-| Inspector | `content/InspectorWindow.kt`, `InspectorPresenter.kt`, `InspectorMotion.kt` | Independent yaw/spin, frame-event subscription, settle under Reduce motion, cancel on disposal |
-| Archive | `stage/ArchiveStage.kt`, `ArchiveGeometry.kt`, `ArchiveLayout.kt`, `RoomLayoutParser.kt` | Room and eighteen anchors, loading-aware view, attachment-panel controls, explicit return and recursive disposal |
+| Object list | Names, descriptions, categories, and model files | `catalogue/Catalogue.kt` |
+| Current choices | Selected object, turn angle, and current screen | `state/MuseumState.kt`, `state/MuseumController.kt` |
+| Main window | Object cards, details, and the small 3D view | `content/MuseumWindow.kt`, `content/CataloguePanel.kt` |
+| Second window | Details or a story that follows the selected object | `content/CompanionWindow.kt`, `content/CompanionStory.kt`, `state/Workspace.kt` |
+| Stories | The chapters and changes between them | `state/Story.kt`, `story/StoryScenes.kt` |
+| Separate 3D view | A larger view with its own rotation | `content/InspectorWindow.kt`, `content/InspectorPresenter.kt` |
+| Archive room | The room, object positions, and Return button | `stage/ArchiveStage.kt`, `stage/ArchiveLayout.kt` |
+| Saved choices | Saved objects and comfort settings | `state/MuseumPreferences.kt` |
 
-## State and lifetime
+You do not need to understand every file at once. Follow the feature you are changing, then ask the assistant to explain the relevant file.
 
-| State | Survives window close/reopen? | Survives process recreation? |
-| --- | --- | --- |
-| Selected object, study view/orientation | Yes while the process lives | No |
-| Saved ids, comfort options | Yes | Yes |
-| Story/chapter | Companion close preserves logical story; Return clears it | No |
-| Filter/search | Yes while the process lives | No |
-| Inspector presentation, archive phase, attached-root counts | Governed by their open/close reducers; not durable | No |
+## A few choices that matter
 
-Primary plus at most one auxiliary means companion or inspector, never a request for both to remain live. The controller waits for observed detach before switching roles; pending opens/closes matter. The immersive Stage is a separate surface, with the catalogue minimized while visiting and restored on the app's Return path. System background/resume differs from disposal and must not be described as the same transition.
+Selecting another object updates the title, details, and model together. It also resets the small study view’s angle. The separate inspector has its own rotation.
 
-The story does not mutate study orientation, so Return simply clears story state. Inspector presentation yaw is likewise independent. Selecting a new object resets study orientation, follows an open inspector, and switches an existing story only when the new object has story content. A filter can hide the selected grid item without destroying selection.
+The main window uses one extra window at a time: the companion or the inspector. The archive is a separate room view. Returning from it restores the catalogue.
 
-Models are local assets. GLBs use uncompressed APK entries to permit `openFd`; the descriptor's lifetime surrounds the suspended load. Scene disposal destroys app-owned entity roots recursively and cancels the inspector update subscription. Entity invalidity is observable; complete native-allocation release remains unproven. See [troubleshooting](TROUBLESHOOTING.md).
+Saved objects and comfort settings are kept when the app restarts. Other choices, such as the current selection and search, are remembered while the app is running, not across a full restart.
+
+A story should not undo a change the visitor made while it was open. For example, pressing Reset and then returning from a story should leave the object reset.
 
 ## Vocabulary
 
-| Term | Meaning in this course |
+| Word | Plain meaning |
 | --- | --- |
-| Agentic | AI-assisted authoring, implementation and verification; no runtime LLM dependency |
-| WindowContainer | SDK-managed spatial window; primary from manifest, auxiliary windows registered through DSL |
-| SpatialView | A region embedding entity content in a composition, with initialization/update/lifecycle responsibilities |
-| Stage / Full Space | Immersive archive surface entered deliberately; distinct from an adjacent study or window |
-| Shared state | One process-owned logical museum observed by all roots, not bundles copied into each window |
-| Study | Adjacent selected-object view inside the primary catalogue window |
-| Inspector | Separate glass-off Open in 3D window with independent presentation rotation |
-| Story | Three-chapter miniature in the companion for tumbler, vacuum or speaker |
-| Entity / resource | Scene object and its underlying mesh/material/model resources; destroying one is not proof of all native memory release |
-| AttachmentPanel | UI attached to scene content, used by the archive for its persistent controls and labels |
-| Reducer | Pure state transition suitable for host logic tests |
-| Receipt / checkpoint | A receipt binds one build or observation; a checkpoint names source/history. Their identities are not interchangeable |
-| Admitted / opened / LOOK | Gate passed and bound the capture / image actually inspected / recorded visual observations |
-| Counted input | Attributed input with observed landing/marker and relevant resulting state; a requested click alone is insufficient |
-| Non-gate look / derivative | Diagnostic capture without gate admission / crop, sheet or edited presentation with new bytes and hash |
-| Host test / native observation | Logic or tooling executed on the host / observed app on the recorded emulator route; neither automatically proves the other |
-| Runtime metric | A platform measurement; the gate's PxrMetric is not established application FPS |
+| AI assistant | A tool that can suggest text or code from your instructions. |
+| Prompt | The message you send to the assistant. |
+| Kotlin | The programming language used for this app. |
+| SDK | Libraries and tools for building on a platform. Here, PICO’s Spatial SDK. |
+| Emulator | Software on a computer that runs an app in a simulated device environment. |
+| APK | An Android app’s installation file. |
+| State | The app’s current choices: for example, the selected object and its angle. |
+| Shared state | The same choices used by more than one window. |
+| Reducer | A function that calculates the next state after an action. |
+| Model / GLB | A 3D object file. GLB is the format used for many museum objects. |
+| Study | The small selected-object view next to the catalogue. |
+| Inspector | The separate, larger 3D object view. |
+| Stage / Full Space | PICO’s immersive view, used for the archive room. |
+| Build | Turning project files into an app file. |
+| Code test | A check run by software. Some tests check logic without opening the app. |
+| Snapshot | A saved copy of the project at a particular point. |
+| Hash | A file fingerprint used to check whether bytes have changed. |
 
-Original architecture documentation was a D0/L1 map and contains dated statements about three procedural objects and window-local ownership. This current summary uses later source and lesson records. Exact source hashes appear in [source notes](../prompts/SOURCE_NOTES.md).
+The [technical architecture record](TECHNICAL_ARCHITECTURE.md) has the full class map and lifecycle details. It describes the original museum, not a new Luna result.

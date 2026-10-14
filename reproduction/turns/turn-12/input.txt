@@ -1,0 +1,353 @@
+This is a text-only chat recreation experiment. Do not call tools, read files, browse, run commands, or edit files. Use only the attached text. A human-style harness will manually apply your returned files and run checks. Return complete contents of only changed/new project files in the requested JSON shape, using project-relative paths. Do not claim the app was run or tested. Preserve the supplied package and Gradle versions.
+
+TEACHING PROMPT (operator-authored ordinary language, not an actual historical human message):
+The room change has the attached coroutine compiler errors. Please fix them and make sure the room view has a nonzero size with an always-visible Leave button. Use an immersive room and keep opening or closing work tied to the view’s lifetime.
+
+ATTACHMENTS:
+SDK 6.1.9 declarations extracted by operator from locally resolved source JARs:
+com.pico.spatial.ui.foundation.dsl.Stage is a SpatialAppScope extension, used at top-level mainApp next to WindowContainer (not inside a composable):
+fun SpatialAppScope.Stage(id: String, immersion: Immersion?=null, brightness: Brightness?=null, upperLimbRenderMode: UpperLimbRenderMode?=null, targetActivity: Class<out ComponentActivity>?=null, content: @Composable StageScope.()->Unit)
+com.pico.spatial.ui.platform.containers.LocalSpatialNavigator.current provides SpatialNavigator.
+suspend fun SpatialNavigator.openStage(id: String, style: StageStyle?=null, bundle: Bundle?=null, upperLimbRenderMode: UpperLimbRenderMode=UpperLimbRenderMode.Default): OpenStageResult
+suspend fun SpatialNavigator.closeStage(): Unit
+Both StageStyle and OpenStageResult are in com.pico.spatial.ui.platform.containers.
+StageStyle enum values Automatic, Mixed, Progressive, Full.
+OpenStageResult sealed class has Allowed and NotAllowed objects, and Error(code:Int, reason:String). Open calls can be rejected; Allowed is not a rendered-frame observation.
+Standard Compose rememberCoroutineScope and kotlinx.coroutines.launch are available for suspend event handlers.
+SpatialView can be used inside Stage content. Entity(), ModelEntity, MeshResource, TransformComponent, Vector3 and EulerAngles APIs are the same as current scene. Do not invent an additional renderer or use unprovided model assets.
+
+Actual build-11 compiler errors:
+e: file://PROJECT/app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumRoomStage.kt:44:63 Unresolved reference 'launch'.
+e: file://PROJECT/app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumRoomStage.kt:44:72 Suspend function 'suspend fun close(navigator: SpatialNavigator): Unit' can only be called from a coroutine or another suspend function.
+Source inspection (not runtime): room SpatialView has no size/fill/weight modifier in a Column. Its Leave button uses GlobalScope. Stage open currently omits style.
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt ---
+package dev.local.lunamuseum.reproduction
+
+import androidx.compose.ui.unit.dp
+import com.pico.spatial.ui.design.PicoTheme
+import com.pico.spatial.ui.foundation.dsl.DefaultWindowContainer
+import com.pico.spatial.ui.foundation.dsl.Form
+import com.pico.spatial.ui.foundation.dsl.SpatialAppScope
+import com.pico.spatial.ui.foundation.dsl.Stage
+import com.pico.spatial.ui.foundation.dsl.WindowContainer
+import com.pico.spatial.ui.foundation.dsl.WindowContainerSize
+import com.pico.spatial.ui.platform.containers.LocalSpatialNavigator
+import dev.local.lunamuseum.reproduction.content.CompanionWindow
+import dev.local.lunamuseum.reproduction.content.HomeVolume
+import dev.local.lunamuseum.reproduction.content.MuseumRoomStage
+
+fun mainApp(scope: SpatialAppScope) =
+    with(scope) {
+        DefaultWindowContainer {
+            PicoTheme {
+                val navigator = LocalSpatialNavigator.current
+                HomeVolume(
+                    onOpenCompanion = {
+                        CompanionWindow.open(navigator)
+                    },
+                )
+            }
+        }
+
+        WindowContainer(
+            id = CompanionWindow.ID,
+            form = Form.Planar,
+            defaultSize = WindowContainerSize(width = 480.dp, height = 620.dp),
+        ) {
+            PicoTheme {
+                CompanionWindow.Content()
+            }
+        }
+
+        Stage(id = MuseumRoomStage.ID) {
+            PicoTheme {
+                MuseumRoomStage.Content()
+            }
+        }
+    }
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumRoomStage.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.pico.spatial.core.ecs.Entity
+import com.pico.spatial.core.ecs.ModelEntity
+import com.pico.spatial.core.ecs.TransformComponent
+import com.pico.spatial.core.ecs.resource.MeshResource
+import com.pico.spatial.core.ecs.resource.UnlitMaterial
+import com.pico.spatial.core.math.Color4
+import com.pico.spatial.core.math.EulerAngles
+import com.pico.spatial.core.math.Vector3
+import com.pico.spatial.ui.design.Button
+import com.pico.spatial.ui.design.Text
+import com.pico.spatial.ui.foundation.content.SpatialView
+import com.pico.spatial.ui.platform.containers.LocalSpatialNavigator
+import com.pico.spatial.ui.platform.containers.OpenStageResult
+import com.pico.spatial.ui.platform.containers.SpatialNavigator
+
+object MuseumRoomStage {
+    const val ID = "luna-museum-room"
+
+    @Composable
+    fun Content() {
+        val navigator = LocalSpatialNavigator.current
+
+        Column(modifier = Modifier.padding(20.dp)) {
+            Text("Luna Museum room")
+            Text("18 exhibits on plinths")
+            Spacer(modifier = Modifier.height(8.dp))
+            SpatialView(
+                update = { _, _ -> },
+                initial = { content, _ ->
+                    content.addEntity(createRoomScene())
+                },
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            Button(onClick = { kotlinx.coroutines.GlobalScope.launch { close(navigator) } }) {
+                Text("Leave museum room")
+            }
+        }
+    }
+
+    suspend fun open(navigator: SpatialNavigator) {
+        MuseumRoomStore.clearMessage()
+        when (val result = navigator.openStage(ID)) {
+            OpenStageResult.Allowed -> Unit
+            OpenStageResult.NotAllowed -> {
+                MuseumRoomStore.showMessage("The museum room cannot open on this device right now.")
+            }
+            is OpenStageResult.Error -> {
+                MuseumRoomStore.showMessage("The museum room could not open: ${result.reason}")
+            }
+        }
+    }
+
+    suspend fun close(navigator: SpatialNavigator) {
+        navigator.closeStage()
+    }
+}
+
+private fun createRoomScene(): Entity {
+    val room = Entity()
+    MuseumObject.values().forEachIndexed { index, _ ->
+        val exhibit = Entity()
+        exhibit.components[TransformComponent::class.java] = TransformComponent(
+            position = roomPosition(index),
+            rotation = EulerAngles(0f, 0f, 0f),
+            scale = Vector3(1f, 1f, 1f),
+        )
+        exhibit.addChild(model(
+            MeshResource.createBox(Vector3(0.8f, 0.35f, 0.8f), 0.06f),
+            Color4(0.18f, 0.2f, 0.25f, 1f),
+            Vector3(0f, -0.3f, 0f),
+        ))
+        exhibit.addChild(model(
+            exhibitMesh(index),
+            exhibitColor(index),
+            Vector3(0f, 0.15f, 0f),
+        ))
+        room.addChild(exhibit)
+    }
+    return room
+}
+
+private fun roomPosition(index: Int): Vector3 {
+    val column = index % 6
+    val row = index / 6
+    return Vector3((column - 2.5f) * 1.25f, 0f, (row - 1f) * 1.25f)
+}
+
+private fun exhibitMesh(index: Int): MeshResource =
+    if (index % 2 == 0) {
+        MeshResource.createBox(Vector3(0.55f, 0.55f, 0.55f), 0.08f)
+    } else {
+        MeshResource.createCylinder(0.28f, 0.6f)
+    }
+
+private fun exhibitColor(index: Int): Color4 = Color4(
+    0.25f + (index % 4) * 0.12f,
+    0.4f + (index % 3) * 0.12f,
+    0.7f,
+    1f,
+)
+
+private fun model(mesh: MeshResource, color: Color4, position: Vector3): ModelEntity {
+    val material = UnlitMaterial.create()
+    material.setBaseColor(color)
+    return ModelEntity(mesh, material).also {
+        it.components[TransformComponent::class.java] = TransformComponent(
+            position = position,
+            rotation = EulerAngles(0f, 0f, 0f),
+            scale = Vector3(1f, 1f, 1f),
+        )
+    }
+}
+
+object MuseumRoomStore {
+    private val messageState = mutableStateOf<String?>(null)
+
+    val message: String?
+        @Synchronized get() = messageState.value
+
+    @Synchronized
+    fun showMessage(value: String) {
+        messageState.value = value
+    }
+
+    @Synchronized
+    fun clearMessage() {
+        messageState.value = null
+    }
+}
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.pico.spatial.ui.design.Button
+import com.pico.spatial.ui.design.Text
+import com.pico.spatial.ui.platform.containers.LocalSpatialNavigator
+import com.pico.spatial.ui.platform.containers.SpatialNavigator
+import kotlinx.coroutines.launch
+
+object CompanionWindow {
+    const val ID = "luna-museum-companion"
+
+    fun open(navigator: SpatialNavigator) {
+        navigator.openWindowContainer(ID, tag = TAG)
+    }
+
+    @Composable
+    fun Content() {
+        val navigator = LocalSpatialNavigator.current
+        val scope = rememberCoroutineScope()
+        val selection = MuseumSelectionStore.current
+        val story = MuseumStoryStore.current
+        val roomMessage = MuseumRoomStore.message
+
+        fun select(item: MuseumObject) {
+            MuseumSelectionStore.update(selection.select(item))
+            MuseumStoryStore.select(item)
+        }
+
+        Column(
+            modifier = Modifier
+                .padding(20.dp)
+                .verticalScroll(rememberScrollState()),
+        ) {
+            Text("Companion inspector")
+            Spacer(modifier = Modifier.height(8.dp))
+            Text("18 exhibits")
+            Spacer(modifier = Modifier.height(12.dp))
+            Text("Selected: ${selection.selected.title}")
+            Text(selection.selected.description)
+            Spacer(modifier = Modifier.height(8.dp))
+            Text("Quarter turns: ${selection.turnQuarterTurns}")
+            Text("Story ${story.stepIndex + 1} of ${story.story.steps.size}: ${story.stepText}")
+            roomMessage?.let {
+                Spacer(modifier = Modifier.height(8.dp))
+                Text(it)
+            }
+            Spacer(modifier = Modifier.height(16.dp))
+            Text("Catalogue")
+            Spacer(modifier = Modifier.height(6.dp))
+
+            MuseumObject.values().forEachIndexed { index, item ->
+                Button(
+                    onClick = { select(item) },
+                    modifier = Modifier.fillMaxWidth(),
+                ) {
+                    Text("${index + 1}. ${item.title}${if (item.isPrimitivePlaceholder) " (primitive placeholder)" else ""}")
+                }
+                Spacer(modifier = Modifier.height(5.dp))
+            }
+
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Button(onClick = {
+                    MuseumStoryStore.update(if (story.isPlaying) story.pause() else story.play())
+                }) { Text(if (story.isPlaying) "Pause story" else "Play story") }
+                Button(onClick = { MuseumStoryStore.update(story.restart()) }) { Text("Restart story") }
+            }
+
+            Spacer(modifier = Modifier.height(8.dp))
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Button(onClick = { MuseumSelectionStore.update(selection.turn()) }) { Text("Turn") }
+                Button(onClick = {
+                    val resetSelection = MuseumSelectionStore.current.reset()
+                    MuseumSelectionStore.update(resetSelection)
+                    MuseumStoryStore.reset(resetSelection.selected)
+                }) { Text("Reset") }
+                Button(onClick = { MuseumStoryStore.update(story.toggleReducedMotion()) }) {
+                    Text("Reduced motion: ${if (story.reducedMotion) "On" else "Off"}")
+                }
+            }
+
+            Spacer(modifier = Modifier.height(8.dp))
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Button(onClick = {
+                    scope.launch { MuseumRoomStage.open(navigator) }
+                }) { Text("Enter museum room") }
+                Button(onClick = { navigator.closeWindowContainer() }) { Text("Close") }
+            }
+        }
+    }
+
+    private const val TAG = "museum-companion"
+}
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelection.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+enum class MuseumObject(
+    val title: String,
+    val description: String,
+    val isPrimitivePlaceholder: Boolean = false,
+) {
+    HANDLED_CUP("Handled cup", "A simple ceramic cup with a sturdy handle."),
+    ROBOT_VACUUM("Robot vacuum", "A compact robot vacuum that quietly patrols the floor."),
+    SMART_SPEAKER("Smart speaker", "A small connected speaker ready to answer a question."),
+    COFFEE_POD("Coffee pod", "Primitive placeholder: a simple capsule-shaped exhibit.", true),
+    DELIVERY_BOX("Delivery box", "Primitive placeholder: a simple box-shaped exhibit.", true),
+    QR_CODE("QR code", "Primitive placeholder: a simple marked-box exhibit.", true),
+    FIDGET_TOY("Fidget toy", "Primitive placeholder: a simple rounded exhibit.", true),
+    FACE_MASK("Face mask", "Primitive placeholder: a simple thin-box exhibit.", true),
+    SMARTPHONE("Smartphone", "Primitive placeholder: a simple thin-box exhibit.", true),
+    EARBUDS("Earbuds", "Primitive placeholder: a pair-like simple exhibit.", true),
+    SMARTWATCH("Smartwatch", "Primitive placeholder: a simple rounded exhibit.", true),
+    CRYPTO_WALLET("Crypto wallet", "Primitive placeholder: a simple wallet-shaped exhibit.", true),
+    REMOTE_CONTROL("Remote control", "Primitive placeholder: a simple long-box exhibit.", true),
+    ROUTER("Router", "Primitive placeholder: a simple box-shaped exhibit.", true),
+    DOORBELL("Doorbell", "Primitive placeholder: a simple wall-box exhibit.", true),
+    SCOOTER("Scooter", "Primitive placeholder: a simple bar-and-box exhibit.", true),
+    GAS_CAN("Gas can", "Primitive placeholder: a simple can-shaped exhibit.", true),
+    ROCKET("Rocket", "Primitive placeholder: a simple cone-and-box exhibit.", true),
+}
+
+data class MuseumSelection(
+    val selected: MuseumObject = MuseumObject.HANDLED_CUP,
+    val turnQuarterTurns: Int = 0,
+) {
+    fun select(item: MuseumObject): MuseumSelection = copy(selected = item, turnQuarterTurns = 0)
+    fun turn(): MuseumSelection = copy(turnQuarterTurns = (turnQuarterTurns + 1) % 4)
+    fun reset(): MuseumSelection = copy(turnQuarterTurns = 0)
+}

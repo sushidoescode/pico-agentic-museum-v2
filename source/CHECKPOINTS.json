@@ -211,6 +211,49 @@
       ],
       "completeRelativeToApk": false,
       "compiledOrReproducedDuringExport": false
+    },
+    {
+      "name": "build-010",
+      "originalTag": null,
+      "peeledCommit": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+      "documentationCloseoutCommit": "5224c1ac95a130dbf7d49806caba3f2ed2617028",
+      "exportDirectory": "snapshots/build-010",
+      "exportFileCount": 114,
+      "exportBytes": 5640819,
+      "sanitizedAggregateSha256": "433c15378cdb5f998ad0bb6cb11e0353b59739f38bdaba2793f2878eb96428d4",
+      "aggregateRecipe": "SHA-256 over sorted UTF-8 lines: sha256 + one space + snapshot-relative path + LF; excludes SNAPSHOT_NOTICE.md",
+      "omittedAssetPaths": [
+        "native/app/src/main/assets/box.usdz",
+        "native/app/src/main/assets/models/exhibits/fidget.glb",
+        "native/app/src/main/assets/models/exhibits/gascan.glb",
+        "native/app/src/main/assets/models/exhibits/scooter.glb",
+        "native/app/src/main/assets/models/vessel_study.glb",
+        "native/app/src/main/assets/thumbnails/fidget.png",
+        "native/app/src/main/assets/thumbnails/gascan.png",
+        "native/app/src/main/assets/thumbnails/quencher.png",
+        "native/app/src/main/assets/thumbnails/scooter.png",
+        "native/app/src/main/res/drawable/ic_launcher_foreground.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_0.png",
+        "native/app/src/main/res/drawable/icon_3d_layer_1.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_0.png",
+        "native/app/src/main/res/drawable/icon_3d_sdf_1.png",
+        "native/app/src/main/res/mipmap-xxxhdpi/ic_spatial_launcher.png"
+      ],
+      "completeRelativeToApk": false,
+      "compiledOrReproducedDuringExport": false,
+      "apk": {
+        "sha256": "a5dd0c3e2ddbe21075778780d66e6103146ec0ce697f642cf42728060eed3e7f",
+        "bytes": 41641132,
+        "versionName": "1.1-feedback-002",
+        "versionCode": 1
+      },
+      "buildReceiptQualification": {
+        "dirtyLines": 42,
+        "sourceAndConfigurationFilesMatchingReceipt": 123,
+        "note": "All 6 Gradle and 117 app/src files match the built revision and later checkout; this does not erase the recorded build-time status lines."
+      },
+      "assetScope": "Same asset/launcher payloads as build-008; qualified omissions retained. No fresh rebuild from export plus supplement performed.",
+      "nativeEvidenceScope": "One build-010 admitted archive-arrival frame and documented Return/disposal. Most feedback interaction observations are build-009; no headset acceptance or successful Subwindow claimed."
     }
   ],
   "editorialMappings": [
@@ -227,6 +270,7 @@
     "L0 complete is source-only, not a native build.",
     "L1 completion annotation corrected forward: 12 admitted frames, 9 opened.",
     "L4-complete is build-007; build-008 is a distinct later hardening checkpoint.",
-    "App APK build-time receipt retains dirtyLines=2; a peeled source revision does not prove clean build inputs."
+    "App APK build-time receipt retains dirtyLines=2; a peeled source revision does not prove clean build inputs.",
+    "Build-010 is a separate October feedback artifact: built source 4f0d8d3, documentation closeout 5224c1a, receipt dirtyLines=42. The earlier ten snapshots and their qualifications are preserved."
   ]
 }

@@ -1,0 +1,1 @@
+The room still has two compiler errors in the attached output. Please fix just those errors while keeping the room layout and Leave button.

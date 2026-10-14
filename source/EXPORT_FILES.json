@@ -10913,6 +10913,2067 @@
       "evidenceClass": "retained-host-dependency-report",
       "inclusionStatus": "included-local-private-review",
       "reason": "Allowlisted source/payload; distribution qualifications in source/NOTICES.md and assets/PROVENANCE_AND_RIGHTS.md"
+    },
+    {
+      "path": "source/snapshots/build-010/native/.gitignore",
+      "bytes": 441,
+      "sha256": "aea75c7fd54461b74663416e9cdc794a472e4805c041642f5044493cac4e8a6a",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/.gitignore",
+        "bytes": 441,
+        "sha256": "aea75c7fd54461b74663416e9cdc794a472e4805c041642f5044493cac4e8a6a"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/.gitignore",
+      "bytes": 7,
+      "sha256": "5b46eb48d96e8571e8c93e4ef4f6ffbe6807b6d7350664a36a064e1167a32718",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/.gitignore",
+        "bytes": 7,
+        "sha256": "5b46eb48d96e8571e8c93e4ef4f6ffbe6807b6d7350664a36a064e1167a32718"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/build.gradle.kts",
+      "bytes": 2382,
+      "sha256": "a7e8522e1fdec2a80e312ca9e4f33451d048b4aef2b94c462dac613bd0fa7ff4",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/build.gradle.kts",
+        "bytes": 2382,
+        "sha256": "a7e8522e1fdec2a80e312ca9e4f33451d048b4aef2b94c462dac613bd0fa7ff4"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/proguard-rules.pro",
+      "bytes": 751,
+      "sha256": "1cf8c57e8f79c250b0af9c1a5a4edad71a5c348a79ab70243b6bae086c150ad2",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/proguard-rules.pro",
+        "bytes": 751,
+        "sha256": "1cf8c57e8f79c250b0af9c1a5a4edad71a5c348a79ab70243b6bae086c150ad2"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/androidTest/java/dev/local/everydayfutures/museum/ExampleInstrumentedTest.kt",
+      "bytes": 692,
+      "sha256": "c69045de5cbd73687b3cc42baaa92849c33c1555015e430c1708d23be106c4a6",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/androidTest/java/dev/local/everydayfutures/museum/ExampleInstrumentedTest.kt",
+        "bytes": 692,
+        "sha256": "c69045de5cbd73687b3cc42baaa92849c33c1555015e430c1708d23be106c4a6"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/AndroidManifest.xml",
+      "bytes": 4747,
+      "sha256": "210685d93abe2ef7b1e7d39be0df614211ea980d910749fbbbe358f1827291ac",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/AndroidManifest.xml",
+        "bytes": 4747,
+        "sha256": "210685d93abe2ef7b1e7d39be0df614211ea980d910749fbbbe358f1827291ac"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/coffeepod.glb",
+      "bytes": 145088,
+      "sha256": "629d9336e4b946a89169f7a54b38edb74261ee370a29e2bfb7c4d0b13ef2643d",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/coffeepod.glb",
+        "bytes": 145088,
+        "sha256": "629d9336e4b946a89169f7a54b38edb74261ee370a29e2bfb7c4d0b13ef2643d"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/cryptowallet.glb",
+      "bytes": 85296,
+      "sha256": "98d8ccaa047daea80f2da1f7db795675a2bcdaebbaa402d131adc6939e9f968d",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/cryptowallet.glb",
+        "bytes": 85296,
+        "sha256": "98d8ccaa047daea80f2da1f7db795675a2bcdaebbaa402d131adc6939e9f968d"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/deliverybox.glb",
+      "bytes": 58256,
+      "sha256": "8b5ce1f7fbabd0c0c502a193942be0a253dd289961d9f8cf18130a2f4ffa9685",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/deliverybox.glb",
+        "bytes": 58256,
+        "sha256": "8b5ce1f7fbabd0c0c502a193942be0a253dd289961d9f8cf18130a2f4ffa9685"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/doorbell.glb",
+      "bytes": 90952,
+      "sha256": "7592c80470d45b3b18c8d98b74b08a305e4ca776a9775b90bbdbeb77aba06bae",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/doorbell.glb",
+        "bytes": 90952,
+        "sha256": "7592c80470d45b3b18c8d98b74b08a305e4ca776a9775b90bbdbeb77aba06bae"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/earbuds.glb",
+      "bytes": 166828,
+      "sha256": "312daee4124de57384da7d5f778c3d5e62c24208c82295982f9ad200a8e054b9",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/earbuds.glb",
+        "bytes": 166828,
+        "sha256": "312daee4124de57384da7d5f778c3d5e62c24208c82295982f9ad200a8e054b9"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/facemask.glb",
+      "bytes": 261456,
+      "sha256": "2be00155fbac49859031b7d5078b2f07ba8c95f7f2a223bd40632568c79a0dcb",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/facemask.glb",
+        "bytes": 261456,
+        "sha256": "2be00155fbac49859031b7d5078b2f07ba8c95f7f2a223bd40632568c79a0dcb"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/qrcode.glb",
+      "bytes": 46876,
+      "sha256": "9a630c948d2760fdee3b782661277d0211ec6d1dcaf6f5f24d6014cb75aa9c1a",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/qrcode.glb",
+        "bytes": 46876,
+        "sha256": "9a630c948d2760fdee3b782661277d0211ec6d1dcaf6f5f24d6014cb75aa9c1a"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/remote.glb",
+      "bytes": 118480,
+      "sha256": "681f6a0853b435c3679187066e68e69e1eb157e13068ae99f8ea3c1d8c6f8d27",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/remote.glb",
+        "bytes": 118480,
+        "sha256": "681f6a0853b435c3679187066e68e69e1eb157e13068ae99f8ea3c1d8c6f8d27"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/rocket.glb",
+      "bytes": 250164,
+      "sha256": "38baf6c3cc9c689f293c60ea2c77ade7ab3f905fa8a5f73bc5a812729f468d62",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/rocket.glb",
+        "bytes": 250164,
+        "sha256": "38baf6c3cc9c689f293c60ea2c77ade7ab3f905fa8a5f73bc5a812729f468d62"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/router.glb",
+      "bytes": 197124,
+      "sha256": "c0d59ace8e0b5801deef943c367d526db82fedf2814380b20ec4cbbb34123e04",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/router.glb",
+        "bytes": 197124,
+        "sha256": "c0d59ace8e0b5801deef943c367d526db82fedf2814380b20ec4cbbb34123e04"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/smartphone.glb",
+      "bytes": 176416,
+      "sha256": "d536d0ef8b5555b8c4d7172c7c7cb59c7d8c0b6123dda427275c43e4031ac5ea",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/smartphone.glb",
+        "bytes": 176416,
+        "sha256": "d536d0ef8b5555b8c4d7172c7c7cb59c7d8c0b6123dda427275c43e4031ac5ea"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/smartspeaker.glb",
+      "bytes": 329780,
+      "sha256": "11ff1240568f66b685fb5f0080f6ea6a795cea465bbee7ae0cb2d8f019d4f922",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/smartspeaker.glb",
+        "bytes": 329780,
+        "sha256": "11ff1240568f66b685fb5f0080f6ea6a795cea465bbee7ae0cb2d8f019d4f922"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/smartwatch.glb",
+      "bytes": 174952,
+      "sha256": "54820c1c53a275213bccf054251dd109790a763c4f0c1ab34172282175eeb03e",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/smartwatch.glb",
+        "bytes": 174952,
+        "sha256": "54820c1c53a275213bccf054251dd109790a763c4f0c1ab34172282175eeb03e"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/models/exhibits/vacuum.glb",
+      "bytes": 235564,
+      "sha256": "bd4c2f30f8b3bb9c16e9631440fc81c15ada432374cd1a6b7555d507997d2b03",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/models/exhibits/vacuum.glb",
+        "bytes": 235564,
+        "sha256": "bd4c2f30f8b3bb9c16e9631440fc81c15ada432374cd1a6b7555d507997d2b03"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/room/earth_archive.glb",
+      "bytes": 2121940,
+      "sha256": "152e5087d2580e8952bda72192bb821fc6bee8a29bf0c3b0ab5f906ae971b6f3",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/room/earth_archive.glb",
+        "bytes": 2121940,
+        "sha256": "152e5087d2580e8952bda72192bb821fc6bee8a29bf0c3b0ab5f906ae971b6f3"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/room/room-layout.json",
+      "bytes": 14482,
+      "sha256": "67023ca9e5f77c068e25901aeb9c8ad9fdda2c652f3a589db4a7f13b51d8bf03",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/room/room-layout.json",
+        "bytes": 14482,
+        "sha256": "67023ca9e5f77c068e25901aeb9c8ad9fdda2c652f3a589db4a7f13b51d8bf03"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/coffeepod.png",
+      "bytes": 44141,
+      "sha256": "de1d13f82a807573d7789109860b7448904455430502168305d8d7800c43fd21",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/coffeepod.png",
+        "bytes": 44141,
+        "sha256": "de1d13f82a807573d7789109860b7448904455430502168305d8d7800c43fd21"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/cryptowallet.png",
+      "bytes": 23498,
+      "sha256": "e93ef8602deb4399587332c8ac454a810d966536062591c1344a6c6c09c1fd71",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/cryptowallet.png",
+        "bytes": 23498,
+        "sha256": "e93ef8602deb4399587332c8ac454a810d966536062591c1344a6c6c09c1fd71"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/deliverybox.png",
+      "bytes": 35856,
+      "sha256": "1f34ce68844b9f04dce7bf4764c2718df99b55d2a47203d2026642485f0b88b0",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/deliverybox.png",
+        "bytes": 35856,
+        "sha256": "1f34ce68844b9f04dce7bf4764c2718df99b55d2a47203d2026642485f0b88b0"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/doorbell.png",
+      "bytes": 29057,
+      "sha256": "53a6e0ad512bb77e506c3d41d22abb4d675f297626a9bddd654537d1f3e5c945",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/doorbell.png",
+        "bytes": 29057,
+        "sha256": "53a6e0ad512bb77e506c3d41d22abb4d675f297626a9bddd654537d1f3e5c945"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/earbuds.png",
+      "bytes": 42482,
+      "sha256": "8b53d18e63ef3fdb1217e375ecbcee4d24eb02e1405642769ac12d4ae67b122e",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/earbuds.png",
+        "bytes": 42482,
+        "sha256": "8b53d18e63ef3fdb1217e375ecbcee4d24eb02e1405642769ac12d4ae67b122e"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/facemask.png",
+      "bytes": 34656,
+      "sha256": "58882c224d8dacdf3bb5776d1f57bb0c7c4a42907b4a3f39ae12c6fd4b96378b",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/facemask.png",
+        "bytes": 34656,
+        "sha256": "58882c224d8dacdf3bb5776d1f57bb0c7c4a42907b4a3f39ae12c6fd4b96378b"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/qrcode.png",
+      "bytes": 40515,
+      "sha256": "9bcf25f458f98b2932b1f84c9dfac21df9684ec19fb7a06d2a004379f66e91b1",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/qrcode.png",
+        "bytes": 40515,
+        "sha256": "9bcf25f458f98b2932b1f84c9dfac21df9684ec19fb7a06d2a004379f66e91b1"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/remote.png",
+      "bytes": 20787,
+      "sha256": "d74e4ba0e477633baab1b383364c1c6198694480d358d03c9d3d56e2b579dd5a",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/remote.png",
+        "bytes": 20787,
+        "sha256": "d74e4ba0e477633baab1b383364c1c6198694480d358d03c9d3d56e2b579dd5a"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/rocket.png",
+      "bytes": 19648,
+      "sha256": "d3bdcc2980b7b4bea7216c2e63ea9ce4e98991eeb4cb0cf4c4b6128c1664f5c9",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/rocket.png",
+        "bytes": 19648,
+        "sha256": "d3bdcc2980b7b4bea7216c2e63ea9ce4e98991eeb4cb0cf4c4b6128c1664f5c9"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/router.png",
+      "bytes": 34845,
+      "sha256": "ffc1c5d8209a340b750dadfd50255d45961757d8d5ece56d7f11ed8a901de58f",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/router.png",
+        "bytes": 34845,
+        "sha256": "ffc1c5d8209a340b750dadfd50255d45961757d8d5ece56d7f11ed8a901de58f"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/smartphone.png",
+      "bytes": 26324,
+      "sha256": "1f4ccadf1ce5a3f17002a0b0b5421f273f541c1169bc520be5153d0435dece31",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/smartphone.png",
+        "bytes": 26324,
+        "sha256": "1f4ccadf1ce5a3f17002a0b0b5421f273f541c1169bc520be5153d0435dece31"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/smartspeaker.png",
+      "bytes": 38564,
+      "sha256": "d5411d10da4fb791fbf4ed69f2e514f385e0eb019dfb2f9b7ba3d956cb5ede25",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/smartspeaker.png",
+        "bytes": 38564,
+        "sha256": "d5411d10da4fb791fbf4ed69f2e514f385e0eb019dfb2f9b7ba3d956cb5ede25"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/smartwatch.png",
+      "bytes": 41067,
+      "sha256": "93c7a80e2fa702c206a0b8615eb12c7cd714720bc497444c6673e72686674eea",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/smartwatch.png",
+        "bytes": 41067,
+        "sha256": "93c7a80e2fa702c206a0b8615eb12c7cd714720bc497444c6673e72686674eea"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/assets/thumbnails/vacuum.png",
+      "bytes": 29680,
+      "sha256": "f59a48dde2d441076fb09d9057d19fd1dd7ca53cdda4ad4bc67d0f730be788bf",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/assets/thumbnails/vacuum.png",
+        "bytes": 29680,
+        "sha256": "f59a48dde2d441076fb09d9057d19fd1dd7ca53cdda4ad4bc67d0f730be788bf"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/Main.kt",
+      "bytes": 6042,
+      "sha256": "4bee6a693533b85962065a2f40de34cb9fc63d08d850d870de1e87b58bdea78c",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/Main.kt",
+        "bytes": 6042,
+        "sha256": "4bee6a693533b85962065a2f40de34cb9fc63d08d850d870de1e87b58bdea78c"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/catalogue/Catalogue.kt",
+      "bytes": 26404,
+      "sha256": "23bf250a05bf53b2fafa0eaef53b9d0c99775954a15e2c625ae5db03ce9f00fa",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/catalogue/Catalogue.kt",
+        "bytes": 26404,
+        "sha256": "23bf250a05bf53b2fafa0eaef53b9d0c99775954a15e2c625ae5db03ce9f00fa"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/catalogue/CatalogueQuery.kt",
+      "bytes": 6532,
+      "sha256": "9e678f9aab0a6bae2e70e6a852b7b534471780fae4bb8c6dfd79a86e78b4c534",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/catalogue/CatalogueQuery.kt",
+        "bytes": 6532,
+        "sha256": "9e678f9aab0a6bae2e70e6a852b7b534471780fae4bb8c6dfd79a86e78b4c534"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/CataloguePanel.kt",
+      "bytes": 20989,
+      "sha256": "87bc6f01dcee84a99764c4462a6532aac3ec58b77436dcfee52b82e986cfd297",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/CataloguePanel.kt",
+        "bytes": 20989,
+        "sha256": "87bc6f01dcee84a99764c4462a6532aac3ec58b77436dcfee52b82e986cfd297"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/CompanionStory.kt",
+      "bytes": 10946,
+      "sha256": "1c023ad916d588a9f8b0c7dcd9b23641d3661f7689277a1a0c4c75fca26ba713",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/CompanionStory.kt",
+        "bytes": 10946,
+        "sha256": "1c023ad916d588a9f8b0c7dcd9b23641d3661f7689277a1a0c4c75fca26ba713"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/CompanionSubwindow.kt",
+      "bytes": 2623,
+      "sha256": "8d3e1d7614f6de8cfbc869208b8c2f5f2b3668c099100f9b330d1fb39ce05d58",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/CompanionSubwindow.kt",
+        "bytes": 2623,
+        "sha256": "8d3e1d7614f6de8cfbc869208b8c2f5f2b3668c099100f9b330d1fb39ce05d58"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/CompanionWindow.kt",
+      "bytes": 12271,
+      "sha256": "274fb48b8d9b4b3cf0635ca1818ed63dbb07c22f159930957f4bdc95f0a8d378",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/CompanionWindow.kt",
+        "bytes": 12271,
+        "sha256": "274fb48b8d9b4b3cf0635ca1818ed63dbb07c22f159930957f4bdc95f0a8d378"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/ExhibitFactory.kt",
+      "bytes": 9719,
+      "sha256": "fb379d3abc91901daad4486b568f76c0726aed05e66eeaf36af58a65d79aaeea",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/ExhibitFactory.kt",
+        "bytes": 9719,
+        "sha256": "fb379d3abc91901daad4486b568f76c0726aed05e66eeaf36af58a65d79aaeea"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/ExhibitLoad.kt",
+      "bytes": 8474,
+      "sha256": "4eab006401814c4dec03ec9922eec9ec0d18f02de82f9679327962f7b8fa0dac",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/ExhibitLoad.kt",
+        "bytes": 8474,
+        "sha256": "4eab006401814c4dec03ec9922eec9ec0d18f02de82f9679327962f7b8fa0dac"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/ExhibitLoader.kt",
+      "bytes": 7684,
+      "sha256": "139ded08a6e887e60a2f28127458794e2e9d6438f1b4fcab3e7569bae4f1c43d",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/ExhibitLoader.kt",
+        "bytes": 7684,
+        "sha256": "139ded08a6e887e60a2f28127458794e2e9d6438f1b4fcab3e7569bae4f1c43d"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/FadeIn.kt",
+      "bytes": 2102,
+      "sha256": "ca82ae5c55a028f42d05deb5b03fae7731f5c5cf2674da6aadbc0ca5d22e0dcb",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/FadeIn.kt",
+        "bytes": 2102,
+        "sha256": "ca82ae5c55a028f42d05deb5b03fae7731f5c5cf2674da6aadbc0ca5d22e0dcb"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/InspectorMotion.kt",
+      "bytes": 3255,
+      "sha256": "97d4093d72127ca79ead253e2f45ae49afd1f8f1fdfb3813fd2bea7b6bc7a7e4",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/InspectorMotion.kt",
+        "bytes": 3255,
+        "sha256": "97d4093d72127ca79ead253e2f45ae49afd1f8f1fdfb3813fd2bea7b6bc7a7e4"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/InspectorPresenter.kt",
+      "bytes": 11058,
+      "sha256": "dce2cab9a6233f990d2de8880b8d0199080ae7f83cc72c038096fc057db952a3",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/InspectorPresenter.kt",
+        "bytes": 11058,
+        "sha256": "dce2cab9a6233f990d2de8880b8d0199080ae7f83cc72c038096fc057db952a3"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/InspectorWindow.kt",
+      "bytes": 7159,
+      "sha256": "f8a88ba3a9e37dd6797c977fc4aa610e6f35990bacc5408dda362b5d78692b9f",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/InspectorWindow.kt",
+        "bytes": 7159,
+        "sha256": "f8a88ba3a9e37dd6797c977fc4aa610e6f35990bacc5408dda362b5d78692b9f"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/ModelCards.kt",
+      "bytes": 3025,
+      "sha256": "70cd8a22343de589186db9a7e6128d1b9934efb65a197f0b6e06058f75f26c0e",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/ModelCards.kt",
+        "bytes": 3025,
+        "sha256": "70cd8a22343de589186db9a7e6128d1b9934efb65a197f0b6e06058f75f26c0e"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/ModelFit.kt",
+      "bytes": 7785,
+      "sha256": "6f4c42f3158fdb2ffc8d6bcf669a18c6ce8952341ae1dd0c81e7c6d0b9973296",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/ModelFit.kt",
+        "bytes": 7785,
+        "sha256": "6f4c42f3158fdb2ffc8d6bcf669a18c6ce8952341ae1dd0c81e7c6d0b9973296"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/ModelSource.kt",
+      "bytes": 1858,
+      "sha256": "4f4ed4804dac3f627fedb4b3ca2654697bbef88bed20c8bba9aeb515ec570f7b",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/ModelSource.kt",
+        "bytes": 1858,
+        "sha256": "4f4ed4804dac3f627fedb4b3ca2654697bbef88bed20c8bba9aeb515ec570f7b"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/MuseumRoot.kt",
+      "bytes": 5585,
+      "sha256": "6eb74d3949bf203ed0c37939bed3e57e63122cf19b422541e08adffd3c18a458",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/MuseumRoot.kt",
+        "bytes": 5585,
+        "sha256": "6eb74d3949bf203ed0c37939bed3e57e63122cf19b422541e08adffd3c18a458"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/MuseumWindow.kt",
+      "bytes": 23249,
+      "sha256": "ab234b56186b5b6fd82e986fc1e6648ca1e3873f90e1f9f5ab424b909412b20c",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/MuseumWindow.kt",
+        "bytes": 23249,
+        "sha256": "ab234b56186b5b6fd82e986fc1e6648ca1e3873f90e1f9f5ab424b909412b20c"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/ObjectPresenter.kt",
+      "bytes": 17528,
+      "sha256": "247ab2930f2e3b4dbd8bbc58f30880059aa30dad5332374d309f3ad62bd83aa7",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/ObjectPresenter.kt",
+        "bytes": 17528,
+        "sha256": "247ab2930f2e3b4dbd8bbc58f30880059aa30dad5332374d309f3ad62bd83aa7"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/content/Thumbnails.kt",
+      "bytes": 2846,
+      "sha256": "810203aed23de9ed3405e7ee5a8d7bc6d510f03b70e6da5c20e119450abd2713",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/content/Thumbnails.kt",
+        "bytes": 2846,
+        "sha256": "810203aed23de9ed3405e7ee5a8d7bc6d510f03b70e6da5c20e119450abd2713"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/platform/LaunchActivity.kt",
+      "bytes": 267,
+      "sha256": "c02117b36d1cff9e34ded1578eaf417fb9dc1b07327b0eaae6959a5f7f950f2b",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/platform/LaunchActivity.kt",
+        "bytes": 267,
+        "sha256": "c02117b36d1cff9e34ded1578eaf417fb9dc1b07327b0eaae6959a5f7f950f2b"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/platform/MuseumRuntime.kt",
+      "bytes": 1938,
+      "sha256": "2701d0e2a659d3ecb7cb9e2bdcecb9f60e3d66eadc4babc12e54e7e1c84000f8",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/platform/MuseumRuntime.kt",
+        "bytes": 1938,
+        "sha256": "2701d0e2a659d3ecb7cb9e2bdcecb9f60e3d66eadc4babc12e54e7e1c84000f8"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/platform/SpatialApplication.kt",
+      "bytes": 770,
+      "sha256": "1b4a693a988938f9a189158c8dd88390fb97df9083175d868c06721048f85d45",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/platform/SpatialApplication.kt",
+        "bytes": 770,
+        "sha256": "1b4a693a988938f9a189158c8dd88390fb97df9083175d868c06721048f85d45"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArchiveGeometry.kt",
+      "bytes": 15096,
+      "sha256": "eae77a1f15a1affbc4ed0e79daa742d770dde8b05c0bca27d17cb36e25c10b31",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArchiveGeometry.kt",
+        "bytes": 15096,
+        "sha256": "eae77a1f15a1affbc4ed0e79daa742d770dde8b05c0bca27d17cb36e25c10b31"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArchiveLayout.kt",
+      "bytes": 3281,
+      "sha256": "023dd400b246d1e52ffe58ee1624e408eb94986dc293dc3a2c6ba71872353cb7",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArchiveLayout.kt",
+        "bytes": 3281,
+        "sha256": "023dd400b246d1e52ffe58ee1624e408eb94986dc293dc3a2c6ba71872353cb7"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArchivePads.kt",
+      "bytes": 3254,
+      "sha256": "d987ef0c9e17bdcc22b378e8ff442388e30fda9cee77ba210d412fe1113f4052",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArchivePads.kt",
+        "bytes": 3254,
+        "sha256": "d987ef0c9e17bdcc22b378e8ff442388e30fda9cee77ba210d412fe1113f4052"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArchiveStage.kt",
+      "bytes": 68216,
+      "sha256": "bad0e5d7a19535c7bd0cc0108d111e281c0cc79149fe6c87bfb9e80c86e029cf",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArchiveStage.kt",
+        "bytes": 68216,
+        "sha256": "bad0e5d7a19535c7bd0cc0108d111e281c0cc79149fe6c87bfb9e80c86e029cf"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArchiveTargets.kt",
+      "bytes": 7195,
+      "sha256": "371a09a3456c9cd94e1732f2de689d99bc1c38dcb56d1d313b98f053f9c41b9a",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArchiveTargets.kt",
+        "bytes": 7195,
+        "sha256": "371a09a3456c9cd94e1732f2de689d99bc1c38dcb56d1d313b98f053f9c41b9a"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArrivalCue.kt",
+      "bytes": 2442,
+      "sha256": "251140e9db11701bb44c2e4326bc9c3c763d15b42289d3a13d79f57e8cf28fc6",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/stage/ArrivalCue.kt",
+        "bytes": 2442,
+        "sha256": "251140e9db11701bb44c2e4326bc9c3c763d15b42289d3a13d79f57e8cf28fc6"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/stage/RoomLayoutParser.kt",
+      "bytes": 3334,
+      "sha256": "ccdb9fd01399f3a5990a6446afeae8033fe5cfe5325b1b9d091facb0ab153915",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/stage/RoomLayoutParser.kt",
+        "bytes": 3334,
+        "sha256": "ccdb9fd01399f3a5990a6446afeae8033fe5cfe5325b1b9d091facb0ab153915"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/state/Archive.kt",
+      "bytes": 7550,
+      "sha256": "69e46d5fc35e607937dcf029e5aa606681d17938031c1fe8493d3e19b4051fa5",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/state/Archive.kt",
+        "bytes": 7550,
+        "sha256": "69e46d5fc35e607937dcf029e5aa606681d17938031c1fe8493d3e19b4051fa5"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/state/Filter.kt",
+      "bytes": 1961,
+      "sha256": "21cf91acfec5422b695939a56b35358a87f9df5400e772d93db82e88468f9711",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/state/Filter.kt",
+        "bytes": 1961,
+        "sha256": "21cf91acfec5422b695939a56b35358a87f9df5400e772d93db82e88468f9711"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/state/Inspector.kt",
+      "bytes": 5620,
+      "sha256": "b1bc05347eba49f0d999b3656ca33d6d750512c693934979ed846005b5f68a9e",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/state/Inspector.kt",
+        "bytes": 5620,
+        "sha256": "b1bc05347eba49f0d999b3656ca33d6d750512c693934979ed846005b5f68a9e"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/state/MuseumController.kt",
+      "bytes": 31907,
+      "sha256": "8b60da5a080e2bf43c940c389ca068af241143252ecb048b29cdcd0a183ad8a9",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/state/MuseumController.kt",
+        "bytes": 31907,
+        "sha256": "8b60da5a080e2bf43c940c389ca068af241143252ecb048b29cdcd0a183ad8a9"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/state/MuseumPreferences.kt",
+      "bytes": 1931,
+      "sha256": "8d025401bd3289ef2a9133e0932305d1389573e1ab998bf9fb6670fdde44f7a3",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/state/MuseumPreferences.kt",
+        "bytes": 1931,
+        "sha256": "8d025401bd3289ef2a9133e0932305d1389573e1ab998bf9fb6670fdde44f7a3"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/state/MuseumState.kt",
+      "bytes": 5701,
+      "sha256": "dd027002897a47b264c58231dfabf002b7c943f7b1fed653c76479ae582d759a",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/state/MuseumState.kt",
+        "bytes": 5701,
+        "sha256": "dd027002897a47b264c58231dfabf002b7c943f7b1fed653c76479ae582d759a"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/state/Story.kt",
+      "bytes": 3268,
+      "sha256": "b6fc44e043526fc1c2ce30640da8a88aafa3c1cbeb48a5659b4483722a81b426",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/state/Story.kt",
+        "bytes": 3268,
+        "sha256": "b6fc44e043526fc1c2ce30640da8a88aafa3c1cbeb48a5659b4483722a81b426"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/state/Workspace.kt",
+      "bytes": 13781,
+      "sha256": "2397c5283fb4de493243952a08590ea2f78c06d23115269b65f2d82eed169d5b",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/state/Workspace.kt",
+        "bytes": 13781,
+        "sha256": "2397c5283fb4de493243952a08590ea2f78c06d23115269b65f2d82eed169d5b"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/story/SceneReadiness.kt",
+      "bytes": 1827,
+      "sha256": "ed7fa12bdda34e7f7dd0dc4e73b33a2e18e0cb47831fd9ed5d0e9f583a08b005",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/story/SceneReadiness.kt",
+        "bytes": 1827,
+        "sha256": "ed7fa12bdda34e7f7dd0dc4e73b33a2e18e0cb47831fd9ed5d0e9f583a08b005"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/story/StoryPresenter.kt",
+      "bytes": 12312,
+      "sha256": "9f2e4609a0f2e63bf60850572598fd352e1e8cf014a8c2ce81ea37a383d7d1d5",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/story/StoryPresenter.kt",
+        "bytes": 12312,
+        "sha256": "9f2e4609a0f2e63bf60850572598fd352e1e8cf014a8c2ce81ea37a383d7d1d5"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/java/dev/local/everydayfutures/museum/story/StoryScenes.kt",
+      "bytes": 17866,
+      "sha256": "e9925b68601798d8775e333e5af101a6c6a025d8a12dd67bae831482ed9536bc",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/java/dev/local/everydayfutures/museum/story/StoryScenes.kt",
+        "bytes": 17866,
+        "sha256": "e9925b68601798d8775e333e5af101a6c6a025d8a12dd67bae831482ed9536bc"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/res/mipmap-anydpi/ic_launcher.xml",
+      "bytes": 273,
+      "sha256": "6816d13425eb7e5a1f32d3531eebf146e5be0642c92d40de9281743cb80954a7",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/res/mipmap-anydpi/ic_launcher.xml",
+        "bytes": 273,
+        "sha256": "6816d13425eb7e5a1f32d3531eebf146e5be0642c92d40de9281743cb80954a7"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml",
+      "bytes": 273,
+      "sha256": "6816d13425eb7e5a1f32d3531eebf146e5be0642c92d40de9281743cb80954a7",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml",
+        "bytes": 273,
+        "sha256": "6816d13425eb7e5a1f32d3531eebf146e5be0642c92d40de9281743cb80954a7"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/res/values-night/themes.xml",
+      "bytes": 285,
+      "sha256": "d8f9c7addec6021b965a233756dc13db7267869fcfbb29cba4f81b19e981fb12",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/res/values-night/themes.xml",
+        "bytes": 285,
+        "sha256": "d8f9c7addec6021b965a233756dc13db7267869fcfbb29cba4f81b19e981fb12"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/res/values/colors.xml",
+      "bytes": 379,
+      "sha256": "57681038afd005dcd260eabdd6d16619709c4a3fe20324362ea00e093e85b5fd",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/res/values/colors.xml",
+        "bytes": 379,
+        "sha256": "57681038afd005dcd260eabdd6d16619709c4a3fe20324362ea00e093e85b5fd"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/res/values/drawables_3d.xml",
+      "bytes": 339,
+      "sha256": "b184f12693135aee48fe26d4413cf7c2c311e7abc96ff647290b6abc57cb6d04",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/res/values/drawables_3d.xml",
+        "bytes": 339,
+        "sha256": "b184f12693135aee48fe26d4413cf7c2c311e7abc96ff647290b6abc57cb6d04"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/res/values/strings.xml",
+      "bytes": 10531,
+      "sha256": "0b8f25f1f25579c20f2f83f3e747c138b5568162c49e90b9ee4f8912de374846",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/res/values/strings.xml",
+        "bytes": 10531,
+        "sha256": "0b8f25f1f25579c20f2f83f3e747c138b5568162c49e90b9ee4f8912de374846"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/res/values/themes.xml",
+      "bytes": 285,
+      "sha256": "d8f9c7addec6021b965a233756dc13db7267869fcfbb29cba4f81b19e981fb12",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/res/values/themes.xml",
+        "bytes": 285,
+        "sha256": "d8f9c7addec6021b965a233756dc13db7267869fcfbb29cba4f81b19e981fb12"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/res/xml/backup_rules.xml",
+      "bytes": 479,
+      "sha256": "602e880ca25c32b557c19cf6d9172e9bf55595cf6440d476d1787652f5889e49",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/res/xml/backup_rules.xml",
+        "bytes": 479,
+        "sha256": "602e880ca25c32b557c19cf6d9172e9bf55595cf6440d476d1787652f5889e49"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/main/res/xml/data_extraction_rules.xml",
+      "bytes": 488,
+      "sha256": "b2e1daf7a7e6fe1f28d49ab9eae35a77bc74a4f443aeeb44ca2275ad2bf51835",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/main/res/xml/data_extraction_rules.xml",
+        "bytes": 488,
+        "sha256": "b2e1daf7a7e6fe1f28d49ab9eae35a77bc74a4f443aeeb44ca2275ad2bf51835"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/ExampleUnitTest.kt",
+      "bytes": 357,
+      "sha256": "e1141dde49afe1b74bba95a1a4e89efac66e6ffd1a1378c87f997e769e702fa6",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/ExampleUnitTest.kt",
+        "bytes": 357,
+        "sha256": "e1141dde49afe1b74bba95a1a4e89efac66e6ffd1a1378c87f997e769e702fa6"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/catalogue/CatalogueTest.kt",
+      "bytes": 14724,
+      "sha256": "1a9e6b4c55b5fa0ee1ff63dac0c26e38209030a7f39e683ce5938651ce8fcd73",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/catalogue/CatalogueTest.kt",
+        "bytes": 14724,
+        "sha256": "1a9e6b4c55b5fa0ee1ff63dac0c26e38209030a7f39e683ce5938651ce8fcd73"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/content/ExhibitLoadTest.kt",
+      "bytes": 9640,
+      "sha256": "2d5103099109f99e5b35fab301bbc102c8da350251f6d36e11aa8ea65b1bca3c",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/content/ExhibitLoadTest.kt",
+        "bytes": 9640,
+        "sha256": "2d5103099109f99e5b35fab301bbc102c8da350251f6d36e11aa8ea65b1bca3c"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/content/FadeInTest.kt",
+      "bytes": 3730,
+      "sha256": "5a1e10073b82b37c67e237d2e948a062630671fb381522a7193ba9b901ca60bd",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/content/FadeInTest.kt",
+        "bytes": 3730,
+        "sha256": "5a1e10073b82b37c67e237d2e948a062630671fb381522a7193ba9b901ca60bd"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/content/ModelFitTest.kt",
+      "bytes": 13891,
+      "sha256": "8746740676080d31837ff5d109d3eacd4b31fc92d68faedd65d906f0c131fe1f",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/content/ModelFitTest.kt",
+        "bytes": 13891,
+        "sha256": "8746740676080d31837ff5d109d3eacd4b31fc92d68faedd65d906f0c131fe1f"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/stage/ArchiveGeometryTest.kt",
+      "bytes": 16773,
+      "sha256": "726ca78a5e87225bd9d657b3b14357073111a2a5f041ff2581c890590b4bc707",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/stage/ArchiveGeometryTest.kt",
+        "bytes": 16773,
+        "sha256": "726ca78a5e87225bd9d657b3b14357073111a2a5f041ff2581c890590b4bc707"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/stage/ArchiveLoadTest.kt",
+      "bytes": 2411,
+      "sha256": "1cac393bd356cac9c0aedc2f49580ade029e2dece85662b911af2bb2db45b1ca",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/stage/ArchiveLoadTest.kt",
+        "bytes": 2411,
+        "sha256": "1cac393bd356cac9c0aedc2f49580ade029e2dece85662b911af2bb2db45b1ca"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/stage/ArchivePadsTest.kt",
+      "bytes": 9027,
+      "sha256": "236c7fbfba55db5abea5e47fc00d9a9a8007ea1d7beb7cc28035b455cc58e69c",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/stage/ArchivePadsTest.kt",
+        "bytes": 9027,
+        "sha256": "236c7fbfba55db5abea5e47fc00d9a9a8007ea1d7beb7cc28035b455cc58e69c"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/stage/ArchiveTargetsTest.kt",
+      "bytes": 10347,
+      "sha256": "4e93d69ffce8f3bc5b54387cbfdf960f75fc390003f50295bf2f0758f4ef4f5b",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/stage/ArchiveTargetsTest.kt",
+        "bytes": 10347,
+        "sha256": "4e93d69ffce8f3bc5b54387cbfdf960f75fc390003f50295bf2f0758f4ef4f5b"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/stage/ArrivalCueTest.kt",
+      "bytes": 3356,
+      "sha256": "64ce00eae1ef5c46b707790b6ac567979af131a9f53ec72c342e1f430001d758",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/stage/ArrivalCueTest.kt",
+        "bytes": 3356,
+        "sha256": "64ce00eae1ef5c46b707790b6ac567979af131a9f53ec72c342e1f430001d758"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/state/ArchiveTest.kt",
+      "bytes": 22861,
+      "sha256": "18c692f72aded8283dc22863c842d38a882a367453aded04cacce005bc14e2e3",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/state/ArchiveTest.kt",
+        "bytes": 22861,
+        "sha256": "18c692f72aded8283dc22863c842d38a882a367453aded04cacce005bc14e2e3"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/state/AuxWindowTest.kt",
+      "bytes": 16206,
+      "sha256": "b731f54a240b54227974e1cb505fb89371afd9bc4a1155a320ba88acc71055ae",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/state/AuxWindowTest.kt",
+        "bytes": 16206,
+        "sha256": "b731f54a240b54227974e1cb505fb89371afd9bc4a1155a320ba88acc71055ae"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/state/CollectionResetTest.kt",
+      "bytes": 4146,
+      "sha256": "c6e64c92c78724d86cc37ea64c15cf779235631db0f86ae31cc4786f2ba6e6fc",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/state/CollectionResetTest.kt",
+        "bytes": 4146,
+        "sha256": "c6e64c92c78724d86cc37ea64c15cf779235631db0f86ae31cc4786f2ba6e6fc"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/state/CompanionSubwindowTest.kt",
+      "bytes": 9647,
+      "sha256": "f1b682a630a840cdb90a70386e1d28ec5f1ad8de68e152b6edbd66cb96a7cd4a",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/state/CompanionSubwindowTest.kt",
+        "bytes": 9647,
+        "sha256": "f1b682a630a840cdb90a70386e1d28ec5f1ad8de68e152b6edbd66cb96a7cd4a"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/state/FilterTest.kt",
+      "bytes": 6860,
+      "sha256": "af09f7b82c9af974e93c00bea157a5c4a73e79649528412be8e8907ec72cfad0",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/state/FilterTest.kt",
+        "bytes": 6860,
+        "sha256": "af09f7b82c9af974e93c00bea157a5c4a73e79649528412be8e8907ec72cfad0"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/state/InspectorTest.kt",
+      "bytes": 20538,
+      "sha256": "d09b918cfbbfdd5c553b38283409bed072469fa3001bbfe60bf117df51e33c0d",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/state/InspectorTest.kt",
+        "bytes": 20538,
+        "sha256": "d09b918cfbbfdd5c553b38283409bed072469fa3001bbfe60bf117df51e33c0d"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/state/MuseumStateTest.kt",
+      "bytes": 6249,
+      "sha256": "f7446c225f15ed1a6bf69dd8bd708e8bbfa4761064d12144a546e83be8313dcc",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/state/MuseumStateTest.kt",
+        "bytes": 6249,
+        "sha256": "f7446c225f15ed1a6bf69dd8bd708e8bbfa4761064d12144a546e83be8313dcc"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/state/SharedWorkspaceTest.kt",
+      "bytes": 9796,
+      "sha256": "c5565908506d81a49007eeb59f7cfc1811f93c8929cfcdf1e30a7f426ed98197",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/state/SharedWorkspaceTest.kt",
+        "bytes": 9796,
+        "sha256": "c5565908506d81a49007eeb59f7cfc1811f93c8929cfcdf1e30a7f426ed98197"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/app/src/test/java/dev/local/everydayfutures/museum/state/StoryTest.kt",
+      "bytes": 23847,
+      "sha256": "bf4162d282e77b4668e0ac7638da9fb220c7d4d2673782a366c76c5cfdd01b81",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/app/src/test/java/dev/local/everydayfutures/museum/state/StoryTest.kt",
+        "bytes": 23847,
+        "sha256": "bf4162d282e77b4668e0ac7638da9fb220c7d4d2673782a366c76c5cfdd01b81"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/build.gradle.kts",
+      "bytes": 324,
+      "sha256": "b45762e3d99dbca0c6c6ce15d4a4c2a07a8494db2fac82bca77c7004bdc8392a",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/build.gradle.kts",
+        "bytes": 324,
+        "sha256": "b45762e3d99dbca0c6c6ce15d4a4c2a07a8494db2fac82bca77c7004bdc8392a"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/gradle.properties",
+      "bytes": 1507,
+      "sha256": "d5e9a2054cb0689f906aa6572d7bae5696565bd8b177e8cc20a75e8a8d3a4b44",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/gradle.properties",
+        "bytes": 1908,
+        "sha256": "f5fea016e01de38dbe7062f7ec71895cf75c8ac21f2c4fa1a7847b29eec3e622"
+      },
+      "transform": [
+        "portability: removed inherited host-layout polish directory default; explicit package-local Gradle property required"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/gradle/libs.versions.toml",
+      "bytes": 1892,
+      "sha256": "92e12e52d727339b0024ae89c568d76fe61733ddf004e3e21d3431c3942fb351",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/gradle/libs.versions.toml",
+        "bytes": 1892,
+        "sha256": "92e12e52d727339b0024ae89c568d76fe61733ddf004e3e21d3431c3942fb351"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/gradle/wrapper/gradle-wrapper.jar",
+      "bytes": 59203,
+      "sha256": "e996d452d2645e70c01c11143ca2d3742734a28da2bf61f25c82bdc288c9e637",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/gradle/wrapper/gradle-wrapper.jar",
+        "bytes": 59203,
+        "sha256": "e996d452d2645e70c01c11143ca2d3742734a28da2bf61f25c82bdc288c9e637"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/gradle/wrapper/gradle-wrapper.properties",
+      "bytes": 251,
+      "sha256": "cdab1ffb439219b1db125e3c99a86cf2424f8762b9b3faa404ed061e3635ecde",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/gradle/wrapper/gradle-wrapper.properties",
+        "bytes": 251,
+        "sha256": "cdab1ffb439219b1db125e3c99a86cf2424f8762b9b3faa404ed061e3635ecde"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/gradlew",
+      "bytes": 5766,
+      "sha256": "63135287117a1e6d12c84580f1f49c61d1ba02218ecd28660605e97f976e7d65",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/gradlew",
+        "bytes": 5766,
+        "sha256": "63135287117a1e6d12c84580f1f49c61d1ba02218ecd28660605e97f976e7d65"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/gradlew.bat",
+      "bytes": 2674,
+      "sha256": "c46a27c79007746de5922b17abb6230d64ad8b1ba3ad1585ee5c6543c2a9b129",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/gradlew.bat",
+        "bytes": 2674,
+        "sha256": "c46a27c79007746de5922b17abb6230d64ad8b1ba3ad1585ee5c6543c2a9b129"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    },
+    {
+      "path": "source/snapshots/build-010/native/settings.gradle.kts",
+      "bytes": 1019,
+      "sha256": "4178ab32d8aa086ec68e6a24fc31b228d42f1c0c4f21c5bc6afff90016158ae7",
+      "original": {
+        "repository": "museum-feedback",
+        "revision": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+        "path": "native/settings.gradle.kts",
+        "bytes": 1019,
+        "sha256": "4178ab32d8aa086ec68e6a24fc31b228d42f1c0c4f21c5bc6afff90016158ae7"
+      },
+      "transform": [
+        "byte-identical relocation"
+      ],
+      "evidenceClass": "qualified-source-snapshot",
+      "inclusionStatus": "prepared-private-for-package-review",
+      "reason": "Same native allowlist/asset eligibility as build-008, plus new application Kotlin/test files; retains existing notices and holds."
+    }
+  ],
+  "lastUpdatedDate": "2026-10-14",
+  "additions": [
+    {
+      "date": "2026-10-14",
+      "snapshot": "build-010",
+      "inputFiles": 114,
+      "preservedPriorEntries": 606
     }
   ]
 }

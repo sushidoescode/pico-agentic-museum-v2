@@ -1,0 +1,273 @@
+This is a text-only chat recreation experiment. Do not call tools, read files, browse, run commands, or edit files. Use only the attached text. A human-style harness will manually apply your returned files and run checks. Return complete contents of only changed/new project files in the requested JSON shape, using project-relative paths. Do not claim the app was run or tested. Preserve the supplied package and Gradle versions.
+
+TEACHING PROMPT (operator-authored ordinary language, not an actual historical human message):
+The buttons change the label, but your response says the 3D scene stays still. Please show only the selected object and make Turn and Reset change its actual 3D rotation. Keep the shapes small enough to fit the viewing area.
+
+ATTACHMENTS:
+Verified SDK math fact: EulerAngles(pitch, yaw, roll) stores angles in DEGREES.
+Your previous response compiled successfully offline; 3 museum state tests plus the template test passed. No runtime/device check occurred. Code inspection finds update={_,_->} empty, matching your own stated limitation.
+SDK 6.1.9 API facts: Entity.enabled is mutable Boolean; false prevents rendering. TransformComponent.eulerAngles is mutable EulerAngles. Entity components are accessed with entity.components[TransformComponent::class.java]. SpatialView update is invoked once after initial, then when Compose state read there changes; initial runs once per attached view. SpatialView lifecycle clears its entities on release. Entity has destroy(recursively: Boolean=true). Entity() permits grouping with addChild(Entity).
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt ---
+package dev.local.lunamuseum.reproduction
+
+import dev.local.lunamuseum.reproduction.content.HomeVolume
+import com.pico.spatial.ui.design.PicoTheme
+import com.pico.spatial.ui.foundation.dsl.DefaultWindowContainer
+import com.pico.spatial.ui.foundation.dsl.SpatialAppScope
+
+fun mainApp(scope: SpatialAppScope) =
+    with(scope) {
+        DefaultWindowContainer {
+            PicoTheme {
+                HomeVolume()
+            }
+        }
+    }
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.unit.dp
+import com.pico.spatial.core.ecs.Entity
+import com.pico.spatial.core.ecs.ModelEntity
+import com.pico.spatial.core.ecs.TransformComponent
+import com.pico.spatial.core.ecs.resource.MeshResource
+import com.pico.spatial.core.ecs.resource.UnlitMaterial
+import com.pico.spatial.core.math.Color4
+import com.pico.spatial.core.math.EulerAngles
+import com.pico.spatial.core.math.Vector3
+import com.pico.spatial.ui.design.Button
+import com.pico.spatial.ui.design.Text
+import com.pico.spatial.ui.foundation.content.SpatialView
+
+@Composable
+fun HomeVolume() {
+    var selection by remember { mutableStateOf(MuseumSelection()) }
+
+    Column(modifier = Modifier.padding(16.dp)) {
+        Text("Luna Museum")
+        Spacer(modifier = Modifier.height(8.dp))
+        Text("Select an exhibit to inspect it in 3D.")
+        Spacer(modifier = Modifier.height(12.dp))
+
+        SpatialView(
+            modifier = Modifier
+                .fillMaxWidth()
+                .size(260.dp)
+                .clip(RoundedCornerShape(18.dp)),
+            update = { _, _ -> },
+            initial = { content, _ ->
+                content.addEntity(createMuseumScene())
+            },
+        )
+
+        Spacer(modifier = Modifier.height(12.dp))
+        Text(selection.selected.title)
+        Text(selection.selected.description)
+        Spacer(modifier = Modifier.height(10.dp))
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            Button(onClick = { selection = selection.select(MuseumObject.HANDLED_CUP) }) {
+                Text("Cup")
+            }
+            Button(onClick = { selection = selection.select(MuseumObject.ROBOT_VACUUM) }) {
+                Text("Vacuum")
+            }
+            Button(onClick = { selection = selection.select(MuseumObject.SMART_SPEAKER) }) {
+                Text("Speaker")
+            }
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Button(onClick = { selection = selection.turn() }) {
+                Text("Turn")
+            }
+            Button(onClick = { selection = selection.reset() }) {
+                Text("Reset")
+            }
+        }
+    }
+}
+
+private fun createMuseumScene(): Entity {
+    val scene = Entity()
+    scene.addChild(createCup())
+    scene.addChild(createRobotVacuum())
+    scene.addChild(createSmartSpeaker())
+    return scene
+}
+
+private fun createCup(): Entity {
+    val cup = Entity()
+    cup.components[TransformComponent::class.java] = TransformComponent(
+        position = Vector3(-0.8f, 0f, 0f),
+        rotation = EulerAngles(0f, 0f, 0f),
+        scale = Vector3(1f, 1f, 1f),
+    )
+    cup.addChild(model(MeshResource.createCylinder(0.7f, 0.42f), Color4(0.9f, 0.35f, 0.25f, 1f)))
+    cup.addChild(model(MeshResource.createCylinder(0.08f, 0.5f), Color4(1f, 0.75f, 0.35f, 1f), Vector3(0f, 0.38f, 0f)))
+    cup.addChild(model(MeshResource.createBox(Vector3(0.12f, 0.42f, 0.12f), 0.04f), Color4(1f, 0.7f, 0.25f, 1f), Vector3(0.42f, 0f, 0f)))
+    cup.addChild(model(MeshResource.createBox(Vector3(0.12f, 0.12f, 0.45f), 0.04f), Color4(1f, 0.7f, 0.25f, 1f), Vector3(0.42f, 0.2f, 0f)))
+    cup.addChild(model(MeshResource.createBox(Vector3(0.12f, 0.12f, 0.45f), 0.04f), Color4(1f, 0.7f, 0.25f, 1f), Vector3(0.42f, -0.2f, 0f)))
+    return cup
+}
+
+private fun createRobotVacuum(): Entity {
+    val vacuum = Entity()
+    vacuum.components[TransformComponent::class.java] = TransformComponent(
+        position = Vector3(0f, 0f, 0f),
+        rotation = EulerAngles(0f, 0f, 0f),
+        scale = Vector3(1f, 1f, 1f),
+    )
+    vacuum.addChild(model(MeshResource.createCylinder(0.25f, 0.55f), Color4(0.18f, 0.25f, 0.32f, 1f)))
+    vacuum.addChild(model(MeshResource.createCylinder(0.08f, 0.3f), Color4(0.25f, 0.75f, 0.8f, 1f), Vector3(0f, 0.28f, 0f)))
+    vacuum.addChild(model(MeshResource.createSphere(0.1f), Color4(0.9f, 0.9f, 0.95f, 1f), Vector3(0f, 0.36f, 0f)))
+    return vacuum
+}
+
+private fun createSmartSpeaker(): Entity {
+    val speaker = Entity()
+    speaker.components[TransformComponent::class.java] = TransformComponent(
+        position = Vector3(0.8f, 0f, 0f),
+        rotation = EulerAngles(0f, 0f, 0f),
+        scale = Vector3(1f, 1f, 1f),
+    )
+    speaker.addChild(model(MeshResource.createBox(Vector3(0.7f, 0.9f, 0.7f), 0.18f), Color4(0.35f, 0.28f, 0.55f, 1f)))
+    speaker.addChild(model(MeshResource.createCylinder(0.08f, 0.2f), Color4(0.35f, 0.9f, 0.75f, 1f), Vector3(0f, 0.5f, 0f)))
+    return speaker
+}
+
+private fun model(
+    mesh: MeshResource,
+    color: Color4,
+    position: Vector3 = Vector3(0f, 0f, 0f),
+): ModelEntity {
+    val material = UnlitMaterial.create()
+    material.setBaseColor(color)
+    return ModelEntity(mesh, material).also {
+        it.components[TransformComponent::class.java] = TransformComponent(
+            position = position,
+            rotation = EulerAngles(0f, 0f, 0f),
+            scale = Vector3(1f, 1f, 1f),
+        )
+    }
+}
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelection.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+enum class MuseumObject(
+    val title: String,
+    val description: String,
+) {
+    HANDLED_CUP(
+        title = "Handled cup",
+        description = "A simple ceramic cup with a sturdy handle.",
+    ),
+    ROBOT_VACUUM(
+        title = "Robot vacuum",
+        description = "A compact robot vacuum that quietly patrols the floor.",
+    ),
+    SMART_SPEAKER(
+        title = "Smart speaker",
+        description = "A small connected speaker ready to answer a question.",
+    ),
+}
+
+data class MuseumSelection(
+    val selected: MuseumObject = MuseumObject.HANDLED_CUP,
+    val turnQuarterTurns: Int = 0,
+) {
+    fun select(item: MuseumObject): MuseumSelection = copy(
+        selected = item,
+        turnQuarterTurns = 0,
+    )
+
+    fun turn(): MuseumSelection = copy(
+        turnQuarterTurns = (turnQuarterTurns + 1) % 4,
+    )
+
+    fun reset(): MuseumSelection = copy(turnQuarterTurns = 0)
+}
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/platform/LaunchActivity.kt ---
+package dev.local.lunamuseum.reproduction.platform
+
+import com.pico.spatial.ui.platform.stub.SpatialLaunchActivity
+
+class LaunchActivity : SpatialLaunchActivity()
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/platform/SpatialApplication.kt ---
+package dev.local.lunamuseum.reproduction.platform
+
+import android.app.Application
+import com.pico.spatial.ui.foundation.dsl.launch
+import dev.local.lunamuseum.reproduction.mainApp
+
+class SpatialApplication : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        launch(::mainApp)
+    }
+}
+
+--- app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionTest.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import org.junit.Assert.assertEquals
+import org.junit.Test
+
+class MuseumSelectionTest {
+    @Test
+    fun selectingAnObjectUpdatesTheDescriptionAndResetsTurn() {
+        val turned = MuseumSelection().turn().turn()
+        val selected = turned.select(MuseumObject.SMART_SPEAKER)
+
+        assertEquals(MuseumObject.SMART_SPEAKER, selected.selected)
+        assertEquals("Smart speaker", selected.selected.title)
+        assertEquals(0, selected.turnQuarterTurns)
+    }
+
+    @Test
+    fun resetReturnsTheSelectedObjectToItsOriginalRotation() {
+        val reset = MuseumSelection(
+            selected = MuseumObject.ROBOT_VACUUM,
+            turnQuarterTurns = 3,
+        ).reset()
+
+        assertEquals(MuseumObject.ROBOT_VACUUM, reset.selected)
+        assertEquals(0, reset.turnQuarterTurns)
+    }
+
+    @Test
+    fun turningWrapsAfterFourQuarterTurns() {
+        val result = MuseumSelection()
+            .turn()
+            .turn()
+            .turn()
+            .turn()
+
+        assertEquals(0, result.turnQuarterTurns)
+    }
+}

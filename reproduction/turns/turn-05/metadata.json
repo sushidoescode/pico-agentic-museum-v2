@@ -1,0 +1,58 @@
+{
+  "requestedModel": "gpt-5.6-luna",
+  "runner": "codex-cli 0.160.0",
+  "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+  "startedAt": "2026-10-07T23:06:37.028767+00:00",
+  "finishedAt": "2026-10-07T23:06:59.864389+00:00",
+  "exitCode": 0,
+  "inputBytes": 14249,
+  "inputSha256": "9a4e44aa74ff00e0168d03c4f53a5f9076b54a20045c451e8136407794cb2d6d",
+  "toolUseRequested": false,
+  "usage": [
+    {
+      "input_tokens": 20133,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4157,
+      "reasoning_output_tokens": 839
+    }
+  ],
+  "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+  "toolEventCount": 0,
+  "responseSha256": "b2579a9eb8ac78ee3c430e87a153262c0608e2be2ebe49e78a476cbbfd962a5e",
+  "responseFiles": [
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/Main.kt",
+      "bytes": 1254,
+      "sha256": "4a1d0787721c6496b4322e7323f5cddb2cefd4477a2711a2d2e87a9ff11d7c4e"
+    },
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+      "bytes": 7514,
+      "sha256": "01eda0b1a91b591561bd4226126915788da5196dd002e7c0dd200360a1aab769"
+    },
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+      "bytes": 1498,
+      "sha256": "34b24af00aa6a4fc62979feab4042e080de51bf49df63f39505b62bc0dd930cf"
+    },
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStore.kt",
+      "bytes": 391,
+      "sha256": "4b5785c17fcf8baa30ef2b98e182cca168c305b252f0561311dce8e6e5302bf7"
+    },
+    {
+      "path": "app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStoreTest.kt",
+      "bytes": 894,
+      "sha256": "9c806adb65b44130f1221fe954be4db11d7e4ce3b9f8ab15b81eba59e98c5d42"
+    }
+  ],
+  "promptWords": 39,
+  "contextBytes": 13463,
+  "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+  "privateRecordHashes": {
+    "events.jsonl": "32078a810e4e75015a62b85661364d78b2121496ee2acbfbc189547b2ff1e543",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "request.json": "7e51bb8caaa8c397339b3e1f6281b6018f769164a4fc6f09057747c95cd4f71e"
+  }
+}

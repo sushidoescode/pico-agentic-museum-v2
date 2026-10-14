@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "./gradlew",
+    "--offline",
+    "--no-daemon",
+    "--console=plain",
+    ":app:testDebugUnitTest",
+    ":app:assembleDebug"
+  ],
+  "startedAt": "2026-10-07T23:01:55.318409+00:00",
+  "freeBefore": 64148393984,
+  "nativeOperations": false,
+  "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+  "exitCode": 0,
+  "finishedAt": "2026-10-07T23:02:11.011297+00:00",
+  "freeAfter": 64135303168,
+  "apk": {
+    "bytes": 32644734,
+    "sha256": "57411ebe3bdcb61d5bf9416e282f308480911992c413dd641f7ad1a333fc8037"
+  },
+  "tests": [
+    {
+      "name": "dev.local.lunamuseum.reproduction.ExampleUnitTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    }
+  ],
+  "build": "build-00-starter",
+  "logOriginalSha256": "befd8d77f4020b77bb9d2b9769efb36cb2bcb17dec54382e813b37d91c8d7a95",
+  "apkDistributed": false
+}

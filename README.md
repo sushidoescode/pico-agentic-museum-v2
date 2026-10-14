@@ -1,55 +1,37 @@
-# Everyday Futures — the Earth Collection
+# Build a small museum with an AI assistant
 
-Everyday Futures is a museum app for PICO's spatial platform: a future archive of eighteen ordinary objects from the early twenty-first century. Visitors browse a catalogue, open any object in its own rotating 3D view, and reveal miniature stories about three of them: a handled tumbler, a robot vacuum and a smart speaker. They can also step into an immersive archive room built in Blender.
+Start with a cup, a robot vacuum, and a speaker. Ask your assistant to add one thing, try it, and describe what needs changing. Over five lessons, you will work towards a collection of objects and a room to visit.
 
-This repository is also a course showing how one person directed AI coding assistants to build and check the app step by step. An AI coding assistant is a tool built on a large language model (LLM) that reads instructions and files and proposes code. The assistants wrote the code, tests and 3D-authoring scripts and ran the checks; the person set the product and art direction and the constraints, and signed in to the emulator. The finished app does not use AI while it runs. You need no AI subscription, API key, headset or development tools to read the course or view the walkthrough.
+**The latest review app is build-010, version `1.1-feedback-002`. Its Drive upload is still pending.** The [download page](ASSET_SUPPLEMENT.md) identifies what is available now. Read [what was checked](review/BUILD_010_RESULTS.md), and use the [short recording and device checklist](review/RECORDING_AND_DEVICE_CHECKS.md) for your own test. Most feedback interactions were checked on build-009; build-010 has a narrower arrival-panel and Return check. The original build-008 is preserved separately.
 
-![Archive room with six objects on a curved bench under a window onto space](evidence/media/l4-archive.png)
+**To learn, begin with [Lesson 1: plan your museum](lessons/L0.md).** If you want to build along, first follow [Get your computer ready](curriculum/SETUP_AND_VERSIONS.md).
 
-*Historical emulator frame: the archive's “Connected lives” bay, from build-006, an earlier Lesson 4 build. It is not an image of the current build-008.*
+You do not need to know the name of a bug before asking for help. “I chose the vacuum, but I still see the cup” is a useful message.
 
-## Who this is for
-
-- **PICO reviewers:** the product, teaching approach and evidence in one place.
-- **Learners new to AI-assisted development:** the walkthrough and the beginner guide need no coding experience. The lesson sheets assume you can read basic Kotlin.
-- **Developers:** only the third route needs development skills and the PICO tools in [setup and versions](curriculum/SETUP_AND_VERSIONS.md).
-
-## Choose a route
-
-This is **pico-agentic-museum-v2**, the project owner’s private personal repository for PICO’s first review. It contains the complete prepared L0–L4 teaching and review package. The v2 name identifies this repository edition; the latest retained application remains build-008. [Delivery handoff](review/TEAM_HANDOFF.md) records its scope and checks. Reviewers need GitHub access to this private repository.
-
-**Review downloads:** [organized Museum delivery on Drive](https://drive.google.com/drive/folders/1C6693JWX1kvqgu253xLBeGumSB32UPB-), [build-008 APK](https://drive.google.com/file/d/1JFz00IfCpPrXmBb0oRTe0onfTUojJv6m/view), and [Blender/models/assets](https://drive.google.com/drive/folders/1mR_iZEc2MCvzEHG0HjQWkd99ULH3RYZz). Open `2026-09-28` in the Drive folder. [ASSET_SUPPLEMENT.md](ASSET_SUPPLEMENT.md) explains its contents and qualifications.
-
-To get an offline copy, choose GitHub’s **Code → Download ZIP** and extract it, or clone using the repository URL shown under **Code**. From the downloaded repository folder, run:
-
-```sh
-python3 review/verify_checksums.py
-```
-
-**See the walkthrough.** Download or clone the whole repository, then open `demo/index.html` from your computer in a web browser. It runs offline: nine panels, six with historical emulator stills, about six minutes. Code-hosting websites show its source instead of running it. The Markdown version is [demo/WALKTHROUGH.md](demo/WALKTHROUGH.md).
-
-**Learn the process.** Read [First steps with an AI assistant](curriculum/FIRST_STEPS_WITH_AI.md), then the [course map](curriculum/COURSE_MAP.md) and [Lesson 1](lessons/L1.md). The [prompt library](prompts/PROMPT_LIBRARY.md) and [AI and human decisions](process/AI_AND_HUMAN_DECISIONS.md) show what the assistants produced, what failed and what people decided.
-
-**Inspect the code/setup.** Start at [source snapshots](source/SNAPSHOTS.md), [architecture and vocabulary](curriculum/ARCHITECTURE_AND_GLOSSARY.md), [setup and versions](curriculum/SETUP_AND_VERSIONS.md) and the included [UI module](third_party/POLISH_MODULE.md).
-
-| Lesson | What gets built |
+| Lesson | What you will try |
 | --- | --- |
-| [L0](lessons/L0.md) | Context, requirements and exact inputs; a source-only checkpoint |
-| [L1](lessons/L1.md) | Catalogue, details and a 3D study you can turn and reset |
-| [L2](lessons/L2.md) | A companion window sharing the same state |
-| [L3](lessons/L3.md) | Three miniature stories and reduced motion |
-| [L4](lessons/L4.md) | Eighteen exhibits, a separate 3D inspector and the Blender archive |
+| [1. Plan your museum](lessons/L0.md) | Describe the first small screen. |
+| [2. Choose and turn an object](lessons/L1.md) | Pick an object, look at it, and reset its view. |
+| [3. Add a second window](lessons/L2.md) | Keep both windows showing the same choice. |
+| [4. Tell a short story](lessons/L3.md) | Add chapters and a way back to the object. |
+| [5. Grow the collection](lessons/L4.md) | Add more objects and a room to visit. |
 
-[PROGRAM_INGREDIENTS.md](PROGRAM_INGREDIENTS.md) maps every part of the program to its folder and entry file.
+![One bay of the original museum room](evidence/media/l4-archive.png)
 
-## What is included and what is not
+[Open this picture at full size](evidence/media/l4-archive.png) · [Picture tour files](demo/index.html)
 
-The museum was built and checked on a signed-in PICO emulator, not on a headset. This repository contains the course, prompts, an editorial development timeline, per-lesson source snapshots, the walkthrough, six historical images, evidence summaries and checksums.
+To view the tour on your computer, choose **Code → Download ZIP** on GitHub, unzip the download, and open `demo/index.html`. The tour uses saved pictures; it is not the running app.
 
-It deliberately omits the Android installer (APK), four exhibit models with their thumbnails, PICO template resources and the original Blender file. **The source here therefore cannot be built as supplied.** All 37 omitted files are listed under `heldItems` in [MANIFEST.json](MANIFEST.json), with reasons in [open items](review/OPEN_ITEMS.md) and [asset provenance and rights](assets/PROVENANCE_AND_RIGHTS.md). No public license is granted.
+*This is an earlier course image. It does not show build-010 or a new student attempt.*
 
-The project owner keeps most omitted files in a separate Drive asset supplement. [ASSET_SUPPLEMENT.md](ASSET_SUPPLEMENT.md) links to the supplied folder and explains how the two parts fit together. Availability does not change the files' individual rights or establish a reproduced build.
+## Useful links
 
-## Details and checks
+- [Short prompts to try](prompts/PROMPT_LIBRARY.md)
+- [Actual saved messages from the project](prompts/ACTUAL_USER_MESSAGES.md)
+- [Help when something goes wrong](curriculum/TROUBLESHOOTING.md)
+- [Current feedback and remaining checks](review/APK_FEEDBACK.md)
+- [Latest review APK, original APK, models and Blender files](ASSET_SUPPLEMENT.md)
 
-Build identities and evidence are in the [evidence index](evidence/INDEX.md) and [validation](review/VALIDATION.md). To check every file, run `python3 review/verify_checksums.py` from this folder.
+The lesson prompts are practice wording, not a recovered conversation. The saved messages are labelled separately. The museum app does not need an AI assistant running inside it.
+
+The older source copies are for reference and leave out some assets. Use the official starter for a new project. [Notes for developers and reviewers](review/README.md) contain the code history, file checks and experiment results; you can skip them while learning.

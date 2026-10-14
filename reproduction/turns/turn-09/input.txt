@@ -1,0 +1,673 @@
+This is a text-only chat recreation experiment. Do not call tools, read files, browse, run commands, or edit files. Use only the attached text. A human-style harness will manually apply your returned files and run checks. Return complete contents of only changed/new project files in the requested JSON shape, using project-relative paths. Do not claim the app was run or tested. Preserve the supplied package and Gradle versions.
+
+TEACHING PROMPT (operator-authored ordinary language, not an actual historical human message):
+Reset currently changes the story back to the cup even when another object remains selected. Please make Reset restore the current exhibit’s first story step and angle while keeping my reduced-motion preference. Add regression tests for that case and for automatic motion being zero when reduced motion is on.
+
+ATTACHMENTS:
+build-08 compiled and 10 feature tests plus 1 starter test passed. Observation is source-only: both Reset callbacks call MuseumStoryStore.reset(), which constructs default cup state, while selection.reset() preserves selected object. Existing reduced-motion test checks state flag/text but not motion output. SDK math classes are best kept out of JVM tests; primitive numeric motion values can be tested before entity application.
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.pico.spatial.ui.design.Button
+import com.pico.spatial.ui.design.Text
+import com.pico.spatial.ui.platform.containers.LocalSpatialNavigator
+import com.pico.spatial.ui.platform.containers.SpatialNavigator
+
+object CompanionWindow {
+    const val ID = "luna-museum-companion"
+
+    fun open(navigator: SpatialNavigator) {
+        navigator.openWindowContainer(ID, tag = TAG)
+    }
+
+    @Composable
+    fun Content() {
+        val navigator = LocalSpatialNavigator.current
+        val selection = MuseumSelectionStore.current
+        val story = MuseumStoryStore.current
+
+        fun select(item: MuseumObject) {
+            MuseumSelectionStore.update(selection.select(item))
+            MuseumStoryStore.select(item)
+        }
+
+        Column(modifier = Modifier.padding(20.dp)) {
+            Text("Companion exhibit")
+            Spacer(modifier = Modifier.height(12.dp))
+            Text(selection.selected.title)
+            Text(selection.selected.description)
+            Spacer(modifier = Modifier.height(8.dp))
+            Text("Quarter turns: ${selection.turnQuarterTurns}")
+            Text("Story ${story.stepIndex + 1} of ${story.story.steps.size}: ${story.stepText}")
+            Spacer(modifier = Modifier.height(12.dp))
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                Button(onClick = { select(MuseumObject.HANDLED_CUP) }) {
+                    Text("Cup")
+                }
+                Button(onClick = { select(MuseumObject.ROBOT_VACUUM) }) {
+                    Text("Vacuum")
+                }
+                Button(onClick = { select(MuseumObject.SMART_SPEAKER) }) {
+                    Text("Speaker")
+                }
+            }
+
+            Spacer(modifier = Modifier.height(8.dp))
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Button(onClick = {
+                    MuseumStoryStore.update(
+                        if (story.isPlaying) story.pause() else story.play(),
+                    )
+                }) {
+                    Text(if (story.isPlaying) "Pause story" else "Play story")
+                }
+                Button(onClick = {
+                    MuseumStoryStore.update(story.restart())
+                }) {
+                    Text("Restart story")
+                }
+                Button(onClick = {
+                    MuseumStoryStore.update(story.toggleReducedMotion())
+                }) {
+                    Text("Reduced motion: ${if (story.reducedMotion) "On" else "Off"}")
+                }
+            }
+
+            Spacer(modifier = Modifier.height(8.dp))
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Button(onClick = {
+                    MuseumSelectionStore.update(MuseumSelectionStore.current.turn())
+                }) {
+                    Text("Turn")
+                }
+                Button(onClick = {
+                    MuseumSelectionStore.update(MuseumSelectionStore.current.reset())
+                    MuseumStoryStore.reset()
+                }) {
+                    Text("Reset")
+                }
+                Button(onClick = {
+                    navigator.closeWindowContainer()
+                }) {
+                    Text("Close")
+                }
+            }
+        }
+    }
+
+    private const val TAG = "museum-companion"
+}
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.unit.dp
+import com.pico.spatial.core.ecs.Entity
+import com.pico.spatial.core.ecs.ModelEntity
+import com.pico.spatial.core.ecs.TransformComponent
+import com.pico.spatial.core.ecs.resource.MeshResource
+import com.pico.spatial.core.ecs.resource.UnlitMaterial
+import com.pico.spatial.core.math.Color4
+import com.pico.spatial.core.math.EulerAngles
+import com.pico.spatial.core.math.Vector3
+import com.pico.spatial.ui.design.Button
+import com.pico.spatial.ui.design.Text
+import com.pico.spatial.ui.foundation.content.SpatialView
+import com.pico.spatial.ui.platform.containers.LocalSpatialNavigator
+import kotlinx.coroutines.delay
+
+@Composable
+fun HomeVolume(
+    onOpenCompanion: () -> Unit,
+) {
+    val selection = MuseumSelectionStore.current
+    val story = MuseumStoryStore.current
+    var museumScene by remember { mutableStateOf<MuseumScene?>(null) }
+    val navigator = LocalSpatialNavigator.current
+
+    LaunchedEffect(story.isPlaying, story.selected) {
+        while (MuseumStoryStore.current.isPlaying) {
+            delay(STORY_STEP_DELAY_MS)
+            MuseumStoryStore.update(MuseumStoryStore.current.advance())
+        }
+    }
+
+    fun select(item: MuseumObject) {
+        MuseumSelectionStore.update(selection.select(item))
+        MuseumStoryStore.select(item)
+    }
+
+    Column(modifier = Modifier.padding(16.dp)) {
+        Text("Luna Museum")
+        Spacer(modifier = Modifier.height(8.dp))
+        Text("Select an exhibit to inspect it in 3D.")
+        Spacer(modifier = Modifier.height(12.dp))
+
+        SpatialView(
+            modifier = Modifier
+                .fillMaxWidth()
+                .size(260.dp)
+                .clip(RoundedCornerShape(18.dp)),
+            update = { _, _ ->
+                museumScene?.apply(selection, story)
+            },
+            initial = { content, _ ->
+                val scene = createMuseumScene()
+                museumScene = scene
+                content.addEntity(scene.root)
+                scene.apply(selection, story)
+            },
+        )
+
+        Spacer(modifier = Modifier.height(12.dp))
+        Text(selection.selected.title)
+        Text(selection.selected.description)
+        Spacer(modifier = Modifier.height(10.dp))
+        Text("Story ${story.stepIndex + 1} of ${story.story.steps.size}: ${story.stepText}")
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            Button(onClick = { select(MuseumObject.HANDLED_CUP) }) {
+                Text("Cup")
+            }
+            Button(onClick = { select(MuseumObject.ROBOT_VACUUM) }) {
+                Text("Vacuum")
+            }
+            Button(onClick = { select(MuseumObject.SMART_SPEAKER) }) {
+                Text("Speaker")
+            }
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Button(onClick = {
+                MuseumStoryStore.update(
+                    if (story.isPlaying) story.pause() else story.play(),
+                )
+            }) {
+                Text(if (story.isPlaying) "Pause story" else "Play story")
+            }
+            Button(onClick = {
+                MuseumStoryStore.update(story.restart())
+            }) {
+                Text("Restart story")
+            }
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Button(onClick = {
+                MuseumStoryStore.update(story.toggleReducedMotion())
+            }) {
+                Text("Reduced motion: ${if (story.reducedMotion) "On" else "Off"}")
+            }
+            Button(onClick = { MuseumSelectionStore.update(selection.turn()) }) {
+                Text("Turn")
+            }
+            Button(onClick = {
+                MuseumSelectionStore.update(selection.reset())
+                MuseumStoryStore.reset()
+            }) {
+                Text("Reset")
+            }
+            Button(onClick = onOpenCompanion) {
+                Text("Open companion")
+            }
+        }
+    }
+}
+
+private const val STORY_STEP_DELAY_MS = 900L
+
+private class MuseumScene(
+    val root: Entity,
+    private val objects: Map<MuseumObject, Entity>,
+) {
+    fun apply(selection: MuseumSelection, story: MuseumStoryState) {
+        objects.forEach { (museumObject, entity) ->
+            entity.enabled = museumObject == selection.selected
+            if (museumObject == selection.selected) {
+                val transform = entity.components[TransformComponent::class.java] ?: return@forEach
+                val quarterTurn = selection.turnQuarterTurns * 90f
+                val motion = if (story.reducedMotion) StoryMotion() else storyMotion(museumObject, story.stepIndex)
+                transform.position = motion.position
+                transform.eulerAngles = EulerAngles(
+                    motion.pitch,
+                    quarterTurn + motion.yaw,
+                    motion.roll,
+                )
+            }
+        }
+    }
+}
+
+private data class StoryMotion(
+    val position: Vector3 = Vector3(0f, 0f, 0f),
+    val pitch: Float = 0f,
+    val yaw: Float = 0f,
+    val roll: Float = 0f,
+)
+
+private fun storyMotion(objectType: MuseumObject, stepIndex: Int): StoryMotion = when (objectType) {
+    MuseumObject.HANDLED_CUP -> when (stepIndex) {
+        1 -> StoryMotion(position = Vector3(0f, 0.12f, 0f), pitch = -8f)
+        2 -> StoryMotion(roll = 12f)
+        else -> StoryMotion()
+    }
+    MuseumObject.ROBOT_VACUUM -> when (stepIndex) {
+        1 -> StoryMotion(position = Vector3(0.16f, 0f, 0f))
+        2 -> StoryMotion(position = Vector3(-0.16f, 0f, 0f), yaw = 18f)
+        else -> StoryMotion()
+    }
+    MuseumObject.SMART_SPEAKER -> when (stepIndex) {
+        1 -> StoryMotion(position = Vector3(0f, 0.08f, 0f), pitch = -6f)
+        2 -> StoryMotion(position = Vector3(0f, 0.03f, 0f), yaw = 10f)
+        else -> StoryMotion()
+    }
+}
+
+private fun createMuseumScene(): MuseumScene {
+    val root = Entity()
+    val cup = createCup()
+    val vacuum = createRobotVacuum()
+    val speaker = createSmartSpeaker()
+
+    root.addChild(cup)
+    root.addChild(vacuum)
+    root.addChild(speaker)
+
+    return MuseumScene(
+        root = root,
+        objects = mapOf(
+            MuseumObject.HANDLED_CUP to cup,
+            MuseumObject.ROBOT_VACUUM to vacuum,
+            MuseumObject.SMART_SPEAKER to speaker,
+        ),
+    )
+}
+
+private fun createCup(): Entity {
+    val cup = Entity()
+    cup.components[TransformComponent::class.java] = TransformComponent(
+        position = Vector3(0f, 0f, 0f),
+        rotation = EulerAngles(0f, 0f, 0f),
+        scale = Vector3(0.55f, 0.55f, 0.55f),
+    )
+    cup.addChild(model(MeshResource.createCylinder(0.7f, 0.42f), Color4(0.9f, 0.35f, 0.25f, 1f)))
+    cup.addChild(model(MeshResource.createCylinder(0.08f, 0.5f), Color4(1f, 0.75f, 0.35f, 1f), Vector3(0f, 0.38f, 0f)))
+    cup.addChild(model(MeshResource.createBox(Vector3(0.12f, 0.42f, 0.12f), 0.04f), Color4(1f, 0.7f, 0.25f, 1f), Vector3(0.42f, 0f, 0f)))
+    cup.addChild(model(MeshResource.createBox(Vector3(0.12f, 0.12f, 0.45f), 0.04f), Color4(1f, 0.7f, 0.25f, 1f), Vector3(0.42f, 0.2f, 0f)))
+    cup.addChild(model(MeshResource.createBox(Vector3(0.12f, 0.12f, 0.45f), 0.04f), Color4(1f, 0.7f, 0.25f, 1f), Vector3(0.42f, -0.2f, 0f)))
+    return cup
+}
+
+private fun createRobotVacuum(): Entity {
+    val vacuum = Entity()
+    vacuum.components[TransformComponent::class.java] = TransformComponent(
+        position = Vector3(0f, 0f, 0f),
+        rotation = EulerAngles(0f, 0f, 0f),
+        scale = Vector3(0.8f, 0.8f, 0.8f),
+    )
+    vacuum.addChild(model(MeshResource.createCylinder(0.25f, 0.55f), Color4(0.18f, 0.25f, 0.32f, 1f)))
+    vacuum.addChild(model(MeshResource.createCylinder(0.08f, 0.3f), Color4(0.25f, 0.75f, 0.8f, 1f), Vector3(0f, 0.28f, 0f)))
+    vacuum.addChild(model(MeshResource.createSphere(0.1f), Color4(0.9f, 0.9f, 0.95f, 1f), Vector3(0f, 0.36f, 0f)))
+    return vacuum
+}
+
+private fun createSmartSpeaker(): Entity {
+    val speaker = Entity()
+    speaker.components[TransformComponent::class.java] = TransformComponent(
+        position = Vector3(0f, 0f, 0f),
+        rotation = EulerAngles(0f, 0f, 0f),
+        scale = Vector3(0.65f, 0.65f, 0.65f),
+    )
+    speaker.addChild(model(MeshResource.createBox(Vector3(0.7f, 0.9f, 0.7f), 0.18f), Color4(0.35f, 0.28f, 0.55f, 1f)))
+    speaker.addChild(model(MeshResource.createCylinder(0.08f, 0.2f), Color4(0.35f, 0.9f, 0.75f, 1f), Vector3(0f, 0.5f, 0f)))
+    return speaker
+}
+
+private fun model(
+    mesh: MeshResource,
+    color: Color4,
+    position: Vector3 = Vector3(0f, 0f, 0f),
+): ModelEntity {
+    val material = UnlitMaterial.create()
+    material.setBaseColor(color)
+    return ModelEntity(mesh, material).also {
+        it.components[TransformComponent::class.java] = TransformComponent(
+            position = position,
+            rotation = EulerAngles(0f, 0f, 0f),
+            scale = Vector3(1f, 1f, 1f),
+        )
+    }
+}
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelection.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+enum class MuseumObject(
+    val title: String,
+    val description: String,
+) {
+    HANDLED_CUP(
+        title = "Handled cup",
+        description = "A simple ceramic cup with a sturdy handle.",
+    ),
+    ROBOT_VACUUM(
+        title = "Robot vacuum",
+        description = "A compact robot vacuum that quietly patrols the floor.",
+    ),
+    SMART_SPEAKER(
+        title = "Smart speaker",
+        description = "A small connected speaker ready to answer a question.",
+    ),
+}
+
+data class MuseumSelection(
+    val selected: MuseumObject = MuseumObject.HANDLED_CUP,
+    val turnQuarterTurns: Int = 0,
+) {
+    fun select(item: MuseumObject): MuseumSelection = copy(
+        selected = item,
+        turnQuarterTurns = 0,
+    )
+
+    fun turn(): MuseumSelection = copy(
+        turnQuarterTurns = (turnQuarterTurns + 1) % 4,
+    )
+
+    fun reset(): MuseumSelection = copy(turnQuarterTurns = 0)
+}
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStore.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import androidx.compose.runtime.mutableStateOf
+
+object MuseumSelectionStore {
+    private val selectionState = mutableStateOf(MuseumSelection())
+
+    val current: MuseumSelection
+        @Synchronized get() = selectionState.value
+
+    @Synchronized
+    fun update(next: MuseumSelection) {
+        selectionState.value = next
+    }
+
+    @Synchronized
+    fun reset() {
+        selectionState.value = MuseumSelection()
+    }
+}
+
+--- app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumStory.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import androidx.compose.runtime.mutableStateOf
+
+class MuseumStory(
+    val objectType: MuseumObject,
+    val steps: List<String>,
+) {
+    val title: String
+        get() = objectType.title
+}
+
+object MuseumStories {
+    fun forObject(objectType: MuseumObject): MuseumStory = MuseumStory(
+        objectType = objectType,
+        steps = when (objectType) {
+            MuseumObject.HANDLED_CUP -> listOf(
+                "The cup waits on the table.",
+                "A warm drink is poured in.",
+                "The handle makes it easy to lift.",
+            )
+            MuseumObject.ROBOT_VACUUM -> listOf(
+                "The robot vacuum starts at home.",
+                "It rolls out to patrol the floor.",
+                "It returns when the room is clean.",
+            )
+            MuseumObject.SMART_SPEAKER -> listOf(
+                "The speaker is listening quietly.",
+                "A question wakes its glowing light.",
+                "It answers and settles back down.",
+            )
+        },
+    )
+}
+
+data class MuseumStoryState(
+    val selected: MuseumObject = MuseumObject.HANDLED_CUP,
+    val stepIndex: Int = 0,
+    val isPlaying: Boolean = false,
+    val reducedMotion: Boolean = false,
+) {
+    val story: MuseumStory
+        get() = MuseumStories.forObject(selected)
+
+    val stepText: String
+        get() = story.steps[stepIndex]
+
+    fun select(objectType: MuseumObject): MuseumStoryState = copy(
+        selected = objectType,
+        stepIndex = 0,
+        isPlaying = false,
+    )
+
+    fun play(): MuseumStoryState = if (stepIndex == story.steps.lastIndex) {
+        copy(stepIndex = 0, isPlaying = true)
+    } else {
+        copy(isPlaying = true)
+    }
+
+    fun pause(): MuseumStoryState = copy(isPlaying = false)
+
+    fun restart(): MuseumStoryState = copy(stepIndex = 0, isPlaying = true)
+
+    fun advance(): MuseumStoryState = if (stepIndex < story.steps.lastIndex) {
+        copy(stepIndex = stepIndex + 1)
+    } else {
+        copy(isPlaying = false)
+    }
+
+    fun toggleReducedMotion(): MuseumStoryState = copy(
+        reducedMotion = !reducedMotion,
+    )
+}
+
+object MuseumStoryStore {
+    private val state = mutableStateOf(MuseumStoryState())
+
+    val current: MuseumStoryState
+        @Synchronized get() = state.value
+
+    @Synchronized
+    fun update(next: MuseumStoryState) {
+        state.value = next
+    }
+
+    @Synchronized
+    fun select(objectType: MuseumObject) {
+        state.value = state.value.select(objectType)
+    }
+
+    @Synchronized
+    fun reset() {
+        state.value = MuseumStoryState()
+    }
+}
+
+--- app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionStoreTest.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import org.junit.Assert.assertEquals
+import org.junit.Before
+import org.junit.Test
+
+class MuseumSelectionStoreTest {
+    @Before
+    fun resetStore() {
+        MuseumSelectionStore.reset()
+    }
+
+    @Test
+    fun homeSelectionIsImmediatelyReadableByCompanion() {
+        val homeSelection = MuseumSelection()
+            .select(MuseumObject.ROBOT_VACUUM)
+            .turn()
+
+        MuseumSelectionStore.update(homeSelection)
+
+        assertEquals(homeSelection, MuseumSelectionStore.current)
+    }
+
+    @Test
+    fun companionSelectionIsImmediatelyReadableByHome() {
+        val companionSelection = MuseumSelection()
+            .select(MuseumObject.SMART_SPEAKER)
+            .turn()
+            .turn()
+
+        MuseumSelectionStore.update(companionSelection)
+
+        assertEquals(companionSelection, MuseumSelectionStore.current)
+    }
+
+    @Test
+    fun storeResetRestoresTheDefaultSelection() {
+        MuseumSelectionStore.update(
+            MuseumSelection(
+                selected = MuseumObject.SMART_SPEAKER,
+                turnQuarterTurns = 2,
+            ),
+        )
+
+        MuseumSelectionStore.reset()
+
+        assertEquals(MuseumSelection(), MuseumSelectionStore.current)
+    }
+}
+
+--- app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumSelectionTest.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import org.junit.Assert.assertEquals
+import org.junit.Test
+
+class MuseumSelectionTest {
+    @Test
+    fun selectingAnObjectUpdatesTheDescriptionAndResetsTurn() {
+        val turned = MuseumSelection().turn().turn()
+        val selected = turned.select(MuseumObject.SMART_SPEAKER)
+
+        assertEquals(MuseumObject.SMART_SPEAKER, selected.selected)
+        assertEquals("Smart speaker", selected.selected.title)
+        assertEquals(0, selected.turnQuarterTurns)
+    }
+
+    @Test
+    fun resetReturnsTheSelectedObjectToItsOriginalRotation() {
+        val reset = MuseumSelection(
+            selected = MuseumObject.ROBOT_VACUUM,
+            turnQuarterTurns = 3,
+        ).reset()
+
+        assertEquals(MuseumObject.ROBOT_VACUUM, reset.selected)
+        assertEquals(0, reset.turnQuarterTurns)
+    }
+
+    @Test
+    fun turningWrapsAfterFourQuarterTurns() {
+        val result = MuseumSelection()
+            .turn()
+            .turn()
+            .turn()
+            .turn()
+
+        assertEquals(0, result.turnQuarterTurns)
+    }
+}
+
+--- app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumStoryTest.kt ---
+package dev.local.lunamuseum.reproduction.content
+
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
+import org.junit.Test
+
+class MuseumStoryTest {
+    @Test
+    fun eachObjectHasThreeStorySteps() {
+        MuseumObject.values().forEach { objectType ->
+            assertEquals(3, MuseumStories.forObject(objectType).steps.size)
+        }
+    }
+
+    @Test
+    fun restartReturnsToTheFirstStepAndStartsPlaying() {
+        val restarted = MuseumStoryState(
+            selected = MuseumObject.ROBOT_VACUUM,
+            stepIndex = 2,
+        ).restart()
+
+        assertEquals(0, restarted.stepIndex)
+        assertTrue(restarted.isPlaying)
+        assertEquals("The robot vacuum starts at home.", restarted.stepText)
+    }
+
+    @Test
+    fun playbackAdvancesThroughAllStepsAndStops() {
+        val finished = MuseumStoryState().play().advance().advance().advance()
+
+        assertEquals(2, finished.stepIndex)
+        assertFalse(finished.isPlaying)
+    }
+
+    @Test
+    fun reducedMotionPreservesStoryStateWhileTurningOn() {
+        val state = MuseumStoryState(stepIndex = 1, isPlaying = true)
+        val reduced = state.toggleReducedMotion()
+
+        assertTrue(reduced.reducedMotion)
+        assertEquals(state.stepIndex, reduced.stepIndex)
+        assertEquals(state.stepText, reduced.stepText)
+        assertTrue(reduced.isPlaying)
+    }
+}

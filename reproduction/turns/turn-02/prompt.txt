@@ -1,0 +1,1 @@
+The buttons change the label, but your response says the 3D scene stays still. Please show only the selected object and make Turn and Reset change its actual 3D rotation. Keep the shapes small enough to fit the viewing area.

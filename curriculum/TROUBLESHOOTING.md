@@ -1,34 +1,24 @@
-# Bounded troubleshooting
+# When something goes wrong
 
-These entries summarize observed museum failures and qualified responses at frozen closeout. They do not authorize native work. Preserve ownership checks, the fresh 10 GB storage prerequisite, the spent 1/1 retry and durable holds. Current museum gates are single-attempt; old retry-loop prose in historical runbooks is not current procedure. Do useful source/design work while an external lane is held.
+Say what you did and what happened. A screenshot or the exact error is usually more useful than a guess about the cause.
 
-| Symptom | Recorded diagnosis | Bounded action or repair | What remains unestablished |
-| --- | --- | --- | --- |
-| Storage prerequisite fails | Historical D0 decision-time readings were below 10 GB | Finish input identities, declaration maps, pure source work and acceptance cases; defer scaffold/build/packing | An old passing reading never authorizes today's heavy work |
-| SDK declaration lookup unavailable | The tool expected a different vault layout | Read the resolved pinned SDK source jars and cite actual members; record exact artifact versions | A source lookup is not compilation or runtime verification |
-| `weight` import unresolved | Extension exists on layout receiver scopes, not the imported top-level symbol | Remove the invalid import and verify each call's receiver | Pure reducer tests do not compile the UI |
-| Theme planner says `theme-not-at-root` | Theme was nested below the root layout | Put the theme at the container binding and constraints on its inner content, then rerun the targeted planner/build check | A planner pass alone does not judge rendered glass/readability |
-| Kit digest changes after tests | The recipe included ignored build products | Hash the pinned tracked allowlist, ordered by path, and retain per-file identities | Do not replace the expected digest with whatever happens to be on disk |
-| Build succeeds but receipt/freeze missing | Relative evidence path became invalid after changing directory | Resolve task input/output paths before changing directory; retain failed run | Successful compilation without a bound receipt does not identify an admitted artifact |
-| Text tiny or controls clipped | First fixed-scale layout was unreadable; taller dynamic-scale layout needed | Inspect actual pixels and change only demonstrated layout defects | Headset legibility/comfort and universal world-scale recommendations |
-| Click requested but nothing changes | Small target missed; mapping depends on pose/window depth | Compare event landing and markers; derive a fresh mapping in the authorized lane; keep ineffective input | An unchanged admitted still does not prove the click worked |
-| Companion attached but absent from frame | Historical anchored placement was outside the emulator view; negative offset was read unsigned | Use the recorded default-placement design; inspect focus and visible bounds | General placement accuracy, hardware comfort or an SDK-wide offset guarantee |
-| Other window fades or its 3D model disappears | Observed focused-first overlap/occlusion behavior | Bring each window forward without changing logical state and compare markers/state | A faded presentation is not automatically a stale-state defect |
-| Story Return undoes a later Reset/Turn | Original reducer restored stale entry pose | Clear story state only; regression: Reset during story survives Return | Do not silently rewrite the original L3 source history |
-| Chapter transition jumps or Reduce motion mid-flight continues | Retargeting/transition-key defects found in review | Retarget from current poses; snap through the same endpoint data | Those two rapid paths are host-tested only, not device-timing proof |
-| Story region initially empty | Scene creation had no loading indication | Later polish adds preparing/error text and at most three attempts per view for returned failures | It cannot recover a native call that never returns or a stopped compositor |
-| Search keyboard captures every touch | Earlier field did not expose the needed single-line search action on the tested route | Build-008 uses SDK SearchField; injected Enter submits/hides; wait eight seconds idle as fallback | Person's host keyboard, headset IME behavior or a universal keyboard fix |
-| Asset exists but `openFd` cannot map it | Compressed APK entry differs from missing asset | Keep GLB `noCompress`, distinguish stream existence from descriptor access, inspect stored/present/byte-identical APK entries | Source presence alone does not establish packaging correctness |
-| Nineteen additional native assets per archive visit | URI-load path retained asset handles in observed runs | App opens/closes descriptors around loads; recorded asset count then stayed at eight | Other native/binder memory growth remains unknown |
-| Disposal marker says all entities invalid, memory still grows | Entity state and native allocation totals measure different things | Report both; use bounded comparable visits and preserve results | Neither an app cause nor SDK/platform causation is established; no leak-free claim |
-| Rapid auxiliary switches lose/duplicate windows | Policy ignored requests still opening/closing | Model pending requests and observed detach; tests cover interleavings | Slower emulator inputs did not reproduce sub-second races |
-| Archive viewpoint waits for all loads | SDK update followed completion of initialization | Apply target view during the loading path and test ordering | Host-modeled loading timing is not new native race evidence |
-| Account prompt blocks launch/input | Retained investigation found a system-owned prompt and no supported account-free route for the recorded state | Preserve the constraint; the later working emulator had the user's own sign-in | Do not invent flags, disable services, change region/accounts or claim account-free launch |
-| Gate sees stale frames/occlusion or target refusal | Covered windows can throttle guest rendering; wrong/missing process differs from a numeric verdict | Inspect exact refusal/occlusion evidence and stop under the current lane rules | No automatic retry, hold reset, application-FPS inference or unrelated process management |
-| Native runtime stalls | A historical runtime failure interrupted demo polish; later recovery resumed with the same APK | Preserve the failure and continue source work until the authorized owner has a healthy lane | The underlying runtime cause was not established by a later successful run |
+These are practice messages. Use one only when it describes your own problem.
 
-The original visitor-start aim coordinates became stale after a human demo changed the head pose. A memory series that never entered the archive was retained as void. Treat re-aiming as an evidence/identity task, not a reason to weaken acceptance or repeat measurements until favorable.
+| What happened | A short next message |
+| --- | --- |
+| The build stopped | “The build stopped with this error. Can you help me fix it?” |
+| You do not know where to put the code | “Which file should I change? Please show me the complete file.” |
+| The assistant mentions a file you do not have | “I don't have that file yet. What should I create first?” |
+| The wrong object is still visible | “I chose the vacuum, but I still see the cup. Can you check why?” |
+| Text is hard to read | “The labels are too small. Can you make them easier to read?” |
+| The second window shows an old choice | “I chose the speaker, but the other window still shows the cup. Can you make them agree?” |
+| A button appears to do nothing | “I pressed Inspect, but I couldn't tell what changed. What should I see?” |
+| A file is missing | “It says this model file is missing. Where should I get it and put it?” |
 
-For a learner, first write the expected state and the evidence that could falsify the suspected cause. Prefer a source or host check when it answers the question. Only a separately authorized native owner can install, launch, input, capture or gate. This package contains no new runtime execution and is not a permission to reuse an old target.
+For a build error, paste the error beneath the message. For a visible problem, attach a screenshot and say which button you pressed. Then try the same steps again after the repair.
 
-Sources: D0/D1 session record, L1–L4 runbooks/reviews, L2 placement record, L3 motion record, demo-polish/recovery/hardening records. The system/account investigation stays private; this table contains only its bounded outcome. Frozen source hashes for eligible citations are in [source notes](../prompts/SOURCE_NOTES.md).
+If things get worse, go back to your last working copy. Tell the assistant which change caused the problem before trying another fix.
+
+The original project also needed several tries to make its companion window readable and keep the right object view after a story. You can see the window change in the [picture tour](../demo/index.html#p03).
+
+More detail for developers: [the earlier troubleshooting record](TECHNICAL_TROUBLESHOOTING.md).

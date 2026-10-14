@@ -1,0 +1,53 @@
+{
+  "requestedModel": "gpt-5.6-luna",
+  "runner": "codex-cli 0.160.0",
+  "transport": "Codex on existing paid account, not a verified Free ChatGPT session",
+  "startedAt": "2026-10-07T23:10:07.903962+00:00",
+  "finishedAt": "2026-10-07T23:10:38.936016+00:00",
+  "exitCode": 0,
+  "inputBytes": 23685,
+  "inputSha256": "83dc8597c6d2cb657995f1db2c39b657f31082f6404e5ddc99d17027d2aeb960",
+  "toolUseRequested": false,
+  "usage": [
+    {
+      "input_tokens": 22090,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6208,
+      "reasoning_output_tokens": 856
+    }
+  ],
+  "identityLimit": "Requested exact model, retained CLI event stream and no fallback warning; no backend model attestation supplied by JSON event schema.",
+  "toolEventCount": 0,
+  "responseSha256": "389488d787fc0a3bc0dc65abbeba318cb75b6b3b79e05e3105e3f2f3fa2f51bb",
+  "responseFiles": [
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/MuseumStory.kt",
+      "bytes": 4024,
+      "sha256": "f7a77ee411d253305213fff6d637bc34241dad3b95b5d2b983514d099a94c25e"
+    },
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/CompanionWindow.kt",
+      "bytes": 4027,
+      "sha256": "66267e362dffa40603478355441d62d69928d43b1ee791ed140631f5d90d07fe"
+    },
+    {
+      "path": "app/src/main/java/dev/local/lunamuseum/reproduction/content/HomeVolume.kt",
+      "bytes": 9350,
+      "sha256": "4c127b5309f95aeda1d82f06702bb841b3980ffe6fcbaa39aeb85f73d2cc2d15"
+    },
+    {
+      "path": "app/src/test/java/dev/local/lunamuseum/reproduction/content/MuseumStoryTest.kt",
+      "bytes": 2543,
+      "sha256": "488654f3a5e29ebe4e4a5a98e3632ae095d91a23e805da0f71bea766383ca414"
+    }
+  ],
+  "promptWords": 49,
+  "contextBytes": 22832,
+  "cliInvocation": "codex exec --ignore-user-config --ephemeral --skip-git-repo-check --sandbox read-only --color never --json --model gpt-5.6-luna -C <EXPERIMENT_PROJECT> --output-schema <RESPONSE_SCHEMA> -o <TURN_RESPONSE> -",
+  "privateRecordHashes": {
+    "events.jsonl": "50c39093ccf93714fcd07a85ea7f4890dc37a3e14f1321bfcef7d45b84f802ca",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "request.json": "0255e61cd0ce305804bca2db5b4ff8c7a8f3821795a5415b30af2188627df83d"
+  }
+}

@@ -1,5 +1,15 @@
 # Source notes and provenance
 
+## About the October 7 beginner edition
+
+The main [lessons](../curriculum/COURSE_MAP.md) and [short prompts T01–T19](PROMPT_LIBRARY.md) are new editorial teaching material. They explain the existing museum in smaller steps for someone using browser ChatGPT or an optional coding assistant. They are not original messages, model output, or proof that a learner build was run. The new exercises and suggested repair prompts are labeled separately from recorded project behavior.
+
+The earlier library is preserved unchanged as [HISTORICAL_PROMPTS.md](HISTORICAL_PROMPTS.md). Its 21 blocks retain their original P00–P20 IDs, excerpts, citations and provenance categories. The earlier technical lessons are preserved in the same folder as `reference-L0.md` through `reference-L4.md`, so their relative links still resolve. The original source register below is unchanged.
+
+The beginner build route now begins with an untouched working official starter, as explained in [Prepare to build](../lessons/PREPARE_TO_BUILD.md) and the [reproduction record](../reproduction/README.md). Historical source snapshots remain a separate reading route. Original museum filenames are an optional reference map; new teaching prompts use the learner's actual files and do not assume the starter already has the old museum code or polish module. The prompts and checks do not claim a new native visual result.
+
+## Original source register
+
 This is a sanitized citation register for the teaching material, prepared 2026-09-28. The source files below were read at museum closeout `0efe2718e0eeb733e2a3b3b2cd300a1703025aa0`; their whole-file SHA-256 values bind the originals. Paths are relative to that original museum repository and are **citations, not links to files promised inside this candidate**. Original documents/evidence trees are not exported wholesale. The teaching summaries, prompt excerpts and qualified [source snapshots](../source/SNAPSHOTS.md) have their own delivery hashes.
 
 Private source paths, original confidential coordinator packets, prompt mappings and exact source hashes are retained separately in the local audit. Those packets supply authority/history, not public operational instructions. No private transcript has been reconstructed as verbatim text. The source register itself grants no asset, source or correspondence redistribution rights.
@@ -58,3 +68,18 @@ Several originals preserve dated statements followed by corrections. This packag
 The private account investigation is deliberately omitted. Its only teaching conclusion here is that no supported account-free route was established for the recorded runtime state; later emulator acceptance used the user's own sign-in. The latest private product/start/hardening briefs are represented only by sanitized or reconstructed prompts and the process summary.
 
 For actual build/dependency records use [setup and versions](../curriculum/SETUP_AND_VERSIONS.md); for admitted/diagnostic/derived image scope use the [evidence index](../evidence/INDEX.md). A hash proves byte identity, not truth, visual inspection, a license or runtime behavior.
+
+## Preserved edition copies
+
+These copies match the corresponding files at documentation base `2ea1b29` exactly. The hashes below identify the preserved **teaching documents**, distinct from the original museum-source hashes above. The base revision belongs to this documentation repository; the museum closeout revision remains `0efe2718e0eeb733e2a3b3b2cd300a1703025aa0`.
+
+| Preserved copy | Previous path at `2ea1b29` | Bytes | SHA-256 |
+| --- | --- | ---: | --- |
+| [lessons/reference-L0.md](../lessons/reference-L0.md) | `lessons/L0.md` | 5646 | `957978d9a6570730949843d15d8d71bce2bb68157432740400e9c6e0d4978e47` |
+| [lessons/reference-L1.md](../lessons/reference-L1.md) | `lessons/L1.md` | 5953 | `c09fa2c52479ed94b71da5adbd2e1bc0e95f6d369d96d4da28e688564b865044` |
+| [lessons/reference-L2.md](../lessons/reference-L2.md) | `lessons/L2.md` | 5671 | `12ca52a7bab2138bd2413d10ed5211b03e87f5da5fac23505d2506b10141f76a` |
+| [lessons/reference-L3.md](../lessons/reference-L3.md) | `lessons/L3.md` | 6753 | `f6e0420ae39eb77ef3a7084e2ae6858cc85d44872d39f86852561fa5c68c85af` |
+| [lessons/reference-L4.md](../lessons/reference-L4.md) | `lessons/L4.md` | 7739 | `eab2cbc16efe51c10bcb372d0ba238f71519693ea70690ef2c49026889e45b00` |
+| [prompts/HISTORICAL_PROMPTS.md](HISTORICAL_PROMPTS.md) | `prompts/PROMPT_LIBRARY.md` | 19385 | `b4500a475fe5af337aa43cff89748a0c9de55eb28d4c957d09f73c9aa3ff5f5e` |
+
+The old reference lessons link to `PROMPT_LIBRARY.md`; that page now directs historical P00–P20 readers to the preserved library. No original prompt was relabeled as a new exact human message. The new T-series has its own IDs and is not included in the historical provenance counts.

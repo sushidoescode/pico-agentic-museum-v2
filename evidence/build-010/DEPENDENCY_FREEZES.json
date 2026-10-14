@@ -1,0 +1,22 @@
+{
+  "build": "build-010",
+  "files": [
+    {
+      "path": "dependency-freezes/deps-debugCompileClasspath.txt",
+      "sha256": "a583a826f0d7a03135e083d82355a5edb5a4724cd5f6e9a961de1906b6a8beae",
+      "bytes": 46846,
+      "originalRelativePath": "evidence/pico-feedback-001/build-010/deps-debugCompileClasspath.txt",
+      "originalSha256": "a583a826f0d7a03135e083d82355a5edb5a4724cd5f6e9a961de1906b6a8beae",
+      "transform": "byte-identical relocation"
+    },
+    {
+      "path": "dependency-freezes/deps-debugRuntimeClasspath.txt",
+      "sha256": "531da9ac68ddbab0707d54ca9c59a6a81678b011fe6dad8801fdaf4f240279a2",
+      "bytes": 59171,
+      "originalRelativePath": "evidence/pico-feedback-001/build-010/deps-debugRuntimeClasspath.txt",
+      "originalSha256": "531da9ac68ddbab0707d54ca9c59a6a81678b011fe6dad8801fdaf4f240279a2",
+      "transform": "byte-identical relocation"
+    }
+  ],
+  "scope": "Recorded dependency graphs, not vendored dependencies or offline-build proof."
+}

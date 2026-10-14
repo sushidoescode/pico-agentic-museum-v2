@@ -1,0 +1,1 @@
+Expand the museum to the 18 exhibits in the attached list. Give me a scrollable catalogue and use the companion as an inspector showing the selected exhibit’s details. Keep the first three stories and use clearly labeled simple shapes for the extra exhibits. Test that every exhibit can be selected and that there are exactly 18.

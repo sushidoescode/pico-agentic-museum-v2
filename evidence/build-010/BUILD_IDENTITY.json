@@ -1,0 +1,47 @@
+{
+  "build": "build-010",
+  "package": "dev.local.everydayfutures.museum",
+  "versionCode": 1,
+  "versionName": "1.1-feedback-002",
+  "minSdkVersion": 35,
+  "targetSdkVersion": 35,
+  "apkBytes": 41641132,
+  "apkSha256": "a5dd0c3e2ddbe21075778780d66e6103146ec0ce697f642cf42728060eed3e7f",
+  "builtSource": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+  "documentationCloseout": "5224c1ac95a130dbf7d49806caba3f2ed2617028",
+  "originalReceiptSha256": "2323bfabce26c07a289ad1fd13dcd2eb4eee23b86fc5171f9ded6b14b3e27d64",
+  "recordedBuildTime": "2026-10-13T22:32:36Z",
+  "recordedDirtyLines": 42,
+  "sourceReceiptHashMatches": 123,
+  "sourceReceiptQualification": "All 6 Gradle files and 117 app/src files match the built commit and finished checkout. Original receipt reports 42 status lines; implementation report attributes them to untracked evidence.",
+  "signing": {
+    "scheme": "APK Signature Scheme v2",
+    "algorithm": "RSA PKCS#1 v1.5 SHA-256",
+    "signatureAndContentDigestVerifiedOffline": true,
+    "certificateSha256": "0709fd7c243886ebb057626519f01186dc9f7aa8dd885391f3a4539267fe388a",
+    "sameCertificateAsPreservedBuild008": true,
+    "method": "Offline binary parsing and RSA/SHA256 arithmetic; no SDK, device or signing-key access. Certificate identity is a newly measured APK property, not an identity asserted by the original build receipt. This does not establish new installation or platform trust."
+  },
+  "toolchainRecorded": {
+    "picoCli": "pico-cli/0.6.0 (public) darwin-arm64 node-v25.8.1",
+    "primerCli": "0.0.2-alpha.5 Build 20260909110037",
+    "gradle": "gradle-8.13-bin",
+    "jdk": "openjdk version 21.0.12.1 2026-08-18 LTS (primer-cli bundled JDK)",
+    "kotlin": "2.1.20 (libs.versions.toml as generated)",
+    "agp": "8.13.2 (libs.versions.toml as generated)",
+    "spatialBom": "6.1.9"
+  },
+  "buildResultRecorded": {
+    "exitCode": 0,
+    "successfulInLog": true,
+    "logSha256": "4a219da1947413291452f4621b9a759eb7820c293012c8d2cb5ea63bcefb8fb0"
+  },
+  "notPerformedForThisPackage": [
+    "build",
+    "application tests",
+    "install",
+    "launch",
+    "native capture",
+    "fresh-machine reproduction"
+  ]
+}

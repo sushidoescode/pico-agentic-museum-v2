@@ -1,0 +1,597 @@
+{
+  "build008ApkSha256": "b1a61d990c3efd15f8a17ec879cf385468bcbc5d2af7f13c2696e9a1484a3f26",
+  "build010ApkSha256": "a5dd0c3e2ddbe21075778780d66e6103146ec0ce697f642cf42728060eed3e7f",
+  "allPackagedAssetsByteIdentical": true,
+  "packagedAssetCount": 39,
+  "glbCount": 19,
+  "gitArtAssetLauncherChangedPaths": [],
+  "sameSignerCertificate": true,
+  "note": "Runtime geometry/interaction code changed; no replacement art payload or new art license claimed. Existing held-asset and private-supplement qualifications remain.",
+  "files": [
+    {
+      "apkPath": "assets/box.usdz",
+      "build008": {
+        "bytes": 217200,
+        "sha256": "1036270ab9c96b0194233177b3407694dd1a831a8a663873fcb172d88da6df75",
+        "zipCompression": 8
+      },
+      "build010": {
+        "bytes": 217200,
+        "sha256": "1036270ab9c96b0194233177b3407694dd1a831a8a663873fcb172d88da6df75",
+        "zipCompression": 8
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": false
+    },
+    {
+      "apkPath": "assets/models/exhibits/coffeepod.glb",
+      "build008": {
+        "bytes": 145088,
+        "sha256": "629d9336e4b946a89169f7a54b38edb74261ee370a29e2bfb7c4d0b13ef2643d",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 145088,
+        "sha256": "629d9336e4b946a89169f7a54b38edb74261ee370a29e2bfb7c4d0b13ef2643d",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/cryptowallet.glb",
+      "build008": {
+        "bytes": 85296,
+        "sha256": "98d8ccaa047daea80f2da1f7db795675a2bcdaebbaa402d131adc6939e9f968d",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 85296,
+        "sha256": "98d8ccaa047daea80f2da1f7db795675a2bcdaebbaa402d131adc6939e9f968d",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/deliverybox.glb",
+      "build008": {
+        "bytes": 58256,
+        "sha256": "8b5ce1f7fbabd0c0c502a193942be0a253dd289961d9f8cf18130a2f4ffa9685",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 58256,
+        "sha256": "8b5ce1f7fbabd0c0c502a193942be0a253dd289961d9f8cf18130a2f4ffa9685",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/doorbell.glb",
+      "build008": {
+        "bytes": 90952,
+        "sha256": "7592c80470d45b3b18c8d98b74b08a305e4ca776a9775b90bbdbeb77aba06bae",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 90952,
+        "sha256": "7592c80470d45b3b18c8d98b74b08a305e4ca776a9775b90bbdbeb77aba06bae",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/earbuds.glb",
+      "build008": {
+        "bytes": 166828,
+        "sha256": "312daee4124de57384da7d5f778c3d5e62c24208c82295982f9ad200a8e054b9",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 166828,
+        "sha256": "312daee4124de57384da7d5f778c3d5e62c24208c82295982f9ad200a8e054b9",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/facemask.glb",
+      "build008": {
+        "bytes": 261456,
+        "sha256": "2be00155fbac49859031b7d5078b2f07ba8c95f7f2a223bd40632568c79a0dcb",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 261456,
+        "sha256": "2be00155fbac49859031b7d5078b2f07ba8c95f7f2a223bd40632568c79a0dcb",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/fidget.glb",
+      "build008": {
+        "bytes": 560148,
+        "sha256": "c36d7b1c8c1a15cfc919c0fd7f6aaa7db20bddd98f0c6c6694a49bc7375bacf0",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 560148,
+        "sha256": "c36d7b1c8c1a15cfc919c0fd7f6aaa7db20bddd98f0c6c6694a49bc7375bacf0",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": false
+    },
+    {
+      "apkPath": "assets/models/exhibits/gascan.glb",
+      "build008": {
+        "bytes": 486240,
+        "sha256": "127f241bd5cb22bf2a8861a1f0ec226d7cd562ac070598685e5e273d69e05be8",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 486240,
+        "sha256": "127f241bd5cb22bf2a8861a1f0ec226d7cd562ac070598685e5e273d69e05be8",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": false
+    },
+    {
+      "apkPath": "assets/models/exhibits/qrcode.glb",
+      "build008": {
+        "bytes": 46876,
+        "sha256": "9a630c948d2760fdee3b782661277d0211ec6d1dcaf6f5f24d6014cb75aa9c1a",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 46876,
+        "sha256": "9a630c948d2760fdee3b782661277d0211ec6d1dcaf6f5f24d6014cb75aa9c1a",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/remote.glb",
+      "build008": {
+        "bytes": 118480,
+        "sha256": "681f6a0853b435c3679187066e68e69e1eb157e13068ae99f8ea3c1d8c6f8d27",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 118480,
+        "sha256": "681f6a0853b435c3679187066e68e69e1eb157e13068ae99f8ea3c1d8c6f8d27",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/rocket.glb",
+      "build008": {
+        "bytes": 250164,
+        "sha256": "38baf6c3cc9c689f293c60ea2c77ade7ab3f905fa8a5f73bc5a812729f468d62",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 250164,
+        "sha256": "38baf6c3cc9c689f293c60ea2c77ade7ab3f905fa8a5f73bc5a812729f468d62",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/router.glb",
+      "build008": {
+        "bytes": 197124,
+        "sha256": "c0d59ace8e0b5801deef943c367d526db82fedf2814380b20ec4cbbb34123e04",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 197124,
+        "sha256": "c0d59ace8e0b5801deef943c367d526db82fedf2814380b20ec4cbbb34123e04",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/scooter.glb",
+      "build008": {
+        "bytes": 998172,
+        "sha256": "a021a57228d3fb9e548c5065f639b8f0992de22b93c4cd30b60e42547d508d83",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 998172,
+        "sha256": "a021a57228d3fb9e548c5065f639b8f0992de22b93c4cd30b60e42547d508d83",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": false
+    },
+    {
+      "apkPath": "assets/models/exhibits/smartphone.glb",
+      "build008": {
+        "bytes": 176416,
+        "sha256": "d536d0ef8b5555b8c4d7172c7c7cb59c7d8c0b6123dda427275c43e4031ac5ea",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 176416,
+        "sha256": "d536d0ef8b5555b8c4d7172c7c7cb59c7d8c0b6123dda427275c43e4031ac5ea",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/smartspeaker.glb",
+      "build008": {
+        "bytes": 329780,
+        "sha256": "11ff1240568f66b685fb5f0080f6ea6a795cea465bbee7ae0cb2d8f019d4f922",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 329780,
+        "sha256": "11ff1240568f66b685fb5f0080f6ea6a795cea465bbee7ae0cb2d8f019d4f922",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/smartwatch.glb",
+      "build008": {
+        "bytes": 174952,
+        "sha256": "54820c1c53a275213bccf054251dd109790a763c4f0c1ab34172282175eeb03e",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 174952,
+        "sha256": "54820c1c53a275213bccf054251dd109790a763c4f0c1ab34172282175eeb03e",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/exhibits/vacuum.glb",
+      "build008": {
+        "bytes": 235564,
+        "sha256": "bd4c2f30f8b3bb9c16e9631440fc81c15ada432374cd1a6b7555d507997d2b03",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 235564,
+        "sha256": "bd4c2f30f8b3bb9c16e9631440fc81c15ada432374cd1a6b7555d507997d2b03",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/models/vessel_study.glb",
+      "build008": {
+        "bytes": 658752,
+        "sha256": "f1d904a4195d0b6a65a07f49a5f4d8a06914032e22ed62d36ab3891306352280",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 658752,
+        "sha256": "f1d904a4195d0b6a65a07f49a5f4d8a06914032e22ed62d36ab3891306352280",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": false
+    },
+    {
+      "apkPath": "assets/room/earth_archive.glb",
+      "build008": {
+        "bytes": 2121940,
+        "sha256": "152e5087d2580e8952bda72192bb821fc6bee8a29bf0c3b0ab5f906ae971b6f3",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 2121940,
+        "sha256": "152e5087d2580e8952bda72192bb821fc6bee8a29bf0c3b0ab5f906ae971b6f3",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/room/room-layout.json",
+      "build008": {
+        "bytes": 14482,
+        "sha256": "67023ca9e5f77c068e25901aeb9c8ad9fdda2c652f3a589db4a7f13b51d8bf03",
+        "zipCompression": 8
+      },
+      "build010": {
+        "bytes": 14482,
+        "sha256": "67023ca9e5f77c068e25901aeb9c8ad9fdda2c652f3a589db4a7f13b51d8bf03",
+        "zipCompression": 8
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/coffeepod.png",
+      "build008": {
+        "bytes": 44141,
+        "sha256": "de1d13f82a807573d7789109860b7448904455430502168305d8d7800c43fd21",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 44141,
+        "sha256": "de1d13f82a807573d7789109860b7448904455430502168305d8d7800c43fd21",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/cryptowallet.png",
+      "build008": {
+        "bytes": 23498,
+        "sha256": "e93ef8602deb4399587332c8ac454a810d966536062591c1344a6c6c09c1fd71",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 23498,
+        "sha256": "e93ef8602deb4399587332c8ac454a810d966536062591c1344a6c6c09c1fd71",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/deliverybox.png",
+      "build008": {
+        "bytes": 35856,
+        "sha256": "1f34ce68844b9f04dce7bf4764c2718df99b55d2a47203d2026642485f0b88b0",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 35856,
+        "sha256": "1f34ce68844b9f04dce7bf4764c2718df99b55d2a47203d2026642485f0b88b0",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/doorbell.png",
+      "build008": {
+        "bytes": 29057,
+        "sha256": "53a6e0ad512bb77e506c3d41d22abb4d675f297626a9bddd654537d1f3e5c945",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 29057,
+        "sha256": "53a6e0ad512bb77e506c3d41d22abb4d675f297626a9bddd654537d1f3e5c945",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/earbuds.png",
+      "build008": {
+        "bytes": 42482,
+        "sha256": "8b53d18e63ef3fdb1217e375ecbcee4d24eb02e1405642769ac12d4ae67b122e",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 42482,
+        "sha256": "8b53d18e63ef3fdb1217e375ecbcee4d24eb02e1405642769ac12d4ae67b122e",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/facemask.png",
+      "build008": {
+        "bytes": 34656,
+        "sha256": "58882c224d8dacdf3bb5776d1f57bb0c7c4a42907b4a3f39ae12c6fd4b96378b",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 34656,
+        "sha256": "58882c224d8dacdf3bb5776d1f57bb0c7c4a42907b4a3f39ae12c6fd4b96378b",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/fidget.png",
+      "build008": {
+        "bytes": 29579,
+        "sha256": "38513b6d03b8d7e4540fdd86c559fc205ebaf5b69d85e832fce77f319dd020e8",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 29579,
+        "sha256": "38513b6d03b8d7e4540fdd86c559fc205ebaf5b69d85e832fce77f319dd020e8",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": false
+    },
+    {
+      "apkPath": "assets/thumbnails/gascan.png",
+      "build008": {
+        "bytes": 37692,
+        "sha256": "510abf28d1c2ffbff06cc5485a79244b7de834f10af9046f8d614f2f1aa51717",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 37692,
+        "sha256": "510abf28d1c2ffbff06cc5485a79244b7de834f10af9046f8d614f2f1aa51717",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": false
+    },
+    {
+      "apkPath": "assets/thumbnails/qrcode.png",
+      "build008": {
+        "bytes": 40515,
+        "sha256": "9bcf25f458f98b2932b1f84c9dfac21df9684ec19fb7a06d2a004379f66e91b1",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 40515,
+        "sha256": "9bcf25f458f98b2932b1f84c9dfac21df9684ec19fb7a06d2a004379f66e91b1",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/quencher.png",
+      "build008": {
+        "bytes": 30580,
+        "sha256": "2dab3107dc5e4f58ed5f65833cef3812edf17add292c4cc025c072cbe10dd146",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 30580,
+        "sha256": "2dab3107dc5e4f58ed5f65833cef3812edf17add292c4cc025c072cbe10dd146",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": false
+    },
+    {
+      "apkPath": "assets/thumbnails/remote.png",
+      "build008": {
+        "bytes": 20787,
+        "sha256": "d74e4ba0e477633baab1b383364c1c6198694480d358d03c9d3d56e2b579dd5a",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 20787,
+        "sha256": "d74e4ba0e477633baab1b383364c1c6198694480d358d03c9d3d56e2b579dd5a",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/rocket.png",
+      "build008": {
+        "bytes": 19648,
+        "sha256": "d3bdcc2980b7b4bea7216c2e63ea9ce4e98991eeb4cb0cf4c4b6128c1664f5c9",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 19648,
+        "sha256": "d3bdcc2980b7b4bea7216c2e63ea9ce4e98991eeb4cb0cf4c4b6128c1664f5c9",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/router.png",
+      "build008": {
+        "bytes": 34845,
+        "sha256": "ffc1c5d8209a340b750dadfd50255d45961757d8d5ece56d7f11ed8a901de58f",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 34845,
+        "sha256": "ffc1c5d8209a340b750dadfd50255d45961757d8d5ece56d7f11ed8a901de58f",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/scooter.png",
+      "build008": {
+        "bytes": 30599,
+        "sha256": "47a919630562fe932ff6e1743e17e499ad8b55f6eeb7fcc273b345c8f9066b01",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 30599,
+        "sha256": "47a919630562fe932ff6e1743e17e499ad8b55f6eeb7fcc273b345c8f9066b01",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": false
+    },
+    {
+      "apkPath": "assets/thumbnails/smartphone.png",
+      "build008": {
+        "bytes": 26324,
+        "sha256": "1f4ccadf1ce5a3f17002a0b0b5421f273f541c1169bc520be5153d0435dece31",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 26324,
+        "sha256": "1f4ccadf1ce5a3f17002a0b0b5421f273f541c1169bc520be5153d0435dece31",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/smartspeaker.png",
+      "build008": {
+        "bytes": 38564,
+        "sha256": "d5411d10da4fb791fbf4ed69f2e514f385e0eb019dfb2f9b7ba3d956cb5ede25",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 38564,
+        "sha256": "d5411d10da4fb791fbf4ed69f2e514f385e0eb019dfb2f9b7ba3d956cb5ede25",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/smartwatch.png",
+      "build008": {
+        "bytes": 41067,
+        "sha256": "93c7a80e2fa702c206a0b8615eb12c7cd714720bc497444c6673e72686674eea",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 41067,
+        "sha256": "93c7a80e2fa702c206a0b8615eb12c7cd714720bc497444c6673e72686674eea",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    },
+    {
+      "apkPath": "assets/thumbnails/vacuum.png",
+      "build008": {
+        "bytes": 29680,
+        "sha256": "f59a48dde2d441076fb09d9057d19fd1dd7ca53cdda4ad4bc67d0f730be788bf",
+        "zipCompression": 0
+      },
+      "build010": {
+        "bytes": 29680,
+        "sha256": "f59a48dde2d441076fb09d9057d19fd1dd7ca53cdda4ad4bc67d0f730be788bf",
+        "zipCompression": 0
+      },
+      "byteIdentical": true,
+      "includedInStagedSource": true
+    }
+  ]
+}

@@ -1,48 +1,35 @@
-# The separate asset supplement
+# Download the app and art files
 
-This repository is one of two parts.
+**Download status — October 14:** the revised lessons and source are in this repository. The latest APK, **build-010**, is packaged locally but **has not been uploaded to Drive yet**.
 
-- **This Git repository** holds the course, the review material, the walkthrough and the source snapshots.
-- **The asset supplement** is a separate folder assembled by the project owner, titled “PICO Museum Delivery / 2026-09-28”. It holds the large and rights-qualified files this repository deliberately leaves out: exhibit models, the Blender project and the Android installer (APK).
+The owner's [Museum Drive folder](https://drive.google.com/drive/folders/1C6693JWX1kvqgu253xLBeGumSB32UPB-) currently contains the earlier **2026-09-28** delivery, including build-008 and the unchanged art files. It is useful for those assets, but it is not a build-010 download.
 
-## Access
+The prepared **2026-10-14** folder has the organization below. These entries describe the ready package, not a completed cloud upload.
 
-The owner supplied the [Museum delivery folder](https://drive.google.com/drive/folders/1C6693JWX1kvqgu253xLBeGumSB32UPB-) for review alongside this repository. It contains the dated [2026-09-28 delivery](https://drive.google.com/drive/folders/1AS_WAx3grzcMzsxmL7meZOO-pxiHTU2P). Both folders were readable without signing in on September 30, 2026, with link access reconfirmed October 1. The parent is now titled “PICO Agentic Spatial SDK Museum (Sushant)”; the folder IDs are unchanged. Use this Git repository for the latest navigation and delivery documentation; Drive's `05_Review_Repository_R2/` and its ZIP preserve the September 28 edition.
-
-Open [assets and Blender](https://drive.google.com/drive/folders/1mR_iZEc2MCvzEHG0HjQWkd99ULH3RYZz), [the eighteen exhibit models](https://drive.google.com/drive/folders/1ZHyUQuv7WBgXgxFQfopJNDOczROMhnFr), or [the Blender room project](https://drive.google.com/drive/folders/1GxGsDcnly8oxpl9mcir6RU7irx8WqqGb). The preserved [build-008 APK](https://drive.google.com/file/d/1JFz00IfCpPrXmBb0oRTe0onfTUojJv6m/view) and [final visitor-start frame](https://drive.google.com/file/d/1CeWg1v13b3tWbLONKlvlnFL_-90jYz9D/view) are separate from Git.
-
-The owner controls access to that folder. Link access does not establish a public reuse license or settle the per-item qualifications in [open items](review/OPEN_ITEMS.md). No Drive sharing setting was changed as part of this repository delivery. The September 28 statement that upload was in progress is historical; [team handoff](review/TEAM_HANDOFF.md) records the newer verification scope.
-
-## What the supplement contains
-
-| Folder in the supplement | Contents |
+| Folder | What it contains |
 | --- | --- |
-| `01_Review_Package/` and its ZIP | The original review package this repository grew from, unchanged |
-| `02_Assets_and_Blender/` | All eighteen current exhibit models and thumbnails, plus the archive room model and layout. It also has the original Blender file with its five room textures, the authoring scripts, the three reference models actually used, the original inputs for the generated vessel, seven PICO template resources and the original provenance and attribution records (reference manifest, asset registers, pipeline and build-input notes, and entry/spec/build records for the four held exhibit families). `RESTORE_MAP.json` maps each file to its place in the museum source. |
-| `03_Android_App/` | The build-008 installer (APK) and its identity notes |
-| `04_Current_Frame/` | The admitted build-008 visitor-start image and its scope notes |
-| `05_Review_Repository_R2/` and its ZIP | The preserved September 28 sharing repository, before the September 30 and October 1 delivery documentation updates |
+| `01_Documentation` | These lessons, short prompts, source versions and review notes. Download the matching ZIP to keep links and the picture tour together. |
+| `02_Assets_and_Blender` | Eighteen exhibit models and their pictures, the room, Blender project, textures, source inputs, template resources and asset notices. |
+| `03_Android_App` | `museum-build-010.apk`, version **1.1-feedback-002**, and its file identity. This is the current feedback build to try. |
+| `04_Review_Evidence` | Selected existing images and their build labels, including the corrected room-panel frame and the unsuccessful Subwindow trial. |
+| `05_Recording_and_Device_Checks` | A short demo outline and checks for the owner's manual emulator/headset session. |
 
-The supplement has its own `README.md`, `SHARING_SCOPE.md`, `MANIFEST.json` and `SHA256SUMS`.
+For the revised documents now, use this repository or choose **Code → Download ZIP** on GitHub. The **2026-09-28** Drive folder keeps the original build-008 APK and earlier course editions. The current APK will need its own completed upload before the team can download it there.
 
-## Matching the two parts
+## Adding art to a new student project
 
-This repository's [MANIFEST.json](MANIFEST.json) lists each file it leaves out under `heldItems`, with its SHA-256 hash. Thirty-three of those 37 hashes match a file in the supplement's own `MANIFEST.json`. The other four are in neither part:
+Start with [the first three models](curriculum/ADD_MODELS.md), then use [the larger collection and room guide](curriculum/EXPAND_MUSEUM.md). Those guides' existing direct model links remain useful: the model and room files are unchanged by the feedback update.
 
-| Held item | Why it is in neither part |
-| --- | --- |
-| The museum's original `THIRD_PARTY_NOTICES.md` | Kept private; the corrected notices are in [source/NOTICES.md](source/NOTICES.md) |
-| `preview.html` and `preview-manifest.json` | The bundled Web preview's license scope is unresolved |
-| One build-006 inspector image (E08 in the [evidence index](evidence/INDEX.md)) | Its background shows rights-qualified thumbnails |
+The source snapshots still omit the assets listed in their notices. Use the supplement's restore map in a separate working copy if you want to inspect the original app. The map's asset paths also apply to build-010; the unchanged asset identities are recorded in its companion note. Combining the downloads has not been tested as a recipient rebuild.
 
-Raw evidence, original prompts and conversations, Git history and recordings are in neither part.
+## Which app results are established?
 
-Some documents here were written for the original package and call the APK, the four held model families, the template resources and the Blender file “held privately”. That is historical preparation wording: these files remain excluded from Git, while the owner-supplied Drive link is now readable without signing in. Their rights qualifications remain unchanged.
+Most new interaction checks were recorded on build-009. Build-010 corrected the room panel's position and has its own admitted arrival-panel check and recorded Return/cleanup. The [current result notes](review/BUILD_010_RESULTS.md) separate those results and list the checks still needed. Hand tracking, headset use and comfort are not established by the emulator observations.
 
-## Having both parts is not a tested build
+Build-008 remains available as the [original APK](https://drive.google.com/file/d/1JFz00IfCpPrXmBb0oRTe0onfTUojJv6m/view), with its earlier feature evidence and narrower final starting-screen admission.
 
-The restore map covers the current build-008 asset inputs only. It does not fill in the historical lesson snapshots. Nobody has yet built the app from this repository combined with the supplement. A developer who tries should work in a separate copy and follow [setup and versions](curriculum/SETUP_AND_VERSIONS.md). They should record new file and build identities before claiming any result.
+## Sharing conditions
 
-## Rights stay with the files
+A working Drive link is not a blanket reuse license. The [asset notes](assets/PROVENANCE_AND_RIGHTS.md) describe the reference models, generated cup, PICO template and Blender-file qualifications. The APK and some images include the same art. No new rights clearance is claimed by this delivery.
 
-The supplement keeps the same provenance as this repository: fourteen project-authored Blender originals, three reference-derived models (fidget, scooter, gascan), one generated vessel and PICO template resources. Neither part grants a blanket public license. The Blender file is copied byte for byte, and the supplement's guide records its remaining metadata qualifications. Read [asset provenance and rights](assets/PROVENANCE_AND_RIGHTS.md) and [notices](source/NOTICES.md) before sharing any file further.
+Raw chats, account/device logs, original Git history, signing keys and build caches are excluded. The prototype APKs are also excluded; their reported result and selected qualified pictures are enough for the follow-up review. No review message has been sent.

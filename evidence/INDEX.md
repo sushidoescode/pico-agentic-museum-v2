@@ -1,35 +1,58 @@
-# Evidence and artifact index
+# Tests and screenshots: what they show
 
-This index is a sanitized editorial summary of retained records at museum closeout `0efe271`. No build, native test, interaction or capture was run during packaging. SHA-256 and byte counts for each selected export are in [EVIDENCE.json](EVIDENCE.json) and the package [manifest](../MANIFEST.json). Exact raw originals and path mappings remain in a separate private audit directory; raw receipts contain identifiers unsuitable for this candidate.
+**The latest review APK is build-010 (`1.1-feedback-002`).** Read its [feedback results](../review/BUILD_010_RESULTS.md) and [remaining device checks](../review/RECORDING_AND_DEVICE_CHECKS.md). Most new interaction observations belong to build-009; build-010 itself has one checked archive-arrival image and a specific Return/cleanup record. The feedback session was on an emulator, not a headset.
 
-## Inspected media and tests
+The six pictures in “Original development pictures” below come from the original museum's development. They show different versions of that earlier app; none of those six is a build-010 screenshot.
 
-| ID | Artifact | Actual build and class | What it establishes / limits |
-| --- | --- | --- | --- |
-| E01 | [L1 reset](media/l1-reset.png) | L1 build-003; existing crop of admitted `museum-14-reset-after` | Visible front view after Reset. The crop has its own digest and is not the original gate image. |
-| E02 | [Companion before repair](media/l2-before.png) | L2 build-005; admitted `museum-l2-11-open-companion-after` | Existing but unreadable small strip; a liveness pass is not visual acceptance. |
-| E03 | [Companion after repair/reopen](media/l2-after.png) | L2 build-006; admitted `museum-l2-28-reopen-companion-after` | Shared vessel selection after reopen. Historically linked to byte-identical opened frame 14; now also opened directly by package root. |
-| E04 | [Vacuum chapter 2](media/l3-story.png) | L3 build-003; admitted `museum-l3-54-next-after` | Boundary state and repaired two-row controls. Not motion-quality evidence. |
-| E05 | [Archive arrival](media/l4-archive.png) | Earth Collection build-006; admitted `museum-ec-05-b6-archive-arrival` | Room, Connected lives objects and explicit Return; not a build-008 image. |
-| E06 | [Earlier Connected bay](media/l4-before-labels.jpg) | Earth Collection build-004; retained derived nongate look | Earlier tiny labels and room iteration. Never promoted to admitted evidence. |
-| E07 | Final visitor-start image, **held** | Demo-hardening build-008; admitted `museum-dh-01-b8-visitor-start` | 17 checks passed once; original opened. Depicts unresolved Tripo/reference assets. Hash `047522da2eb690a77c8943ae3370870dff5541adce4b3abaeacca545fb52fd34`, 2,696,294 bytes. |
-| E08 | Smartphone inspector image, **held** | Earth Collection build-006; admitted `museum-ec-06-b6-inspector` | Independent inspector visible; background thumbnails include qualified assets. |
-| T07 | [Build-007 tests](build-007-tests-retained.txt) | Retained host-unit-test summary | 128 tests, zero failures/errors/skips. Not rerun. |
-| T08 | [Build-008 tests](build-008-tests-retained.txt) | Retained host-unit-test summary | 128 tests, zero failures/errors/skips. Not rerun. |
+A **build** is a particular packaged version of the app. Build-008 remains the unchanged final APK of the original delivery. The newer feedback APK is packaged separately; its upload status is stated in the [download guide](../ASSET_SUPPLEMENT.md).
 
-All six included media files and both held selected gate images were visually opened by the package root. Originals were copied byte-for-byte; E01/E06 were already derivatives before this assignment. No new pixel edits or captures were made. No unrelated windows, personal paths, account names or device serials were visible in the selected included stills. PICO emulator chrome/environment remains visible and is included only for intended private technical review, without asserting public-marketing clearance.
+## Current build-010 image
 
-## Claims requiring records beyond a still
+The original build-010 archive-arrival image is kept in the separate PICO review package, outside this GitHub edition. See the [download status](../ASSET_SUPPLEMENT.md); its Drive upload is pending. The retained image shows the corrected navigation panel and six floor targets in the Connected lives bay. Return is visible first; the emulator toolbar overlaps the panel’s leftmost edge.
 
-| Claim | Retained source at closeout `0efe271` | Evidence boundary |
+This is the exact existing PNG from one admitted check on October 13: 17 checks, one attempt, bound to APK `a5dd0c3e…`. It is an emulator still, not a full build-010 interaction test or headset evidence. Most new interaction observations used build-009. No new screenshot was made for this package.
+
+The [gate summary](build-010/BUILD010_GATE_SUMMARY.json), [APK identity](build-010/BUILD_IDENTITY.json), [image scope and rights](build-010/MEDIA_NOTES.json), and [current results](build-010/CURRENT_RESULTS.md) retain those distinctions. The [asset comparison](build-010/ASSET_CHANGE_MAP.json) records unchanged build-008/build-010 asset bytes. Raw logs and full device records stay private.
+
+## Original development pictures
+
+| Picture | What to look for | Original version |
 | --- | --- | --- |
-| L1 interaction slice | `docs/lessons/lesson-1/ARTIFACTS.md`; `evidence/d1b-emulator-001/LOOK.md` and `INTERACTIONS.md` | Corrected totals: 12 admitted, 9 opened. Keep/Inspect counted clicks, vacuum turn and account-free launch were not established by that L1 slice. |
-| L2 shared selection/yaw and lifecycle | `evidence/l2-workspace-001/LOOK.md`, `PLACEMENT.md`, `INTERACTIONS.md` | Six builds, placement iterations; primary-close/companion-survival remained host-tested. |
-| L3 Return and reduced motion | `evidence/l3-story-001/REVIEW.md`, `LOOK.md`, `motion/MOTION.md` | Three original stories; historical recordings retain their original temporal-review limits. Rapid interruption and changing motion mid-transition are not native acceptance. |
-| Eighteen models, inspector, bays and Return | `evidence/earth-collection-001/README.md`, `REVIEW.md`, `INTERACTIONS.md` | Final build-007 confirms broad L4 behavior; eight admitted frames span builds 001–007. It is inaccurate to say all eight are build-007. |
-| Search/Close/disposal hardening | `evidence/demo-hardening-001/README.md`, `search-b8.txt` | Search used injected text and Enter; Close is counted host-pointer evidence. 22 invalid entities do not prove freed allocations. Five-visit memory investigation was on build-007 and inconclusive. |
-| Final build-008 admission | Original gate receipt SHA-256 `544a556cf754caacc0b2c5e574713a5565e6e1068b9b37e9a195f37b897d61a5` | Bounded app liveness plus an inspected visitor-start frame. No full application, FPS or physical-device acceptance follows from the gate alone. |
+| [Object after Reset](media/l1-reset.png) | The cup faces forward again. This is the earlier simple cup model. | L1 build-003, E01; an existing crop. |
+| [Companion before repair](media/l2-before.png) | The second window is present but too small to read. | L2 build-005, E02. |
+| [Companion after repair](media/l2-after.png) | A larger window shows the shared selection and controls. | L2 build-006, E03. |
+| [Vacuum story](media/l3-story.png) | The second chapter and two rows of controls. A still cannot show motion quality. | L3 build-003, E04. |
+| [Room before larger labels](media/l4-before-labels.jpg) | The tiny wall title in an earlier room layout. | L4 build-004, E06; an existing cropped/resized image, not a formal acceptance capture. |
+| [Room after the change](media/l4-archive.png) | Larger bay lettering and a clear Return button. | L4 build-006, E05. |
 
-The rows above are source citations, not links into an absent raw evidence tree. [CLAIM_SOURCES.json](CLAIM_SOURCES.json) pins their original digests; the private audit holds exact copies. The lessons and process documents provide reviewable summaries. Historical “gate deferred” prose in the hardening README is superseded by its final admission section; it is not the current conclusion.
+These six image files are unchanged. They were visually inspected when the original package was prepared. We did not make new screenshots for the rewrite.
 
-The build-008 APK was rehashed from its preserved artifact, not the mutable Gradle output. Its original receipt hash is `4491af2bf2355fa8a2a650bb2f3eabee93406624cf2a339097fd5278037b546e`; it records source `c65959f` and `dirtyLines=2`. The clean closeout `0efe271` is a later documentation/evidence state. [Source checkpoints](../source/CHECKPOINTS.json) preserve that distinction.
+The final build-008 starting-screen image, E07, is in the [Drive supplement](../ASSET_SUPPLEMENT.md). The inspector image E08 is excluded from both parts because of the qualified artwork visible in its background.
+
+## What was tested in the original delivery
+
+The original build-007 and build-008 records each report **128 passing app tests**. Those were small tests run on the development computer, not 128 headset tests. Their summaries are [T07](build-007-tests-retained.txt) and [T08](build-008-tests-retained.txt). They were not rerun for this documentation rewrite.
+
+Earlier emulator checks covered selection, turning, companion behavior, stories, the separate inspector, and the archive. Their builds and limits are kept in the [technical evidence record](TECHNICAL_RECORD.md).
+
+Build-008's final visitor-start check passed 17 checks once and its image was inspected. This supports the recorded starting state. It does not establish a fresh, complete test of every museum feature.
+
+## Later PICO feedback
+
+In the review conversation supplied on October 13, PICO reviewers said they had tried the app on a headset and described several usability issues. That is reported reviewer feedback. It does not identify an APK hash, device/OS version, complete test sequence, or comfort assessment, so it does not replace the original build records. The [feedback status](../review/APK_FEEDBACK.md) now records the subsequent emulator observations and what still needs checking.
+
+## Feedback-session limits
+
+Build-010's checked arrival showed the room panel within view and Return first. Its specific exit record restored the main museum. The model switch, visible study fade, shortlist and most room-target interactions were observed on build-009, not repeated as a full build-010 test.
+
+Two attached Subwindow prototypes produced no visible panel in the emulator. The delivered app keeps the separate window. Neither a system attachment record nor an input label of `GazePinch` establishes a visible Subwindow or successful hand tracking.
+
+Arrival after a head turn, the door-ring exit, hover, headset input/comfort, comfort-option toggles, the separate 3D-view fade and stories remain outside that feedback session's checks. The [current results](../review/BUILD_010_RESULTS.md) keep those limits separate from earlier course results.
+
+## What remains unknown
+
+The original results do not establish headset comfort, hand/controller input, or account-free operation. Search Enter was tested through injected key events, not a person typing on the host keyboard. The memory investigation did not establish a cause or prove all native memory was released after leaving the room.
+
+The separate [Luna experiment](../reproduction/README.md) reports its own code, tests, and limitations. It cannot borrow these old screenshots or test results as proof of its output.
+
+For file-level checks, [EVIDENCE.json](EVIDENCE.json) lists image sizes and hashes; [CLAIM_SOURCES.json](CLAIM_SOURCES.json) identifies the original records behind the summaries. Private raw logs and account/device details remain outside the repository.

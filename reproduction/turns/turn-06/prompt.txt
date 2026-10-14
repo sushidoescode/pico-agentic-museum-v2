@@ -1,0 +1,1 @@
+Please fix the companion so both views immediately show each other’s changes without a Refresh button. It still needs select and reset controls, a readable layout, and the attached import error fixed. Add a test that changes the selection from each side and reads it from the other.

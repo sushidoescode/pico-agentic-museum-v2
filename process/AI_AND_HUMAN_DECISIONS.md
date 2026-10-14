@@ -1,43 +1,44 @@
-# AI and human decisions — retained development timeline
+# How the app grew
 
-This is an editorial synthesis of the retained museum records through closeout `0efe2718e0eeb733e2a3b3b2cd300a1703025aa0`. It separates product choices, agent-generated work and verification. It is not a full conversation export. Exact selected prompts and reconstructed teaching prompts are labeled in the [prompt library](../prompts/PROMPT_LIBRARY.md); original museum document hashes are in [source notes](../prompts/SOURCE_NOTES.md). Dates follow the retained session records rather than implying a continuous recording.
+The museum did not appear from one perfect prompt. It grew through small requests, mistakes, checks, and repairs.
 
-| Phase | Brief or decision | Agent output and what failed | Check and result | Human contribution / limit |
-| --- | --- | --- | --- | --- |
-| Design and L0, September 20–21 | Three ordinary objects; choose → adjacent inspection → later miniature story | Web design draft, input inventory, SDK source maps, pure reducers and staged native UI; bad import and declaration assumptions found | Eleven host logic tests; declaration/static review and one document review; source-only checkpoint | Human supplied direction and constraints. Storage blocked native work; no APK/frame existed |
-| L1 host build, September 22 | Official scaffold plus the pinned external polish module; freeze actual dependencies | Native scaffold/overlay, provenance wrapper and receipt; theme nesting, ignored build products in digest recipe and relative freeze paths needed repair | Host build receipt, APK identity, app/module tests, style checks; failed attempts retained | Human supplied the continuation/correction brief. A successful build did not open the device lane |
-| L1 native iteration, September 23–25 | Make the existing slice readable and prove selection/turn/reset | Fixed-scale text was too small; comfort controls clipped; a glass-visible shelf was misread; three small-target clicks missed | Dynamic scale/taller window; restored base-panel setting; mapping from actual landings; counted actions with markers and opened after-frames | User independently signed in; no supported account-free route was established. Corrected evidence count: 12 admitted, 9 opened |
-| L2, September 25 | One optional companion with real shared state | One controller per process, DSL companion, lifecycle markers; five placement attempts preceded the final layout | Final build-006 open/focus/select/turn/reset/close/reopen sequence; no duplicate companion; source review found no material defect | No in-session human code or window intervention recorded. Previous sign-in remained a prerequisite |
-| L3, September 25 | Three original stories through one reducer/presenter | Data-defined miniatures; first frames showed a low/small scene and pale route marks; review found stale Return restoration and timing defects | Larger/lifted scene, brass marks, Return clears only story; changed native paths rechecked on build-003; rapid interruptions remained host-only | Agent review drove the corrections. Sampled motion sheets were later correctly labeled; no hardware comfort claim |
-| Demo polish, September 26 | Improve loading feedback, collection reset and the vacuum path | Rearranged furniture around the vacuum's straight transition; preparing/error/retry UI; confirmation for clear collection | Complete timestamped frame sequences reviewed for repaired motion; a runtime failure interrupted remaining native work | Runtime cause was not established. Failure remained recorded, rather than attributed to an app fix without evidence |
-| Recovery and bounded asset polish, September 27 | Finish remaining checks with the same demo-polish APK; improve one study object | Recovery acceptance then an earlier Tripo-generated vessel in the study, with procedural story/fallback retained | Reduced-motion/reset paths and bounded generated-asset checks recorded on the emulator | User restored the running emulator for recovery. An ElevenLabs narration candidate was unheard/unintegrated and is not an accepted audio deliverable |
-| L4, September 27 | Larger collection, independent rotating 3D view and serene alien archive | Two implementers with disjoint art/app ownership; root integrated Stage/builds/native checks. Fourteen Blender originals, three processed references and the earlier Tripo vessel; room authored in Blender | Eighteen study models inspected; inspector/archive/return/story checks; eight admitted/opened frames across the increment; one source review, eight findings resolved once in build-007 | Human selected the art direction and feature expansion. Reference permission statements remain qualified; a private project is not blanket clearance |
-| Demo hardening, September 28 | Resolve companion Close, immediate search submission and bound memory question | Re-aimed stale coordinates; SDK SearchField; entity-invalidity marker. First memory series never entered archive and stayed void | Companion Close/detach/reopen demonstrated; Enter demonstrated by injected keys; controlled build-007 memory series inconclusive; build-008 visitor-start gate admitted once with 17 checks | User's own demo changed head pose; agent paused and re-derived mappings. No claim that human host typing or headset input was tested |
-| Delivery preparation, September 28 | Teach the actual progression from ingredients and repairs | Current lesson/prompt/process summaries and qualified snapshot links, keeping private packets out | Document, source-identity, excerpt and package checks; retained tests/acceptance reused | Host-only preparation: no fresh build, native operation, provider generation or sending inferred |
+People chose the idea and art direction. AI assistants wrote code, tests, modelling scripts, and much of the documentation. Reviews caught mistakes in that work. The project owner also signed in to the emulator and later restored it after a runtime problem. We should not describe those contributions as if one person or one model did everything.
 
-## Four instructive decisions
+This timeline describes the original September build. The [new Luna attempt](../reproduction/README.md) has its own record.
 
-**One owner rather than copied window data.** Creating a controller in each composition would split the museum. The L2 agent moved ownership to application creation and made roots report attach/detach. The meaningful evidence combined pure lifecycle tests with counted open/focus/reopen observations. A single opened image could not prove the absence of duplicate owners.
+| When | What we tried | What changed after checking |
+| --- | --- | --- |
+| September 20–21 | Plan a museum around three ordinary objects. Make a browser design draft and early app code. | Incorrect code assumptions were found. This stage produced source files, not a running PICO app. |
+| September 22 | Put the first app into the official PICO starter. | Build errors and theme setup needed fixes before an APK could be made. |
+| September 23–25 | Select an object, turn it, and reset its view. | Text was too small, controls clipped, and some clicks missed. The layout and input checks were revised. |
+| September 25 | Add a companion window. | Five placement attempts came before the final layout. Both windows needed to read the same selected object. |
+| September 25 | Add three short stories. | The first scenes sat too low. A code review also found that Return could undo a Reset made during a story. |
+| September 26–27 | Improve loading and reset controls, then improve the models. | A runtime failure interrupted testing. The owner restored the emulator; later checks continued. A generated cup replaced its earlier simple shape. |
+| September 27 | Grow to eighteen objects and build the archive room. | Separate art and app work came together. Room labels, distances, and controls changed after inspection. |
+| September 28 | Check search, window closing, and the final starting screen. | Search was checked with injected key events. The final build-008 starting screen passed its checks. A memory investigation remained inconclusive. |
 
-**Preserve the visitor's latest choice.** The first L3 Return design saved and restored entry orientation. Source review exposed a counterexample: Reset during the story would be undone. The repair changed the transition contract, not the scene art. Return now clears story state because the story never owns the study's orientation. The historical review wording is not fully retained; [P12](../prompts/PROMPT_LIBRARY.md) is reconstructed from its finding/result.
+## Three mistakes worth learning from
 
-**Observe one exported segment before finishing a room.** The L4 art brief separated authoring from native appearance. A Blender segment proved scale/axes/material treatment in the renderer before the full room. Native observations then changed bay distances, the panel anchor and the scooter close-look framing. The concept image remained art direction; its generated lettering/proportions did not become a blueprint.
+### The second window opened, but people could not read it
 
-**Do not infer memory release from object destruction.** Closing a descriptor fixed the observed per-visit asset-count growth. Subsequent memory growth survived as an unresolved result. Build-008's `invalidAfter=22/22` marker confirms invalid entity handles, not all native allocations. The controlled series supports neither a proven app leak nor a proven SDK cause. That distinction is part of the lesson.
+The first companion was a small strip. Its existence was easy to confirm; its usefulness was another matter. The repair made it larger and arranged the controls in two rows.
 
-## What the agent generated and what people decided
+[Compare the pictures](../demo/index.html#p03). A useful next message would be: “The new window opens, but the labels are too small. Make them easier to read.” This is a new teaching example, not a recovered quote.
 
-Agents produced Kotlin, tests and build/evidence helpers; authored procedural miniatures and Blender models/room through scripts; adapted three reference-derived items; and generated one earlier Tripo study model. Human choices supplied the product direction, collection expansion, art direction and operating constraints. User actions supplied the emulator sign-in and later recovery/demo interaction. Reviews and source checks corrected agent mistakes; they are agent verification, not invented human edits.
+### Return brought back an old view
 
-The exact code or art authoring contribution is a provenance record, not a statement of licensing ownership. Asset distribution and source eligibility are tracked separately in [rights](../assets/PROVENANCE_AND_RIGHTS.md). No raw chat, provider task/account data, private reference source or coordination correspondence is included here.
+An early story design remembered the object's angle when the story opened. That sounds sensible until someone presses Reset during the story. Restoring the old angle would undo their latest action.
 
-## Evidence gaps that stay visible
+The fix was to close the story and leave the current object view alone. The lesson: test what happens when a visitor changes their mind, not just the expected sequence.
 
-- L0 is source-only, and there is no original L1-start tag; the teaching map is explicit.
-- L1 admitted/opened counts differ. Input requests and successful state changes differ.
-- Initial L3 motion review sampled visuals and measured every frame; one later reopen interval was fully inspected. Rapid transition cases remain host-only.
-- `lesson-4-complete` is build-007. Current build-008 has its own visitor-start admission and limited hardening evidence, not a new complete replay of all L4 features.
-- The 128 passing app tests are retained build results, not rerun for delivery. A clean closeout is not a clean build-time worktree claim.
-- Headset/wearer acceptance, hand/controller/drag input, account-free use, close-look plaque legibility, complete native memory release, accepted narration and fresh-machine reproduction remain unestablished.
+### A counter answered only part of the question
 
-Use the [course map](../curriculum/COURSE_MAP.md) to walk through the checkpoints, the [evidence index](../evidence/INDEX.md) to inspect eligible artifact summaries, and the [offline walkthrough](../demo/index.html) for the assembled visual/process presentation. An assembled stills walkthrough is not continuous build-008 video.
+The room reported that its created objects were no longer valid after leaving. That did not prove all graphics memory had been released. The memory result stayed unresolved.
+
+The lesson: say what a check measured. Avoid turning a small successful check into a claim about the whole app.
+
+## Read the original detail
+
+The [development record](DEVELOPMENT_RECORD.md) preserves the longer timeline and its source references. Four [actual saved user-message excerpts](../prompts/ACTUAL_USER_MESSAGES.md) are now available, with their context. These are part of the conversation, not the full build history. The [historical prompt record](../prompts/HISTORICAL_PROMPTS.md) labels exact excerpts, shortened briefs, and reconstructions. The new [short prompts](../prompts/PROMPT_LIBRARY.md) are teaching examples.
+
+The rewrite is AI-assisted too. Shorter wording does not make it a human-authored transcript. Its purpose is to make the work easier to follow and the next step easier to try.

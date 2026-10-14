@@ -1,7 +1,11 @@
-# Qualified original art payloads
+# Art scripts and textures
 
-Local private review only. This directory contains authoring scripts, source textures and build metadata for fourteen original exhibits, plus archive authoring/export/layout scripts and baked textures. Shared Blender helpers are under `art/tools/`. Runtime models and thumbnail files are preserved at their historical positions in the source snapshots; current eligible runtime files are in [build-008](../../source/snapshots/build-008/SNAPSHOT_NOTICE.md).
+These files show how the project's fourteen original exhibit models and archive room were made. They include Blender scripts, texture sources, and build notes. Shared Blender helpers are under `art/tools/`.
 
-The three reference-derived objects and Tripo tumbler are omitted. The compressed room `.blend` is held because read-only decompression exposed unexplained image-name data and stale host-path fragments; its complete binary privacy/embedded-attribution status was not established. The provided room scripts/textures and runtime GLB are separate, inspected inputs. No Blender file was rewritten and no asset was regenerated for this package.
+The exported models and thumbnails are stored with the [source versions](../../source/SNAPSHOTS.md). The current original models are in build-008. The three reference-derived models, generated cup, and editable room Blender file are supplied separately through [Drive](../../ASSET_SUPPLEMENT.md).
 
-Scripts retain historical default output locations such as `native-staging/`; use explicit `--out` destinations in a separate working copy. The retained original scripts are teaching inputs, not a turnkey rebuild pipeline for this incomplete asset set. Dependencies include Blender 5.1.2, its bundled Python and glTF exporter 5.1.20; some scripts invoke ImageMagick 7.1.2-25. No such tools or font binaries are distributed here. Read [provenance and rights](../PROVENANCE_AND_RIGHTS.md) before reuse.
+To study a model, read its script beside the exported result. You do not need to rerun Blender to follow the course. If you do run a script, use a new output folder: some historical defaults point to `native-staging/`.
+
+The recorded art tools were Blender 5.1.2, its bundled Python, glTF exporter 5.1.20, and, for some scripts, ImageMagick 7.1.2-25. These tools and font files are not included. The scripts are examples from the project, not a one-command rebuild of every asset.
+
+Read [where the art came from](../PROVENANCE_AND_RIGHTS.md) before reusing or sharing it. No art was changed during the documentation rewrite.

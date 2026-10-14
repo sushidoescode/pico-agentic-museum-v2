@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "./gradlew",
+    "--offline",
+    "--no-daemon",
+    "--console=plain",
+    ":app:testDebugUnitTest",
+    ":app:assembleDebug"
+  ],
+  "startedAt": "2026-10-07T23:06:05.188804+00:00",
+  "freeBefore": 64007860224,
+  "nativeOperations": false,
+  "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+  "exitCode": 1,
+  "finishedAt": "2026-10-07T23:06:11.754759+00:00",
+  "freeAfter": 64007438336,
+  "tests": [],
+  "build": "build-04",
+  "logOriginalSha256": "fff7937d61d9c941032b9c54ea1925deb761dfcddbc73d3690839b28b0c48d82",
+  "apkDistributed": false
+}

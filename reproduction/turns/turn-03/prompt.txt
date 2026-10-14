@@ -1,0 +1,1 @@
+Please repair the selected-object view using the attached compiler error. I also noticed in the code that the cup and speaker still sit far to either side; center whichever one I select.

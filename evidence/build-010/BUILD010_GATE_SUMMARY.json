@@ -1,0 +1,24 @@
+{
+  "name": "museum-fb-01-b10-archive-arrival",
+  "build": "build-010",
+  "apkSha256": "a5dd0c3e2ddbe21075778780d66e6103146ec0ce697f642cf42728060eed3e7f",
+  "sourceCommit": "4f0d8d3a4904720b76c530380b485a708ffdca03",
+  "attempts": 1,
+  "verdict": "admitted",
+  "checkCount": 17,
+  "failingChecks": [],
+  "capture": {
+    "path": "museum-fb-01-b10-archive-arrival.png",
+    "bytes": 1817984,
+    "sha256": "326b7b1acfeb5c324defd3044a2ebf9de4be6b3f4bbc27cf3e48541c52d69166",
+    "includedInGithubEdition": false
+  },
+  "receiptRevalidationValid": true,
+  "originalSingleGateJournalSha256": "8b7ba2e0bf81554b07afd30403e7a82119a285277eb663217c6602868f48d0cb",
+  "originalGateReceiptSha256": "b6ba728e53a0df5a7bba08205353753b591384b1a9b9e47eb9c82e892aa9dcc4",
+  "originalBuildReceiptSha256": "2323bfabce26c07a289ad1fd13dcd2eb4eee23b86fc5171f9ded6b14b3e27d64",
+  "startedAtUtc": "2026-10-13T22:33:43.125378Z",
+  "endedAtUtc": "2026-10-13T22:34:31.857222Z",
+  "scope": "One archive-arrival observation; emulator only. Does not stand for the build009 interaction sequence or untested headset behavior.",
+  "transform": "selected factual fields from original receipts; raw host/device/process/command details omitted; originals retained privately"
+}
