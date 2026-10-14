@@ -10,4 +10,4 @@ The documentation producer inspected the retained source, APK identity and evide
 
 Use the [Drive guide](../ASSET_SUPPLEMENT.md) for the dated folder layout. The [open items](OPEN_ITEMS.md) and [validation guide](VALIDATION.md) explain outstanding checks and file integrity. The [review request](REVIEW_REQUEST_UNSENT.md) remains unsent.
 
-This is the October 14 documentation update for **pico-agentic-museum-v2**, prepared from the October 1 published revision. It includes the revised course and current app-result notes. Repository visibility is unchanged. The [download page](../ASSET_SUPPLEMENT.md) states the separate Drive upload status; updating GitHub does not upload the APK to Drive.
+This is the October 14 documentation update for **pico-agentic-museum-v2**, prepared from the October 1 published revision. It includes the revised course and current app-result notes. Repository visibility is unchanged. The owner has uploaded the October 14 delivery. Use the [download page](../ASSET_SUPPLEMENT.md) for direct links to the app, documentation, assets and review files.

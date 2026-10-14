@@ -1,20 +1,20 @@
-# Download the app and art files
+# Download the app and project files
 
-**Download status — October 14:** the revised lessons and source are in this repository. The latest APK, **build-010**, is packaged locally but **has not been uploaded to Drive yet**.
+**The October 14 delivery is available on Drive.** Open the [delivery folder](https://drive.google.com/drive/folders/1wsFhAascr5YcG9hu1LnNjpluKMStxuMH) or choose what you need below.
 
-The owner's [Museum Drive folder](https://drive.google.com/drive/folders/1C6693JWX1kvqgu253xLBeGumSB32UPB-) currently contains the earlier **2026-09-28** delivery, including build-008 and the unchanged art files. It is useful for those assets, but it is not a build-010 download.
-
-The prepared **2026-10-14** folder has the organization below. These entries describe the ready package, not a completed cloud upload.
-
-| Folder | What it contains |
+| What you need | Open or download |
 | --- | --- |
-| `01_Documentation` | These lessons, short prompts, source versions and review notes. Download the matching ZIP to keep links and the picture tour together. |
-| `02_Assets_and_Blender` | Eighteen exhibit models and their pictures, the room, Blender project, textures, source inputs, template resources and asset notices. |
-| `03_Android_App` | `museum-build-010.apk`, version **1.1-feedback-002**, and its file identity. This is the current feedback build to try. |
-| `04_Review_Evidence` | Selected existing images and their build labels, including the corrected room-panel frame and the unsuccessful Subwindow trial. |
-| `05_Recording_and_Device_Checks` | A short demo outline and checks for the owner's manual emulator/headset session. |
+| Latest app | [museum-build-010.apk](https://drive.google.com/file/d/1hvN_kR3R4ZuDUlDO4_WcWkXQyhoLFDBz/view), version **1.1-feedback-002**. Use this for the current review. |
+| Lessons and source together | [Documentation ZIP](https://drive.google.com/file/d/1H37xNS9vaEcL-wtAcMi6Ub7hYNMFGwsB/view). Unzip it before opening the picture tour in `demo/index.html`. |
+| Browse the documents | [01_Documentation](https://drive.google.com/drive/folders/16sDIm9Tk-bIdJ8cLNk5Blp5toSiczeT6) |
+| Models, room and Blender project | [02_Assets_and_Blender](https://drive.google.com/drive/folders/1mU_gf3c2CFr9Bs8yDC4Z5lO1-yAZVRt-) — eighteen exhibit models, thumbnails, room files, textures and source inputs. |
+| APK details | [03_Android_App](https://drive.google.com/drive/folders/1bs2hJtquDnVV9kVDCngxjoayIwudTn8c) — the app, version notes and file identity. |
+| Review pictures | [04_Review_Evidence](https://drive.google.com/drive/folders/1WEa16WkU1q_O61DxtDY6TxpGZAGmn_LK) — existing images labelled by the build they show. |
+| Record and test the app | [05_Recording_and_Device_Checks](https://drive.google.com/drive/folders/19I2XoYMGmyjxIAPHtfzwAWpRF42D89SA) — a short demo outline and a blank test-notes form. |
 
-For the revised documents now, use this repository or choose **Code → Download ZIP** on GitHub. The **2026-09-28** Drive folder keeps the original build-008 APK and earlier course editions. The current APK will need its own completed upload before the team can download it there.
+The folder is under **Agentic Spatial SDK (NEW) → 2026-10-14** in the [main Museum Drive](https://drive.google.com/drive/folders/1C6693JWX1kvqgu253xLBeGumSB32UPB-). The links above take you straight there. The [download check](review/DRIVE_DELIVERY.md) records which files were verified and one missing sharing note.
+
+Use this GitHub repository for the latest instructions and download status. The Drive documentation ZIP is a saved copy from the upload; it still contains the earlier delivery-status wording. Its lesson content is unchanged. The older **2026-09-28** Drive folder preserves build-008 and the first course edition.
 
 ## Adding art to a new student project
 

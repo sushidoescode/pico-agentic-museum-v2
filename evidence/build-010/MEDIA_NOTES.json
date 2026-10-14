@@ -20,7 +20,8 @@
         }
       ],
       "included": false,
-      "placement": "Separate owner-requested PICO review package; Drive upload pending."
+      "placement": "Separate PICO review package on Drive; excluded from this GitHub edition.",
+      "driveEvidenceFolder": "https://drive.google.com/drive/folders/1WEa16WkU1q_O61DxtDY6TxpGZAGmn_LK"
     }
   ],
   "edition": "Public GitHub documentation; capture bytes excluded."

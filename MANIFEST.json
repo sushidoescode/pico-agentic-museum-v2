@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-28",
-  "status": "github-documentation-edition",
+  "status": "github-documentation-edition-drive-links-confirmed",
   "hashAlgorithm": "SHA-256",
   "scheme": "MANIFEST lists payloads (the tracked files; never .git), excludes itself and SHA256SUMS. SHA256SUMS covers payloads plus MANIFEST, excludes itself. Archive digest is outside archive.",
   "files": [
@@ -21,31 +21,31 @@
     },
     {
       "path": "ASSET_SUPPLEMENT.md",
-      "bytes": 3564,
-      "sha256": "3787bf3e587f5bb13cf4f2ac24f8c5ffbd5e1e56e984af47503ec33f3ec97263",
+      "bytes": 3984,
+      "sha256": "c2c3a0893aef3c73bc8f3503beadcd5f6f51695938b4d4acf566c0d0f737094f",
       "original": {
-        "kind": "github-edition-adjustment",
+        "kind": "drive-link-documentation-update",
         "date": "2026-10-14",
-        "sourceBasis": "Reviewed local package b8097a4; owner instruction to update the GitHub README and current documentation."
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
       },
-      "transform": "Clarified actual download availability and separated the private-review capture from the GitHub edition. No new native observation.",
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner-requested update to the existing repository; retained asset/source qualifications remain."
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
     },
     {
       "path": "DELIVERABLES.json",
-      "bytes": 9747,
-      "sha256": "b07ea4c4d2b632a732f99bd3941b53681ff6698405a3c14da53669db33b7cf55",
+      "bytes": 9787,
+      "sha256": "48b114c7e796ae244dcbdd003e6740f2fd2ddf0cb4c54675df0490975a0867de",
       "original": {
-        "kind": "github-edition-adjustment",
+        "kind": "drive-link-documentation-update",
         "date": "2026-10-14",
-        "sourceBasis": "Reviewed local package b8097a4; owner instruction to update the GitHub README and current documentation."
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
       },
-      "transform": "Clarified actual download availability and separated the private-review capture from the GitHub edition. No new native observation.",
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner-requested update to the existing repository; retained asset/source qualifications remain."
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
     },
     {
       "path": "PROGRAM_INGREDIENTS.md",
@@ -63,31 +63,31 @@
     },
     {
       "path": "README.md",
-      "bytes": 2811,
-      "sha256": "fc37d1b6a676cdd650fb26c234030aa80659e0f257be92de5d4ae2506eb5e218",
+      "bytes": 2997,
+      "sha256": "301b1d7e6f5c36f1c05d89ad6b8683e0ebb5c28edaa074e27abbf7baa489e483",
       "original": {
-        "kind": "github-edition-adjustment",
+        "kind": "drive-link-documentation-update",
         "date": "2026-10-14",
-        "sourceBasis": "Reviewed local package b8097a4; owner instruction to update the GitHub README and current documentation."
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
       },
-      "transform": "Clarified actual download availability and separated the private-review capture from the GitHub edition. No new native observation.",
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner-requested update to the existing repository; retained asset/source qualifications remain."
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
     },
     {
       "path": "START_HERE.md",
-      "bytes": 313,
-      "sha256": "b5371fbaf03cc6b20a31ef93c1e4db6e321825b1208539bea7f39de94cc22b49",
+      "bytes": 569,
+      "sha256": "fbe2ed619200e3178b81eb9ec4ae8ed4874dc33cae7a245bbd6795d88beda755",
       "original": {
-        "kind": "editorial-feedback-revision",
-        "date": "2026-10-13",
-        "sourceBasis": "October 7 local candidate 7eecbb87ffd67b42ebd227d4eefd736b94cc61ed; user-supplied PICO feedback; frozen museum records."
+        "kind": "drive-link-documentation-update",
+        "date": "2026-10-14",
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
       },
-      "transform": "AI-assisted plain-language revision. Practice prompts are teaching examples, not original user messages. Summarized review feedback is not a new runtime test.",
-      "evidenceClass": "package-documentation",
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "User-requested response to PICO documentation and app feedback."
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
     },
     {
       "path": "assets/ASSET_REGISTER.json",
@@ -1627,17 +1627,17 @@
     },
     {
       "path": "evidence/INDEX.md",
-      "bytes": 6252,
-      "sha256": "6eb23002a69fa54ad422f25983eefa60b2fb139f65615c3d89b33391cdf5b520",
+      "bytes": 6287,
+      "sha256": "14fe0c822dd1ede99e9ec9ac7b40aab5048d4478e19e510a44166594c4c0a74d",
       "original": {
-        "kind": "github-edition-adjustment",
+        "kind": "drive-link-documentation-update",
         "date": "2026-10-14",
-        "sourceBasis": "Reviewed local package b8097a4; owner instruction to update the GitHub README and current documentation."
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
       },
-      "transform": "Clarified actual download availability and separated the private-review capture from the GitHub edition. No new native observation.",
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner-requested update to the existing repository; retained asset/source qualifications remain."
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
     },
     {
       "original": {
@@ -1752,17 +1752,17 @@
     },
     {
       "original": {
-        "kind": "github-edition-adjustment",
+        "kind": "drive-link-documentation-update",
         "date": "2026-10-14",
-        "sourceBasis": "Reviewed local package b8097a4; owner instruction to update the GitHub README and current documentation."
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
       },
-      "transform": "Clarified actual download availability and separated the private-review capture from the GitHub edition. No new native observation.",
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner-requested update to the existing repository; retained asset/source qualifications remain.",
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements.",
       "path": "evidence/build-010/MEDIA_NOTES.json",
-      "bytes": 1358,
-      "sha256": "7761d0342a6fd7f92dad93da5efd48cc5b6a111afdd1131650da9aba06f0a22d"
+      "bytes": 1469,
+      "sha256": "a256ecd6219cf7cf0f3b6c88fe61fb1e8c1a7e43158f5f8981e19e4ff0f9c000"
     },
     {
       "original": {
@@ -3562,6 +3562,20 @@
     },
     {
       "original": {
+        "kind": "drive-link-documentation-update",
+        "date": "2026-10-14",
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
+      },
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "evidenceClass": "publication-documentation",
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements.",
+      "path": "review/DRIVE_DELIVERY.md",
+      "bytes": 2113,
+      "sha256": "b5b32b23525748e0a7a8954d9b632aad26dcb9a2b100e051ffd9b0c3b278a6ca",
+      "inclusionStatus": "included-github-documentation"
+    },
+    {
+      "original": {
         "kind": "editorial-feedback-revision",
         "date": "2026-10-13",
         "sourceBasis": "Prior local revision 77f7b9cf2e65d99c4b08b29d12f393b21e56c2cf; exact saved user-role messages selected for their museum build feedback."
@@ -3576,45 +3590,45 @@
     },
     {
       "original": {
-        "kind": "github-edition-adjustment",
+        "kind": "drive-link-documentation-update",
         "date": "2026-10-14",
-        "sourceBasis": "Reviewed local package b8097a4; owner instruction to update the GitHub README and current documentation."
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
       },
-      "transform": "Clarified actual download availability and separated the private-review capture from the GitHub edition. No new native observation.",
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
       "evidenceClass": "publication-documentation",
-      "reason": "Owner-requested update to the existing repository; retained asset/source qualifications remain.",
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements.",
       "path": "review/GITHUB_EDITION.md",
-      "bytes": 1753,
-      "sha256": "f7dfabbf6e5e093dcbaf6cf1fb725bace84f5edf91ee7fb113cb94f949a0524d",
+      "bytes": 1868,
+      "sha256": "568e10ad75bceb93c107ce9ed87dbf0e5c7b9b6ba0afaf8e35510959fe0c09e3",
       "inclusionStatus": "included-github-documentation"
     },
     {
       "original": {
-        "kind": "github-edition-adjustment",
+        "kind": "drive-link-documentation-update",
         "date": "2026-10-14",
-        "sourceBasis": "Reviewed local package b8097a4; owner instruction to update the GitHub README and current documentation."
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
       },
-      "transform": "Clarified actual download availability and separated the private-review capture from the GitHub edition. No new native observation.",
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner-requested update to the existing repository; retained asset/source qualifications remain.",
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements.",
       "path": "review/OCTOBER_14_PACKAGE_CHECKS.md",
-      "bytes": 2295,
-      "sha256": "559bb8061ac800f149c37368638954476797a081a6c75f6ad78dbd0a0a387c89"
+      "bytes": 2325,
+      "sha256": "bac895e0a3a2610d537bfc7271b9de4fbe9381a853ec38897d8014a936ac5ebe"
     },
     {
       "path": "review/OPEN_ITEMS.md",
-      "bytes": 1995,
-      "sha256": "148c6ba35f4d02f61720a0df6ee568e1c16fedafdc2b0274979167cb5903cbbf",
+      "bytes": 2029,
+      "sha256": "5b68a97529b3d66523e5d84528eba8fe9ec63f9a0e40415beb34da1cb0a7565b",
       "original": {
-        "kind": "github-edition-adjustment",
+        "kind": "drive-link-documentation-update",
         "date": "2026-10-14",
-        "sourceBasis": "Reviewed local package b8097a4; owner instruction to update the GitHub README and current documentation."
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
       },
-      "transform": "Clarified actual download availability and separated the private-review capture from the GitHub edition. No new native observation.",
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner-requested update to the existing repository; retained asset/source qualifications remain."
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
     },
     {
       "original": {
@@ -3717,31 +3731,31 @@
     },
     {
       "original": {
-        "kind": "github-edition-adjustment",
+        "kind": "drive-link-documentation-update",
         "date": "2026-10-14",
-        "sourceBasis": "Reviewed local package b8097a4; owner instruction to update the GitHub README and current documentation."
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
       },
-      "transform": "Clarified actual download availability and separated the private-review capture from the GitHub edition. No new native observation.",
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner-requested update to the existing repository; retained asset/source qualifications remain.",
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements.",
       "path": "review/TEAM_HANDOFF.md",
-      "bytes": 1874,
-      "sha256": "c560fd0736f2bced0bec420c4969c7b3e7aaa2ff9c639a1d8239efac90d7abaf"
+      "bytes": 1904,
+      "sha256": "cc35a83695b336ecae09e288fff442f78214d4f262cfe87d225b9c7aabb9074d"
     },
     {
       "path": "review/VALIDATION.md",
-      "bytes": 1971,
-      "sha256": "6eabef3eae843fd78a17a5a6be30ad1f7ba700326fc372024ac1bdcfb56eb875",
+      "bytes": 2062,
+      "sha256": "099a8ffa26fb67668a6be3e4bbe9684cbb05a7534a1697652cdee9cce62a6ce8",
       "original": {
-        "kind": "october-14-delivery-material",
+        "kind": "drive-link-documentation-update",
         "date": "2026-10-14",
-        "sourceBasis": "Retained museum feedback source 4f0d8d3 and closeout 5224c1a; approved October 13 documentation."
+        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
       },
-      "transform": "Editorial assembly or sanitized retained evidence projection; no new native observation.",
-      "evidenceClass": "package-documentation",
+      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Current documentation, source and APK delivery requested by owner."
+      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
     },
     {
       "path": "review/verify_checksums.py",
@@ -16269,13 +16283,13 @@
       "bytes": 1817984,
       "sha256": "326b7b1acfeb5c324defd3044a2ebf9de4be6b3f4bbc27cf3e48541c52d69166",
       "inclusionStatus": "excluded-from-github; retained-in-owner-review-package",
-      "reason": "New capture prepared for private PICO review, with no broad public clearance. Latest Drive upload pending."
+      "reason": "New capture supplied in the separate PICO review package on Drive; no broad public clearance. Excluded from GitHub. See review/DRIVE_DELIVERY.md for the limited cloud verification scope."
     }
   ],
   "revisionDate": "2026-10-14",
   "repository": "https://github.com/sushidoescode/pico-agentic-museum-v2",
-  "publishedBasis": "2ea1b291f7ca923286f9e91ac0bba39e3eeda223",
-  "publication": "Owner-authorized GitHub documentation update. Latest Drive package upload remains pending; remote publication verification is retained separately by the producer.",
+  "publishedBasis": "ffc432175d77e455a0ba7f20187758520eccbf72",
+  "publication": "Owner-authorized GitHub update after owner upload to Drive. Selected APK, documentation ZIP, outer manifest and checksums downloaded and matched; all five folder listings readable. One sharing note not listed; no recursive cloud-file audit. See review/DRIVE_DELIVERY.md.",
   "baseLocalRevision": "b8097a4afb22f7c2e1839223a3edf1e37e7458d5",
-  "editorialRevision": "github-october-14"
+  "editorialRevision": "github-october-14-drive-links"
 }

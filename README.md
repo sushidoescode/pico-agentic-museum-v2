@@ -2,9 +2,13 @@
 
 Start with a cup, a robot vacuum, and a speaker. Ask your assistant to add one thing, try it, and describe what needs changing. Over five lessons, you will work towards a collection of objects and a room to visit.
 
-**The latest review app is build-010, version `1.1-feedback-002`. Its Drive upload is still pending.** The [download page](ASSET_SUPPLEMENT.md) identifies what is available now. Read [what was checked](review/BUILD_010_RESULTS.md), and use the [short recording and device checklist](review/RECORDING_AND_DEVICE_CHECKS.md) for your own test. Most feedback interactions were checked on build-009; build-010 has a narrower arrival-panel and Return check. The original build-008 is preserved separately.
+| What would you like to do? | Start here |
+| --- | --- |
+| Build along with the lessons | [Get your computer ready](curriculum/SETUP_AND_VERSIONS.md), then open [Lesson 1](lessons/L0.md). |
+| Try the finished museum | [Download the latest APK: build-010](https://drive.google.com/file/d/1hvN_kR3R4ZuDUlDO4_WcWkXQyhoLFDBz/view) — version **1.1-feedback-002**. |
+| Get the project files | [Open the organized Drive folder](https://drive.google.com/drive/folders/1wsFhAascr5YcG9hu1LnNjpluKMStxuMH) for documents, models, Blender files, the APK and review pictures. |
 
-**To learn, begin with [Lesson 1: plan your museum](lessons/L0.md).** If you want to build along, first follow [Get your computer ready](curriculum/SETUP_AND_VERSIONS.md).
+**The October 14 files are available on Drive.** The [download guide](ASSET_SUPPLEMENT.md) links to each folder and explains what to use. Before reviewing the app, read [what was checked](review/BUILD_010_RESULTS.md) and use the [short recording checklist](review/RECORDING_AND_DEVICE_CHECKS.md) for your own test.
 
 You do not need to know the name of a bug before asking for help. “I chose the vacuum, but I still see the cup” is a useful message.
 
@@ -30,7 +34,7 @@ To view the tour on your computer, choose **Code → Download ZIP** on GitHub, u
 - [Actual saved messages from the project](prompts/ACTUAL_USER_MESSAGES.md)
 - [Help when something goes wrong](curriculum/TROUBLESHOOTING.md)
 - [Current feedback and remaining checks](review/APK_FEEDBACK.md)
-- [Latest review APK, original APK, models and Blender files](ASSET_SUPPLEMENT.md)
+- [App, models and Blender downloads](ASSET_SUPPLEMENT.md)
 
 The lesson prompts are practice wording, not a recovered conversation. The saved messages are labelled separately. The museum app does not need an AI assistant running inside it.
 

@@ -37,7 +37,7 @@
       "paths": [
         "ASSET_SUPPLEMENT.md"
       ],
-      "qualification": "Links the owner-supplied Drive delivery; separates Git content from rights-qualified supplements and states verification scope."
+      "qualification": "Direct links to the uploaded October 14 APK, documentation ZIP, assets, evidence and recording checklist. Earlier Drive documentation is a fixed snapshot; current instructions are on GitHub."
     },
     {
       "id": "course",
@@ -235,7 +235,7 @@
         "evidence/build-010/MEDIA_NOTES.json",
         "evidence/build-010/ASSET_CHANGE_MAP.json"
       ],
-      "qualification": "Retained APK/source identities and qualified observations. The capture itself stays in the separate review package; latest Drive upload pending. Most interaction checks belong to build-009."
+      "qualification": "Retained APK/source identities and qualified observations. The capture itself stays in the uploaded Drive review package. Most interaction checks belong to build-009."
     }
   ],
   "revisionDate": "2026-10-14"

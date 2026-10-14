@@ -8,7 +8,7 @@ A **build** is a particular packaged version of the app. Build-008 remains the u
 
 ## Current build-010 image
 
-The original build-010 archive-arrival image is kept in the separate PICO review package, outside this GitHub edition. See the [download status](../ASSET_SUPPLEMENT.md); its Drive upload is pending. The retained image shows the corrected navigation panel and six floor targets in the Connected lives bay. Return is visible first; the emulator toolbar overlaps the panel’s leftmost edge.
+The original build-010 archive-arrival image is kept in the separate PICO review package, outside this GitHub edition. Open the [Drive review-evidence folder](https://drive.google.com/drive/folders/1WEa16WkU1q_O61DxtDY6TxpGZAGmn_LK). The retained image shows the corrected navigation panel and six floor targets in the Connected lives bay. Return is visible first; the emulator toolbar overlaps the panel’s leftmost edge.
 
 This is the exact existing PNG from one admitted check on October 13: 17 checks, one attempt, bound to APK `a5dd0c3e…`. It is an emulator still, not a full build-010 interaction test or headset evidence. Most new interaction observations used build-009. No new screenshot was made for this package.
 
