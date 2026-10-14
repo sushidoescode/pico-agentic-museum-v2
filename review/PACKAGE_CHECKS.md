@@ -1,4 +1,4 @@
-# October 14 package checks
+# Package checks
 
 The October 13 lessons and prompt selections are carried forward. The new material identifies the finished build-010 APK, adds its source snapshot and a summary of the retained arrival image, and gives a manual recording checklist. Earlier results keep their original build labels.
 

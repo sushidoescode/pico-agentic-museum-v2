@@ -8,7 +8,7 @@ Start with a cup, a robot vacuum, and a speaker. Ask your assistant to add one t
 | Try the finished museum | [Download the latest APK: build-010](https://drive.google.com/file/d/1hvN_kR3R4ZuDUlDO4_WcWkXQyhoLFDBz/view) — version **1.1-feedback-002**. |
 | Get the project files | [Open the organized Drive folder](https://drive.google.com/drive/folders/1wsFhAascr5YcG9hu1LnNjpluKMStxuMH) for documents, models, Blender files, the APK and review pictures. |
 
-**The October 14 files are available on Drive.** The [download guide](ASSET_SUPPLEMENT.md) links to each folder and explains what to use. Before reviewing the app, read [what was checked](review/BUILD_010_RESULTS.md) and use the [short recording checklist](review/RECORDING_AND_DEVICE_CHECKS.md) for your own test.
+**The project files are available on Drive.** The [download guide](ASSET_SUPPLEMENT.md) links to each folder and explains what to use. Before reviewing the app, read [what was checked](review/BUILD_010_RESULTS.md) and use the [short recording checklist](review/RECORDING_AND_DEVICE_CHECKS.md) for your own test.
 
 You do not need to know the name of a bug before asking for help. “I chose the vacuum, but I still see the cup” is a useful message.
 

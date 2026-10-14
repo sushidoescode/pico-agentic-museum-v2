@@ -1,6 +1,6 @@
 # Download the app and project files
 
-**The October 14 delivery is available on Drive.** Open the [delivery folder](https://drive.google.com/drive/folders/1wsFhAascr5YcG9hu1LnNjpluKMStxuMH) or choose what you need below.
+**The app and project files are available on Drive.** Open the [delivery folder](https://drive.google.com/drive/folders/1wsFhAascr5YcG9hu1LnNjpluKMStxuMH) or choose what you need below.
 
 | What you need | Open or download |
 | --- | --- |
@@ -12,7 +12,7 @@
 | Review pictures | [04_Review_Evidence](https://drive.google.com/drive/folders/1WEa16WkU1q_O61DxtDY6TxpGZAGmn_LK) — existing images labelled by the build they show. |
 | Record and test the app | [05_Recording_and_Device_Checks](https://drive.google.com/drive/folders/19I2XoYMGmyjxIAPHtfzwAWpRF42D89SA) — a short demo outline and a blank test-notes form. |
 
-The folder is under **Agentic Spatial SDK (NEW) → 2026-10-14** in the [main Museum Drive](https://drive.google.com/drive/folders/1C6693JWX1kvqgu253xLBeGumSB32UPB-). The links above take you straight there. The [download check](review/DRIVE_DELIVERY.md) records which files were verified and one missing sharing note.
+The files are under **Agentic Spatial SDK (NEW)** in the [main Museum Drive](https://drive.google.com/drive/folders/1C6693JWX1kvqgu253xLBeGumSB32UPB-). The links above take you straight there. The [download check](review/DRIVE_DELIVERY.md) records which files were verified and one missing sharing note.
 
 Use this GitHub repository for the latest instructions and download status. The Drive documentation ZIP is a saved copy from the upload; it still contains the earlier delivery-status wording. Its lesson content is unchanged. The older **2026-09-28** Drive folder preserves build-008 and the first course edition.
 

@@ -1,6 +1,6 @@
 # Included files and remaining work
 
-The October 14 package brings the rewritten course together with build-010's source and the app agent's retained feedback results.
+This package brings the rewritten course together with build-010's source and the app agent's retained feedback results.
 
 Included: five lessons, short practice prompts, selected exact user messages, setup/model/room guides, source snapshots, historical and current evidence summaries, asset notices, an offline tour, a recording checklist, checksums, and an unsent review request. The uploaded [Drive package](../ASSET_SUPPLEMENT.md) supplies the APK and qualified assets separately from this source/documentation ZIP.
 
@@ -16,4 +16,4 @@ The artwork has no blanket public reuse license. Reference/provider/template qua
 
 Raw conversations, account/device logs, signing keys, original Git history, build caches, the full old browser preview, excluded historical inspector image, and prototype APKs are outside the sharing package. No finished continuous recording or accepted narration is included.
 
-The owner uploaded the October 14 files and requested this GitHub link update. The [download check](DRIVE_DELIVERY.md) found one sharing note still missing from the folder listing. No invitations or review messages have been sent.
+The project files are available on Drive. The [download check](DRIVE_DELIVERY.md) found one sharing note still missing from the folder listing. No invitations or review messages have been sent.

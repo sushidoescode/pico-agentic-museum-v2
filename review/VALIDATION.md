@@ -1,6 +1,6 @@
 # Check the files in this package
 
-This is the October 14 delivery, carrying the revised lessons and the finished build-010 review records. File checks confirm that a download is complete and unchanged; they do not prove the app works on a device.
+This package contains the revised lessons and the build-010 review records. File checks confirm that a download is complete and unchanged; they do not prove the app works on a device.
 
 From this documentation folder, run:
 
@@ -12,7 +12,7 @@ You need Python 3.8 or later and no extra packages. The script reads the files, 
 
 A **hash** is a file fingerprint. `MANIFEST.json` lists each payload's size, hash, origin and sharing changes. `SHA256SUMS` covers the payloads and manifest. Git history is excluded. `heldItems` identifies files omitted from this documentation/source export; some are supplied separately in the qualified Drive supplement.
 
-The producer checks links, JSON, source hashes, preserved lessons and evidence, and APK identity. The [October 14 check record](OCTOBER_14_PACKAGE_CHECKS.md) states the local scope. The [Drive download check](DRIVE_DELIVERY.md) records the later upload verification. The [October 13 revision](FEEDBACK_REVIEW.md), [October 7 review](READABILITY_REVIEW.md) and [older package history](PACKAGE_HISTORY.md) retain their original dates.
+The producer checks links, JSON, source hashes, preserved lessons and evidence, and APK identity. The [package check record](PACKAGE_CHECKS.md) states the local scope. The [Drive download check](DRIVE_DELIVERY.md) records the later upload verification. The [October 13 revision](FEEDBACK_REVIEW.md), [October 7 review](READABILITY_REVIEW.md) and [older package history](PACKAGE_HISTORY.md) retain their original dates.
 
 Keep these results separate:
 

@@ -10,7 +10,7 @@
         "README.md",
         "START_HERE.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "ingredient-index",
@@ -18,7 +18,7 @@
       "paths": [
         "PROGRAM_INGREDIENTS.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "beginner-guide",
@@ -29,7 +29,7 @@
         "curriculum/MY_BUILD_NOTES.md",
         "lessons/PREPARE_TO_BUILD.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "asset-supplement-explanation",
@@ -37,7 +37,7 @@
       "paths": [
         "ASSET_SUPPLEMENT.md"
       ],
-      "qualification": "Direct links to the uploaded October 14 APK, documentation ZIP, assets, evidence and recording checklist. Earlier Drive documentation is a fixed snapshot; current instructions are on GitHub."
+      "qualification": "Direct links to the uploaded build-010 APK, documentation ZIP, assets, evidence and recording checklist. Earlier Drive documentation is a fixed snapshot; current instructions are on GitHub."
     },
     {
       "id": "course",
@@ -45,7 +45,7 @@
       "paths": [
         "curriculum/COURSE_MAP.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "lessons",
@@ -57,7 +57,7 @@
         "lessons/L3.md",
         "lessons/L4.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "prompts",
@@ -66,7 +66,7 @@
         "prompts/PROMPT_INDEX.md",
         "prompts/PROMPT_LIBRARY.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "process",
@@ -74,7 +74,7 @@
       "paths": [
         "process/AI_AND_HUMAN_DECISIONS.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "setup",
@@ -84,7 +84,7 @@
         "curriculum/ADD_MODELS.md",
         "curriculum/EXPAND_MUSEUM.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "architecture",
@@ -93,7 +93,7 @@
         "curriculum/ARCHITECTURE_AND_GLOSSARY.md",
         "curriculum/TROUBLESHOOTING.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "source",
@@ -113,7 +113,7 @@
         "demo/WALKTHROUGH.md",
         "demo/SHOT_LIST.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "evidence",
@@ -143,7 +143,7 @@
         "review/PICO_FEEDBACK_2026-10-13.md",
         "review/APK_FEEDBACK.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "validation",
@@ -157,10 +157,10 @@
         "review/TEAM_HANDOFF.md",
         "review/READABILITY_REVIEW.md",
         "review/FEEDBACK_REVIEW.md",
-        "review/OCTOBER_14_PACKAGE_CHECKS.md",
+        "review/PACKAGE_CHECKS.md",
         "review/GITHUB_EDITION.md"
       ],
-      "qualification": "October 13 plain-language lessons carried into the October 14 delivery; cloud availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
+      "qualification": "Plain-language lessons and supporting materials; download availability is recorded separately. New practice prompts remain separate from actual saved user messages and historical records."
     },
     {
       "id": "apk-and-qualified-artifacts",

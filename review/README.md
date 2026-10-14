@@ -13,7 +13,7 @@ The student course starts at the [README](../README.md). This section keeps the 
 | Original app checks and pictures | [Evidence guide](../evidence/INDEX.md) |
 | The separate Luna attempt | [Experiment result](../reproduction/README.md) |
 | Artwork origins and reuse conditions | [Asset notes](../assets/PROVENANCE_AND_RIGHTS.md), [source notices](../source/NOTICES.md) |
-| File integrity | [Validation](VALIDATION.md), [October 14 GitHub edition](GITHUB_EDITION.md) |
+| File integrity | [Validation](VALIDATION.md), [What this repository includes](GITHUB_EDITION.md) |
 | The earlier October 7 editorial review | [Readability review](READABILITY_REVIEW.md) |
 
 The private meeting transcript and review screenshot are not included here. Their actionable feedback is summarized. Review correspondence stays separate from the lesson text. The [GitHub edition notes](GITHUB_EDITION.md) identify the current publication scope and files kept in the separate review package. Artwork and third-party conditions still apply.

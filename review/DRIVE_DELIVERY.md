@@ -1,6 +1,6 @@
-# Drive download check — October 14, 2026
+# Drive download check
 
-The October 14 delivery is available in the [dated Drive folder](https://drive.google.com/drive/folders/1wsFhAascr5YcG9hu1LnNjpluKMStxuMH). All five numbered folders opened without signing in. The four files below also downloaded successfully and matched the prepared local copies, byte for byte.
+The app and project files are available in the [Drive folder](https://drive.google.com/drive/folders/1wsFhAascr5YcG9hu1LnNjpluKMStxuMH). All five numbered folders opened without signing in. The four files below also downloaded successfully and matched the prepared local copies, byte for byte.
 
 | Download | Bytes | SHA-256 file fingerprint |
 | --- | ---: | --- |
@@ -11,8 +11,8 @@ The October 14 delivery is available in the [dated Drive folder](https://drive.g
 
 The check covered these four downloads and the folder listings. It did not compare every loose source or asset file. No app build or device test was run.
 
-**One small file still needs adding:** `SHARING_SCOPE.md` was not visible in the dated folder or its parent folders during this check. The upload's manifest lists it. Until it is added, use the [sharing conditions](../ASSET_SUPPLEMENT.md#sharing-conditions) and [asset notices](../assets/PROVENANCE_AND_RIGHTS.md) here. The APK and documentation ZIP were both accessible.
+**One small file still needs adding:** `SHARING_SCOPE.md` was not visible in the delivery folder or its parent folders during this check. The upload's manifest lists it. Until it is added, use the [sharing conditions](../ASSET_SUPPLEMENT.md#sharing-conditions) and [asset notices](../assets/PROVENANCE_AND_RIGHTS.md) here. The APK and documentation ZIP were both accessible.
 
 The Drive documentation ZIP is the saved edition from commit `ffc4321`. It still says the upload is pending in a few places because it was packaged before the upload. This GitHub repository contains the current links and status; the lesson content is unchanged.
 
-The check ran on October 14, 2026, at 11:55 UTC. Recordings beside the dated folder were listed but not reviewed in this check. [Return to the download guide](../ASSET_SUPPLEMENT.md).
+The check ran on October 14, 2026, at 11:55 UTC. Recordings beside the delivery folder were listed but not reviewed in this check. [Return to the download guide](../ASSET_SUPPLEMENT.md).

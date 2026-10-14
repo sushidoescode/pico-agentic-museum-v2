@@ -21,31 +21,31 @@
     },
     {
       "path": "ASSET_SUPPLEMENT.md",
-      "bytes": 3984,
-      "sha256": "c2c3a0893aef3c73bc8f3503beadcd5f6f51695938b4d4acf566c0d0f737094f",
+      "bytes": 3972,
+      "sha256": "05de820168cd1811c9d4d491c9d42b7d228e3e45b3150e04e8ddcbaaaf81512f",
       "original": {
-        "kind": "drive-link-documentation-update",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
+      "reason": "Keep the course and download instructions focused on the reader task."
     },
     {
       "path": "DELIVERABLES.json",
-      "bytes": 9787,
-      "sha256": "48b114c7e796ae244dcbdd003e6740f2fd2ddf0cb4c54675df0490975a0867de",
+      "bytes": 9535,
+      "sha256": "e1b95086f7028735ebe759a0e4b62d29e85edc614f4ca0c11ab492c5226083ab",
       "original": {
-        "kind": "drive-link-documentation-update",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
+      "reason": "Keep the course and download instructions focused on the reader task."
     },
     {
       "path": "PROGRAM_INGREDIENTS.md",
@@ -63,17 +63,17 @@
     },
     {
       "path": "README.md",
-      "bytes": 2997,
-      "sha256": "301b1d7e6f5c36f1c05d89ad6b8683e0ebb5c28edaa074e27abbf7baa489e483",
+      "bytes": 2994,
+      "sha256": "22344ae1076f8b70054601e8a14e71bf5512e8f7ee0d966add792e8dba76c06a",
       "original": {
-        "kind": "drive-link-documentation-update",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
+      "reason": "Keep the course and download instructions focused on the reader task."
     },
     {
       "path": "START_HERE.md",
@@ -3562,16 +3562,16 @@
     },
     {
       "original": {
-        "kind": "drive-link-documentation-update",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
       "evidenceClass": "publication-documentation",
-      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements.",
+      "reason": "Keep the course and download instructions focused on the reader task.",
       "path": "review/DRIVE_DELIVERY.md",
-      "bytes": 2113,
-      "sha256": "b5b32b23525748e0a7a8954d9b632aad26dcb9a2b100e051ffd9b0c3b278a6ca",
+      "bytes": 2095,
+      "sha256": "a13bae1f068d05e8b3d1ab96dc8a6c4ab149829b2f7bbb77b8b0606c6cb2f187",
       "inclusionStatus": "included-github-documentation"
     },
     {
@@ -3590,45 +3590,45 @@
     },
     {
       "original": {
-        "kind": "drive-link-documentation-update",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
       "evidenceClass": "publication-documentation",
-      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements.",
+      "reason": "Keep the course and download instructions focused on the reader task.",
       "path": "review/GITHUB_EDITION.md",
-      "bytes": 1868,
-      "sha256": "568e10ad75bceb93c107ce9ed87dbf0e5c7b9b6ba0afaf8e35510959fe0c09e3",
+      "bytes": 1882,
+      "sha256": "b3ab27b0074e9033684912700dfe6a44e4cd789a33c5f075d782013b347da43f",
       "inclusionStatus": "included-github-documentation"
     },
     {
+      "path": "review/OPEN_ITEMS.md",
+      "bytes": 1982,
+      "sha256": "de121c1da425f3bb69c7bb4bab195c8aa34914d1e0ef3c29e072138c7d2e9961",
       "original": {
-        "kind": "drive-link-documentation-update",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements.",
-      "path": "review/OCTOBER_14_PACKAGE_CHECKS.md",
-      "bytes": 2325,
-      "sha256": "bac895e0a3a2610d537bfc7271b9de4fbe9381a853ec38897d8014a936ac5ebe"
+      "reason": "Keep the course and download instructions focused on the reader task."
     },
     {
-      "path": "review/OPEN_ITEMS.md",
-      "bytes": 2029,
-      "sha256": "5b68a97529b3d66523e5d84528eba8fe9ec63f9a0e40415beb34da1cb0a7565b",
       "original": {
-        "kind": "drive-link-documentation-update",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
+      "reason": "Keep the course and download instructions focused on the reader task.",
+      "path": "review/PACKAGE_CHECKS.md",
+      "bytes": 2314,
+      "sha256": "664717e177fdc68e9072374c92057f97dfd8ea2a8f26af4fad40d7d018c68fa5"
     },
     {
       "original": {
@@ -3647,17 +3647,17 @@
     },
     {
       "original": {
-        "kind": "github-edition-adjustment",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Reviewed local package b8097a4; owner instruction to update the GitHub README and current documentation."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Clarified actual download availability and separated the private-review capture from the GitHub edition. No new native observation.",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner-requested update to the existing repository; retained asset/source qualifications remain.",
+      "reason": "Keep the course and download instructions focused on the reader task.",
       "path": "review/PICO_FEEDBACK_2026-10-13.md",
-      "bytes": 3587,
-      "sha256": "1deda1b03baf95b4dca08a73927064043703e178869a3a3b957d121577c4c8d1"
+      "bytes": 3576,
+      "sha256": "f1b9493454e046179a15934e51e7108ae2bdee524797432bc2b1cea0cda7a38a"
     },
     {
       "original": {
@@ -3675,17 +3675,17 @@
     },
     {
       "original": {
-        "kind": "github-edition-adjustment",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Reviewed local package b8097a4; owner instruction to update the GitHub README and current documentation."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Clarified actual download availability and separated the private-review capture from the GitHub edition. No new native observation.",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner-requested update to the existing repository; retained asset/source qualifications remain.",
+      "reason": "Keep the course and download instructions focused on the reader task.",
       "path": "review/README.md",
-      "bytes": 1703,
-      "sha256": "44b3f8b6892e96f34873b75b157238b10aa8a1fae274eed9367e6db3fd6e57db"
+      "bytes": 1707,
+      "sha256": "3de9c0d58ec04f84f2577b48161a1a60df925d0f58f61537bb5b4d4d125b532e"
     },
     {
       "original": {
@@ -3703,17 +3703,17 @@
     },
     {
       "path": "review/REVIEW_REQUEST_UNSENT.md",
-      "bytes": 1491,
-      "sha256": "145c27c3e0fd0d701e2771fbe958311dc93688e325d7ee7c2ad889c1d6098077",
+      "bytes": 1464,
+      "sha256": "cb3397539f7af1b4db8d8f1578b03d4ed6f0c3522ee1f613f968fd4f57d12f7c",
       "original": {
-        "kind": "october-14-delivery-material",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Retained museum feedback source 4f0d8d3 and closeout 5224c1a; approved October 13 documentation."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Editorial assembly or sanitized retained evidence projection; no new native observation.",
-      "evidenceClass": "package-documentation",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
+      "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Current documentation, source and APK delivery requested by owner."
+      "reason": "Keep the course and download instructions focused on the reader task."
     },
     {
       "path": "review/REVIEW_RESOLUTION.md",
@@ -3731,31 +3731,31 @@
     },
     {
       "original": {
-        "kind": "drive-link-documentation-update",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements.",
+      "reason": "Keep the course and download instructions focused on the reader task.",
       "path": "review/TEAM_HANDOFF.md",
-      "bytes": 1904,
-      "sha256": "cc35a83695b336ecae09e288fff442f78214d4f262cfe87d225b9c7aabb9074d"
+      "bytes": 1758,
+      "sha256": "3579666554d7a76ca2c0814c500945c03e2cc6009aa8e65b4666ec48d32798da"
     },
     {
       "path": "review/VALIDATION.md",
-      "bytes": 2062,
-      "sha256": "099a8ffa26fb67668a6be3e4bbe9684cbb05a7534a1697652cdee9cce62a6ce8",
+      "bytes": 2019,
+      "sha256": "3ff6c1517f0914b4e8bff565f419faf9da68e69e6ae90114d377814edeccdb35",
       "original": {
-        "kind": "drive-link-documentation-update",
+        "kind": "reader-wording-update",
         "date": "2026-10-14",
-        "sourceBasis": "Published documentation ffc4321; owner-confirmed upload and anonymous core-file downloads."
+        "sourceBasis": "Published documentation 79b94dd; owner requested removing unnecessary update-date labels."
       },
-      "transform": "Updated navigation, direct Drive links and bounded delivery verification. No new native observation.",
+      "transform": "Removed update-date labels from reader-facing prose and navigation. File-verification timestamps and historical source records retained.",
       "evidenceClass": "publication-documentation",
       "inclusionStatus": "included-github-documentation",
-      "reason": "Owner requested clear instructions and correction of outdated upload-pending statements."
+      "reason": "Keep the course and download instructions focused on the reader task."
     },
     {
       "path": "review/verify_checksums.py",
@@ -16288,8 +16288,8 @@
   ],
   "revisionDate": "2026-10-14",
   "repository": "https://github.com/sushidoescode/pico-agentic-museum-v2",
-  "publishedBasis": "ffc432175d77e455a0ba7f20187758520eccbf72",
+  "publishedBasis": "79b94ddf027763316d323a6649a4c688fb6721fd",
   "publication": "Owner-authorized GitHub update after owner upload to Drive. Selected APK, documentation ZIP, outer manifest and checksums downloaded and matched; all five folder listings readable. One sharing note not listed; no recursive cloud-file audit. See review/DRIVE_DELIVERY.md.",
   "baseLocalRevision": "b8097a4afb22f7c2e1839223a3edf1e37e7458d5",
-  "editorialRevision": "github-october-14-drive-links"
+  "editorialRevision": "reader-wording-update"
 }

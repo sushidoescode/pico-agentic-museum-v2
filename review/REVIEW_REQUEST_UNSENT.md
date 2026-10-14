@@ -1,6 +1,6 @@
 # Draft review request — not sent
 
-Prepared October 14, 2026. Add the current delivery links and intended recipients before sending.
+Add the current delivery links and intended recipients before sending.
 
 **Subject: Museum course and feedback build — ready for another look**
 
